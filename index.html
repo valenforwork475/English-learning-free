@@ -58,8 +58,8 @@
                     <p>ยินดีต้อนรับกลับมา! พร้อมเรียนหรือยัง?</p>
                     <form id="login-form">
                         <div class="form-group">
-                            <label>อีเมล (Email)</label>
-                            <input type="email" id="login-email" required placeholder="ใส่อีเมลของคุณ">
+                            <label>ชื่อผู้ใช้งาน (Username)</label>
+                            <input type="text" id="login-username" required placeholder="ใส่ชื่อผู้ใช้งาน (ภาษาอังกฤษ)">
                         </div>
                         <div class="form-group">
                             <label>รหัสผ่าน</label>
@@ -76,15 +76,11 @@
                 <div class="auth-card">
                     <div class="auth-icon"><i class="fa-solid fa-user-plus"></i></div>
                     <h2>สมัครสมาชิกใหม่</h2>
-                    <p>เชื่อมต่อกับ Supabase</p>
+                    <p>เข้าสู่ระบบง่ายๆ ด้วยชื่อผู้ใช้งาน</p>
                     <form id="register-form">
                         <div class="form-group">
-                            <label>ชื่อผู้ใช้งาน (แสดงผล)</label>
-                            <input type="text" id="register-username" required placeholder="ชื่อที่จะให้แอปเรียกคุณ">
-                        </div>
-                        <div class="form-group">
-                            <label>อีเมล (Email)</label>
-                            <input type="email" id="register-email" required placeholder="ใส่อีเมลของคุณ">
+                            <label>ชื่อผู้ใช้งาน (Username)</label>
+                            <input type="text" id="register-username" required placeholder="ตั้งชื่อผู้ใช้งาน (ภาษาอังกฤษ)">
                         </div>
                         <div class="form-group">
                             <label>รหัสผ่าน (อย่างน้อย 6 ตัวอักษร)</label>
@@ -331,8 +327,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=25"></script>
-    <script src="js/app.js?v=25"></script>
+    <script src="js/data.js?v=26"></script>
+    <script src="js/app.js?v=26"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

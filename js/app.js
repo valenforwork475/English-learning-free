@@ -45,7 +45,7 @@ const app = {
         if (loginForm) {
             loginForm.onsubmit = async (e) => {
                 e.preventDefault();
-                const email = document.getElementById('login-email').value.trim();
+                const username = document.getElementById('login-username').value.trim().toLowerCase();
                 const pass = document.getElementById('login-password').value.trim();
                 const error = document.getElementById('login-error');
                 const btn = document.getElementById('login-btn');
@@ -53,8 +53,11 @@ const app = {
                 btn.textContent = 'กำลังเข้าสู่ระบบ...';
                 btn.disabled = true;
                 
+                // แปลง Username เป็น Email ปลอมสำหรับส่งให้ Supabase
+                const fakeEmail = `${username}@eng.com`;
+                
                 const { data, error: err } = await supabase.auth.signInWithPassword({
-                    email: email,
+                    email: fakeEmail,
                     password: pass,
                 });
                 
@@ -62,7 +65,7 @@ const app = {
                 btn.disabled = false;
                 
                 if (err) {
-                    error.textContent = 'อีเมลหรือรหัสผ่านไม่ถูกต้อง';
+                    error.textContent = 'ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง';
                     error.style.display = 'block';
                 } else {
                     error.style.display = 'none';
@@ -77,8 +80,7 @@ const app = {
         if (registerForm) {
             registerForm.onsubmit = async (e) => {
                 e.preventDefault();
-                const username = document.getElementById('register-username').value.trim();
-                const email = document.getElementById('register-email').value.trim();
+                const username = document.getElementById('register-username').value.trim().toLowerCase();
                 const pass = document.getElementById('register-password').value.trim();
                 const error = document.getElementById('register-error');
                 const btn = document.getElementById('register-btn');
@@ -86,8 +88,11 @@ const app = {
                 btn.textContent = 'กำลังสร้างบัญชี...';
                 btn.disabled = true;
                 
+                // แปลง Username เป็น Email ปลอมสำหรับส่งให้ Supabase
+                const fakeEmail = `${username}@eng.com`;
+                
                 const { data, error: err } = await supabase.auth.signUp({
-                    email: email,
+                    email: fakeEmail,
                     password: pass,
                     options: {
                         data: {
@@ -102,7 +107,7 @@ const app = {
                 btn.disabled = false;
                 
                 if (err) {
-                    error.textContent = err.message || 'เกิดข้อผิดพลาดในการสมัคร';
+                    error.textContent = err.message || 'เกิดข้อผิดพลาดในการสมัคร (รหัสผ่านอาจสั้นเกินไป)';
                     error.style.display = 'block';
                     return;
                 }

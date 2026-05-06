@@ -602,7 +602,15 @@ const app = {
 
         const btn = document.getElementById('btn-speak');
         const feedback = document.getElementById('speaking-feedback');
-        
+        const timerEl = document.getElementById('speaking-timer');
+
+        // หยุด timer ทันทีที่ผู้เรียนเริ่มพูด
+        if (this._speakingTimer) {
+            clearInterval(this._speakingTimer);
+            this._speakingTimer = null;
+        }
+        if (timerEl) timerEl.textContent = '🎤 กำลังฟัง...';
+
         const recognition = new SpeechRecognition();
         recognition.lang = 'en-US';
         recognition.interimResults = false;
@@ -664,6 +672,59 @@ const app = {
         };
     },
 
+    // เปิดเฉลยคำตอบเมื่อหมดเวลา
+    revealSpeakingAnswer() {
+        if (this._speakingTimer) {
+            clearInterval(this._speakingTimer);
+            this._speakingTimer = null;
+        }
+        const questionData = this.quizList[this.currentQuizIndex];
+        const feedback = document.getElementById('speaking-feedback');
+        const timerEl = document.getElementById('speaking-timer');
+        const btn = document.getElementById('btn-speak');
+        const revealBtn = document.getElementById('btn-reveal');
+
+        if (timerEl) timerEl.textContent = '';
+        if (btn) btn.disabled = true;
+        if (revealBtn) revealBtn.style.display = 'none';
+
+        if (feedback) {
+            feedback.innerHTML = `⏰ หมดเวลา! คำตอบคือ: <strong style="color:var(--accent-orange);font-size:1.3rem;">${questionData.answerText}</strong>`;
+            feedback.style.color = 'var(--text-main)';
+        }
+
+        this.playFeedbackSound(false);
+
+        setTimeout(() => {
+            if (btn) btn.disabled = false;
+            this.nextQuizQuestion();
+        }, 3000);
+    },
+
+    // เริ่มนับถอยหลัง
+    startSpeakingCountdown() {
+        if (this._speakingTimer) clearInterval(this._speakingTimer);
+        let timeLeft = 10;
+        const timerEl = document.getElementById('speaking-timer');
+        if (timerEl) {
+            timerEl.textContent = `⏱ ${timeLeft}วินาที`;
+            timerEl.style.color = 'var(--accent-blue)';
+        }
+
+        this._speakingTimer = setInterval(() => {
+            timeLeft--;
+            if (timerEl) {
+                timerEl.textContent = `⏱ ${timeLeft}วินาที`;
+                timerEl.style.color = timeLeft <= 3 ? 'var(--accent-red)' : (timeLeft <= 6 ? 'var(--accent-orange)' : 'var(--accent-blue)');
+            }
+            if (timeLeft <= 0) {
+                clearInterval(this._speakingTimer);
+                this._speakingTimer = null;
+                this.revealSpeakingAnswer();
+            }
+        }, 1000);
+    },
+
     // --- Quiz Logic ---
     startQuizFromModal() {
         this.closeModal();
@@ -716,14 +777,22 @@ const app = {
             // Reset speaking UI
             const btn = document.getElementById('btn-speak');
             const feedback = document.getElementById('speaking-feedback');
+            const timerEl = document.getElementById('speaking-timer');
+            const revealBtn = document.getElementById('btn-reveal');
             if (btn) {
                 btn.style.transform = 'scale(1)';
                 btn.style.backgroundColor = 'var(--primary)';
+                btn.disabled = false;
             }
             if (feedback) {
                 feedback.textContent = 'กดปุ่มไมโครโฟนเพื่อเริ่มพูด';
                 feedback.style.color = 'var(--text-main)';
             }
+            if (timerEl) timerEl.textContent = '';
+            if (revealBtn) revealBtn.style.display = 'inline-flex';
+
+            // เริ่มนับถอย 10 วินาที
+            this.startSpeakingCountdown();
         } else {
             qText.style.display = 'block';
             qText.textContent = questionData.question;

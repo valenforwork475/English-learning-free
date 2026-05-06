@@ -310,13 +310,24 @@
                             <!-- Options injected by JS -->
                         </div>
                         <div id="quiz-speaking-container" style="display: none; text-align: center; margin-top: 20px;">
-                            <div class="speaking-feedback" id="speaking-feedback" style="margin-bottom: 20px; min-height: 40px; font-size: 1.2rem; color: var(--text-main);">
+                            <!-- Timer Countdown -->
+                            <div id="speaking-timer" class="speaking-timer-display"></div>
+
+                            <div class="speaking-feedback" id="speaking-feedback" style="margin-bottom: 20px; min-height: 40px; font-size: 1.1rem; color: var(--text-main);">
                                 กดปุ่มไมโครโฟนเพื่อเริ่มพูด
                             </div>
+
+                            <!-- Mic Button -->
                             <button id="btn-speak" class="btn btn-primary" onclick="app.startSpeaking()" style="width: 100px; height: 100px; border-radius: 50%; font-size: 3rem; box-shadow: var(--shadow-lg); transition: transform 0.2s;">
                                 <i class="fa-solid fa-microphone"></i>
                             </button>
-                            <p style="margin-top: 20px; color: var(--text-muted);">พูดคำศัพท์ให้ชัดเจนเพื่อผ่านด่าน</p>
+
+                            <p style="margin-top: 16px; color: var(--text-muted); font-size: 0.9rem;">พูดคำศัพท์ให้ชัดเจนเพื่อผ่านด่าน</p>
+
+                            <!-- Reveal Answer Button -->
+                            <button id="btn-reveal" class="btn-reveal-answer" onclick="app.revealSpeakingAnswer()">
+                                <i class="fa-solid fa-eye"></i> เฉลยคำตอบ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -352,8 +363,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=33"></script>
-    <script src="js/app.js?v=33"></script>
+    <script src="js/data.js?v=34"></script>
+    <script src="js/app.js?v=34"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

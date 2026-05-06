@@ -68,6 +68,19 @@
                     <div class="auth-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <h2>เข้าสู่ระบบ</h2>
                     <p class="auth-slogan">💡 ความรู้ไม่มีที่สิ้นสุด</p>
+                    <!-- User Stats Bar -->
+                    <div class="user-stats-bar">
+                        <div class="stat-pill">
+                            <span class="stat-dot online"></span>
+                            <span>กำลังออนไลน์:</span>
+                            <strong id="online-count">...</strong>
+                        </div>
+                        <div class="stat-pill">
+                            <i class="fa-solid fa-users" style="color: var(--primary);"></i>
+                            <span>ผู้เรียนทั้งหมด:</span>
+                            <strong id="total-count">...</strong>
+                        </div>
+                    </div>
                     <form id="login-form">
                         <div class="form-group">
                             <label>ชื่อผู้ใช้งาน (Username)</label>
@@ -344,8 +357,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=29"></script>
-    <script src="js/app.js?v=29"></script>
+    <script src="js/data.js?v=30"></script>
+    <script src="js/app.js?v=30"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

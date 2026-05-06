@@ -24,6 +24,8 @@ const app = {
         this.setupAuth();
         this.setupNavigation();
         this.setupPWA();
+        this.fetchUserStats(); // ดึงจำนวนผู้ใช้ทันที
+        this.setupPresence();  // ติดตามผู้ใช้ออนไลน์
         
         try {
             const { data: { session }, error } = await db.auth.getSession();
@@ -164,6 +166,39 @@ const app = {
         if (userNameSpan) {
             userNameSpan.textContent = username;
         }
+    },
+
+    async fetchUserStats() {
+        try {
+            const { count, error } = await db
+                .from('profiles')
+                .select('*', { count: 'exact', head: true });
+            
+            const el = document.getElementById('total-count');
+            if (el) el.textContent = error ? '-' : `${count || 0} คน`;
+        } catch(e) {
+            const el = document.getElementById('total-count');
+            if (el) el.textContent = '-';
+        }
+    },
+
+    setupPresence() {
+        const channel = db.channel('online-users', {
+            config: { presence: { key: 'user_' + Math.random().toString(36).slice(2) } }
+        });
+
+        channel.on('presence', { event: 'sync' }, () => {
+            const state = channel.presenceState();
+            const count = Object.keys(state).length;
+            const el = document.getElementById('online-count');
+            if (el) el.textContent = `${count} คน`;
+        });
+
+        channel.subscribe(async (status) => {
+            if (status === 'SUBSCRIBED') {
+                await channel.track({ online_at: new Date().toISOString() });
+            }
+        });
     },
 
     setupPWA() {

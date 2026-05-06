@@ -25,16 +25,36 @@ const app = {
         this.setupNavigation();
         this.setupPWA();
         
-        const { data: { session } } = await supabase.auth.getSession();
-        if (!session) {
+        try {
+            const { data: { session }, error } = await supabase.auth.getSession();
+            if (error) throw error;
+            
+            const sidebar = document.querySelector('.sidebar');
+            if (!session) {
+                this.switchView('login');
+                if(sidebar) {
+                    sidebar.classList.remove('sidebar-initial-hide');
+                    sidebar.style.display = 'none';
+                }
+            } else {
+                if(sidebar) {
+                    sidebar.classList.remove('sidebar-initial-hide');
+                    sidebar.style.display = 'flex';
+                }
+                await this.loadProgress();
+                this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
+                this.updateStats();
+                this.loadFlashcard(false);
+                this.updateGreeting(session.user.user_metadata.username || session.user.email);
+                
+                // Force dashboard to show if login-view is active
+                if (document.getElementById('login-view').classList.contains('active')) {
+                    this.switchView('dashboard');
+                }
+            }
+        } catch (err) {
+            alert("Auth Error: " + err.message);
             this.switchView('login');
-            document.querySelector('.sidebar').style.display = 'none';
-        } else {
-            await this.loadProgress();
-            this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
-            this.updateStats();
-            this.loadFlashcard(false);
-            this.updateGreeting(session.user.user_metadata.username || session.user.email);
         }
     },
 

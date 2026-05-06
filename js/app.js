@@ -135,9 +135,16 @@ const app = {
                 error.style.display = 'none';
                 registerForm.reset();
                 
-                document.querySelector('.sidebar').style.display = 'flex';
-                this.init();
-                this.switchView('dashboard');
+                // สมัครสำเร็จ -> กลับไปหน้าล็อกอิน
+                error.textContent = '✅ สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบด้วยชื่อผู้ใช้งานของคุณ';
+                error.style.display = 'block';
+                error.style.color = '#22c55e';
+                
+                setTimeout(() => {
+                    error.style.display = 'none';
+                    error.style.color = '';
+                    this.switchView('login');
+                }, 2000);
             };
         }
     },

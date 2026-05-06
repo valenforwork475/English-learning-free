@@ -67,7 +67,7 @@
                 <div class="auth-card">
                     <div class="auth-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <h2>เข้าสู่ระบบ</h2>
-                    <p>ยินดีต้อนรับกลับมา! พร้อมเรียนหรือยัง?</p>
+                    <p class="auth-slogan">💡 ความรู้ไม่มีที่สิ้นสุด</p>
                     <form id="login-form">
                         <div class="form-group">
                             <label>ชื่อผู้ใช้งาน (Username)</label>
@@ -113,6 +113,11 @@
                         <p>มาเรียนรู้คำศัพท์ใหม่ๆ กันเถอะ</p>
                         <button id="install-btn" class="primary-btn" style="display: none; margin-top: 15px; padding: 8px 16px; font-size: 0.9rem; background: var(--accent-green);">
                             <i class="fa-solid fa-download"></i> ติดตั้งแอปลงเครื่อง
+                        </button>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <button onclick="app.logout()" class="secondary-btn" style="padding: 8px 16px; font-size: 0.85rem; display: none;" id="mobile-logout-btn">
+                            <i class="fa-solid fa-right-from-bracket"></i> ออกจากระบบ
                         </button>
                     </div>
                     <div class="search-bar">
@@ -339,8 +344,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=28"></script>
-    <script src="js/app.js?v=28"></script>
+    <script src="js/data.js?v=29"></script>
+    <script src="js/app.js?v=29"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

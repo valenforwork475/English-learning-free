@@ -1019,3 +1019,128 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
     transform: translateY(-1px);
 }
+
+/* Auth Slogan */
+.auth-slogan {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary, #6366f1);
+    letter-spacing: 0.5px;
+    margin-bottom: 28px !important;
+}
+
+/* ===================== */
+/* MOBILE RESPONSIVE     */
+/* ===================== */
+@media (max-width: 768px) {
+    /* Layout: Stack sidebar on mobile */
+    .app-container {
+        flex-direction: column;
+        height: 100dvh;
+    }
+
+    /* Sidebar becomes bottom nav bar */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 10px 16px;
+        border-right: none;
+        border-top: 1px solid var(--border);
+        order: 2; /* Move to bottom */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: var(--surface);
+    }
+
+    .logo { display: none; }
+    .user-profile { display: none; }
+    #logout-btn { display: none; }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        gap: 0;
+        flex-grow: 0;
+    }
+
+    .nav-links li a {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 12px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .nav-links li a i {
+        font-size: 1.3rem;
+    }
+
+    /* Main content takes full width */
+    .main-content {
+        order: 1;
+        padding-bottom: 70px; /* Space for bottom nav */
+        height: calc(100dvh - 70px);
+        overflow-y: auto;
+    }
+
+    /* Auth card mobile */
+    .auth-card {
+        padding: 28px 20px;
+        margin: 16px;
+        max-width: 100%;
+    }
+
+    .auth-icon { font-size: 2.8rem; }
+    .auth-card h2 { font-size: 1.6rem; }
+
+    /* Top header */
+    .top-header {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    /* Cards grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 12px;
+    }
+
+    .flashcard {
+        height: 200px;
+        margin: 0 12px;
+    }
+
+    .fc-word {
+        font-size: 2rem;
+    }
+
+    /* Quiz options */
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+
+    /* Level grid */
+    .levels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .auth-card h2 { font-size: 1.4rem; }
+    .nav-links li a { padding: 6px 8px; }
+}
+
+@media (max-width: 768px) {
+    #mobile-logout-btn { display: inline-flex !important; }
+}

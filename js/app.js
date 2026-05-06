@@ -24,8 +24,6 @@ const app = {
         this.setupAuth();
         this.setupNavigation();
         this.setupPWA();
-        this.fetchUserStats(); // ดึงจำนวนผู้ใช้ทันที
-        this.setupPresence();  // ติดตามผู้ใช้ออนไลน์
         
         try {
             const { data: { session }, error } = await db.auth.getSession();
@@ -38,7 +36,12 @@ const app = {
                     sidebar.classList.remove('sidebar-initial-hide');
                     sidebar.style.display = 'none';
                 }
+                // ยังไม่ล็อกอิน → เริ่ม Presence โดยไม่มีชื่อ (นับจำนวนออนไลน์อย่างเดียว)
+                this.setupPresence(null);
             } else {
+                const username = session.user.user_metadata.username || session.user.email;
+                this._currentUsername = username; // เก็บชื่อไว้ใช้งาน
+
                 if(sidebar) {
                     sidebar.classList.remove('sidebar-initial-hide');
                     sidebar.style.display = 'flex';
@@ -47,8 +50,13 @@ const app = {
                 this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
                 this.updateStats();
                 this.loadFlashcard(false);
-                this.updateGreeting(session.user.user_metadata.username || session.user.email);
+                this.updateGreeting(username);
                 
+                // เริ่ม Presence พร้อมชื่อผู้ใช้
+                this.setupPresence(username);
+                // ดึงสถิติผู้ใช้ (admin only)
+                this.fetchUserStats();
+
                 // Force dashboard to show if login-view is active
                 if (document.getElementById('login-view').classList.contains('active')) {
                     this.switchView('dashboard');
@@ -169,34 +177,45 @@ const app = {
     },
 
     async fetchUserStats() {
+        // เฉพาะแอดมิน valen เท่านั้น
+        if (this._currentUsername !== 'valen') return;
         try {
             const { count, error } = await db
                 .from('profiles')
                 .select('*', { count: 'exact', head: true });
-            
-            const el = document.getElementById('total-count');
-            if (el) el.textContent = error ? '-' : `${count || 0} คน`;
-        } catch(e) {
-            const el = document.getElementById('total-count');
-            if (el) el.textContent = '-';
-        }
+            const el = document.getElementById('admin-total-count');
+            if (el) el.textContent = `${count || 0} คน`;
+        } catch(e) { /* ตารางยังไม่มี */ }
     },
 
-    setupPresence() {
-        const channel = db.channel('online-users', {
-            config: { presence: { key: 'user_' + Math.random().toString(36).slice(2) } }
-        });
+    setupPresence(username) {
+        const isAdmin = username === 'valen';
+        const channel = db.channel('online-users');
 
         channel.on('presence', { event: 'sync' }, () => {
             const state = channel.presenceState();
-            const count = Object.keys(state).length;
-            const el = document.getElementById('online-count');
-            if (el) el.textContent = `${count} คน`;
+            const users = [];
+            Object.values(state).forEach(presences => {
+                presences.forEach(p => { if (p.username) users.push(p.username); });
+            });
+
+            if (isAdmin) {
+                const panel = document.getElementById('admin-panel');
+                const countEl = document.getElementById('admin-online-count');
+                const listEl = document.getElementById('admin-online-list');
+                if (panel) panel.style.display = 'block';
+                if (countEl) countEl.textContent = `${users.length} คน`;
+                if (listEl) {
+                    listEl.innerHTML = users.length
+                        ? users.map(u => `<div class="online-user-chip"><span class="stat-dot online"></span>${u}</div>`).join('')
+                        : '<span style="opacity:0.5;font-size:0.85rem;">ยังไม่มีผู้ใช้งานออนไลน์</span>';
+                }
+            }
         });
 
         channel.subscribe(async (status) => {
             if (status === 'SUBSCRIBED') {
-                await channel.track({ online_at: new Date().toISOString() });
+                await channel.track({ username, online_at: new Date().toISOString() });
             }
         });
     },

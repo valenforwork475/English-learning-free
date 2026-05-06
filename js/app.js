@@ -20,8 +20,47 @@ const app = {
         this.loadProgress();
         this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
         this.setupNavigation();
+        this.setupPWA();
         this.updateStats();
         this.loadFlashcard(false);
+    },
+
+    setupPWA() {
+        let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            const installBtn = document.getElementById('install-btn');
+            if (installBtn) {
+                installBtn.style.display = 'inline-flex';
+                installBtn.onclick = async () => {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    console.log(`User response to the install prompt: ${outcome}`);
+                    deferredPrompt = null;
+                    installBtn.style.display = 'none';
+                };
+            }
+        });
+
+        // iOS fallback
+        const isIos = () => {
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            return /iphone|ipad|ipod/.test( userAgent );
+        };
+        const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+        if (isIos() && !isInStandaloneMode()) {
+            const installBtn = document.getElementById('install-btn');
+            if (installBtn) {
+                installBtn.style.display = 'inline-flex';
+                installBtn.innerHTML = '<i class="fa-brands fa-apple"></i> วิธีติดตั้งบน iPhone';
+                installBtn.onclick = () => {
+                    alert("วิธีติดตั้งบน iPhone:\n1. กดปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น) ด้านล่างจอ\n2. เลื่อนหาและเลือก 'เพิ่มไปยังหน้าจอโฮม' (Add to Home Screen)");
+                };
+            }
+        }
     },
 
     loadProgress() {

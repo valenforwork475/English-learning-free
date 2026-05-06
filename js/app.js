@@ -595,64 +595,101 @@ const app = {
     // --- Speech Recognition Logic ---
     startSpeaking() {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (!SpeechRecognition) {
-            alert('เบราว์เซอร์ของคุณไม่รองรับระบบสั่งงานด้วยเสียง (กรุณาใช้ Chrome หรือ Edge)');
-            return;
-        }
-
         const btn = document.getElementById('btn-speak');
         const feedback = document.getElementById('speaking-feedback');
         const timerEl = document.getElementById('speaking-timer');
+
+        // ตรวจสอบว่าเบราว์เซอร์รองรับหรือไม่
+        if (!SpeechRecognition) {
+            // iOS Safari และ Firefox ไม่รองรับ → ใช้วิธีเฉลยเอง
+            if (feedback) {
+                feedback.innerHTML = `
+                    <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:12px;padding:14px;font-size:0.9rem;color:#92400e;line-height:1.6;">
+                        📵 เบราว์เซอร์ของคุณ<strong>ไม่รองรับการพูด</strong><br>
+                        กรุณาใช้ <strong>Chrome หรือ Edge</strong><br>
+                        หรือกด <strong>"เฉลยคำตอบ"</strong> เพื่อดูคำตอบ
+                    </div>`;
+            }
+            if (timerEl) timerEl.textContent = '';
+            if (this._speakingTimer) {
+                clearInterval(this._speakingTimer);
+                this._speakingTimer = null;
+            }
+            return;
+        }
 
         // หยุด timer ทันทีที่ผู้เรียนเริ่มพูด
         if (this._speakingTimer) {
             clearInterval(this._speakingTimer);
             this._speakingTimer = null;
         }
-        if (timerEl) timerEl.textContent = '🎤 กำลังฟัง...';
+
+        if (timerEl) {
+            timerEl.textContent = '🎤 กำลังฟัง...';
+            timerEl.style.color = 'var(--accent-blue)';
+        }
 
         const recognition = new SpeechRecognition();
         recognition.lang = 'en-US';
         recognition.interimResults = false;
-        recognition.maxAlternatives = 1;
+        recognition.maxAlternatives = 3;
 
         btn.style.transform = 'scale(1.1)';
         btn.style.backgroundColor = 'var(--accent-red)';
-        feedback.textContent = 'กำลังฟัง... (พูดคำศัพท์ได้เลย)';
-        feedback.style.color = 'var(--accent-blue)';
+        if (feedback) {
+            feedback.textContent = '🎤 กำลังฟัง... พูดได้เลยครับ';
+            feedback.style.color = 'var(--accent-blue)';
+        }
 
-        recognition.start();
+        try {
+            recognition.start();
+        } catch(e) {
+            // กรณีที่กดปุ่มซ้ำเร็วเกินไป
+            btn.style.transform = 'scale(1)';
+            btn.style.backgroundColor = 'var(--primary)';
+            if (feedback) feedback.textContent = 'กดปุ่มไมโครโฟนเพื่อเริ่มพูด';
+            return;
+        }
 
         recognition.onresult = (event) => {
-            const speechResult = event.results[0][0].transcript.toLowerCase().trim();
+            // ลอง match จากทุก alternatives
+            let speechResult = '';
+            for (let i = 0; i < event.results[0].length; i++) {
+                speechResult = event.results[0][i].transcript.toLowerCase().trim();
+                const questionData = this.quizList[this.currentQuizIndex];
+                const targetWord = questionData.answerText.toLowerCase().trim();
+                if (speechResult.includes(targetWord) || targetWord.includes(speechResult)) break;
+            }
+
             const questionData = this.quizList[this.currentQuizIndex];
             const targetWord = questionData.answerText.toLowerCase().trim();
-
             const quizCard = document.querySelector('.quiz-card');
-            quizCard.classList.remove('pop-effect', 'shake-effect');
-            void quizCard.offsetWidth; // trigger reflow
-            
-            // Simple matching check
+            if (quizCard) {
+                quizCard.classList.remove('pop-effect', 'shake-effect');
+                void quizCard.offsetWidth;
+            }
+
             if (speechResult.includes(targetWord) || targetWord.includes(speechResult)) {
-                feedback.textContent = `ยอดเยี่ยม! คุณพูดว่า: "${event.results[0][0].transcript}"`;
-                feedback.style.color = 'var(--accent-green)';
+                if (feedback) {
+                    feedback.textContent = `✅ ยอดเยี่ยม! ได้ยิน: "${event.results[0][0].transcript}"`;
+                    feedback.style.color = 'var(--accent-green)';
+                }
                 btn.style.backgroundColor = 'var(--accent-green)';
                 this.quizScore++;
-                
-                quizCard.classList.add('pop-effect');
+                if (quizCard) quizCard.classList.add('pop-effect');
                 this.playFeedbackSound(true);
-                
-                setTimeout(() => {
-                    this.nextQuizQuestion();
-                }, 2000);
+                setTimeout(() => { this.nextQuizQuestion(); }, 2000);
             } else {
-                feedback.textContent = `ระบบได้ยินเป็น: "${event.results[0][0].transcript}" ลองใหม่อีกครั้ง`;
-                feedback.style.color = 'var(--accent-red)';
+                if (feedback) {
+                    feedback.textContent = `❌ ได้ยินว่า: "${event.results[0][0].transcript}" — ลองอีกครั้ง`;
+                    feedback.style.color = 'var(--accent-red)';
+                }
                 btn.style.backgroundColor = 'var(--primary)';
                 btn.style.transform = 'scale(1)';
-                
-                quizCard.classList.add('shake-effect');
+                if (quizCard) quizCard.classList.add('shake-effect');
                 this.playFeedbackSound(false);
+                // เริ่มจับเวลาใหม่ 10 วิ หลังพูดผิด
+                this.startSpeakingCountdown();
             }
         };
 
@@ -667,8 +704,25 @@ const app = {
         recognition.onerror = (event) => {
             btn.style.transform = 'scale(1)';
             btn.style.backgroundColor = 'var(--primary)';
-            feedback.textContent = `เกิดข้อผิดพลาด: ${event.error}`;
-            feedback.style.color = 'var(--accent-red)';
+            
+            const errorMessages = {
+                'not-allowed': '🚫 ไม่ได้รับอนุญาตให้ใช้ไมโครโฟน\nกรุณาไปที่การตั้งค่าเบราว์เซอร์ และอนุญาตการใช้ไมโครโฟนสำหรับเว็บนี้',
+                'no-speech': '🔇 ไม่ได้ยินเสียง กรุณาลองพูดใหม่',
+                'audio-capture': '🎙️ ไม่พบไมโครโฟน กรุณาตรวจสอบอุปกรณ์',
+                'network': '🌐 เกิดข้อผิดพลาดด้านเครือข่าย กรุณาลองใหม่',
+                'aborted': null, // ผู้ใช้กดหยุดเอง ไม่ต้องแจ้ง
+            };
+
+            const msg = errorMessages[event.error];
+            if (msg && feedback) {
+                feedback.innerHTML = `<div style="background:#fee2e2;border:1px solid #fca5a5;border-radius:12px;padding:12px;font-size:0.9rem;color:#991b1b;line-height:1.6;">${msg}</div>`;
+                feedback.style.color = 'var(--text-main)';
+            }
+
+            if (event.error !== 'aborted') {
+                // เริ่มนับถอยใหม่หลัง error
+                this.startSpeakingCountdown();
+            }
         };
     },
 

@@ -27,39 +27,45 @@ const app = {
 
     setupPWA() {
         let deferredPrompt;
+        const installBtn = document.getElementById('install-btn');
         
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            const installBtn = document.getElementById('install-btn');
-            if (installBtn) {
-                installBtn.style.display = 'inline-flex';
-                installBtn.onclick = async () => {
-                    deferredPrompt.prompt();
-                    const { outcome } = await deferredPrompt.userChoice;
-                    console.log(`User response to the install prompt: ${outcome}`);
-                    deferredPrompt = null;
-                    installBtn.style.display = 'none';
-                };
-            }
         });
 
-        // iOS fallback
         const isIos = () => {
             const userAgent = window.navigator.userAgent.toLowerCase();
             return /iphone|ipad|ipod/.test( userAgent );
         };
-        const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+        const isInStandaloneMode = () => ('standalone' in window.navigator) || window.matchMedia('(display-mode: standalone)').matches;
 
-        if (isIos() && !isInStandaloneMode()) {
-            const installBtn = document.getElementById('install-btn');
-            if (installBtn) {
+        if (installBtn) {
+            if (!isInStandaloneMode()) {
                 installBtn.style.display = 'inline-flex';
-                installBtn.innerHTML = '<i class="fa-brands fa-apple"></i> วิธีติดตั้งบน iPhone';
-                installBtn.onclick = () => {
-                    alert("วิธีติดตั้งบน iPhone:\n1. กดปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น) ด้านล่างจอ\n2. เลื่อนหาและเลือก 'เพิ่มไปยังหน้าจอโฮม' (Add to Home Screen)");
-                };
+            } else {
+                installBtn.style.display = 'none';
             }
+
+            if (isIos() && !isInStandaloneMode()) {
+                installBtn.innerHTML = '<i class="fa-brands fa-apple"></i> วิธีติดตั้งบน iPhone';
+            }
+            
+            installBtn.onclick = async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    console.log(`User response: ${outcome}`);
+                    deferredPrompt = null;
+                    installBtn.style.display = 'none';
+                } else {
+                    if (isIos()) {
+                        alert("วิธีติดตั้งบน iPhone:\n1. กดปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น) ด้านล่างจอ\n2. เลื่อนหาและเลือก 'เพิ่มไปยังหน้าจอโฮม' (Add to Home Screen)");
+                    } else {
+                        alert("วิธีติดตั้งบนเบราว์เซอร์ของคุณ:\n1. กดที่เมนูตั้งค่า (จุด 3 จุด มุมขวาบน)\n2. เลือกคำว่า 'เพิ่มลงในหน้าจอหลัก' หรือ 'ติดตั้งแอป'");
+                    }
+                }
+            };
         }
     },
 

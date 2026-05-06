@@ -59,11 +59,18 @@ const app = {
                     deferredPrompt = null;
                     installBtn.style.display = 'none';
                 } else {
+                    const modal = document.getElementById('custom-install-modal');
+                    const icon = document.getElementById('install-modal-icon');
+                    const msg = document.getElementById('install-modal-message');
+                    
                     if (isIos()) {
-                        alert("วิธีติดตั้งบน iPhone:\n1. กดปุ่ม Share (สี่เหลี่ยมมีลูกศรชี้ขึ้น) ด้านล่างจอ\n2. เลื่อนหาและเลือก 'เพิ่มไปยังหน้าจอโฮม' (Add to Home Screen)");
+                        icon.innerHTML = '<i class="fa-brands fa-apple"></i>';
+                        msg.innerHTML = "<strong>วิธีติดตั้งบน iPhone:</strong><br><br>1. กดปุ่ม Share (ไอคอนสี่เหลี่ยมมีลูกศรชี้ขึ้น) ที่แถบด้านล่างของจอ<br><br>2. เลื่อนหาและกดคำว่า <strong>'เพิ่มไปยังหน้าจอโฮม'</strong> (Add to Home Screen)";
                     } else {
-                        alert("วิธีติดตั้งบนเบราว์เซอร์ของคุณ:\n1. กดที่เมนูตั้งค่า (จุด 3 จุด มุมขวาบน)\n2. เลือกคำว่า 'เพิ่มลงในหน้าจอหลัก' หรือ 'ติดตั้งแอป'");
+                        icon.innerHTML = '<i class="fa-brands fa-android"></i>';
+                        msg.innerHTML = "<strong>วิธีติดตั้งบน Android:</strong><br><br>1. กดที่เมนูตั้งค่า (จุด 3 จุด มุมขวาบนของเบราว์เซอร์)<br><br>2. เลือกคำว่า <strong>'เพิ่มลงในหน้าจอหลัก'</strong> หรือ <strong>'ติดตั้งแอป'</strong>";
                     }
+                    modal.classList.add('active');
                 }
             };
         }

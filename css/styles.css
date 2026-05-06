@@ -844,3 +844,85 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.5rem;
     }
 }
+
+/* Install Button Beautiful Style */
+#install-btn {
+    background: linear-gradient(135deg, #2563eb, #8b5cf6) !important;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    animation: pulseGlow 2s infinite;
+    transition: all 0.3s ease;
+}
+#install-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+/* Custom Alert Modal */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+.custom-alert.active {
+    display: flex;
+}
+.custom-alert-content {
+    background: var(--surface);
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.custom-alert-icon {
+    font-size: 3rem;
+    color: #8b5cf6;
+    margin-bottom: 20px;
+}
+.custom-alert-title {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+.custom-alert-message {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: left;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+}
+.custom-alert-btn {
+    background: linear-gradient(135deg, #2563eb, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    transition: all 0.2s;
+    width: 100%;
+}
+.custom-alert-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}

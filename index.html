@@ -252,6 +252,20 @@
         </main>
     </div>
 
+    <!-- Custom Alert Modal for Installation -->
+    <div id="custom-install-modal" class="custom-alert">
+        <div class="custom-alert-content">
+            <div class="custom-alert-icon" id="install-modal-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h2 class="custom-alert-title" id="install-modal-title">ติดตั้งแอปพลิเคชัน</h2>
+            <div class="custom-alert-message" id="install-modal-message">
+                ข้อความแนะนำวิธีติดตั้ง...
+            </div>
+            <button class="custom-alert-btn" onclick="document.getElementById('custom-install-modal').classList.remove('active')">รับทราบ</button>
+        </div>
+    </div>
+
     <!-- Completion Modal -->
     <div id="completion-modal" class="modal-overlay">
         <div class="modal-content">
@@ -265,8 +279,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=22"></script>
-    <script src="js/app.js?v=22"></script>
+    <script src="js/data.js?v=23"></script>
+    <script src="js/app.js?v=23"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

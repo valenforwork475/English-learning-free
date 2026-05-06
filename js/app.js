@@ -26,8 +26,7 @@ const app = {
         this.setupPWA();
         
         try {
-            const { data: { session }, error } = await db.auth.getSession();
-            if (error) throw error;
+            const { data: { session } } = await db.auth.getSession();
             
             const sidebar = document.querySelector('.sidebar');
             if (!session) {
@@ -36,11 +35,9 @@ const app = {
                     sidebar.classList.remove('sidebar-initial-hide');
                     sidebar.style.display = 'none';
                 }
-                // ยังไม่ล็อกอิน → เริ่ม Presence โดยไม่มีชื่อ (นับจำนวนออนไลน์อย่างเดียว)
-                this.setupPresence(null);
             } else {
-                const username = session.user.user_metadata.username || session.user.email;
-                this._currentUsername = username; // เก็บชื่อไว้ใช้งาน
+                const username = session.user.user_metadata?.username || session.user.email?.split('@')[0] || 'ผู้เรียน';
+                this._currentUsername = username;
 
                 if(sidebar) {
                     sidebar.classList.remove('sidebar-initial-hide');
@@ -52,19 +49,20 @@ const app = {
                 this.loadFlashcard(false);
                 this.updateGreeting(username);
                 
-                // เริ่ม Presence พร้อมชื่อผู้ใช้
-                this.setupPresence(username);
-                // ดึงสถิติผู้ใช้ (admin only)
-                this.fetchUserStats();
+                // เริ่ม Presence และดึงสถิติ (ทำแบบ silent ไม่ error)
+                try { this.setupPresence(username); } catch(e) { console.warn('Presence error:', e); }
+                try { this.fetchUserStats(); } catch(e) { console.warn('Stats error:', e); }
 
-                // Force dashboard to show if login-view is active
-                if (document.getElementById('login-view').classList.contains('active')) {
+                if (document.getElementById('login-view')?.classList.contains('active')) {
                     this.switchView('dashboard');
                 }
             }
         } catch (err) {
-            alert("Auth Error: " + err.message);
+            // Error เงียบๆ ไม่ต้อง alert → กลับไปหน้า Login
+            console.error("Auth init error:", err);
             this.switchView('login');
+            const sidebar = document.querySelector('.sidebar');
+            if(sidebar) sidebar.style.display = 'none';
         }
     },
 

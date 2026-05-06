@@ -11,18 +11,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563eb">
-    <script>
-        window.onerror = function(msg, url, line, col, error) {
-            alert("JS Error: " + msg + " at line " + line);
-        };
-        window.addEventListener('unhandledrejection', function(event) {
-            alert("Promise Error: " + (event.reason ? event.reason.message || event.reason : "Unknown"));
-        });
-    </script>
-    <style>
-        /* Hide sidebar by default until JS decides to show it */
-        .sidebar-initial-hide { display: none; }
-    </style>
 </head>
 <body>
     <div class="app-container">
@@ -365,8 +353,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=31"></script>
-    <script src="js/app.js?v=31"></script>
+    <script src="js/data.js?v=32"></script>
+    <script src="js/app.js?v=32"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

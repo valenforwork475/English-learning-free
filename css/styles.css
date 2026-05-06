@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sidebar */
+.sidebar-initial-hide { display: none; }
 .sidebar {
     width: 260px;
     background-color: var(--surface);

@@ -1,0 +1,4798 @@
+{
+    "toeic_listening": [
+        {
+            "en": "Announce",
+            "phonetic": "แอน-เนาซ์",
+            "th": "ประกาศ",
+            "type": "Verb",
+            "example_en": "They will announce the flight delay soon.",
+            "example_th": "พวกเขาจะประกาศเที่ยวบินล่าช้าในไม่ช้า"
+        },
+        {
+            "en": "Boarding",
+            "phonetic": "บอร์ด-ดิง",
+            "th": "การขึ้นเครื่อง",
+            "type": "Noun",
+            "example_en": "Boarding will begin in 10 minutes.",
+            "example_th": "การขึ้นเครื่องจะเริ่มในอีก 10 นาที"
+        },
+        {
+            "en": "Platform",
+            "phonetic": "แพลต-ฟอร์ม",
+            "th": "ชานชาลา",
+            "type": "Noun",
+            "example_en": "The train will arrive at platform 3.",
+            "example_th": "รถไฟจะมาถึงที่ชานชาลาที่ 3"
+        },
+        {
+            "en": "Delay",
+            "phonetic": "ดี-เลย์",
+            "th": "ล่าช้า",
+            "type": "Noun/Verb",
+            "example_en": "The flight has a two-hour delay.",
+            "example_th": "เที่ยวบินล่าช้าไปสองชั่วโมง"
+        },
+        {
+            "en": "Passenger",
+            "phonetic": "แพส-เซน-เจอร์",
+            "th": "ผู้โดยสาร",
+            "type": "Noun",
+            "example_en": "All passengers must wear a seatbelt.",
+            "example_th": "ผู้โดยสารทุกคนต้องคาดเข็มขัดนิรภัย"
+        },
+        {
+            "en": "Ticket",
+            "phonetic": "ทิค-เคท",
+            "th": "ตั๋ว",
+            "type": "Noun",
+            "example_en": "Please show your ticket at the gate.",
+            "example_th": "โปรดแสดงตั๋วของคุณที่ประตูทางออก"
+        },
+        {
+            "en": "Luggage",
+            "phonetic": "ลัก-เกจ",
+            "th": "สัมภาระ",
+            "type": "Noun",
+            "example_en": "Do not leave your luggage unattended.",
+            "example_th": "ห้ามทิ้งสัมภาระไว้โดยไม่มีคนดูแล"
+        },
+        {
+            "en": "Departure",
+            "phonetic": "ดิ-พาร์ท-เชอร์",
+            "th": "ขาออก",
+            "type": "Noun",
+            "example_en": "Check the departure screen for updates.",
+            "example_th": "ตรวจสอบหน้าจอขาออกสำหรับการอัปเดต"
+        },
+        {
+            "en": "Arrival",
+            "phonetic": "อะ-ไรฟ-วัล",
+            "th": "ขาเข้า",
+            "type": "Noun",
+            "example_en": "We are waiting at the arrival hall.",
+            "example_th": "พวกเรากำลังรออยู่ที่ห้องโถงขาเข้า"
+        },
+        {
+            "en": "Cancel",
+            "phonetic": "แคน-เซิล",
+            "th": "ยกเลิก",
+            "type": "Verb",
+            "example_en": "The meeting was canceled due to rain.",
+            "example_th": "การประชุมถูกยกเลิกเนื่องจากฝนตก"
+        },
+        {
+            "en": "Confirm",
+            "phonetic": "คอน-เฟิร์ม",
+            "th": "ยืนยัน",
+            "type": "Verb",
+            "example_en": "Please confirm your reservation by email.",
+            "example_th": "โปรดยืนยันการจองของคุณทางอีเมล"
+        },
+        {
+            "en": "Reserve",
+            "phonetic": "รี-เซิร์ฟ",
+            "th": "จอง",
+            "type": "Verb",
+            "example_en": "I would like to reserve a table for two.",
+            "example_th": "ฉันต้องการจองโต๊ะสำหรับสองคน"
+        },
+        {
+            "en": "Schedule",
+            "phonetic": "เชด-ดูล",
+            "th": "ตารางเวลา",
+            "type": "Noun",
+            "example_en": "The project is ahead of schedule.",
+            "example_th": "โครงการนี้เร็วกว่าตารางเวลาที่กำหนด"
+        },
+        {
+            "en": "Meeting",
+            "phonetic": "มีท-ติง",
+            "th": "การประชุม",
+            "type": "Noun",
+            "example_en": "The board meeting is on Friday.",
+            "example_th": "การประชุมคณะกรรมการมีขึ้นในวันศุกร์"
+        },
+        {
+            "en": "Client",
+            "phonetic": "ไคล-เอนท์",
+            "th": "ลูกค้า",
+            "type": "Noun",
+            "example_en": "We have a meeting with a new client.",
+            "example_th": "เรามีการประชุมกับลูกค้ารายใหม่"
+        },
+        {
+            "en": "Colleague",
+            "phonetic": "คอล-ลีก",
+            "th": "เพื่อนร่วมงาน",
+            "type": "Noun",
+            "example_en": "My colleague will assist you today.",
+            "example_th": "เพื่อนร่วมงานของฉันจะช่วยเหลือคุณในวันนี้"
+        },
+        {
+            "en": "Manager",
+            "phonetic": "แมน-เน-เจอร์",
+            "th": "ผู้จัดการ",
+            "type": "Noun",
+            "example_en": "The manager approved my leave request.",
+            "example_th": "ผู้จัดการอนุมัติคำขอลาพักร้อนของฉัน"
+        },
+        {
+            "en": "Office",
+            "phonetic": "ออฟ-ฟิศ",
+            "th": "สำนักงาน",
+            "type": "Noun",
+            "example_en": "Our office is located in downtown.",
+            "example_th": "สำนักงานของเราตั้งอยู่ในย่านใจกลางเมือง"
+        },
+        {
+            "en": "Discuss",
+            "phonetic": "ดิส-คัส",
+            "th": "อภิปราย",
+            "type": "Verb",
+            "example_en": "We need to discuss the budget cuts.",
+            "example_th": "เราจำเป็นต้องหารือเกี่ยวกับการตัดงบประมาณ"
+        },
+        {
+            "en": "Report",
+            "phonetic": "รี-พอร์ต",
+            "th": "รายงาน",
+            "type": "Noun",
+            "example_en": "The financial report is due tomorrow.",
+            "example_th": "รายงานทางการเงินมีกำหนดส่งพรุ่งนี้"
+        },
+        {
+            "en": "Flight",
+            "phonetic": "ไฟลท์",
+            "th": "เที่ยวบิน",
+            "type": "Noun",
+            "example_en": "Our flight departs at 9 AM.",
+            "example_th": "เที่ยวบินของเราออกเดินทางเวลา 9 โมงเช้า"
+        },
+        {
+            "en": "Luggage_alt",
+            "phonetic": "ลัก-เกจ",
+            "th": "สัมภาระ",
+            "type": "Noun",
+            "example_en": "Please collect your luggage at belt 4.",
+            "example_th": "โปรดรับสัมภาระของคุณที่สายพาน 4"
+        },
+        {
+            "en": "Hotel",
+            "phonetic": "โฮ-เทล",
+            "th": "โรงแรม",
+            "type": "Noun",
+            "example_en": "We booked a hotel near the airport.",
+            "example_th": "เราจองโรงแรมใกล้สนามบิน"
+        },
+        {
+            "en": "Briefcase",
+            "phonetic": "บรีฟ-เคส",
+            "th": "กระเป๋าเอกสาร",
+            "type": "Noun",
+            "example_en": "He forgot his briefcase in the taxi.",
+            "example_th": "เขาลืมกระเป๋าเอกสารไว้ในแท็กซี่"
+        },
+        {
+            "en": "Commute",
+            "phonetic": "คอม-มิวท์",
+            "th": "เดินทางไปทำงาน",
+            "type": "Verb",
+            "example_en": "I commute to work by train every day.",
+            "example_th": "ฉันเดินทางไปทำงานด้วยรถไฟทุกวัน"
+        },
+        {
+            "en": "Overtime",
+            "phonetic": "โอ-เวอร์-ไทม์",
+            "th": "ล่วงเวลา",
+            "type": "Noun",
+            "example_en": "The staff had to work overtime yesterday.",
+            "example_th": "พนักงานต้องทำงานล่วงเวลาเมื่อวานนี้"
+        },
+        {
+            "en": "Resume",
+            "phonetic": "เร-ซู-เม่",
+            "th": "ประวัติย่อ",
+            "type": "Noun",
+            "example_en": "Please send your resume to HR.",
+            "example_th": "โปรดส่งประวัติย่อของคุณไปที่ฝ่ายบุคคล"
+        },
+        {
+            "en": "Interview",
+            "phonetic": "อิน-เทอร์-วิว",
+            "th": "สัมภาษณ์",
+            "type": "Noun/Verb",
+            "example_en": "She has a job interview at 2 PM.",
+            "example_th": "เธอมีสัมภาษณ์งานเวลาบ่าย 2 โมง"
+        },
+        {
+            "en": "Candidate",
+            "phonetic": "แคน-ดิ-เดท",
+            "th": "ผู้สมัคร",
+            "type": "Noun",
+            "example_en": "He is a strong candidate for the position.",
+            "example_th": "เขาเป็นผู้สมัครที่โดดเด่นสำหรับตำแหน่งนี้"
+        },
+        {
+            "en": "Hire",
+            "phonetic": "ไฮเออร์",
+            "th": "จ้างงาน",
+            "type": "Verb",
+            "example_en": "The company plans to hire 50 new employees.",
+            "example_th": "บริษัทวางแผนที่จะจ้างพนักงานใหม่ 50 คน"
+        },
+        {
+            "en": "Strategy",
+            "phonetic": "สแตรท-เทอ-จี",
+            "th": "กลยุทธ์",
+            "type": "Noun",
+            "example_en": "We need a new marketing strategy.",
+            "example_th": "เราต้องการกลยุทธ์การตลาดใหม่"
+        },
+        {
+            "en": "Budget",
+            "phonetic": "บัด-เจท",
+            "th": "งบประมาณ",
+            "type": "Noun",
+            "example_en": "The project went over budget.",
+            "example_th": "โครงการใช้งบประมาณเกินกำหนด"
+        },
+        {
+            "en": "Negotiate",
+            "phonetic": "นิ-โก-ชี-เอท",
+            "th": "เจรจาต่อรอง",
+            "type": "Verb",
+            "example_en": "We must negotiate a better deal.",
+            "example_th": "เราต้องเจรจาต่อรองเพื่อข้อเสนอที่ดีกว่า"
+        },
+        {
+            "en": "Revenue",
+            "phonetic": "เรฟ-เวน-นิว",
+            "th": "รายได้",
+            "type": "Noun",
+            "example_en": "Our revenue increased this quarter.",
+            "example_th": "รายได้ของเราเพิ่มขึ้นในไตรมาสนี้"
+        },
+        {
+            "en": "Implement",
+            "phonetic": "อิม-พลิ-เมนท์",
+            "th": "นำไปปฏิบัติ",
+            "type": "Verb",
+            "example_en": "They will implement the new system tomorrow.",
+            "example_th": "พวกเขาจะนำระบบใหม่มาใช้ในวันพรุ่งนี้"
+        },
+        {
+            "en": "Evaluate",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมิน",
+            "type": "Verb",
+            "example_en": "Please evaluate the employee performance.",
+            "example_th": "โปรดประเมินประสิทธิภาพการทำงานของพนักงาน"
+        },
+        {
+            "en": "Feedback",
+            "phonetic": "ฟีด-แบ็ก",
+            "th": "ข้อเสนอแนะ",
+            "type": "Noun",
+            "example_en": "Customer feedback is very important.",
+            "example_th": "ข้อเสนอแนะของลูกค้ามีความสำคัญมาก"
+        },
+        {
+            "en": "Launch",
+            "phonetic": "ลอนช์",
+            "th": "เปิดตัว",
+            "type": "Verb",
+            "example_en": "We will launch the product next month.",
+            "example_th": "เราจะเปิดตัวผลิตภัณฑ์ในเดือนหน้า"
+        },
+        {
+            "en": "Proposal",
+            "phonetic": "โปร-โพ-ซัล",
+            "th": "ข้อเสนอ",
+            "type": "Noun",
+            "example_en": "The committee accepted his proposal.",
+            "example_th": "คณะกรรมการยอมรับข้อเสนอของเขา"
+        },
+        {
+            "en": "Deadline",
+            "phonetic": "เดด-ไลน์",
+            "th": "กำหนดส่ง",
+            "type": "Noun",
+            "example_en": "I have a strict deadline for this report.",
+            "example_th": "ฉันมีกำหนดส่งที่เข้มงวดสำหรับรายงานนี้"
+        },
+        {
+            "en": "Objective",
+            "phonetic": "ออบ-เจค-ทิฟ",
+            "th": "วัตถุประสงค์",
+            "type": "Noun",
+            "example_en": "Our main objective is to increase sales.",
+            "example_th": "วัตถุประสงค์หลักของเราคือการเพิ่มยอดขาย"
+        },
+        {
+            "en": "Priority",
+            "phonetic": "ไพรออ-ริ-ตี",
+            "th": "ลำดับความสำคัญ",
+            "type": "Noun",
+            "example_en": "Safety is our top priority.",
+            "example_th": "ความปลอดภัยคือลำดับความสำคัญสูงสุดของเรา"
+        },
+        {
+            "en": "Significant",
+            "phonetic": "ซิก-นิฟ-ฟิ-แคนท์",
+            "th": "สำคัญ",
+            "type": "Adjective",
+            "example_en": "There was a significant change in policy.",
+            "example_th": "มีการเปลี่ยนแปลงนโยบายอย่างมีนัยสำคัญ"
+        },
+        {
+            "en": "Update",
+            "phonetic": "อัป-เดต",
+            "th": "อัปเดต/ทำให้ทันสมัย",
+            "type": "Verb",
+            "example_en": "Please update the software regularly.",
+            "example_th": "โปรดอัปเดตซอฟต์แวร์เป็นประจำ"
+        },
+        {
+            "en": "Maintain",
+            "phonetic": "เมน-เทน",
+            "th": "รักษาไว้",
+            "type": "Verb",
+            "example_en": "We must maintain high quality standards.",
+            "example_th": "เราต้องรักษามาตรฐานคุณภาพสูงไว้"
+        },
+        {
+            "en": "Facility",
+            "phonetic": "ฟา-ซิล-ลิ-ตี",
+            "th": "สิ่งอำนวยความสะดวก",
+            "type": "Noun",
+            "example_en": "The new facility opens next week.",
+            "example_th": "สิ่งอำนวยความสะดวกแห่งใหม่จะเปิดในสัปดาห์หน้า"
+        },
+        {
+            "en": "Require",
+            "phonetic": "รี-ไควร์",
+            "th": "ต้องการ/บังคับ",
+            "type": "Verb",
+            "example_en": "This job requires excellent communication skills.",
+            "example_th": "งานนี้ต้องการทักษะการสื่อสารที่ยอดเยี่ยม"
+        },
+        {
+            "en": "Procedure",
+            "phonetic": "โปร-ซี-เจอร์",
+            "th": "ขั้นตอน",
+            "type": "Noun",
+            "example_en": "Follow the emergency procedure strictly.",
+            "example_th": "ปฏิบัติตามขั้นตอนฉุกเฉินอย่างเคร่งครัด"
+        },
+        {
+            "en": "Ensure",
+            "phonetic": "เอน-ชัวร์",
+            "th": "ทำให้แน่ใจ",
+            "type": "Verb",
+            "example_en": "We must ensure customer satisfaction.",
+            "example_th": "เราต้องทำให้แน่ใจว่าลูกค้าจะพึงพอใจ"
+        },
+        {
+            "en": "Comply",
+            "phonetic": "คอม-พลาย",
+            "th": "ปฏิบัติตาม",
+            "type": "Verb",
+            "example_en": "All staff must comply with the rules.",
+            "example_th": "พนักงานทุกคนต้องปฏิบัติตามกฎระเบียบ"
+        },
+        {
+            "en": "Aisle",
+            "phonetic": "ไอล",
+            "th": "ทางเดิน",
+            "type": "Noun",
+            "example_en": "Please keep your bags out of the aisle.",
+            "example_th": "กรุณาอย่าวางกระเป๋าขวางทางเดิน"
+        },
+        {
+            "en": "Baggage",
+            "phonetic": "แบก-เกจ",
+            "th": "สัมภาระ",
+            "type": "Noun",
+            "example_en": "You can claim your baggage at carousel 3.",
+            "example_th": "คุณสามารถรับสัมภาระได้ที่สายพาน 3"
+        },
+        {
+            "en": "Counter",
+            "phonetic": "เคาน์-เตอร์",
+            "th": "เคาน์เตอร์",
+            "type": "Noun",
+            "example_en": "Please proceed to the check-in counter.",
+            "example_th": "กรุณาไปที่เคาน์เตอร์เช็คอิน"
+        },
+        {
+            "en": "Destination",
+            "phonetic": "เดส-ทิ-เน-ชัน",
+            "th": "จุดหมายปลายทาง",
+            "type": "Noun",
+            "example_en": "What is your final destination?",
+            "example_th": "จุดหมายปลายทางของคุณคือที่ไหน?"
+        },
+        {
+            "en": "Familiar",
+            "phonetic": "ฟา-มิล-เลียร์",
+            "th": "คุ้นเคย",
+            "type": "Adjective",
+            "example_en": "Are you familiar with this software?",
+            "example_th": "คุณคุ้นเคยกับซอฟต์แวร์นี้หรือไม่?"
+        },
+        {
+            "en": "Guarantee",
+            "phonetic": "แก-รัน-ตี",
+            "th": "รับประกัน",
+            "type": "Verb",
+            "example_en": "We guarantee the best price.",
+            "example_th": "เรารับประกันราคาดีที่สุด"
+        },
+        {
+            "en": "Information",
+            "phonetic": "อิน-ฟอร์-เม-ชัน",
+            "th": "ข้อมูล",
+            "type": "Noun",
+            "example_en": "For more information, visit our website.",
+            "example_th": "สำหรับข้อมูลเพิ่มเติม โปรดเยี่ยมชมเว็บไซต์ของเรา"
+        },
+        {
+            "en": "Journal",
+            "phonetic": "เจอร์-นัล",
+            "th": "วารสาร",
+            "type": "Noun",
+            "example_en": "He published his findings in a journal.",
+            "example_th": "เขาตีพิมพ์ผลการค้นพบในวารสาร"
+        },
+        {
+            "en": "Machine",
+            "phonetic": "มะ-ชีน",
+            "th": "เครื่องจักร",
+            "type": "Noun",
+            "example_en": "The coffee machine is broken.",
+            "example_th": "เครื่องชงกาแฟพัง"
+        },
+        {
+            "en": "Occasion",
+            "phonetic": "ออ-เค-ชัน",
+            "th": "โอกาส",
+            "type": "Noun",
+            "example_en": "I only wear this suit on special occasions.",
+            "example_th": "ฉันใส่ชุดสูทนี้เฉพาะในโอกาสพิเศษเท่านั้น"
+        },
+        {
+            "en": "Package",
+            "phonetic": "แพค-เกจ",
+            "th": "บรรจุภัณฑ์/พัสดุ",
+            "type": "Noun",
+            "example_en": "Your package has arrived.",
+            "example_th": "พัสดุของคุณมาถึงแล้ว"
+        },
+        {
+            "en": "Quality",
+            "phonetic": "ควอล-ลิ-ตี",
+            "th": "คุณภาพ",
+            "type": "Noun",
+            "example_en": "We focus on product quality.",
+            "example_th": "เรามุ่งเน้นที่คุณสมบัติของผลิตภัณฑ์"
+        },
+        {
+            "en": "Receipt",
+            "phonetic": "รี-ซีท",
+            "th": "ใบเสร็จ",
+            "type": "Noun",
+            "example_en": "Please keep your receipt as proof of purchase.",
+            "example_th": "โปรดเก็บใบเสร็จไว้เป็นหลักฐานการซื้อ"
+        },
+        {
+            "en": "Signature",
+            "phonetic": "ซิก-เน-เจอร์",
+            "th": "ลายเซ็น",
+            "type": "Noun",
+            "example_en": "We need your signature on this document.",
+            "example_th": "เราต้องการลายเซ็นของคุณในเอกสารนี้"
+        },
+        {
+            "en": "Terminal",
+            "phonetic": "เทอร์-มิ-นัล",
+            "th": "อาคารผู้โดยสาร",
+            "type": "Noun",
+            "example_en": "The flight departs from Terminal 2.",
+            "example_th": "เที่ยวบินออกเดินทางจากอาคารผู้โดยสาร 2"
+        },
+        {
+            "en": "Valuable",
+            "phonetic": "แวล-ลู-เอ-เบิล",
+            "th": "มีค่า",
+            "type": "Adjective",
+            "example_en": "Keep your valuable items with you.",
+            "example_th": "เก็บของมีค่าไว้กับตัว"
+        },
+        {
+            "en": "Warehouse",
+            "phonetic": "แวร์-เฮาส์",
+            "th": "โกดัง",
+            "type": "Noun",
+            "example_en": "The goods are stored in the warehouse.",
+            "example_th": "สินค้าถูกเก็บไว้ในโกดัง"
+        },
+        {
+            "en": "Yield",
+            "phonetic": "ยิลด์",
+            "th": "ผลผลิต/ให้ผล",
+            "type": "Noun/Verb",
+            "example_en": "The new strategy yielded positive results.",
+            "example_th": "กลยุทธ์ใหม่ให้ผลลัพธ์ที่เป็นบวก"
+        },
+        {
+            "en": "Zone",
+            "phonetic": "โซน",
+            "th": "พื้นที่",
+            "type": "Noun",
+            "example_en": "This is a no-parking zone.",
+            "example_th": "นี่คือพื้นที่ห้ามจอด"
+        },
+        {
+            "en": "Accompany",
+            "phonetic": "แอค-คอม-พา-นี",
+            "th": "มาด้วย/ติดตาม",
+            "type": "Verb",
+            "example_en": "Children must be accompanied by an adult.",
+            "example_th": "เด็กต้องมีผู้ใหญ่คอยดูแล"
+        },
+        {
+            "en": "Board",
+            "phonetic": "บอร์ด",
+            "th": "คณะกรรมการ/ขึ้น(เครื่อง)",
+            "type": "Noun/Verb",
+            "example_en": "The board of directors approved the budget.",
+            "example_th": "คณะกรรมการอนุมัติงบประมาณ"
+        },
+        {
+            "en": "Cancel_alt",
+            "phonetic": "แคน-เซิล",
+            "th": "ยกเลิก",
+            "type": "Verb",
+            "example_en": "The flight was canceled due to bad weather.",
+            "example_th": "เที่ยวบินถูกยกเลิกเนื่องจากสภาพอากาศเลวร้าย"
+        },
+        {
+            "en": "Damage",
+            "phonetic": "แดม-เมจ",
+            "th": "ความเสียหาย",
+            "type": "Noun",
+            "example_en": "Report any damage to the manager.",
+            "example_th": "รายงานความเสียหายใดๆ ต่อผู้จัดการ"
+        },
+        {
+            "en": "Economy",
+            "phonetic": "อี-คอน-โน-มี",
+            "th": "เศรษฐกิจ/ชั้นประหยัด",
+            "type": "Noun",
+            "example_en": "I usually fly economy class.",
+            "example_th": "ฉันมักจะบินชั้นประหยัด"
+        },
+        {
+            "en": "Forecast",
+            "phonetic": "ฟอร์-คาสท์",
+            "th": "พยากรณ์",
+            "type": "Verb/Noun",
+            "example_en": "The weather forecast predicts rain.",
+            "example_th": "พยากรณ์อากาศคาดว่าจะมีฝนตก"
+        },
+        {
+            "en": "Gate",
+            "phonetic": "เกท",
+            "th": "ประตู(ขึ้นเครื่อง)",
+            "type": "Noun",
+            "example_en": "Proceed to gate 14 immediately.",
+            "example_th": "ไปที่ประตู 14 ทันที"
+        },
+        {
+            "en": "Handle",
+            "phonetic": "แฮน-เดิล",
+            "th": "จัดการ",
+            "type": "Verb",
+            "example_en": "She can handle the pressure.",
+            "example_th": "เธอสามารถจัดการกับแรงกดดันได้"
+        },
+        {
+            "en": "Item",
+            "phonetic": "ไอ-เทม",
+            "th": "รายการ/สิ่งของ",
+            "type": "Noun",
+            "example_en": "Please place all items in the bin.",
+            "example_th": "โปรดวางสิ่งของทั้งหมดลงในถัง"
+        },
+        {
+            "en": "Join",
+            "phonetic": "จอยน์",
+            "th": "เข้าร่วม",
+            "type": "Verb",
+            "example_en": "Would you like to join us for lunch?",
+            "example_th": "คุณต้องการร่วมทานอาหารกลางวันกับเราไหม?"
+        },
+        {
+            "en": "Luggage_alt",
+            "phonetic": "ลัก-เกจ",
+            "th": "สัมภาระ",
+            "type": "Noun",
+            "example_en": "Do you have any checked luggage?",
+            "example_th": "คุณมีสัมภาระโหลดใต้เครื่องหรือไม่?"
+        },
+        {
+            "en": "Manager_alt",
+            "phonetic": "แมน-เน-เจอร์",
+            "th": "ผู้จัดการ",
+            "type": "Noun",
+            "example_en": "The store manager is currently busy.",
+            "example_th": "ผู้จัดการร้านกำลังยุ่งอยู่"
+        },
+        {
+            "en": "Notice",
+            "phonetic": "โน-ทิส",
+            "th": "ประกาศ/สังเกต",
+            "type": "Noun",
+            "example_en": "Did you see the notice on the board?",
+            "example_th": "คุณเห็นประกาศบนกระดานไหม?"
+        },
+        {
+            "en": "Option",
+            "phonetic": "ออป-ชัน",
+            "th": "ทางเลือก",
+            "type": "Noun",
+            "example_en": "We have several payment options.",
+            "example_th": "เรามีทางเลือกการชำระเงินหลายแบบ"
+        },
+        {
+            "en": "Platform_alt",
+            "phonetic": "แพลต-ฟอร์ม",
+            "th": "ชานชาลา",
+            "type": "Noun",
+            "example_en": "The train on platform 3 is ready to depart.",
+            "example_th": "รถไฟที่ชานชาลา 3 พร้อมออกเดินทางแล้ว"
+        },
+        {
+            "en": "Quarter",
+            "phonetic": "ควอร์-เตอร์",
+            "th": "ไตรมาส",
+            "type": "Noun",
+            "example_en": "Profits rose in the third quarter.",
+            "example_th": "กำไรเพิ่มขึ้นในไตรมาสที่สาม"
+        },
+        {
+            "en": "Reservation",
+            "phonetic": "เรส-เซอร์-เว-ชัน",
+            "th": "การจอง",
+            "type": "Noun",
+            "example_en": "I have a reservation under the name Smith.",
+            "example_th": "ฉันมีการจองในชื่อสมิธ"
+        },
+        {
+            "en": "Security",
+            "phonetic": "ซี-คิว-ริ-ตี",
+            "th": "ความปลอดภัย",
+            "type": "Noun",
+            "example_en": "Pass through security screening.",
+            "example_th": "ผ่านการตรวจตราความปลอดภัย"
+        },
+        {
+            "en": "Track",
+            "phonetic": "แทรค",
+            "th": "ติดตาม/ลู่",
+            "type": "Verb/Noun",
+            "example_en": "We use software to track shipments.",
+            "example_th": "เราใช้ซอฟต์แวร์เพื่อติดตามการจัดส่ง"
+        },
+        {
+            "en": "Upgrade",
+            "phonetic": "อัป-เกรด",
+            "th": "อัปเกรด",
+            "type": "Verb/Noun",
+            "example_en": "He received a free upgrade to first class.",
+            "example_th": "เขาได้รับการอัปเกรดเป็นชั้นหนึ่งฟรี"
+        },
+        {
+            "en": "Vehicle",
+            "phonetic": "วี-ฮิ-เคิล",
+            "th": "ยานพาหนะ",
+            "type": "Noun",
+            "example_en": "Park your vehicle in the designated area.",
+            "example_th": "จอดรถของคุณในพื้นที่ที่กำหนด"
+        },
+        {
+            "en": "Wait",
+            "phonetic": "เวท",
+            "th": "รอ",
+            "type": "Verb",
+            "example_en": "Please wait in the lobby.",
+            "example_th": "กรุณารอที่ล็อบบี้"
+        },
+        {
+            "en": "Annual",
+            "phonetic": "แอน-นวล",
+            "th": "ประจำปี",
+            "type": "Adjective",
+            "example_en": "The annual report will be published soon.",
+            "example_th": "รายงานประจำปีจะได้รับการเผยแพร่ในไม่ช้า"
+        },
+        {
+            "en": "Balance",
+            "phonetic": "บาล-ลานซ์",
+            "th": "ยอดคงเหลือ/สมดุล",
+            "type": "Noun",
+            "example_en": "Check your account balance online.",
+            "example_th": "ตรวจสอบยอดเงินในบัญชีของคุณทางออนไลน์"
+        },
+        {
+            "en": "Charge",
+            "phonetic": "ชาร์จ",
+            "th": "คิดราคา",
+            "type": "Verb",
+            "example_en": "There is no extra charge for delivery.",
+            "example_th": "ไม่มีค่าธรรมเนียมเพิ่มเติมสำหรับการจัดส่ง"
+        },
+        {
+            "en": "Direct",
+            "phonetic": "ได-เรคท์",
+            "th": "โดยตรง",
+            "type": "Adjective",
+            "example_en": "I prefer a direct flight.",
+            "example_th": "ฉันชอบเที่ยวบินตรงมากกว่า"
+        },
+        {
+            "en": "Estimate",
+            "phonetic": "เอส-ทิ-เมท",
+            "th": "ประมาณการ",
+            "type": "Verb",
+            "example_en": "Can you estimate the total cost?",
+            "example_th": "คุณช่วยประมาณการค่าใช้จ่ายทั้งหมดได้ไหม?"
+        },
+        {
+            "en": "Frequent",
+            "phonetic": "ฟรี-เควนท์",
+            "th": "บ่อย",
+            "type": "Adjective",
+            "example_en": "He is a frequent flyer.",
+            "example_th": "เขาเป็นผู้โดยสารที่บินบ่อย"
+        },
+        {
+            "en": "Guest",
+            "phonetic": "เกสต์",
+            "th": "แขก",
+            "type": "Noun",
+            "example_en": "We are expecting a special guest.",
+            "example_th": "เรากำลังรอแขกคนพิเศษ"
+        },
+        {
+            "en": "Host",
+            "phonetic": "โฮสต์",
+            "th": "เจ้าภาพ",
+            "type": "Noun",
+            "example_en": "Our company will host the event.",
+            "example_th": "บริษัทของเราจะเป็นเจ้าภาพจัดงาน"
+        },
+        {
+            "en": "Issue",
+            "phonetic": "อิช-ชิว",
+            "th": "ปัญหา/ออกให้",
+            "type": "Noun",
+            "example_en": "Let us resolve this issue quickly.",
+            "example_th": "เรามาแก้ปัญหานี้กันอย่างรวดเร็ว"
+        }
+    ],
+    "toeic_reading": [
+        {
+            "en": "Implement",
+            "phonetic": "อิม-พลิ-เมนท์",
+            "th": "ทำให้มีผล",
+            "type": "Verb",
+            "example_en": "The company will implement new safety rules.",
+            "example_th": "บริษัทจะนำกฎความปลอดภัยใหม่มาใช้"
+        },
+        {
+            "en": "Revenue",
+            "phonetic": "เรฟ-เวน-นิว",
+            "th": "รายได้",
+            "type": "Noun",
+            "example_en": "Our revenue increased by 20% this year.",
+            "example_th": "รายได้ของเราเพิ่มขึ้น 20% ในปีนี้"
+        },
+        {
+            "en": "Budget",
+            "phonetic": "บัด-เจท",
+            "th": "งบประมาณ",
+            "type": "Noun",
+            "example_en": "We have a limited budget for marketing.",
+            "example_th": "เรามีงบประมาณจำกัดสำหรับการตลาด"
+        },
+        {
+            "en": "Evaluate",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมินผล",
+            "type": "Verb",
+            "example_en": "They will evaluate the employee performance.",
+            "example_th": "พวกเขาจะประเมินประสิทธิภาพการทำงานของพนักงาน"
+        },
+        {
+            "en": "Strategy",
+            "phonetic": "สแตรท-เทอ-จี",
+            "th": "กลยุทธ์",
+            "type": "Noun",
+            "example_en": "We need a new business strategy to win.",
+            "example_th": "เราต้องการกลยุทธ์ทางธุรกิจใหม่เพื่อเอาชนะ"
+        },
+        {
+            "en": "Propose",
+            "phonetic": "โปร-โพส",
+            "th": "เสนอ",
+            "type": "Verb",
+            "example_en": "I propose that we launch the app next week.",
+            "example_th": "ฉันเสนอให้เราเปิดตัวแอปในสัปดาห์หน้า"
+        },
+        {
+            "en": "Agreement",
+            "phonetic": "อะ-กรี-เมนท์",
+            "th": "ข้อตกลง",
+            "type": "Noun",
+            "example_en": "Both parties signed the agreement today.",
+            "example_th": "ทั้งสองฝ่ายได้ลงนามในข้อตกลงวันนี้"
+        },
+        {
+            "en": "Investment",
+            "phonetic": "อิน-เวสท์-เมนท์",
+            "th": "การลงทุน",
+            "type": "Noun",
+            "example_en": "Buying real estate is a good investment.",
+            "example_th": "การซื้ออสังหาริมทรัพย์เป็นการลงทุนที่ดี"
+        },
+        {
+            "en": "Profit",
+            "phonetic": "โปร-ฟิท",
+            "th": "กำไร",
+            "type": "Noun",
+            "example_en": "The store made a huge profit last month.",
+            "example_th": "ร้านค้าทำกำไรได้อย่างมหาศาลในเดือนที่แล้ว"
+        },
+        {
+            "en": "Market",
+            "phonetic": "มาร์-เกท",
+            "th": "ตลาด",
+            "type": "Noun",
+            "example_en": "The global market is highly competitive.",
+            "example_th": "ตลาดโลกมีการแข่งขันสูงมาก"
+        },
+        {
+            "en": "Competitor",
+            "phonetic": "คอม-เพท-ทิ-เทอร์",
+            "th": "คู่แข่ง",
+            "type": "Noun",
+            "example_en": "Our main competitor has lowered their prices.",
+            "example_th": "คู่แข่งหลักของเราได้ปรับลดราคาลง"
+        },
+        {
+            "en": "Launch",
+            "phonetic": "ลอนช์",
+            "th": "เปิดตัว",
+            "type": "Verb",
+            "example_en": "The brand will launch a new smartphone.",
+            "example_th": "แบรนด์จะเปิดตัวสมาร์ทโฟนรุ่นใหม่"
+        },
+        {
+            "en": "Promote",
+            "phonetic": "โปร-โมท",
+            "th": "ส่งเสริม",
+            "type": "Verb",
+            "example_en": "He was promoted to the position of director.",
+            "example_th": "เขาได้รับการเลื่อนตำแหน่งเป็นผู้อำนวยการ"
+        },
+        {
+            "en": "Campaign",
+            "phonetic": "แคม-เปน",
+            "th": "แคมเปญ",
+            "type": "Noun",
+            "example_en": "The advertising campaign was successful.",
+            "example_th": "แคมเปญโฆษณาประสบความสำเร็จอย่างมาก"
+        },
+        {
+            "en": "Target",
+            "phonetic": "ทาร์-เกท",
+            "th": "เป้าหมาย",
+            "type": "Noun",
+            "example_en": "We must reach our sales target by December.",
+            "example_th": "เราต้องไปให้ถึงเป้าหมายการขายภายในเดือนธันวาคม"
+        },
+        {
+            "en": "Resource",
+            "phonetic": "รี-ซอร์ส",
+            "th": "ทรัพยากร",
+            "type": "Noun",
+            "example_en": "Human resources is an important department.",
+            "example_th": "ฝ่ายทรัพยากรบุคคลเป็นแผนกที่สำคัญ"
+        },
+        {
+            "en": "Allocate",
+            "phonetic": "แอล-โล-เคท",
+            "th": "จัดสรร",
+            "type": "Verb",
+            "example_en": "The government will allocate funds to schools.",
+            "example_th": "รัฐบาลจะจัดสรรเงินทุนให้กับโรงเรียน"
+        },
+        {
+            "en": "Analyze",
+            "phonetic": "แอน-นะ-ไลซ์",
+            "th": "วิเคราะห์",
+            "type": "Verb",
+            "example_en": "Scientists analyze the data carefully.",
+            "example_th": "นักวิทยาศาสตร์วิเคราะห์ข้อมูลอย่างระมัดระวัง"
+        },
+        {
+            "en": "Trend",
+            "phonetic": "เทรนด์",
+            "th": "แนวโน้ม",
+            "type": "Noun",
+            "example_en": "There is a growing trend in online shopping.",
+            "example_th": "มีแนวโน้มการเติบโตในการช็อปปิ้งออนไลน์"
+        },
+        {
+            "en": "Forecast",
+            "phonetic": "ฟอร์-คาสท์",
+            "th": "คาดการณ์",
+            "type": "Verb",
+            "example_en": "Experts forecast a drop in housing prices.",
+            "example_th": "ผู้เชี่ยวชาญคาดการณ์ว่าราคาบ้านจะลดลง"
+        },
+        {
+            "en": "Contract",
+            "phonetic": "คอน-แทรคท์",
+            "th": "สัญญา",
+            "type": "Noun",
+            "example_en": "Please sign the contract by Friday.",
+            "example_th": "โปรดเซ็นสัญญาภายในวันศุกร์"
+        },
+        {
+            "en": "Policy",
+            "phonetic": "โพล-ลิ-ซี",
+            "th": "นโยบาย",
+            "type": "Noun",
+            "example_en": "The company updated its return policy.",
+            "example_th": "บริษัทได้อัปเดตนโยบายการคืนสินค้า"
+        },
+        {
+            "en": "Discount",
+            "phonetic": "ดิส-เคานท์",
+            "th": "ส่วนลด",
+            "type": "Noun",
+            "example_en": "Employees get a 20% discount.",
+            "example_th": "พนักงานได้รับส่วนลด 20%"
+        },
+        {
+            "en": "Invoice",
+            "phonetic": "อิน-วอยซ์",
+            "th": "ใบแจ้งหนี้",
+            "type": "Noun",
+            "example_en": "The invoice was sent to the client.",
+            "example_th": "ใบแจ้งหนี้ถูกส่งไปยังลูกค้าแล้ว"
+        },
+        {
+            "en": "Guarantee",
+            "phonetic": "แก-รัน-ตี",
+            "th": "รับประกัน",
+            "type": "Verb/Noun",
+            "example_en": "We guarantee the quality of our products.",
+            "example_th": "เรารับประกันคุณภาพของสินค้าของเรา"
+        },
+        {
+            "en": "Inventory",
+            "phonetic": "อิน-เวน-ทอ-รี",
+            "th": "สินค้าคงคลัง",
+            "type": "Noun",
+            "example_en": "We need to check the inventory level.",
+            "example_th": "เราจำเป็นต้องตรวจสอบระดับสินค้าคงคลัง"
+        },
+        {
+            "en": "Shipment",
+            "phonetic": "ชิป-เมนท์",
+            "th": "การจัดส่งสินค้า",
+            "type": "Noun",
+            "example_en": "The shipment will arrive next week.",
+            "example_th": "การจัดส่งสินค้าจะมาถึงในสัปดาห์หน้า"
+        },
+        {
+            "en": "Refund",
+            "phonetic": "รี-ฟันด์",
+            "th": "คืนเงิน",
+            "type": "Noun/Verb",
+            "example_en": "You can request a full refund within 30 days.",
+            "example_th": "คุณสามารถขอคืนเงินเต็มจำนวนได้ภายใน 30 วัน"
+        },
+        {
+            "en": "Warranty",
+            "phonetic": "วอ-แรน-ตี",
+            "th": "การรับประกัน",
+            "type": "Noun",
+            "example_en": "The laptop comes with a one-year warranty.",
+            "example_th": "แล็ปท็อปมาพร้อมกับการรับประกันหนึ่งปี"
+        },
+        {
+            "en": "Expense",
+            "phonetic": "เอ็กซ์-เพนส์",
+            "th": "ค่าใช้จ่าย",
+            "type": "Noun",
+            "example_en": "Travel expenses will be reimbursed.",
+            "example_th": "ค่าใช้จ่ายในการเดินทางจะได้รับการเบิกคืน"
+        },
+        {
+            "en": "Accommodation",
+            "phonetic": "อะ-คอม-โม-เด-ชัน",
+            "th": "ที่พัก",
+            "type": "Noun",
+            "example_en": "We need to book accommodation for the trip.",
+            "example_th": "เราต้องจองที่พักสำหรับการเดินทาง"
+        },
+        {
+            "en": "Colleague",
+            "phonetic": "คอล-ลีก",
+            "th": "เพื่อนร่วมงาน",
+            "type": "Noun",
+            "example_en": "My colleague will assist you.",
+            "example_th": "เพื่อนร่วมงานของฉันจะช่วยเหลือคุณ"
+        },
+        {
+            "en": "Consult",
+            "phonetic": "คอน-ซัลท์",
+            "th": "ปรึกษา",
+            "type": "Verb",
+            "example_en": "You should consult a lawyer first.",
+            "example_th": "คุณควรปรึกษาทนายความก่อน"
+        },
+        {
+            "en": "Determine",
+            "phonetic": "ดี-เทอร์-มิน",
+            "th": "กำหนด/ตัดสินใจ",
+            "type": "Verb",
+            "example_en": "The survey will determine the market needs.",
+            "example_th": "การสำรวจจะกำหนดความต้องการของตลาด"
+        },
+        {
+            "en": "Exceed",
+            "phonetic": "เอกซ์-ซีด",
+            "th": "เกิน/เหนือกว่า",
+            "type": "Verb",
+            "example_en": "Sales exceeded our expectations.",
+            "example_th": "ยอดขายทะลุความคาดหมายของเรา"
+        },
+        {
+            "en": "Hesitate",
+            "phonetic": "เฮส-ซิ-เทท",
+            "th": "ลังเล",
+            "type": "Verb",
+            "example_en": "Please do not hesitate to contact us.",
+            "example_th": "โปรดอย่าลังเลที่จะติดต่อเรา"
+        },
+        {
+            "en": "Identify",
+            "phonetic": "ไอ-เดน-ทิ-ไฟ",
+            "th": "ระบุ",
+            "type": "Verb",
+            "example_en": "We need to identify the core problem.",
+            "example_th": "เราต้องระบุปัญหาหลัก"
+        },
+        {
+            "en": "Investigate",
+            "phonetic": "อิน-เวส-ทิ-เกท",
+            "th": "สืบสวน",
+            "type": "Verb",
+            "example_en": "The police will investigate the incident.",
+            "example_th": "ตำรวจจะสืบสวนเหตุการณ์ดังกล่าว"
+        },
+        {
+            "en": "Monitor",
+            "phonetic": "มอน-นิ-เตอร์",
+            "th": "เฝ้าสังเกต",
+            "type": "Verb",
+            "example_en": "We monitor the network 24/7.",
+            "example_th": "เราเฝ้าสังเกตเครือข่ายตลอด 24 ชั่วโมง"
+        },
+        {
+            "en": "Obtain",
+            "phonetic": "ออบ-เทน",
+            "th": "ได้รับ",
+            "type": "Verb",
+            "example_en": "You must obtain a visa before traveling.",
+            "example_th": "คุณต้องได้รับวีซ่าก่อนเดินทาง"
+        },
+        {
+            "en": "Participate",
+            "phonetic": "พาร์-ทิ-ซิ-เพท",
+            "th": "เข้าร่วม",
+            "type": "Verb",
+            "example_en": "Everyone is encouraged to participate.",
+            "example_th": "ทุกคนได้รับการส่งเสริมให้เข้าร่วม"
+        },
+        {
+            "en": "Promote_alt",
+            "phonetic": "โปร-โมท",
+            "th": "เลื่อนตำแหน่ง/ส่งเสริม",
+            "type": "Verb",
+            "example_en": "She was promoted to manager last year.",
+            "example_th": "เธอได้รับการเลื่อนตำแหน่งเป็นผู้จัดการเมื่อปีที่แล้ว"
+        },
+        {
+            "en": "Provide",
+            "phonetic": "โปร-ไวด์",
+            "th": "จัดหาให้",
+            "type": "Verb",
+            "example_en": "The hotel provides free Wi-Fi.",
+            "example_th": "โรงแรมให้บริการ Wi-Fi ฟรี"
+        },
+        {
+            "en": "Recommend",
+            "phonetic": "เรค-คอม-เมนด์",
+            "th": "แนะนำ",
+            "type": "Verb",
+            "example_en": "I highly recommend this restaurant.",
+            "example_th": "ฉันขอแนะนำร้านอาหารนี้อย่างยิ่ง"
+        },
+        {
+            "en": "Resolve",
+            "phonetic": "รี-โซลฟ์",
+            "th": "แก้ไข(ปัญหา)",
+            "type": "Verb",
+            "example_en": "We must resolve this issue immediately.",
+            "example_th": "เราต้องแก้ไขปัญหานี้ทันที"
+        },
+        {
+            "en": "Specific",
+            "phonetic": "สเป-ซิฟ-ฟิค",
+            "th": "เฉพาะเจาะจง",
+            "type": "Adjective",
+            "example_en": "Can you be more specific?",
+            "example_th": "คุณช่วยระบุให้เฉพาะเจาะจงกว่านี้ได้ไหม?"
+        },
+        {
+            "en": "Submit",
+            "phonetic": "ซับ-มิท",
+            "th": "ส่ง",
+            "type": "Verb",
+            "example_en": "Submit your application online.",
+            "example_th": "ส่งใบสมัครของคุณทางออนไลน์"
+        },
+        {
+            "en": "Sufficient",
+            "phonetic": "ซัฟ-ฟิ-เชียนท์",
+            "th": "เพียงพอ",
+            "type": "Adjective",
+            "example_en": "We have sufficient funds for the project.",
+            "example_th": "เรามีเงินทุนเพียงพอสำหรับโครงการ"
+        },
+        {
+            "en": "Valid",
+            "phonetic": "แวล-ลิด",
+            "th": "ถูกต้อง/ใช้ได้",
+            "type": "Adjective",
+            "example_en": "Your ticket is no longer valid.",
+            "example_th": "ตั๋วของคุณใช้ไม่ได้อีกต่อไป"
+        },
+        {
+            "en": "Verify",
+            "phonetic": "เว-ริ-ไฟ",
+            "th": "ตรวจสอบความถูกต้อง",
+            "type": "Verb",
+            "example_en": "Please verify your email address.",
+            "example_th": "โปรดตรวจสอบความถูกต้องของที่อยู่อีเมลของคุณ"
+        },
+        {
+            "en": "Asset",
+            "phonetic": "แอส-เซท",
+            "th": "สินทรัพย์",
+            "type": "Noun",
+            "example_en": "The company has many valuable assets.",
+            "example_th": "บริษัทมีสินทรัพย์ที่มีค่ามากมาย"
+        },
+        {
+            "en": "Broker",
+            "phonetic": "โบรค-เกอร์",
+            "th": "นายหน้า",
+            "type": "Noun",
+            "example_en": "The real estate broker showed us the house.",
+            "example_th": "นายหน้าอสังหาริมทรัพย์พาเราไปดูบ้าน"
+        },
+        {
+            "en": "Clause",
+            "phonetic": "คลอส",
+            "th": "ข้อสัญญา",
+            "type": "Noun",
+            "example_en": "Please read the penalty clause carefully.",
+            "example_th": "โปรดอ่านข้อสัญญาการปรับอย่างละเอียด"
+        },
+        {
+            "en": "Deduct",
+            "phonetic": "ดี-ดัคท์",
+            "th": "หักออก",
+            "type": "Verb",
+            "example_en": "Taxes will be deducted from your salary.",
+            "example_th": "ภาษีจะถูกหักออกจากเงินเดือนของคุณ"
+        },
+        {
+            "en": "Exempt",
+            "phonetic": "เอกซ์-เซมพ์",
+            "th": "ได้รับการยกเว้น",
+            "type": "Adjective",
+            "example_en": "Non-profit organizations are tax-exempt.",
+            "example_th": "องค์กรไม่แสวงหาผลกำไรได้รับการยกเว้นภาษี"
+        },
+        {
+            "en": "Franchise",
+            "phonetic": "แฟรน-ไชส์",
+            "th": "แฟรนไชส์",
+            "type": "Noun",
+            "example_en": "He owns a fast-food franchise.",
+            "example_th": "เขาเป็นเจ้าของแฟรนไชส์ฟาสต์ฟู้ด"
+        },
+        {
+            "en": "Gross",
+            "phonetic": "กรอส",
+            "th": "ทั้งหมด/รวม",
+            "type": "Adjective",
+            "example_en": "The gross profit margin was 40%.",
+            "example_th": "อัตรากำไรขั้นต้นอยู่ที่ 40%"
+        },
+        {
+            "en": "Headquarters",
+            "phonetic": "เฮด-ควอ-เตอร์ส",
+            "th": "สำนักงานใหญ่",
+            "type": "Noun",
+            "example_en": "Our headquarters is located in London.",
+            "example_th": "สำนักงานใหญ่ของเราตั้งอยู่ในลอนดอน"
+        },
+        {
+            "en": "Inventory_alt",
+            "phonetic": "อิน-เวน-ทอ-รี",
+            "th": "สินค้าคงคลัง",
+            "type": "Noun",
+            "example_en": "We conduct an inventory check every month.",
+            "example_th": "เราทำการตรวจสอบสินค้าคงคลังทุกเดือน"
+        },
+        {
+            "en": "Jobless",
+            "phonetic": "จ๊อบ-เลส",
+            "th": "ตกงาน",
+            "type": "Adjective",
+            "example_en": "The jobless rate has decreased this year.",
+            "example_th": "อัตราคนว่างงานลดลงในปีนี้"
+        },
+        {
+            "en": "Lease",
+            "phonetic": "ลีส",
+            "th": "สัญญาเช่า",
+            "type": "Noun/Verb",
+            "example_en": "The office lease expires in December.",
+            "example_th": "สัญญาเช่าสำนักงานจะหมดอายุในเดือนธันวาคม"
+        },
+        {
+            "en": "Margin",
+            "phonetic": "มาร์-จิน",
+            "th": "ส่วนกำไร",
+            "type": "Noun",
+            "example_en": "We need to increase our profit margin.",
+            "example_th": "เราจำเป็นต้องเพิ่มอัตรากำไรของเรา"
+        },
+        {
+            "en": "Net",
+            "phonetic": "เนท",
+            "th": "สุทธิ",
+            "type": "Adjective",
+            "example_en": "Net income rose by 10%.",
+            "example_th": "รายได้สุทธิเพิ่มขึ้น 10%"
+        },
+        {
+            "en": "Output",
+            "phonetic": "เอาท์-พุท",
+            "th": "ผลผลิต",
+            "type": "Noun",
+            "example_en": "Factory output reached a new high.",
+            "example_th": "ผลผลิตของโรงงานพุ่งแตะระดับสูงสุดใหม่"
+        },
+        {
+            "en": "Patent",
+            "phonetic": "แพท-เทนท์",
+            "th": "สิทธิบัตร",
+            "type": "Noun",
+            "example_en": "The company filed a patent for the new technology.",
+            "example_th": "บริษัทได้ยื่นจดสิทธิบัตรสำหรับเทคโนโลยีใหม่"
+        },
+        {
+            "en": "Quota",
+            "phonetic": "โคว-ตา",
+            "th": "โควตา",
+            "type": "Noun",
+            "example_en": "The sales team met their monthly quota.",
+            "example_th": "ทีมขายทำยอดได้ตามโควตารายเดือน"
+        },
+        {
+            "en": "Retail",
+            "phonetic": "รี-เทล",
+            "th": "ขายปลีก",
+            "type": "Noun",
+            "example_en": "Retail prices have gone up slightly.",
+            "example_th": "ราคาขายปลีกปรับตัวสูงขึ้นเล็กน้อย"
+        },
+        {
+            "en": "Stake",
+            "phonetic": "สเตค",
+            "th": "ส่วนได้ส่วนเสีย",
+            "type": "Noun",
+            "example_en": "He holds a 20% stake in the business.",
+            "example_th": "เขาถือหุ้น 20% ในธุรกิจนี้"
+        },
+        {
+            "en": "Tariff",
+            "phonetic": "ทาร์-ริฟ",
+            "th": "ภาษีศุลกากร",
+            "type": "Noun",
+            "example_en": "New tariffs on imported goods were introduced.",
+            "example_th": "มีการนำอัตราภาษีใหม่สำหรับสินค้านำเข้ามาใช้"
+        },
+        {
+            "en": "Utility",
+            "phonetic": "ยู-ทิล-ลิ-ตี",
+            "th": "สาธารณูปโภค",
+            "type": "Noun",
+            "example_en": "The utility bills include water and electricity.",
+            "example_th": "ค่าสาธารณูปโภคครอบคลุมค่าน้ำและค่าไฟฟ้า"
+        },
+        {
+            "en": "Vendor",
+            "phonetic": "เวน-ดอร์",
+            "th": "ผู้จัดจำหน่าย",
+            "type": "Noun",
+            "example_en": "We need to select a reliable software vendor.",
+            "example_th": "เราจำเป็นต้องเลือกผู้จัดจำหน่ายซอฟต์แวร์ที่เชื่อถือได้"
+        },
+        {
+            "en": "Wholesale",
+            "phonetic": "โฮล-เซล",
+            "th": "ขายส่ง",
+            "type": "Noun",
+            "example_en": "We buy materials at wholesale prices.",
+            "example_th": "เราซื้อวัสดุในราคาขายส่ง"
+        },
+        {
+            "en": "Yield",
+            "phonetic": "ยิลด์",
+            "th": "ผลตอบแทน",
+            "type": "Noun",
+            "example_en": "The investment offers a high yield.",
+            "example_th": "การลงทุนให้ผลตอบแทนสูง"
+        },
+        {
+            "en": "Approve",
+            "phonetic": "แอพ-พรูฟ",
+            "th": "อนุมัติ",
+            "type": "Verb",
+            "example_en": "The manager approved the budget request.",
+            "example_th": "ผู้จัดการอนุมัติคำของบประมาณ"
+        },
+        {
+            "en": "Bankrupt",
+            "phonetic": "แบง-ครัปท์",
+            "th": "ล้มละลาย",
+            "type": "Adjective",
+            "example_en": "The company went bankrupt last year.",
+            "example_th": "บริษัทล้มละลายเมื่อปีที่แล้ว"
+        },
+        {
+            "en": "Compensation",
+            "phonetic": "คอม-เพน-เซ-ชัน",
+            "th": "ค่าตอบแทน",
+            "type": "Noun",
+            "example_en": "He received workers' compensation for his injury.",
+            "example_th": "เขาได้รับค่าตอบแทนสำหรับคนงานจากการบาดเจ็บ"
+        },
+        {
+            "en": "Distribute",
+            "phonetic": "ดิส-ทริ-บิวท์",
+            "th": "แจกจ่าย",
+            "type": "Verb",
+            "example_en": "We distribute products worldwide.",
+            "example_th": "เราจัดจำหน่ายสินค้าไปทั่วโลก"
+        },
+        {
+            "en": "Entrepreneur",
+            "phonetic": "ออน-เทรอ-เพรอ-เนอร์",
+            "th": "ผู้ประกอบการ",
+            "type": "Noun",
+            "example_en": "She is a successful entrepreneur in the tech industry.",
+            "example_th": "เธอเป็นผู้ประกอบการที่ประสบความสำเร็จในอุตสาหกรรมเทคโนโลยี"
+        },
+        {
+            "en": "Feature",
+            "phonetic": "ฟี-เจอร์",
+            "th": "คุณลักษณะเด่น",
+            "type": "Noun",
+            "example_en": "The new car has many advanced safety features.",
+            "example_th": "รถยนต์รุ่นใหม่มีคุณลักษณะด้านความปลอดภัยขั้นสูงมากมาย"
+        },
+        {
+            "en": "Guarantee_alt",
+            "phonetic": "แก-รัน-ตี",
+            "th": "การรับประกัน",
+            "type": "Noun",
+            "example_en": "The television comes with a two-year guarantee.",
+            "example_th": "โทรทัศน์มาพร้อมกับการรับประกันสองปี"
+        },
+        {
+            "en": "Hierarchical",
+            "phonetic": "ไฮ-รา-คิ-คัล",
+            "th": "ตามลำดับชั้น",
+            "type": "Adjective",
+            "example_en": "The organization has a hierarchical structure.",
+            "example_th": "องค์กรมีโครงสร้างตามลำดับชั้น"
+        },
+        {
+            "en": "Incentive",
+            "phonetic": "อิน-เซน-ทิฟ",
+            "th": "สิ่งจูงใจ",
+            "type": "Noun",
+            "example_en": "Employees are given financial incentives for good performance.",
+            "example_th": "พนักงานจะได้รับสิ่งจูงใจทางการเงินสำหรับผลการทำงานที่ดี"
+        },
+        {
+            "en": "Justify",
+            "phonetic": "จัส-ติ-ไฟ",
+            "th": "แสดงเหตุผล",
+            "type": "Verb",
+            "example_en": "You must justify your business expenses.",
+            "example_th": "คุณต้องแสดงเหตุผลสำหรับค่าใช้จ่ายทางธุรกิจของคุณ"
+        },
+        {
+            "en": "Launch_alt",
+            "phonetic": "ลอนช์",
+            "th": "เปิดตัว",
+            "type": "Verb",
+            "example_en": "The marketing team will launch the campaign next week.",
+            "example_th": "ทีมการตลาดจะเปิดตัวแคมเปญในสัปดาห์หน้า"
+        },
+        {
+            "en": "Merger",
+            "phonetic": "เมอร์-เจอร์",
+            "th": "การควบรวมกิจการ",
+            "type": "Noun",
+            "example_en": "The merger between the two banks was successful.",
+            "example_th": "การควบรวมกิจการระหว่างสองธนาคารประสบความสำเร็จ"
+        },
+        {
+            "en": "Niche",
+            "phonetic": "นิช",
+            "th": "กลุ่มเป้าหมายเฉพาะ",
+            "type": "Noun",
+            "example_en": "They found a profitable niche in the market.",
+            "example_th": "พวกเขาพบกลุ่มเป้าหมายเฉพาะที่ทำกำไรได้ในตลาด"
+        },
+        {
+            "en": "Outsource",
+            "phonetic": "เอาท์-ซอร์ส",
+            "th": "จัดจ้างบุคคลภายนอก",
+            "type": "Verb",
+            "example_en": "Many companies outsource their IT services.",
+            "example_th": "บริษัทหลายแห่งจ้างบุคคลภายนอกให้บริการด้านไอที"
+        },
+        {
+            "en": "Portfolio",
+            "phonetic": "พอร์ต-โฟ-ลิ-โอ",
+            "th": "ผลงาน/พอร์ตโฟลิโอ",
+            "type": "Noun",
+            "example_en": "The designer presented her portfolio to the client.",
+            "example_th": "นักออกแบบนำเสนอผลงานของเธอต่อลูกค้า"
+        },
+        {
+            "en": "Quarterly",
+            "phonetic": "ควอร์-เตอร์-ลี",
+            "th": "รายไตรมาส",
+            "type": "Adjective/Adverb",
+            "example_en": "We publish a quarterly report.",
+            "example_th": "เราจัดพิมพ์รายงานรายไตรมาส"
+        },
+        {
+            "en": "Refund_alt",
+            "phonetic": "รี-ฟันด์",
+            "th": "คืนเงิน",
+            "type": "Noun",
+            "example_en": "If you are not satisfied, we will offer a full refund.",
+            "example_th": "หากคุณไม่พอใจ เราจะคืนเงินให้เต็มจำนวน"
+        },
+        {
+            "en": "Sponsor",
+            "phonetic": "สปอน-เซอร์",
+            "th": "ผู้สนับสนุน",
+            "type": "Noun/Verb",
+            "example_en": "The event is sponsored by local businesses.",
+            "example_th": "กิจกรรมนี้ได้รับการสนับสนุนจากธุรกิจในท้องถิ่น"
+        },
+        {
+            "en": "Turnover",
+            "phonetic": "เทิร์น-โอ-เวอร์",
+            "th": "อัตราการหมุนเวียน/ยอดขาย",
+            "type": "Noun",
+            "example_en": "The company has a high staff turnover rate.",
+            "example_th": "บริษัทมีอัตราการลาออกของพนักงานสูง"
+        },
+        {
+            "en": "Unanimous",
+            "phonetic": "ยู-แนน-นิ-มัส",
+            "th": "เป็นเอกฉันท์",
+            "type": "Adjective",
+            "example_en": "The board reached a unanimous decision.",
+            "example_th": "คณะกรรมการมีมติเป็นเอกฉันท์"
+        },
+        {
+            "en": "Viable",
+            "phonetic": "ไว-อะ-เบิล",
+            "th": "ทำได้จริง",
+            "type": "Adjective",
+            "example_en": "We need to find a commercially viable solution.",
+            "example_th": "เราจำเป็นต้องหาวิธีแก้ปัญหาที่ทำกำไรได้ในเชิงพาณิชย์"
+        },
+        {
+            "en": "Warrant",
+            "phonetic": "วอ-แรนท์",
+            "th": "รับรอง",
+            "type": "Verb",
+            "example_en": "The situation does not warrant such drastic measures.",
+            "example_th": "สถานการณ์ไม่ได้รุนแรงถึงขั้นต้องใช้มาตรการรุนแรงเช่นนี้"
+        },
+        {
+            "en": "Acquisition",
+            "phonetic": "แอค-ควิ-ซิ-ชัน",
+            "th": "การเข้าซื้อกิจการ",
+            "type": "Noun",
+            "example_en": "The acquisition will double our market share.",
+            "example_th": "การเข้าซื้อกิจการจะเพิ่มส่วนแบ่งการตลาดของเราเป็นสองเท่า"
+        },
+        {
+            "en": "Benchmark",
+            "phonetic": "เบนช์-มาร์ค",
+            "th": "เกณฑ์มาตรฐาน",
+            "type": "Noun",
+            "example_en": "This product sets a new benchmark for quality.",
+            "example_th": "ผลิตภัณฑ์นี้สร้างเกณฑ์มาตรฐานใหม่สำหรับคุณภาพ"
+        },
+        {
+            "en": "Comply",
+            "phonetic": "คอม-พลาย",
+            "th": "ปฏิบัติตาม",
+            "type": "Verb",
+            "example_en": "All suppliers must comply with environmental regulations.",
+            "example_th": "ซัพพลายเออร์ทั้งหมดต้องปฏิบัติตามข้อบังคับด้านสิ่งแวดล้อม"
+        },
+        {
+            "en": "Diversify",
+            "phonetic": "ได-เวอร์-ซิ-ไฟ",
+            "th": "ทำให้หลากหลาย",
+            "type": "Verb",
+            "example_en": "We need to diversify our product range.",
+            "example_th": "เราจำเป็นต้องเพิ่มความหลากหลายของสายผลิตภัณฑ์"
+        }
+    ],
+    "toeic_speaking": [
+        {
+            "en": "Present",
+            "phonetic": "พรี-เซนต์",
+            "th": "นำเสนอ",
+            "type": "Verb",
+            "example_en": "I have to present my project tomorrow.",
+            "example_th": "ฉันต้องนำเสนอโครงการของฉันในวันพรุ่งนี้"
+        },
+        {
+            "en": "Negotiate",
+            "phonetic": "นิ-โก-ชี-เอท",
+            "th": "เจรจาต่อรอง",
+            "type": "Verb",
+            "example_en": "We managed to negotiate a better deal.",
+            "example_th": "เราจัดการเจรจาต่อรองข้อเสนอที่ดีกว่าได้"
+        },
+        {
+            "en": "Explain",
+            "phonetic": "เอ็กซ์-เพลน",
+            "th": "อธิบาย",
+            "type": "Verb",
+            "example_en": "Can you explain how this machine works?",
+            "example_th": "คุณช่วยอธิบายว่าเครื่องนี้ทำงานอย่างไรได้ไหม?"
+        },
+        {
+            "en": "Clarify",
+            "phonetic": "แคล-ริ-ไฟ",
+            "th": "ทำให้ชัดเจน",
+            "type": "Verb",
+            "example_en": "Please clarify what you mean by that.",
+            "example_th": "โปรดทำให้ชัดเจนว่าคุณหมายถึงอะไร"
+        },
+        {
+            "en": "Summarize",
+            "phonetic": "ซัม-มะ-ไรซ์",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "Could you summarize the main points?",
+            "example_th": "คุณช่วยสรุปประเด็นหลักให้หน่อยได้ไหม?"
+        },
+        {
+            "en": "Suggest",
+            "phonetic": "ซัก-เจสท์",
+            "th": "แนะนำ",
+            "type": "Verb",
+            "example_en": "I suggest we take a short break.",
+            "example_th": "ฉันขอแนะนำให้เราหยุดพักสักครู่"
+        },
+        {
+            "en": "Recommend",
+            "phonetic": "เรค-คอม-เมนด์",
+            "th": "แนะนำ/เสนอแนะ",
+            "type": "Verb",
+            "example_en": "The chef recommends the grilled salmon.",
+            "example_th": "เชฟแนะนำเมนูแซลมอนย่าง"
+        },
+        {
+            "en": "Agree",
+            "phonetic": "อะ-กรี",
+            "th": "เห็นด้วย",
+            "type": "Verb",
+            "example_en": "I completely agree with your idea.",
+            "example_th": "ฉันเห็นด้วยกับแนวคิดของคุณอย่างสมบูรณ์"
+        },
+        {
+            "en": "Disagree",
+            "phonetic": "ดิส-อะ-กรี",
+            "th": "ไม่เห็นด้วย",
+            "type": "Verb",
+            "example_en": "He strongly disagrees with the new policy.",
+            "example_th": "เขาไม่เห็นด้วยอย่างยิ่งกับนโยบายใหม่"
+        },
+        {
+            "en": "Apologize",
+            "phonetic": "อะ-พอล-โล-ไจซ์",
+            "th": "ขอโทษ",
+            "type": "Verb",
+            "example_en": "I apologize for the delay in response.",
+            "example_th": "ฉันขออภัยที่ตอบกลับล่าช้า"
+        },
+        {
+            "en": "Persuade",
+            "phonetic": "เพอร์-สเวด",
+            "th": "โน้มน้าว",
+            "type": "Verb",
+            "example_en": "She tried to persuade me to buy the car.",
+            "example_th": "เธอพยายามโน้มน้าวให้ฉันซื้อรถ"
+        },
+        {
+            "en": "Convince",
+            "phonetic": "คอน-วินซ์",
+            "th": "ทำให้เชื่อ",
+            "type": "Verb",
+            "example_en": "You need to convince the investors.",
+            "example_th": "คุณจำเป็นต้องโน้มน้าวใจนักลงทุน"
+        },
+        {
+            "en": "Emphasize",
+            "phonetic": "เอ็ม-ฟะ-ไซซ์",
+            "th": "เน้นย้ำ",
+            "type": "Verb",
+            "example_en": "The boss emphasized the importance of teamwork.",
+            "example_th": "เจ้านายเน้นย้ำถึงความสำคัญของการทำงานเป็นทีม"
+        },
+        {
+            "en": "Illustrate",
+            "phonetic": "อิล-ลัส-เตรท",
+            "th": "ยกตัวอย่าง",
+            "type": "Verb",
+            "example_en": "Let me illustrate this concept with a graph.",
+            "example_th": "ให้ฉันอธิบายแนวคิดนี้ด้วยกราฟ"
+        },
+        {
+            "en": "Express",
+            "phonetic": "เอ็กซ์-เพรส",
+            "th": "แสดงออก",
+            "type": "Verb",
+            "example_en": "Words cannot express how grateful I am.",
+            "example_th": "คำพูดไม่สามารถแสดงได้ว่าฉันรู้สึกขอบคุณเพียงใด"
+        },
+        {
+            "en": "Respond",
+            "phonetic": "รี-สปอนด์",
+            "th": "ตอบกลับ",
+            "type": "Verb",
+            "example_en": "Please respond to the email by 5 PM.",
+            "example_th": "โปรดตอบกลับอีเมลภายในเวลา 17.00 น."
+        },
+        {
+            "en": "Interact",
+            "phonetic": "อิน-เทอร์-แอคท์",
+            "th": "โต้ตอบ",
+            "type": "Verb",
+            "example_en": "Teachers should interact with students more.",
+            "example_th": "ครูควรมีปฏิสัมพันธ์กับนักเรียนให้มากขึ้น"
+        },
+        {
+            "en": "Communicate",
+            "phonetic": "คอม-มิว-นิ-เคท",
+            "th": "สื่อสาร",
+            "type": "Verb",
+            "example_en": "We must communicate effectively to succeed.",
+            "example_th": "เราต้องสื่อสารอย่างมีประสิทธิภาพเพื่อความสำเร็จ"
+        },
+        {
+            "en": "Participate",
+            "phonetic": "พาร์-ทิ-ซิ-เพท",
+            "th": "เข้าร่วม",
+            "type": "Verb",
+            "example_en": "Everyone is encouraged to participate in the event.",
+            "example_th": "ทุกคนได้รับการส่งเสริมให้เข้าร่วมในกิจกรรม"
+        },
+        {
+            "en": "Introduce",
+            "phonetic": "อิน-โทร-ดิวซ์",
+            "th": "แนะนำตัว",
+            "type": "Verb",
+            "example_en": "Allow me to introduce our guest speaker.",
+            "example_th": "ขออนุญาตแนะนำวิทยากรรับเชิญของเรา"
+        },
+        {
+            "en": "Welcome",
+            "phonetic": "เวล-คัม",
+            "th": "ยินดีต้อนรับ",
+            "type": "Verb",
+            "example_en": "Welcome to our annual conference.",
+            "example_th": "ยินดีต้อนรับสู่การประชุมประจำปีของเรา"
+        },
+        {
+            "en": "Apologize_alt",
+            "phonetic": "อะ-พอล-โล-ไจซ์",
+            "th": "ขออภัย",
+            "type": "Verb",
+            "example_en": "I apologize for the misunderstanding.",
+            "example_th": "ฉันขออภัยสำหรับความเข้าใจผิด"
+        },
+        {
+            "en": "Clarify_alt",
+            "phonetic": "แคล-ริ-ไฟ",
+            "th": "ทำให้ชัดเจน",
+            "type": "Verb",
+            "example_en": "Let me clarify this point for you.",
+            "example_th": "ให้ฉันอธิบายประเด็นนี้ให้ชัดเจนขึ้น"
+        },
+        {
+            "en": "Discuss",
+            "phonetic": "ดิส-คัส",
+            "th": "อภิปราย",
+            "type": "Verb",
+            "example_en": "I would like to discuss the new project.",
+            "example_th": "ฉันต้องการหารือเกี่ยวกับโครงการใหม่"
+        },
+        {
+            "en": "Provide",
+            "phonetic": "โปร-ไวด์",
+            "th": "จัดหาให้",
+            "type": "Verb",
+            "example_en": "We can provide the necessary materials.",
+            "example_th": "เราสามารถจัดเตรียมวัสดุที่จำเป็นให้ได้"
+        },
+        {
+            "en": "Confirm",
+            "phonetic": "คอน-เฟิร์ม",
+            "th": "ยืนยัน",
+            "type": "Verb",
+            "example_en": "I am calling to confirm our meeting.",
+            "example_th": "ฉันโทรมาเพื่อยืนยันการประชุมของเรา"
+        },
+        {
+            "en": "Appreciate",
+            "phonetic": "แอพ-พรี-ชี-เอท",
+            "th": "ซาบซึ้ง",
+            "type": "Verb",
+            "example_en": "I really appreciate your help.",
+            "example_th": "ฉันซาบซึ้งในความช่วยเหลือของคุณมาก"
+        },
+        {
+            "en": "Ensure",
+            "phonetic": "เอน-ชัวร์",
+            "th": "ทำให้แน่ใจ",
+            "type": "Verb",
+            "example_en": "Please ensure the door is locked.",
+            "example_th": "โปรดตรวจสอบให้แน่ใจว่าประตูล็อคแล้ว"
+        },
+        {
+            "en": "Notify",
+            "phonetic": "โน-ทิ-ไฟ",
+            "th": "แจ้งให้ทราบ",
+            "type": "Verb",
+            "example_en": "We will notify you of the results.",
+            "example_th": "เราจะแจ้งให้คุณทราบถึงผลลัพธ์"
+        },
+        {
+            "en": "Submit",
+            "phonetic": "ซับ-มิท",
+            "th": "ส่ง (เอกสาร)",
+            "type": "Verb",
+            "example_en": "Please submit the report by Friday.",
+            "example_th": "โปรดส่งรายงานภายในวันศุกร์"
+        },
+        {
+            "en": "Acknowledge",
+            "phonetic": "แอค-นอล-เลจ",
+            "th": "รับทราบ",
+            "type": "Verb",
+            "example_en": "I acknowledge your concern.",
+            "example_th": "ฉันรับทราบความกังวลของคุณ"
+        },
+        {
+            "en": "Address",
+            "phonetic": "แอด-เดรส",
+            "th": "จัดการกับ(ปัญหา)",
+            "type": "Verb",
+            "example_en": "We need to address these complaints.",
+            "example_th": "เราจำเป็นต้องจัดการกับข้อร้องเรียนเหล่านี้"
+        },
+        {
+            "en": "Anticipate",
+            "phonetic": "แอน-ทิ-ซิ-เพท",
+            "th": "คาดการณ์",
+            "type": "Verb",
+            "example_en": "We anticipate a large crowd tonight.",
+            "example_th": "เราคาดการณ์ว่าจะมีฝูงชนจำนวนมากคืนนี้"
+        },
+        {
+            "en": "Convince_alt",
+            "phonetic": "คอน-วินซ์",
+            "th": "โน้มน้าว",
+            "type": "Verb",
+            "example_en": "You need to convince the board.",
+            "example_th": "คุณต้องโน้มน้าวใจคณะกรรมการ"
+        },
+        {
+            "en": "Demonstrate",
+            "phonetic": "เดม-มอน-สเตรท",
+            "th": "สาธิต",
+            "type": "Verb",
+            "example_en": "Let me demonstrate how it works.",
+            "example_th": "ให้ฉันสาธิตว่ามันทำงานอย่างไร"
+        },
+        {
+            "en": "Emphasize_alt",
+            "phonetic": "เอ็ม-ฟะ-ไซซ์",
+            "th": "เน้นย้ำ",
+            "type": "Verb",
+            "example_en": "I want to emphasize this point.",
+            "example_th": "ฉันต้องการเน้นย้ำประเด็นนี้"
+        },
+        {
+            "en": "Establish",
+            "phonetic": "เอส-แท็บ-ลิช",
+            "th": "ก่อตั้ง/สร้าง",
+            "type": "Verb",
+            "example_en": "They established the company in 1990.",
+            "example_th": "พวกเขาก่อตั้งบริษัทในปี 1990"
+        },
+        {
+            "en": "Evaluate",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมิน",
+            "type": "Verb",
+            "example_en": "We will evaluate the results later.",
+            "example_th": "เราจะประเมินผลลัพธ์ในภายหลัง"
+        },
+        {
+            "en": "Explain_alt",
+            "phonetic": "เอ็กซ์-เพลน",
+            "th": "อธิบาย",
+            "type": "Verb",
+            "example_en": "Can you explain the process again?",
+            "example_th": "คุณช่วยอธิบายกระบวนการอีกครั้งได้ไหม?"
+        },
+        {
+            "en": "Gather",
+            "phonetic": "แก-เธอร์",
+            "th": "รวบรวม",
+            "type": "Verb",
+            "example_en": "We need to gather more information.",
+            "example_th": "เราต้องรวบรวมข้อมูลเพิ่มเติม"
+        },
+        {
+            "en": "Indicate",
+            "phonetic": "อิน-ดิ-เคท",
+            "th": "ระบุ/แสดงให้เห็น",
+            "type": "Verb",
+            "example_en": "The data indicates a positive trend.",
+            "example_th": "ข้อมูลแสดงให้เห็นถึงแนวโน้มเชิงบวก"
+        },
+        {
+            "en": "Inquire",
+            "phonetic": "อิน-ไควร์",
+            "th": "สอบถาม",
+            "type": "Verb",
+            "example_en": "I am calling to inquire about the vacancy.",
+            "example_th": "ฉันโทรมาเพื่อสอบถามเกี่ยวกับตำแหน่งว่าง"
+        },
+        {
+            "en": "Maintain",
+            "phonetic": "เมน-เทน",
+            "th": "รักษา",
+            "type": "Verb",
+            "example_en": "Try to maintain eye contact.",
+            "example_th": "พยายามสบตา"
+        },
+        {
+            "en": "Mention",
+            "phonetic": "เมน-ชัน",
+            "th": "กล่าวถึง",
+            "type": "Verb",
+            "example_en": "He mentioned your name earlier.",
+            "example_th": "เขากล่าวถึงชื่อคุณก่อนหน้านี้"
+        },
+        {
+            "en": "Negotiate_alt",
+            "phonetic": "นิ-โก-ชี-เอท",
+            "th": "เจรจาต่อรอง",
+            "type": "Verb",
+            "example_en": "We can negotiate the price.",
+            "example_th": "เราสามารถเจรจาเรื่องราคาได้"
+        },
+        {
+            "en": "Observe",
+            "phonetic": "ออบ-เซิร์ฟ",
+            "th": "สังเกต",
+            "type": "Verb",
+            "example_en": "Observe the patient carefully.",
+            "example_th": "สังเกตผู้ป่วยอย่างระมัดระวัง"
+        },
+        {
+            "en": "Persuade_alt",
+            "phonetic": "เพอร์-สเวด",
+            "th": "โน้มน้าว",
+            "type": "Verb",
+            "example_en": "She persuaded him to stay.",
+            "example_th": "เธอโน้มน้าวให้เขาอยู่ต่อ"
+        },
+        {
+            "en": "Propose",
+            "phonetic": "โปร-โพส",
+            "th": "เสนอ",
+            "type": "Verb",
+            "example_en": "I propose a toast to the bride.",
+            "example_th": "ฉันขอเสนอให้ดื่มอวยพรแด่เจ้าสาว"
+        },
+        {
+            "en": "Suggest_alt",
+            "phonetic": "ซัก-เจสท์",
+            "th": "แนะนำ",
+            "type": "Verb",
+            "example_en": "I suggest we leave early.",
+            "example_th": "ฉันแนะนำให้เราออกเดินทางแต่เช้า"
+        },
+        {
+            "en": "Summarize_alt",
+            "phonetic": "ซัม-มะ-ไรซ์",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "Please summarize the main points.",
+            "example_th": "โปรดสรุปประเด็นหลัก"
+        },
+        {
+            "en": "Adapt",
+            "phonetic": "อะ-แดปท์",
+            "th": "ปรับตัว",
+            "type": "Verb",
+            "example_en": "We must adapt to changing market conditions.",
+            "example_th": "เราต้องปรับตัวให้เข้ากับสภาวะตลาดที่เปลี่ยนแปลง"
+        },
+        {
+            "en": "Benefit",
+            "phonetic": "เบน-เน-ฟิท",
+            "th": "ผลประโยชน์",
+            "type": "Noun",
+            "example_en": "The main benefit of this plan is cost savings.",
+            "example_th": "ประโยชน์หลักของแผนนี้คือการประหยัดต้นทุน"
+        },
+        {
+            "en": "Conclude",
+            "phonetic": "คอน-คลูด",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "To conclude, we need more funding.",
+            "example_th": "โดยสรุปแล้ว เราต้องการเงินทุนเพิ่มเติม"
+        },
+        {
+            "en": "Determine",
+            "phonetic": "ดี-เทอร์-มิน",
+            "th": "ตัดสินใจ/กำหนด",
+            "type": "Verb",
+            "example_en": "We need to determine the best approach.",
+            "example_th": "เราจำเป็นต้องกำหนดแนวทางที่ดีที่สุด"
+        },
+        {
+            "en": "Essential",
+            "phonetic": "เอส-เซน-เชียล",
+            "th": "จำเป็นอย่างยิ่ง",
+            "type": "Adjective",
+            "example_en": "Teamwork is essential for success.",
+            "example_th": "การทำงานเป็นทีมเป็นสิ่งจำเป็นอย่างยิ่งสำหรับความสำเร็จ"
+        },
+        {
+            "en": "Focus",
+            "phonetic": "โฟ-คัส",
+            "th": "มุ่งเน้น",
+            "type": "Verb",
+            "example_en": "We should focus on customer service.",
+            "example_th": "เราควรมุ่งเน้นไปที่การบริการลูกค้า"
+        },
+        {
+            "en": "Guideline",
+            "phonetic": "ไกด์-ไลน์",
+            "th": "แนวทาง",
+            "type": "Noun",
+            "example_en": "Please follow the safety guidelines.",
+            "example_th": "โปรดปฏิบัติตามแนวทางด้านความปลอดภัย"
+        },
+        {
+            "en": "Highlight",
+            "phonetic": "ไฮ-ไลท์",
+            "th": "เน้นให้เห็นชัด",
+            "type": "Verb",
+            "example_en": "I would like to highlight three main issues.",
+            "example_th": "ฉันต้องการเน้นให้เห็นประเด็นหลักสามประการ"
+        },
+        {
+            "en": "Inform",
+            "phonetic": "อิน-ฟอร์ม",
+            "th": "แจ้งให้ทราบ",
+            "type": "Verb",
+            "example_en": "Please inform the staff about the meeting.",
+            "example_th": "โปรดแจ้งให้พนักงานทราบเกี่ยวกับการประชุม"
+        },
+        {
+            "en": "Justify",
+            "phonetic": "จัส-ติ-ไฟ",
+            "th": "อธิบายเหตุผล",
+            "type": "Verb",
+            "example_en": "Can you justify this expense?",
+            "example_th": "คุณอธิบายเหตุผลของค่าใช้จ่ายนี้ได้ไหม?"
+        },
+        {
+            "en": "Knowledge",
+            "phonetic": "นอล-เลจ",
+            "th": "ความรู้",
+            "type": "Noun",
+            "example_en": "He has extensive knowledge of the subject.",
+            "example_th": "เขามีความรู้อย่างกว้างขวางในเรื่องนี้"
+        },
+        {
+            "en": "Locate",
+            "phonetic": "โล-เคท",
+            "th": "ตั้งอยู่/หาตำแหน่ง",
+            "type": "Verb",
+            "example_en": "We are trying to locate the missing package.",
+            "example_th": "เรากำลังพยายามค้นหาพัสดุที่หายไป"
+        },
+        {
+            "en": "Maximize",
+            "phonetic": "แมก-ซิ-ไมซ์",
+            "th": "ทำให้สูงสุด",
+            "type": "Verb",
+            "example_en": "Our goal is to maximize efficiency.",
+            "example_th": "เป้าหมายของเราคือการทำให้ประสิทธิภาพสูงสุด"
+        },
+        {
+            "en": "Note",
+            "phonetic": "โน้ท",
+            "th": "สังเกต/จดจำ",
+            "type": "Verb",
+            "example_en": "Please note that the deadline has changed.",
+            "example_th": "โปรดทราบว่ากำหนดส่งได้เปลี่ยนแปลงแล้ว"
+        },
+        {
+            "en": "Outline",
+            "phonetic": "เอาท์-ไลน์",
+            "th": "เค้าโครง/สรุปคร่าวๆ",
+            "type": "Verb/Noun",
+            "example_en": "I will outline the marketing strategy.",
+            "example_th": "ฉันจะสรุปโครงร่างกลยุทธ์การตลาด"
+        },
+        {
+            "en": "Persuade_alt",
+            "phonetic": "เพอร์-สเวด",
+            "th": "โน้มน้าว",
+            "type": "Verb",
+            "example_en": "We need to persuade the client to sign.",
+            "example_th": "เราต้องโน้มน้าวให้ลูกค้าเซ็นสัญญา"
+        },
+        {
+            "en": "Question",
+            "phonetic": "เควส-ชัน",
+            "th": "ตั้งคำถาม",
+            "type": "Verb/Noun",
+            "example_en": "I have a question about the budget.",
+            "example_th": "ฉันมีคำถามเกี่ยวกับงบประมาณ"
+        },
+        {
+            "en": "Recognize",
+            "phonetic": "เรค-คอก-ไนซ์",
+            "th": "ตระหนัก/จดจำได้",
+            "type": "Verb",
+            "example_en": "We must recognize the importance of this task.",
+            "example_th": "เราต้องตระหนักถึงความสำคัญของงานนี้"
+        },
+        {
+            "en": "Summarize_alt",
+            "phonetic": "ซัม-มะ-ไรซ์",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "Let me summarize what we discussed.",
+            "example_th": "ให้ฉันสรุปสิ่งที่เราได้หารือกัน"
+        },
+        {
+            "en": "Target",
+            "phonetic": "ทาร์-เกท",
+            "th": "เป้าหมาย",
+            "type": "Noun",
+            "example_en": "Our target audience is young adults.",
+            "example_th": "กลุ่มเป้าหมายของเราคือคนหนุ่มสาว"
+        },
+        {
+            "en": "Understand",
+            "phonetic": "อัน-เดอร์-สแตนด์",
+            "th": "เข้าใจ",
+            "type": "Verb",
+            "example_en": "Do you understand the instructions?",
+            "example_th": "คุณเข้าใจคำแนะนำไหม?"
+        },
+        {
+            "en": "Verify",
+            "phonetic": "เว-ริ-ไฟ",
+            "th": "ยืนยันความถูกต้อง",
+            "type": "Verb",
+            "example_en": "Can you verify these numbers?",
+            "example_th": "คุณช่วยยืนยันตัวเลขเหล่านี้ได้ไหม?"
+        },
+        {
+            "en": "Welcome_alt",
+            "phonetic": "เวล-คัม",
+            "th": "ยินดีต้อนรับ",
+            "type": "Verb",
+            "example_en": "We welcome your suggestions.",
+            "example_th": "เรายินดีรับข้อเสนอแนะของคุณ"
+        },
+        {
+            "en": "Yield",
+            "phonetic": "ยิลด์",
+            "th": "ยอมแพ้/ให้ผล",
+            "type": "Verb",
+            "example_en": "We will not yield to their demands.",
+            "example_th": "เราจะไม่ยอมแพ้ต่อข้อเรียกร้องของพวกเขา"
+        },
+        {
+            "en": "Analyze",
+            "phonetic": "แอน-นะ-ไลซ์",
+            "th": "วิเคราะห์",
+            "type": "Verb",
+            "example_en": "Let's analyze the sales data.",
+            "example_th": "มาวิเคราะห์ข้อมูลการขายกันเถอะ"
+        },
+        {
+            "en": "Brainstorm",
+            "phonetic": "เบรน-สตอร์ม",
+            "th": "ระดมสมอง",
+            "type": "Verb",
+            "example_en": "We need to brainstorm some new ideas.",
+            "example_th": "เราจำเป็นต้องระดมสมองคิดไอเดียใหม่ๆ"
+        },
+        {
+            "en": "Clarify_alt",
+            "phonetic": "แคล-ริ-ไฟ",
+            "th": "อธิบายให้กระจ่าง",
+            "type": "Verb",
+            "example_en": "Could you clarify the last point?",
+            "example_th": "คุณช่วยอธิบายประเด็นสุดท้ายให้กระจ่างได้ไหม?"
+        },
+        {
+            "en": "Demonstrate_alt",
+            "phonetic": "เดม-มอน-สเตรท",
+            "th": "แสดงให้เห็น",
+            "type": "Verb",
+            "example_en": "I will demonstrate how to use the software.",
+            "example_th": "ฉันจะสาธิตวิธีใช้ซอฟต์แวร์"
+        },
+        {
+            "en": "Evaluate_alt",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมิน",
+            "type": "Verb",
+            "example_en": "We must evaluate all the options.",
+            "example_th": "เราต้องประเมินทางเลือกทั้งหมด"
+        },
+        {
+            "en": "Facilitate",
+            "phonetic": "ฟา-ซิล-ลิ-เทท",
+            "th": "ทำให้ง่ายขึ้น/อำนวยความสะดวก",
+            "type": "Verb",
+            "example_en": "I will facilitate the workshop tomorrow.",
+            "example_th": "ฉันจะเป็นผู้อำนวยความสะดวกในการประชุมเชิงปฏิบัติการพรุ่งนี้"
+        },
+        {
+            "en": "Generate",
+            "phonetic": "เจน-เนอ-เรท",
+            "th": "สร้าง/ผลิต",
+            "type": "Verb",
+            "example_en": "The campaign should generate more leads.",
+            "example_th": "แคมเปญควรจะสร้างลูกค้าเป้าหมายได้มากขึ้น"
+        },
+        {
+            "en": "Handle",
+            "phonetic": "แฮน-เดิล",
+            "th": "รับมือ/จัดการ",
+            "type": "Verb",
+            "example_en": "How should we handle this complaint?",
+            "example_th": "เราควรรับมือกับข้อร้องเรียนนี้อย่างไร?"
+        },
+        {
+            "en": "Implement",
+            "phonetic": "อิม-พลิ-เมนท์",
+            "th": "นำไปปฏิบัติ",
+            "type": "Verb",
+            "example_en": "We plan to implement the changes next week.",
+            "example_th": "เราวางแผนที่จะนำการเปลี่ยนแปลงไปใช้ในสัปดาห์หน้า"
+        },
+        {
+            "en": "Judge",
+            "phonetic": "จัจ",
+            "th": "ตัดสิน",
+            "type": "Verb",
+            "example_en": "It is hard to judge the outcome right now.",
+            "example_th": "เป็นการยากที่จะตัดสินผลลัพธ์ในตอนนี้"
+        },
+        {
+            "en": "Keep",
+            "phonetic": "คีพ",
+            "th": "รักษาไว้",
+            "type": "Verb",
+            "example_en": "Please keep me updated on the progress.",
+            "example_th": "โปรดแจ้งให้ฉันทราบถึงความคืบหน้า"
+        },
+        {
+            "en": "Lead",
+            "phonetic": "ลีด",
+            "th": "นำ/เป็นผู้นำ",
+            "type": "Verb",
+            "example_en": "Who will lead the project team?",
+            "example_th": "ใครจะเป็นผู้นำทีมโครงการ?"
+        },
+        {
+            "en": "Manage",
+            "phonetic": "แมน-เนจ",
+            "th": "จัดการ",
+            "type": "Verb",
+            "example_en": "She manages a team of 10 people.",
+            "example_th": "เธอจัดการทีมงาน 10 คน"
+        },
+        {
+            "en": "Negotiate_alt",
+            "phonetic": "นิ-โก-ชี-เอท",
+            "th": "เจรจา",
+            "type": "Verb",
+            "example_en": "We are currently negotiating the contract.",
+            "example_th": "เรากำลังอยู่ในระหว่างการเจรจาสัญญา"
+        },
+        {
+            "en": "Organize",
+            "phonetic": "ออร์-กา-ไนซ์",
+            "th": "จัดระเบียบ/จัดเตรียม",
+            "type": "Verb",
+            "example_en": "I will organize the files.",
+            "example_th": "ฉันจะจัดระเบียบไฟล์ต่างๆ"
+        },
+        {
+            "en": "Present_alt",
+            "phonetic": "พรี-เซนต์",
+            "th": "นำเสนอ",
+            "type": "Verb",
+            "example_en": "I am ready to present my findings.",
+            "example_th": "ฉันพร้อมที่จะนำเสนอผลการค้นพบของฉันแล้ว"
+        },
+        {
+            "en": "Quantify",
+            "phonetic": "ควอน-ทิ-ไฟ",
+            "th": "วัดปริมาณ",
+            "type": "Verb",
+            "example_en": "It is difficult to quantify the benefits.",
+            "example_th": "เป็นการยากที่จะระบุจำนวนผลประโยชน์ออกมาเป็นตัวเลข"
+        },
+        {
+            "en": "Review",
+            "phonetic": "รี-วิว",
+            "th": "ทบทวน",
+            "type": "Verb",
+            "example_en": "Let's review the document together.",
+            "example_th": "มาทบทวนเอกสารด้วยกันเถอะ"
+        },
+        {
+            "en": "Support",
+            "phonetic": "ซัพ-พอร์ต",
+            "th": "สนับสนุน",
+            "type": "Verb",
+            "example_en": "I fully support your decision.",
+            "example_th": "ฉันสนับสนุนการตัดสินใจของคุณอย่างเต็มที่"
+        },
+        {
+            "en": "Tackle",
+            "phonetic": "แทค-เคิล",
+            "th": "รับมือกับ(ปัญหา)",
+            "type": "Verb",
+            "example_en": "We need to tackle this problem immediately.",
+            "example_th": "เราจำเป็นต้องรับมือกับปัญหานี้ทันที"
+        },
+        {
+            "en": "Urge",
+            "phonetic": "เอิร์จ",
+            "th": "กระตุ้น/เร่งเร้า",
+            "type": "Verb",
+            "example_en": "I urge you to consider this option.",
+            "example_th": "ฉันขอร้องให้คุณพิจารณาทางเลือกนี้"
+        },
+        {
+            "en": "Value",
+            "phonetic": "แวล-ลู",
+            "th": "ให้คุณค่า",
+            "type": "Verb",
+            "example_en": "We value your feedback.",
+            "example_th": "เราให้คุณค่ากับความคิดเห็นของคุณ"
+        },
+        {
+            "en": "Weigh",
+            "phonetic": "เวย์",
+            "th": "ชั่งน้ำหนัก(พิจารณา)",
+            "type": "Verb",
+            "example_en": "We must weigh the pros and cons.",
+            "example_th": "เราต้องชั่งน้ำหนักข้อดีข้อเสีย"
+        },
+        {
+            "en": "Examine",
+            "phonetic": "เอ็ก-แซม-มิน",
+            "th": "ตรวจสอบ",
+            "type": "Verb",
+            "example_en": "We will examine the issue closely.",
+            "example_th": "เราจะตรวจสอบปัญหาอย่างใกล้ชิด"
+        },
+        {
+            "en": "Yield_alt",
+            "phonetic": "ยิลด์",
+            "th": "ยอมทำตาม",
+            "type": "Verb",
+            "example_en": "We cannot yield to pressure.",
+            "example_th": "เราไม่สามารถยอมแพ้ต่อแรงกดดันได้"
+        },
+        {
+            "en": "Zero",
+            "phonetic": "ซี-โร",
+            "th": "ศูนย์/ปรับศูนย์",
+            "type": "Verb",
+            "example_en": "Let's zero in on the main problem.",
+            "example_th": "มาเจาะจงที่ปัญหาหลักกันเถอะ"
+        }
+    ],
+    "toefl_listening": [
+        {
+            "en": "Lecture",
+            "phonetic": "เลค-เชอร์",
+            "th": "การบรรยาย",
+            "type": "Noun",
+            "example_en": "The professor gave a lecture on biology.",
+            "example_th": "ศาสตราจารย์บรรยายวิชาชีววิทยา"
+        },
+        {
+            "en": "Professor",
+            "phonetic": "โปร-เฟส-เซอร์",
+            "th": "ศาสตราจารย์",
+            "type": "Noun",
+            "example_en": "Professor Smith is an expert in history.",
+            "example_th": "ศาสตราจารย์สมิธเป็นผู้เชี่ยวชาญด้านประวัติศาสตร์"
+        },
+        {
+            "en": "Campus",
+            "phonetic": "แคม-ปัส",
+            "th": "วิทยาเขต",
+            "type": "Noun",
+            "example_en": "The new library is located on the main campus.",
+            "example_th": "ห้องสมุดแห่งใหม่ตั้งอยู่ในวิทยาเขตหลัก"
+        },
+        {
+            "en": "Assignment",
+            "phonetic": "แอส-ไซน์-เมนท์",
+            "th": "งานที่ได้รับมอบหมาย",
+            "type": "Noun",
+            "example_en": "The assignment is due next Monday.",
+            "example_th": "งานที่ได้รับมอบหมายมีกำหนดส่งในวันจันทร์หน้า"
+        },
+        {
+            "en": "Deadline",
+            "phonetic": "เดด-ไลน์",
+            "th": "กำหนดส่ง",
+            "type": "Noun",
+            "example_en": "Make sure you submit the paper before the deadline.",
+            "example_th": "ตรวจสอบให้แน่ใจว่าคุณส่งรายงานก่อนกำหนด"
+        },
+        {
+            "en": "Library",
+            "phonetic": "ไล-บรา-รี",
+            "th": "ห้องสมุด",
+            "type": "Noun",
+            "example_en": "I spend most of my time studying in the library.",
+            "example_th": "ฉันใช้เวลาส่วนใหญ่เรียนอยู่ในห้องสมุด"
+        },
+        {
+            "en": "Semester",
+            "phonetic": "ซี-เมส-เตอร์",
+            "th": "ภาคเรียน",
+            "type": "Noun",
+            "example_en": "We have three exams this semester.",
+            "example_th": "เรามีการสอบสามครั้งในภาคเรียนนี้"
+        },
+        {
+            "en": "Credit",
+            "phonetic": "เคร-ดิต",
+            "th": "หน่วยกิต",
+            "type": "Noun",
+            "example_en": "This course is worth three academic credits.",
+            "example_th": "หลักสูตรนี้มีค่าเท่ากับสามหน่วยกิตทางวิชาการ"
+        },
+        {
+            "en": "Enroll",
+            "phonetic": "เอน-โรล",
+            "th": "ลงทะเบียนเรียน",
+            "type": "Verb",
+            "example_en": "Over 500 students enrolled in this course.",
+            "example_th": "มีนักเรียนลงทะเบียนเรียนหลักสูตรนี้กว่า 500 คน"
+        },
+        {
+            "en": "Syllabus",
+            "phonetic": "ซิล-ละ-บัส",
+            "th": "ประมวลรายวิชา",
+            "type": "Noun",
+            "example_en": "Please read the syllabus before the first class.",
+            "example_th": "โปรดอ่านประมวลรายวิชาก่อนเข้าเรียนคาบแรก"
+        },
+        {
+            "en": "Experiment",
+            "phonetic": "เอกซ์-เพอ-ริ-เมนท์",
+            "th": "การทดลอง",
+            "type": "Noun",
+            "example_en": "The chemistry experiment was a success.",
+            "example_th": "การทดลองทางเคมีประสบความสำเร็จ"
+        },
+        {
+            "en": "Theory",
+            "phonetic": "เธีย-รี",
+            "th": "ทฤษฎี",
+            "type": "Noun",
+            "example_en": "Darwin proposed the theory of evolution.",
+            "example_th": "ดาร์วินเสนอทฤษฎีวิวัฒนาการ"
+        },
+        {
+            "en": "Hypothesis",
+            "phonetic": "ไฮ-พอท-ธิ-ซิส",
+            "th": "สมมติฐาน",
+            "type": "Noun",
+            "example_en": "We need more data to prove this hypothesis.",
+            "example_th": "เราต้องการข้อมูลเพิ่มเติมเพื่อพิสูจน์สมมติฐานนี้"
+        },
+        {
+            "en": "Evidence",
+            "phonetic": "เอฟ-วิ-เดนซ์",
+            "th": "หลักฐาน",
+            "type": "Noun",
+            "example_en": "There is no scientific evidence to support this claim.",
+            "example_th": "ไม่มีหลักฐานทางวิทยาศาสตร์มาสนับสนุนข้อกล่าวอ้างนี้"
+        },
+        {
+            "en": "Conclude",
+            "phonetic": "คอน-คลูด",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "The study concluded that the drug is safe.",
+            "example_th": "การศึกษาสรุปว่ายาชนิดนี้มีความปลอดภัย"
+        },
+        {
+            "en": "Observe",
+            "phonetic": "ออบ-เซิร์ฟ",
+            "th": "สังเกต",
+            "type": "Verb",
+            "example_en": "We must carefully observe the changes in temperature.",
+            "example_th": "เราต้องสังเกตการเปลี่ยนแปลงของอุณหภูมิอย่างระมัดระวัง"
+        },
+        {
+            "en": "Phenomenon",
+            "phonetic": "ฟิ-นอม-มิ-นอน",
+            "th": "ปรากฏการณ์",
+            "type": "Noun",
+            "example_en": "Eclipses are a rare natural phenomenon.",
+            "example_th": "สุริยุปราคาเป็นปรากฏการณ์ทางธรรมชาติที่หาดูได้ยาก"
+        },
+        {
+            "en": "Concept",
+            "phonetic": "คอน-เซปท์",
+            "th": "แนวคิด",
+            "type": "Noun",
+            "example_en": "Gravity is a fundamental concept in physics.",
+            "example_th": "แรงโน้มถ่วงเป็นแนวคิดพื้นฐานทางฟิสิกส์"
+        },
+        {
+            "en": "Identify",
+            "phonetic": "ไอ-เดน-ทิ-ไฟ",
+            "th": "ระบุ",
+            "type": "Verb",
+            "example_en": "Can you identify the main cause of the problem?",
+            "example_th": "คุณช่วยระบุสาเหตุหลักของปัญหาได้ไหม?"
+        },
+        {
+            "en": "Explain",
+            "phonetic": "เอ็กซ์-เพลน",
+            "th": "อธิบาย",
+            "type": "Verb",
+            "example_en": "The professor asked the student to explain the answer.",
+            "example_th": "ศาสตราจารย์ขอให้นักเรียนอธิบายคำตอบ"
+        },
+        {
+            "en": "Research",
+            "phonetic": "รี-เสิร์ช",
+            "th": "การวิจัย",
+            "type": "Noun/Verb",
+            "example_en": "The research took three years to complete.",
+            "example_th": "การวิจัยใช้เวลาสามปีจึงจะเสร็จสมบูรณ์"
+        },
+        {
+            "en": "Journal",
+            "phonetic": "เจอร์-นัล",
+            "th": "วารสาร",
+            "type": "Noun",
+            "example_en": "The study was published in a medical journal.",
+            "example_th": "การศึกษานี้ได้รับการตีพิมพ์ในวารสารทางการแพทย์"
+        },
+        {
+            "en": "Article",
+            "phonetic": "อาร์-ทิ-เคิล",
+            "th": "บทความ",
+            "type": "Noun",
+            "example_en": "Read the first article for homework.",
+            "example_th": "อ่านบทความแรกเป็นการบ้าน"
+        },
+        {
+            "en": "Discuss",
+            "phonetic": "ดิส-คัส",
+            "th": "อภิปราย",
+            "type": "Verb",
+            "example_en": "Today we will discuss global warming.",
+            "example_th": "วันนี้เราจะหารือเกี่ยวกับภาวะโลกร้อน"
+        },
+        {
+            "en": "Examine",
+            "phonetic": "เอ็ก-ซาม-มิน",
+            "th": "ตรวจสอบ",
+            "type": "Verb",
+            "example_en": "We need to examine the evidence closely.",
+            "example_th": "เราต้องตรวจสอบหลักฐานอย่างใกล้ชิด"
+        },
+        {
+            "en": "Observe_alt",
+            "phonetic": "ออบ-เซิร์ฟ",
+            "th": "สังเกต",
+            "type": "Verb",
+            "example_en": "Students will observe the chemical reaction.",
+            "example_th": "นักเรียนจะสังเกตปฏิกิริยาทางเคมี"
+        },
+        {
+            "en": "Method",
+            "phonetic": "เมธ-ธอด",
+            "th": "วิธีการ",
+            "type": "Noun",
+            "example_en": "The scientific method requires careful testing.",
+            "example_th": "วิธีการทางวิทยาศาสตร์ต้องอาศัยการทดสอบอย่างระมัดระวัง"
+        },
+        {
+            "en": "Data",
+            "phonetic": "เด-ต้า",
+            "th": "ข้อมูล",
+            "type": "Noun",
+            "example_en": "The data supports our hypothesis.",
+            "example_th": "ข้อมูลสนับสนุนสมมติฐานของเรา"
+        },
+        {
+            "en": "Survey",
+            "phonetic": "เซอร์-เวย์",
+            "th": "การสำรวจ",
+            "type": "Noun/Verb",
+            "example_en": "A recent survey shows interesting results.",
+            "example_th": "การสำรวจล่าสุดแสดงให้เห็นผลลัพธ์ที่น่าสนใจ"
+        },
+        {
+            "en": "Participant",
+            "phonetic": "พาร์-ทิ-ซิ-เพนท์",
+            "th": "ผู้เข้าร่วม",
+            "type": "Noun",
+            "example_en": "There were 100 participants in the study.",
+            "example_th": "มีผู้เข้าร่วมในการศึกษา 100 คน"
+        },
+        {
+            "en": "Academic",
+            "phonetic": "อะ-แค-เด-มิค",
+            "th": "ทางวิชาการ",
+            "type": "Adjective",
+            "example_en": "He wrote an academic paper on history.",
+            "example_th": "เขาเขียนบทความทางวิชาการเกี่ยวกับประวัติศาสตร์"
+        },
+        {
+            "en": "Analyze",
+            "phonetic": "แอน-นะ-ไลซ์",
+            "th": "วิเคราะห์",
+            "type": "Verb",
+            "example_en": "Analyze the data thoroughly.",
+            "example_th": "วิเคราะห์ข้อมูลอย่างถี่ถ้วน"
+        },
+        {
+            "en": "Assignment_alt",
+            "phonetic": "แอส-ไซน์-เมนท์",
+            "th": "งานที่มอบหมาย",
+            "type": "Noun",
+            "example_en": "The assignment is due next week.",
+            "example_th": "งานที่ได้รับมอบหมายมีกำหนดส่งในสัปดาห์หน้า"
+        },
+        {
+            "en": "Campus_alt",
+            "phonetic": "แคม-ปัส",
+            "th": "วิทยาเขต",
+            "type": "Noun",
+            "example_en": "I live off campus this year.",
+            "example_th": "ปีนี้ฉันอาศัยอยู่นอกวิทยาเขต"
+        },
+        {
+            "en": "Concept_alt",
+            "phonetic": "คอน-เซปท์",
+            "th": "แนวคิด",
+            "type": "Noun",
+            "example_en": "This is a difficult concept to grasp.",
+            "example_th": "นี่เป็นแนวคิดที่ยากจะเข้าใจ"
+        },
+        {
+            "en": "Credit_alt",
+            "phonetic": "เคร-ดิต",
+            "th": "หน่วยกิต",
+            "type": "Noun",
+            "example_en": "You need 120 credits to graduate.",
+            "example_th": "คุณต้องมี 120 หน่วยกิตเพื่อจบการศึกษา"
+        },
+        {
+            "en": "Curriculum",
+            "phonetic": "เคอ-ริค-คิว-ลัม",
+            "th": "หลักสูตร",
+            "type": "Noun",
+            "example_en": "Math is part of the core curriculum.",
+            "example_th": "คณิตศาสตร์เป็นส่วนหนึ่งของหลักสูตรแกนกลาง"
+        },
+        {
+            "en": "Enroll_alt",
+            "phonetic": "เอน-โรล",
+            "th": "ลงทะเบียนเรียน",
+            "type": "Verb",
+            "example_en": "How many students enrolled this semester?",
+            "example_th": "ภาคเรียนนี้มีนักเรียนลงทะเบียนกี่คน?"
+        },
+        {
+            "en": "Evaluate",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมินผล",
+            "type": "Verb",
+            "example_en": "Professors evaluate student performance.",
+            "example_th": "ศาสตราจารย์ประเมินผลการเรียนของนักเรียน"
+        },
+        {
+            "en": "Faculty",
+            "phonetic": "แฟค-คัล-ตี",
+            "th": "คณาจารย์/คณะ",
+            "type": "Noun",
+            "example_en": "The faculty members are highly qualified.",
+            "example_th": "คณาจารย์มีคุณสมบัติสูงมาก"
+        },
+        {
+            "en": "Hypothesis_alt",
+            "phonetic": "ไฮ-พอท-ธิ-ซิส",
+            "th": "สมมติฐาน",
+            "type": "Noun",
+            "example_en": "The experiment proved his hypothesis.",
+            "example_th": "การทดลองพิสูจน์สมมติฐานของเขา"
+        },
+        {
+            "en": "Lecture_alt",
+            "phonetic": "เลค-เชอร์",
+            "th": "การบรรยาย",
+            "type": "Noun/Verb",
+            "example_en": "The lecture was very informative.",
+            "example_th": "การบรรยายมีประโยชน์มาก"
+        },
+        {
+            "en": "Literature",
+            "phonetic": "ลิท-เทอ-เร-เชอร์",
+            "th": "วรรณกรรม",
+            "type": "Noun",
+            "example_en": "She studies English literature.",
+            "example_th": "เธอเรียนวรรณคดีอังกฤษ"
+        },
+        {
+            "en": "Methodology",
+            "phonetic": "เมธ-ธอด-ดอล-ลอ-จี",
+            "th": "ระเบียบวิธี",
+            "type": "Noun",
+            "example_en": "The methodology used is flawed.",
+            "example_th": "ระเบียบวิธีที่ใช้นั้นมีข้อบกพร่อง"
+        },
+        {
+            "en": "Objective",
+            "phonetic": "ออบ-เจค-ทิฟ",
+            "th": "ปรนัย/วัตถุประสงค์",
+            "type": "Adjective/Noun",
+            "example_en": "The test consists of objective questions.",
+            "example_th": "แบบทดสอบประกอบด้วยคำถามแบบปรนัย"
+        },
+        {
+            "en": "Paragraph",
+            "phonetic": "พา-รา-กราฟ",
+            "th": "ย่อหน้า",
+            "type": "Noun",
+            "example_en": "Read the first paragraph carefully.",
+            "example_th": "อ่านย่อหน้าแรกอย่างระมัดระวัง"
+        },
+        {
+            "en": "Plagiarism",
+            "phonetic": "เพล-เจีย-ริส-ซึม",
+            "th": "การคัดลอกผลงาน",
+            "type": "Noun",
+            "example_en": "Plagiarism is a serious academic offense.",
+            "example_th": "การคัดลอกผลงานเป็นความผิดทางวิชาการที่ร้ายแรง"
+        },
+        {
+            "en": "Prerequisite",
+            "phonetic": "พรี-เรค-ควิ-ซิท",
+            "th": "วิชาบังคับก่อน",
+            "type": "Noun",
+            "example_en": "Biology 101 is a prerequisite.",
+            "example_th": "ชีววิทยา 101 เป็นวิชาบังคับก่อน"
+        },
+        {
+            "en": "Scholarship",
+            "phonetic": "สคอล-ลาร์-ชิป",
+            "th": "ทุนการศึกษา",
+            "type": "Noun",
+            "example_en": "He won a scholarship to Harvard.",
+            "example_th": "เขาได้รับทุนการศึกษาไปเรียนที่ฮาร์วาร์ด"
+        },
+        {
+            "en": "Semester_alt",
+            "phonetic": "ซี-เมส-เตอร์",
+            "th": "ภาคการศึกษา",
+            "type": "Noun",
+            "example_en": "The fall semester begins in September.",
+            "example_th": "ภาคเรียนฤดูใบไม้ร่วงเริ่มในเดือนกันยายน"
+        },
+        {
+            "en": "Astronomy",
+            "phonetic": "แอส-ตรอ-โน-มี",
+            "th": "ดาราศาสตร์",
+            "type": "Noun",
+            "example_en": "The lecture on astronomy was fascinating.",
+            "example_th": "การบรรยายเรื่องดาราศาสตร์น่าสนใจมาก"
+        },
+        {
+            "en": "Biology",
+            "phonetic": "ไบ-ออล-โล-จี",
+            "th": "ชีววิทยา",
+            "type": "Noun",
+            "example_en": "She is majoring in marine biology.",
+            "example_th": "เธอเรียนวิชาเอกชีววิทยาทางทะเล"
+        },
+        {
+            "en": "Chemistry",
+            "phonetic": "เค-มิส-ทรี",
+            "th": "เคมี",
+            "type": "Noun",
+            "example_en": "The chemistry lab is on the second floor.",
+            "example_th": "ห้องปฏิบัติการเคมีอยู่บนชั้นสอง"
+        },
+        {
+            "en": "Documentary",
+            "phonetic": "ดอค-คิว-เมน-ทา-รี",
+            "th": "สารคดี",
+            "type": "Noun",
+            "example_en": "We watched a documentary about climate change.",
+            "example_th": "เราดูสารคดีเกี่ยวกับการเปลี่ยนแปลงสภาพภูมิอากาศ"
+        },
+        {
+            "en": "Ecology",
+            "phonetic": "อี-คอล-โล-จี",
+            "th": "นิเวศวิทยา",
+            "type": "Noun",
+            "example_en": "Ecology studies how organisms interact.",
+            "example_th": "นิเวศวิทยาศึกษาว่าสิ่งมีชีวิตมีปฏิสัมพันธ์กันอย่างไร"
+        },
+        {
+            "en": "Fossil",
+            "phonetic": "ฟอส-ซิล",
+            "th": "ฟอสซิล/ซากดึกดำบรรพ์",
+            "type": "Noun",
+            "example_en": "They found a dinosaur fossil in the desert.",
+            "example_th": "พวกเขาพบซากฟอสซิลไดโนเสาร์ในทะเลทราย"
+        },
+        {
+            "en": "Geology",
+            "phonetic": "จี-ออล-โล-จี",
+            "th": "ธรณีวิทยา",
+            "type": "Noun",
+            "example_en": "Geology is the study of the Earth.",
+            "example_th": "ธรณีวิทยาคือการศึกษาเกี่ยวกับโลก"
+        },
+        {
+            "en": "Habitat",
+            "phonetic": "แฮบ-บิ-แทท",
+            "th": "ถิ่นที่อยู่",
+            "type": "Noun",
+            "example_en": "The destruction of their natural habitat is a problem.",
+            "example_th": "การทำลายถิ่นที่อยู่ตามธรรมชาติของพวกมันเป็นปัญหา"
+        },
+        {
+            "en": "Institution",
+            "phonetic": "อิน-สติ-ทิว-ชัน",
+            "th": "สถาบัน",
+            "type": "Noun",
+            "example_en": "Harvard is a prestigious academic institution.",
+            "example_th": "ฮาร์วาร์ดเป็นสถาบันการศึกษาที่มีชื่อเสียง"
+        },
+        {
+            "en": "Journalism",
+            "phonetic": "เจอร์-นัล-ลิส-ซึม",
+            "th": "วารสารศาสตร์",
+            "type": "Noun",
+            "example_en": "He is studying journalism at university.",
+            "example_th": "เขากำลังศึกษาวารสารศาสตร์ที่มหาวิทยาลัย"
+        },
+        {
+            "en": "Kinetic",
+            "phonetic": "คิ-เน-ติค",
+            "th": "จลน์(เกี่ยวกับพลังงานการเคลื่อนที่)",
+            "type": "Adjective",
+            "example_en": "The professor explained kinetic energy.",
+            "example_th": "ศาสตราจารย์อธิบายเรื่องพลังงานจลน์"
+        },
+        {
+            "en": "Linguistics",
+            "phonetic": "ลิง-กวิส-ติคส์",
+            "th": "ภาษาศาสตร์",
+            "type": "Noun",
+            "example_en": "Linguistics is the scientific study of language.",
+            "example_th": "ภาษาศาสตร์คือการศึกษาภาษาในเชิงวิทยาศาสตร์"
+        },
+        {
+            "en": "Meteorology",
+            "phonetic": "มี-ที-ออ-รอล-โล-จี",
+            "th": "อุตุนิยมวิทยา",
+            "type": "Noun",
+            "example_en": "Meteorology helps us predict the weather.",
+            "example_th": "อุตุนิยมวิทยาช่วยให้เราพยากรณ์อากาศได้"
+        },
+        {
+            "en": "Neanderthal",
+            "phonetic": "นี-แอน-เดอร์-ธัล",
+            "th": "มนุษย์นีแอนเดอร์ทัล",
+            "type": "Noun",
+            "example_en": "Neanderthals lived in Europe long ago.",
+            "example_th": "มนุษย์นีแอนเดอร์ทัลเคยอาศัยอยู่ในยุโรปเมื่อนานมาแล้ว"
+        },
+        {
+            "en": "Organism",
+            "phonetic": "ออร์-กา-นิส-ซึม",
+            "th": "สิ่งมีชีวิต",
+            "type": "Noun",
+            "example_en": "Microscopic organisms are found in water.",
+            "example_th": "พบสิ่งมีชีวิตขนาดเล็กในน้ำ"
+        },
+        {
+            "en": "Psychology",
+            "phonetic": "ไซ-คอล-โล-จี",
+            "th": "จิตวิทยา",
+            "type": "Noun",
+            "example_en": "Psychology studies the human mind and behavior.",
+            "example_th": "จิตวิทยาศึกษาจิตใจและพฤติกรรมของมนุษย์"
+        },
+        {
+            "en": "Quotient",
+            "phonetic": "โคว-เชียนท์",
+            "th": "ผลหาร/ระดับ(เช่น IQ)",
+            "type": "Noun",
+            "example_en": "Intelligence quotient is commonly known as IQ.",
+            "example_th": "Intelligence quotient เป็นที่รู้จักกันทั่วไปในชื่อ IQ"
+        },
+        {
+            "en": "Radiation",
+            "phonetic": "เร-ดิ-เอ-ชัน",
+            "th": "การแผ่รังสี",
+            "type": "Noun",
+            "example_en": "Exposure to high levels of radiation is dangerous.",
+            "example_th": "การสัมผัสกับรังสีในระดับสูงเป็นอันตราย"
+        },
+        {
+            "en": "Sociology",
+            "phonetic": "โซ-ซิ-ออล-โล-จี",
+            "th": "สังคมวิทยา",
+            "type": "Noun",
+            "example_en": "Sociology focuses on human social relationships.",
+            "example_th": "สังคมวิทยามุ่งเน้นไปที่ความสัมพันธ์ทางสังคมของมนุษย์"
+        },
+        {
+            "en": "Tectonic",
+            "phonetic": "เทค-ทอน-นิค",
+            "th": "เกี่ยวกับการแปรสัณฐานเปลือกโลก",
+            "type": "Adjective",
+            "example_en": "Earthquakes are caused by tectonic plate movement.",
+            "example_th": "แผ่นดินไหวเกิดจากการเคลื่อนตัวของแผ่นเปลือกโลก"
+        },
+        {
+            "en": "Universe",
+            "phonetic": "ยู-นิ-เวิร์ส",
+            "th": "จักรวาล",
+            "type": "Noun",
+            "example_en": "The universe is constantly expanding.",
+            "example_th": "จักรวาลกำลังขยายตัวอย่างต่อเนื่อง"
+        },
+        {
+            "en": "Volcano",
+            "phonetic": "โวล-เค-โน",
+            "th": "ภูเขาไฟ",
+            "type": "Noun",
+            "example_en": "The volcano erupted last night.",
+            "example_th": "ภูเขาไฟปะทุเมื่อคืนนี้"
+        },
+        {
+            "en": "Zoology",
+            "phonetic": "ซู-ออล-โล-จี",
+            "th": "สัตววิทยา",
+            "type": "Noun",
+            "example_en": "Zoology is the scientific study of animals.",
+            "example_th": "สัตววิทยาคือการศึกษาสัตว์ในเชิงวิทยาศาสตร์"
+        },
+        {
+            "en": "Abstract",
+            "phonetic": "แอ็บ-สแทรคท์",
+            "th": "บทคัดย่อ/นามธรรม",
+            "type": "Noun/Adjective",
+            "example_en": "Read the abstract before the full article.",
+            "example_th": "อ่านบทคัดย่อก่อนอ่านบทความเต็ม"
+        },
+        {
+            "en": "Botany",
+            "phonetic": "บอท-ทา-นี",
+            "th": "พฤกษศาสตร์",
+            "type": "Noun",
+            "example_en": "Botany is a branch of biology focusing on plants.",
+            "example_th": "พฤกษศาสตร์เป็นสาขาหนึ่งของชีววิทยาที่เน้นเรื่องพืช"
+        },
+        {
+            "en": "Chronological",
+            "phonetic": "โคร-โน-ลอ-จิ-คัล",
+            "th": "ตามลำดับเวลา",
+            "type": "Adjective",
+            "example_en": "The events are listed in chronological order.",
+            "example_th": "เหตุการณ์ต่างๆ ถูกแสดงตามลำดับเวลา"
+        },
+        {
+            "en": "Deduce",
+            "phonetic": "ดี-ดิวส์",
+            "th": "สรุปจากหลักฐาน",
+            "type": "Verb",
+            "example_en": "We can deduce the age of the tree from its rings.",
+            "example_th": "เราสามารถอนุมานอายุของต้นไม้ได้จากวงปีของมัน"
+        },
+        {
+            "en": "Empirical",
+            "phonetic": "เอ็ม-พิ-ริ-คัล",
+            "th": "เชิงประจักษ์/จากการทดลอง",
+            "type": "Adjective",
+            "example_en": "There is no empirical evidence to support this.",
+            "example_th": "ไม่มีหลักฐานเชิงประจักษ์ใดมารองรับเรื่องนี้"
+        },
+        {
+            "en": "Fluctuation",
+            "phonetic": "ฟลัค-ชู-เอ-ชัน",
+            "th": "ความผันผวน",
+            "type": "Noun",
+            "example_en": "There is a natural fluctuation in temperature.",
+            "example_th": "มีความผันผวนของอุณหภูมิตามธรรมชาติ"
+        },
+        {
+            "en": "Genetics",
+            "phonetic": "เจ-เน-ติคส์",
+            "th": "พันธุศาสตร์",
+            "type": "Noun",
+            "example_en": "Genetics plays a role in many diseases.",
+            "example_th": "พันธุศาสตร์มีบทบาทในหลายโรค"
+        },
+        {
+            "en": "Herbivore",
+            "phonetic": "เฮอร์-บิ-วอร์",
+            "th": "สัตว์กินพืช",
+            "type": "Noun",
+            "example_en": "Cows and horses are herbivores.",
+            "example_th": "วัวและม้าเป็นสัตว์กินพืช"
+        },
+        {
+            "en": "Implication",
+            "phonetic": "อิม-พลิ-เค-ชัน",
+            "th": "ความหมายแฝง/ผลที่ตามมา",
+            "type": "Noun",
+            "example_en": "What are the implications of this discovery?",
+            "example_th": "ผลกระทบจากการค้นพบนี้คืออะไร?"
+        },
+        {
+            "en": "Justification",
+            "phonetic": "จัส-ติ-ฟิ-เค-ชัน",
+            "th": "การให้เหตุผล",
+            "type": "Noun",
+            "example_en": "There is no justification for his actions.",
+            "example_th": "ไม่มีข้อแก้ตัวใดๆ สำหรับการกระทำของเขา"
+        },
+        {
+            "en": "Kinetics",
+            "phonetic": "คิ-เน-ติคส์",
+            "th": "จลนศาสตร์",
+            "type": "Noun",
+            "example_en": "We studied the kinetics of chemical reactions.",
+            "example_th": "เราศึกษาจลนศาสตร์ของปฏิกิริยาเคมี"
+        },
+        {
+            "en": "Lunar",
+            "phonetic": "ลู-นาร์",
+            "th": "เกี่ยวกับดวงจันทร์",
+            "type": "Adjective",
+            "example_en": "A lunar eclipse occurs when the Earth blocks the sun.",
+            "example_th": "จันทรุปราคาเกิดขึ้นเมื่อโลกบังดวงอาทิตย์"
+        },
+        {
+            "en": "Migration",
+            "phonetic": "ไม-เกร-ชัน",
+            "th": "การอพยพ",
+            "type": "Noun",
+            "example_en": "Bird migration happens every autumn.",
+            "example_th": "การอพยพของนกเกิดขึ้นทุกฤดูใบไม้ร่วง"
+        },
+        {
+            "en": "Nutrient",
+            "phonetic": "นิว-เทรียนท์",
+            "th": "สารอาหาร",
+            "type": "Noun",
+            "example_en": "Plants absorb nutrients from the soil.",
+            "example_th": "พืชดูดซับสารอาหารจากดิน"
+        },
+        {
+            "en": "Observation",
+            "phonetic": "ออบ-เซิร์ฟ-เว-ชัน",
+            "th": "การสังเกตการณ์",
+            "type": "Noun",
+            "example_en": "Careful observation is key to science.",
+            "example_th": "การสังเกตอย่างระมัดระวังเป็นกุญแจสำคัญของวิทยาศาสตร์"
+        },
+        {
+            "en": "Predator",
+            "phonetic": "พรี-เด-เตอร์",
+            "th": "สัตว์นักล่า",
+            "type": "Noun",
+            "example_en": "Lions are apex predators.",
+            "example_th": "สิงโตเป็นนักล่าจุดสูงสุด"
+        },
+        {
+            "en": "Quantitative",
+            "phonetic": "ควอน-ทิ-เท-ทิฟ",
+            "th": "เชิงปริมาณ",
+            "type": "Adjective",
+            "example_en": "The study uses quantitative research methods.",
+            "example_th": "การศึกษาใช้วิธีการวิจัยเชิงปริมาณ"
+        },
+        {
+            "en": "Reptile",
+            "phonetic": "เรป-ไทล์",
+            "th": "สัตว์เลื้อยคลาน",
+            "type": "Noun",
+            "example_en": "Snakes and lizards are reptiles.",
+            "example_th": "งูและกิ้งก่าเป็นสัตว์เลื้อยคลาน"
+        },
+        {
+            "en": "Species",
+            "phonetic": "สปี-ชีส์",
+            "th": "สายพันธุ์",
+            "type": "Noun",
+            "example_en": "There are thousands of species of spiders.",
+            "example_th": "มีแมงมุมหลายพันสายพันธุ์"
+        },
+        {
+            "en": "Thermodynamics",
+            "phonetic": "เธอร์-โม-ได-นาม-มิคส์",
+            "th": "อุณหพลศาสตร์",
+            "type": "Noun",
+            "example_en": "The second law of thermodynamics is complex.",
+            "example_th": "กฎข้อที่สองของอุณหพลศาสตร์มีความซับซ้อน"
+        },
+        {
+            "en": "Unprecedented",
+            "phonetic": "อัน-พรี-เซ-เดนท์-เท็ด",
+            "th": "ไม่เคยเกิดขึ้นมาก่อน",
+            "type": "Adjective",
+            "example_en": "This level of growth is unprecedented.",
+            "example_th": "ระดับการเติบโตนี้ไม่เคยมีมาก่อน"
+        },
+        {
+            "en": "Variable",
+            "phonetic": "แว-ริ-อะ-เบิล",
+            "th": "ตัวแปร",
+            "type": "Noun",
+            "example_en": "Temperature is a key variable in this experiment.",
+            "example_th": "อุณหภูมิเป็นตัวแปรสำคัญในการทดลองนี้"
+        },
+        {
+            "en": "Wavelength",
+            "phonetic": "เวฟ-เลงธ์",
+            "th": "ความยาวคลื่น",
+            "type": "Noun",
+            "example_en": "Red light has a longer wavelength than blue light.",
+            "example_th": "แสงสีแดงมีความยาวคลื่นมากกว่าแสงสีน้ำเงิน"
+        },
+        {
+            "en": "X-ray",
+            "phonetic": "เอกซ์-เรย์",
+            "th": "รังสีเอกซ์",
+            "type": "Noun",
+            "example_en": "X-rays are used to see inside the body.",
+            "example_th": "รังสีเอกซ์ใช้เพื่อดูภายในร่างกาย"
+        },
+        {
+            "en": "Yield",
+            "phonetic": "ยิลด์",
+            "th": "ผลผลิต(ทางการเกษตร)",
+            "type": "Noun",
+            "example_en": "The crop yield was lower than expected.",
+            "example_th": "ผลผลิตทางการเกษตรต่ำกว่าที่คาดไว้"
+        },
+        {
+            "en": "Zone",
+            "phonetic": "โซน",
+            "th": "เขต/พื้นที่",
+            "type": "Noun",
+            "example_en": "The area is a protected ecological zone.",
+            "example_th": "พื้นที่นี้เป็นเขตนิเวศวิทยาที่ได้รับการคุ้มครอง"
+        },
+        {
+            "en": "Aquatic",
+            "phonetic": "อะ-ควา-ติค",
+            "th": "เกี่ยวกับน้ำ",
+            "type": "Adjective",
+            "example_en": "Whales are aquatic mammals.",
+            "example_th": "ปลาวาฬเป็นสัตว์เลี้ยงลูกด้วยนมในน้ำ"
+        }
+    ],
+    "toefl_reading": [
+        {
+            "en": "Significant",
+            "phonetic": "ซิก-นิฟ-ฟิ-แคนท์",
+            "th": "สำคัญ/มีนัยสำคัญ",
+            "type": "Adjective",
+            "example_en": "There is a significant difference between the two results.",
+            "example_th": "มีความแตกต่างอย่างมีนัยสำคัญระหว่างผลลัพธ์ทั้งสอง"
+        },
+        {
+            "en": "Consequence",
+            "phonetic": "คอน-ซิ-เควนซ์",
+            "th": "ผลที่ตามมา",
+            "type": "Noun",
+            "example_en": "Global warming is a consequence of human activity.",
+            "example_th": "ภาวะโลกร้อนเป็นผลมาจากการกระทำของมนุษย์"
+        },
+        {
+            "en": "Evolve",
+            "phonetic": "อี-โวลฟ์",
+            "th": "วิวัฒนาการ",
+            "type": "Verb",
+            "example_en": "Birds evolved from dinosaurs millions of years ago.",
+            "example_th": "นกวิวัฒนาการมาจากไดโนเสาร์เมื่อหลายล้านปีก่อน"
+        },
+        {
+            "en": "Adequate",
+            "phonetic": "แอด-ดี-เควต",
+            "th": "เพียงพอ",
+            "type": "Adjective",
+            "example_en": "Make sure you drink adequate amounts of water.",
+            "example_th": "ตรวจสอบให้แน่ใจว่าคุณดื่มน้ำในปริมาณที่เพียงพอ"
+        },
+        {
+            "en": "Perspective",
+            "phonetic": "เพอร์-สเปค-ทิฟ",
+            "th": "มุมมอง",
+            "type": "Noun",
+            "example_en": "Try to look at the problem from a different perspective.",
+            "example_th": "พยายามมองปัญหาจากมุมมองที่ต่างออกไป"
+        },
+        {
+            "en": "Incorporate",
+            "phonetic": "อิน-คอร์-ปะ-เรท",
+            "th": "รวมเข้าด้วยกัน",
+            "type": "Verb",
+            "example_en": "The architect incorporated solar panels into the design.",
+            "example_th": "สถาปนิกได้รวมแผงโซลาร์เซลล์เข้าไว้ในการออกแบบ"
+        },
+        {
+            "en": "Assess",
+            "phonetic": "แอส-เซส",
+            "th": "ประเมิน",
+            "type": "Verb",
+            "example_en": "The committee will assess the impact of the new law.",
+            "example_th": "คณะกรรมการจะประเมินผลกระทบของกฎหมายฉบับใหม่"
+        },
+        {
+            "en": "Derive",
+            "phonetic": "ดิ-ไรฟ์",
+            "th": "ได้รับมาจาก",
+            "type": "Verb",
+            "example_en": "The word is derived from a Latin root.",
+            "example_th": "คำนี้มีรากศัพท์มาจากภาษาละติน"
+        },
+        {
+            "en": "Interpret",
+            "phonetic": "อิน-เทอร์-พรีท",
+            "th": "ตีความ",
+            "type": "Verb",
+            "example_en": "How do you interpret the ending of the novel?",
+            "example_th": "คุณตีความตอนจบของนวนิยายเรื่องนี้อย่างไร?"
+        },
+        {
+            "en": "Structure",
+            "phonetic": "สตรัค-เจอร์",
+            "th": "โครงสร้าง",
+            "type": "Noun",
+            "example_en": "The cell structure of plants and animals is different.",
+            "example_th": "โครงสร้างเซลล์ของพืชและสัตว์มีความแตกต่างกัน"
+        },
+        {
+            "en": "Maintain",
+            "phonetic": "เมน-เทน",
+            "th": "รักษาไว้",
+            "type": "Verb",
+            "example_en": "It is important to maintain a healthy diet.",
+            "example_th": "การรักษาพฤติกรรมการกินเพื่อสุขภาพเป็นสิ่งสำคัญ"
+        },
+        {
+            "en": "Illustrate",
+            "phonetic": "อิล-ลัส-เตรท",
+            "th": "อธิบายด้วยภาพประกอบ",
+            "type": "Verb",
+            "example_en": "The author uses examples to illustrate his point.",
+            "example_th": "ผู้เขียนยกตัวอย่างเพื่ออธิบายประเด็นของเขา"
+        },
+        {
+            "en": "Demonstrate",
+            "phonetic": "เดม-มอน-สเตรท",
+            "th": "สาธิต/แสดงให้เห็น",
+            "type": "Verb",
+            "example_en": "The data clearly demonstrates the need for reform.",
+            "example_th": "ข้อมูลแสดงให้เห็นอย่างชัดเจนถึงความจำเป็นในการปฏิรูป"
+        },
+        {
+            "en": "Justify",
+            "phonetic": "จัส-ติ-ไฟ",
+            "th": "แสดงให้เห็นถึงเหตุผล",
+            "type": "Verb",
+            "example_en": "Can you justify your decision to quit the job?",
+            "example_th": "คุณสามารถให้เหตุผลประกอบการตัดสินใจลาออกจากงานได้หรือไม่?"
+        },
+        {
+            "en": "Proportion",
+            "phonetic": "โพร-พอร์-ชัน",
+            "th": "สัดส่วน",
+            "type": "Noun",
+            "example_en": "A large proportion of the budget goes to education.",
+            "example_th": "สัดส่วนส่วนใหญ่ของงบประมาณตกเป็นของการศึกษา"
+        },
+        {
+            "en": "Sequence",
+            "phonetic": "ซี-เควนซ์",
+            "th": "ลำดับ",
+            "type": "Noun",
+            "example_en": "Follow the sequence of steps in the manual.",
+            "example_th": "ทำตามลำดับขั้นตอนในคู่มือ"
+        },
+        {
+            "en": "Valid",
+            "phonetic": "แวล-ลิด",
+            "th": "ถูกต้อง/มีเหตุผล",
+            "type": "Adjective",
+            "example_en": "You must have a valid passport to travel abroad.",
+            "example_th": "คุณต้องมีหนังสือเดินทางที่ยังไม่หมดอายุเพื่อเดินทางไปต่างประเทศ"
+        },
+        {
+            "en": "Abstract",
+            "phonetic": "แอ็บ-สแทรคท์",
+            "th": "นามธรรม",
+            "type": "Adjective",
+            "example_en": "Truth and beauty are abstract concepts.",
+            "example_th": "ความจริงและความงามเป็นแนวคิดที่เป็นนามธรรม"
+        },
+        {
+            "en": "Determine",
+            "phonetic": "ดี-เทอร์-มิน",
+            "th": "กำหนด",
+            "type": "Verb",
+            "example_en": "Your grades will determine which university you enter.",
+            "example_th": "เกรดของคุณจะเป็นตัวกำหนดว่าคุณจะเข้าเรียนมหาวิทยาลัยใด"
+        },
+        {
+            "en": "Analyze",
+            "phonetic": "แอน-นะ-ไลซ์",
+            "th": "วิเคราะห์",
+            "type": "Verb",
+            "example_en": "We need to analyze the customer feedback.",
+            "example_th": "เราจำเป็นต้องวิเคราะห์ความคิดเห็นของลูกค้า"
+        },
+        {
+            "en": "Abundant",
+            "phonetic": "อะ-บัน-ดันท์",
+            "th": "มากมาย",
+            "type": "Adjective",
+            "example_en": "There is an abundant supply of water.",
+            "example_th": "มีแหล่งน้ำอุดมสมบูรณ์"
+        },
+        {
+            "en": "Crucial",
+            "phonetic": "ครู-เชียล",
+            "th": "สำคัญมาก",
+            "type": "Adjective",
+            "example_en": "Water is crucial for survival.",
+            "example_th": "น้ำมีความสำคัญอย่างยิ่งต่อการอยู่รอด"
+        },
+        {
+            "en": "Diverse",
+            "phonetic": "ได-เวิร์ส",
+            "th": "หลากหลาย",
+            "type": "Adjective",
+            "example_en": "The rainforest has a diverse ecosystem.",
+            "example_th": "ป่าฝนมีระบบนิเวศที่หลากหลาย"
+        },
+        {
+            "en": "Evident",
+            "phonetic": "เอฟ-วิ-เดนท์",
+            "th": "ชัดเจน",
+            "type": "Adjective",
+            "example_en": "It is evident that the climate is changing.",
+            "example_th": "เป็นที่แน่ชัดว่าสภาพภูมิอากาศกำลังเปลี่ยนแปลง"
+        },
+        {
+            "en": "Flourish",
+            "phonetic": "ฟลอ-ริช",
+            "th": "เจริญงอกงาม",
+            "type": "Verb",
+            "example_en": "Plants flourish in this environment.",
+            "example_th": "พืชเจริญงอกงามในสภาพแวดล้อมนี้"
+        },
+        {
+            "en": "Inherent",
+            "phonetic": "อิน-เฮีย-เรนท์",
+            "th": "โดยธรรมชาติ",
+            "type": "Adjective",
+            "example_en": "There are inherent risks in this procedure.",
+            "example_th": "มีความเสี่ยงโดยธรรมชาติในขั้นตอนนี้"
+        },
+        {
+            "en": "Obscure",
+            "phonetic": "ออบ-สเคียวร์",
+            "th": "คลุมเครือ",
+            "type": "Adjective/Verb",
+            "example_en": "The meaning of the poem is obscure.",
+            "example_th": "ความหมายของบทกวีค่อนข้างคลุมเครือ"
+        },
+        {
+            "en": "Profound",
+            "phonetic": "โปร-ฟาวนด์",
+            "th": "ลึกซึ้ง",
+            "type": "Adjective",
+            "example_en": "The discovery had a profound impact.",
+            "example_th": "การค้นพบนี้มีผลกระทบอย่างลึกซึ้ง"
+        },
+        {
+            "en": "Resilient",
+            "phonetic": "รี-ซิล-เลียนท์",
+            "th": "ยืดหยุ่น/ฟื้นตัวเร็ว",
+            "type": "Adjective",
+            "example_en": "Children are often remarkably resilient.",
+            "example_th": "เด็กๆ มักจะฟื้นตัวได้อย่างน่าทึ่ง"
+        },
+        {
+            "en": "Subtle",
+            "phonetic": "ซับ-เทิล",
+            "th": "เล็กน้อย/บอบบาง",
+            "type": "Adjective",
+            "example_en": "There is a subtle difference between the two.",
+            "example_th": "มีความแตกต่างเพียงเล็กน้อยระหว่างสองสิ่งนี้"
+        },
+        {
+            "en": "Adequate_alt",
+            "phonetic": "แอด-ดี-เควต",
+            "th": "เพียงพอ",
+            "type": "Adjective",
+            "example_en": "The room size is adequate for two people.",
+            "example_th": "ขนาดห้องเพียงพอสำหรับสองคน"
+        },
+        {
+            "en": "Alternative",
+            "phonetic": "ออล-เทอร์-เน-ทิฟ",
+            "th": "ทางเลือก",
+            "type": "Noun/Adjective",
+            "example_en": "We must find alternative energy sources.",
+            "example_th": "เราต้องหาแหล่งพลังงานทางเลือก"
+        },
+        {
+            "en": "Apparent",
+            "phonetic": "แอพ-พา-เรนท์",
+            "th": "ชัดเจน",
+            "type": "Adjective",
+            "example_en": "It is apparent that he is lying.",
+            "example_th": "เห็นได้ชัดว่าเขากำลังโกหก"
+        },
+        {
+            "en": "Approximate",
+            "phonetic": "อะ-พร็อก-ซิ-เมท",
+            "th": "โดยประมาณ",
+            "type": "Adjective",
+            "example_en": "What is the approximate cost?",
+            "example_th": "ค่าใช้จ่ายโดยประมาณคือเท่าไร?"
+        },
+        {
+            "en": "Attribute",
+            "phonetic": "แอท-ทริ-บิวท์",
+            "th": "คุณลักษณะ/ถือว่าเป็นของ",
+            "type": "Noun/Verb",
+            "example_en": "Patience is a necessary attribute for a teacher.",
+            "example_th": "ความอดทนเป็นคุณลักษณะที่จำเป็นสำหรับครู"
+        },
+        {
+            "en": "Capacity",
+            "phonetic": "คา-พาส-ซิ-ตี",
+            "th": "ความจุ/ความสามารถ",
+            "type": "Noun",
+            "example_en": "The stadium has a seating capacity of 50,000.",
+            "example_th": "สนามกีฬาแห่งนี้มีความจุที่นั่ง 50,000 ที่"
+        },
+        {
+            "en": "Component",
+            "phonetic": "คอม-โพ-เนนท์",
+            "th": "ส่วนประกอบ",
+            "type": "Noun",
+            "example_en": "Trust is a key component of a relationship.",
+            "example_th": "ความไว้วางใจเป็นส่วนประกอบสำคัญของความสัมพันธ์"
+        },
+        {
+            "en": "Consequently",
+            "phonetic": "คอน-ซิ-เควนท์-ลี",
+            "th": "ผลที่ตามมาคือ",
+            "type": "Adverb",
+            "example_en": "It rained; consequently, the game was delayed.",
+            "example_th": "ฝนตก ผลที่ตามมาคือเกมถูกเลื่อนออกไป"
+        },
+        {
+            "en": "Demonstrate_alt",
+            "phonetic": "เดม-มอน-สเตรท",
+            "th": "แสดงให้เห็น",
+            "type": "Verb",
+            "example_en": "These numbers demonstrate the problem.",
+            "example_th": "ตัวเลขเหล่านี้แสดงให้เห็นถึงปัญหา"
+        },
+        {
+            "en": "Emerge",
+            "phonetic": "อี-เมิร์จ",
+            "th": "ปรากฏออกมา",
+            "type": "Verb",
+            "example_en": "New details began to emerge.",
+            "example_th": "รายละเอียดใหม่ๆ เริ่มปรากฏออกมา"
+        },
+        {
+            "en": "Equivalent",
+            "phonetic": "อี-ควิ-วา-เลนท์",
+            "th": "เทียบเท่า",
+            "type": "Adjective/Noun",
+            "example_en": "One mile is equivalent to 1.6 kilometers.",
+            "example_th": "หนึ่งไมล์เทียบเท่ากับ 1.6 กิโลเมตร"
+        },
+        {
+            "en": "Fundamental",
+            "phonetic": "ฟัน-ดะ-เมน-ทัล",
+            "th": "พื้นฐาน",
+            "type": "Adjective",
+            "example_en": "Freedom of speech is a fundamental right.",
+            "example_th": "เสรีภาพในการพูดเป็นสิทธิขั้นพื้นฐาน"
+        },
+        {
+            "en": "Hypothesis",
+            "phonetic": "ไฮ-พอท-ธิ-ซิส",
+            "th": "สมมติฐาน",
+            "type": "Noun",
+            "example_en": "The results support his hypothesis.",
+            "example_th": "ผลลัพธ์สนับสนุนสมมติฐานของเขา"
+        },
+        {
+            "en": "Imply",
+            "phonetic": "อิม-พลาย",
+            "th": "บอกเป็นนัย",
+            "type": "Verb",
+            "example_en": "Are you implying that I am wrong?",
+            "example_th": "คุณกำลังบอกเป็นนัยว่าฉันผิดใช่ไหม?"
+        },
+        {
+            "en": "Initial",
+            "phonetic": "อิน-นิ-เชียล",
+            "th": "เริ่มแรก",
+            "type": "Adjective",
+            "example_en": "My initial reaction was shock.",
+            "example_th": "ปฏิกิริยาแรกของฉันคือความตกใจ"
+        },
+        {
+            "en": "Justify_alt",
+            "phonetic": "จัส-ติ-ไฟ",
+            "th": "แสดงเหตุผล",
+            "type": "Verb",
+            "example_en": "How can you justify this behavior?",
+            "example_th": "คุณจะอธิบายพฤติกรรมนี้อย่างไร?"
+        },
+        {
+            "en": "Perspective_alt",
+            "phonetic": "เพอร์-สเปค-ทิฟ",
+            "th": "มุมมอง",
+            "type": "Noun",
+            "example_en": "Try looking from a different perspective.",
+            "example_th": "ลองมองจากมุมมองที่ต่างออกไป"
+        },
+        {
+            "en": "Proportion_alt",
+            "phonetic": "โพร-พอร์-ชัน",
+            "th": "สัดส่วน",
+            "type": "Noun",
+            "example_en": "A large proportion of the land is forest.",
+            "example_th": "พื้นที่ส่วนใหญ่เป็นป่าไม้"
+        },
+        {
+            "en": "Sequence_alt",
+            "phonetic": "ซี-เควนซ์",
+            "th": "ลำดับ",
+            "type": "Noun",
+            "example_en": "Follow the sequence of events.",
+            "example_th": "ทำตามลำดับเหตุการณ์"
+        },
+        {
+            "en": "Subsequent",
+            "phonetic": "ซับ-ซี-เควนท์",
+            "th": "ตามมา/ภายหลัง",
+            "type": "Adjective",
+            "example_en": "Subsequent studies confirmed the finding.",
+            "example_th": "การศึกษาในเวลาต่อมายืนยันการค้นพบนี้"
+        },
+        {
+            "en": "Aesthetic",
+            "phonetic": "เอส-เธ-ติค",
+            "th": "เกี่ยวกับความงาม",
+            "type": "Adjective",
+            "example_en": "The building has great aesthetic appeal.",
+            "example_th": "อาคารนี้มีความดึงดูดใจด้านสุนทรียภาพอย่างมาก"
+        },
+        {
+            "en": "Bizarre",
+            "phonetic": "บิ-ซาร์",
+            "th": "แปลกประหลาด",
+            "type": "Adjective",
+            "example_en": "The story was completely bizarre.",
+            "example_th": "เรื่องราวนั้นแปลกประหลาดอย่างสิ้นเชิง"
+        },
+        {
+            "en": "Coincide",
+            "phonetic": "โค-อิน-ไซด์",
+            "th": "เกิดขึ้นพร้อมกัน",
+            "type": "Verb",
+            "example_en": "Her arrival coincided with the storm.",
+            "example_th": "การมาถึงของเธอเกิดขึ้นพร้อมกับพายุ"
+        },
+        {
+            "en": "Deviate",
+            "phonetic": "ดี-วิ-เอท",
+            "th": "เบี่ยงเบน",
+            "type": "Verb",
+            "example_en": "Never deviate from the original plan.",
+            "example_th": "อย่าเบี่ยงเบนไปจากแผนเดิม"
+        },
+        {
+            "en": "Elicit",
+            "phonetic": "อี-ลิส-ซิท",
+            "th": "ดึงออกมา/ล้วงความลับ",
+            "type": "Verb",
+            "example_en": "The question elicited a defensive response.",
+            "example_th": "คำถามนั้นกระตุ้นให้เกิดการตอบสนองเชิงป้องกันตัว"
+        },
+        {
+            "en": "Fluctuate",
+            "phonetic": "ฟลัค-ชู-เอท",
+            "th": "ผันผวน",
+            "type": "Verb",
+            "example_en": "Prices fluctuate based on supply and demand.",
+            "example_th": "ราคาผันผวนตามอุปสงค์และอุปทาน"
+        },
+        {
+            "en": "Gregarious",
+            "phonetic": "กริ-กา-เรียส",
+            "th": "ชอบเข้าสังคม",
+            "type": "Adjective",
+            "example_en": "Dolphins are gregarious animals.",
+            "example_th": "โลมาเป็นสัตว์ที่ชอบอยู่รวมฝูง"
+        },
+        {
+            "en": "Hinder",
+            "phonetic": "ฮิน-เดอร์",
+            "th": "ขัดขวาง",
+            "type": "Verb",
+            "example_en": "Lack of funding will hinder the project.",
+            "example_th": "การขาดแคลนเงินทุนจะขัดขวางโครงการ"
+        },
+        {
+            "en": "Innate",
+            "phonetic": "อิน-เนท",
+            "th": "โดยกำเนิด",
+            "type": "Adjective",
+            "example_en": "Birds have an innate ability to fly.",
+            "example_th": "นกมีความสามารถในการบินโดยกำเนิด"
+        },
+        {
+            "en": "Juxtapose",
+            "phonetic": "จัค-สตา-โพส",
+            "th": "วางเคียงกันเพื่อเปรียบเทียบ",
+            "type": "Verb",
+            "example_en": "The artist juxtaposes bright colors with dark ones.",
+            "example_th": "ศิลปินนำสีสว่างมาวางคู่กับสีเข้มเพื่อเปรียบเทียบ"
+        },
+        {
+            "en": "Lethal",
+            "phonetic": "ลี-ธัล",
+            "th": "ถึงตาย",
+            "type": "Adjective",
+            "example_en": "The snake has a lethal bite.",
+            "example_th": "งูตัวนี้มีพิษกัดถึงตาย"
+        },
+        {
+            "en": "Meticulous",
+            "phonetic": "เม-ทิค-คิว-ลัส",
+            "th": "พิถีพิถัน",
+            "type": "Adjective",
+            "example_en": "He is very meticulous about his work.",
+            "example_th": "เขาพิถีพิถันกับการทำงานมาก"
+        },
+        {
+            "en": "Nomad",
+            "phonetic": "โน-แมด",
+            "th": "คนพเนจร",
+            "type": "Noun",
+            "example_en": "Nomads move from place to place.",
+            "example_th": "คนเร่ร่อนย้ายจากที่หนึ่งไปยังอีกที่หนึ่ง"
+        },
+        {
+            "en": "Obsolete",
+            "phonetic": "ออบ-โซ-ลีท",
+            "th": "ล้าสมัย",
+            "type": "Adjective",
+            "example_en": "Typewriters are largely obsolete.",
+            "example_th": "เครื่องพิมพ์ดีดส่วนใหญ่ล้าสมัยแล้ว"
+        },
+        {
+            "en": "Paradox",
+            "phonetic": "พา-รา-ดอกซ์",
+            "th": "ความขัดแย้งในตัวเอง",
+            "type": "Noun",
+            "example_en": "It is a paradox that technology makes us more isolated.",
+            "example_th": "เป็นเรื่องย้อนแย้งที่เทคโนโลยีทำให้เราโดดเดี่ยวมากขึ้น"
+        },
+        {
+            "en": "Qualitative",
+            "phonetic": "ควอล-ลิ-เท-ทิฟ",
+            "th": "เชิงคุณภาพ",
+            "type": "Adjective",
+            "example_en": "We need a qualitative analysis of the data.",
+            "example_th": "เราต้องการการวิเคราะห์ข้อมูลในเชิงคุณภาพ"
+        },
+        {
+            "en": "Redundant",
+            "phonetic": "รี-ดัน-ดันท์",
+            "th": "ซ้ำซ้อน",
+            "type": "Adjective",
+            "example_en": "The second paragraph is redundant.",
+            "example_th": "ย่อหน้าที่สองมีความซ้ำซ้อน"
+        },
+        {
+            "en": "Skeptical",
+            "phonetic": "สเคป-ติ-คัล",
+            "th": "สงสัย/ไม่เชื่อ",
+            "type": "Adjective",
+            "example_en": "I am skeptical of his claims.",
+            "example_th": "ฉันยังคงคลางแคลงใจในคำกล่าวอ้างของเขา"
+        },
+        {
+            "en": "Tangible",
+            "phonetic": "แทน-จิ-เบิล",
+            "th": "จับต้องได้/ชัดเจน",
+            "type": "Adjective",
+            "example_en": "We need tangible evidence.",
+            "example_th": "เราต้องการหลักฐานที่จับต้องได้"
+        },
+        {
+            "en": "Ubiquitous",
+            "phonetic": "ยู-บิค-ควิ-ตัส",
+            "th": "มีอยู่ทุกหนทุกแห่ง",
+            "type": "Adjective",
+            "example_en": "Mobile phones are ubiquitous today.",
+            "example_th": "โทรศัพท์มือถือมีอยู่ทุกหนทุกแห่งในปัจจุบัน"
+        },
+        {
+            "en": "Vacillate",
+            "phonetic": "วา-ซิล-เลท",
+            "th": "ลังเล",
+            "type": "Verb",
+            "example_en": "He vacillated between two choices.",
+            "example_th": "เขาลังเลระหว่างสองตัวเลือก"
+        },
+        {
+            "en": "Warrant",
+            "phonetic": "วอ-แรนท์",
+            "th": "รับรอง/เป็นเหตุผลสมควร",
+            "type": "Verb",
+            "example_en": "The evidence does not warrant a trial.",
+            "example_th": "หลักฐานไม่มีน้ำหนักพอที่จะนำไปสู่การพิจารณาคดี"
+        },
+        {
+            "en": "Alleviate",
+            "phonetic": "อัล-ลี-วิ-เอท",
+            "th": "บรรเทา",
+            "type": "Verb",
+            "example_en": "The medicine will alleviate your pain.",
+            "example_th": "ยาจะช่วยบรรเทาอาการปวดของคุณ"
+        },
+        {
+            "en": "Benevolent",
+            "phonetic": "บิ-เนฟ-โว-เลนท์",
+            "th": "เมตตา",
+            "type": "Adjective",
+            "example_en": "He was a benevolent leader.",
+            "example_th": "เขาเป็นผู้นำที่มีความเมตตา"
+        },
+        {
+            "en": "Candid",
+            "phonetic": "แคน-ดิด",
+            "th": "ตรงไปตรงมา",
+            "type": "Adjective",
+            "example_en": "She gave a candid interview.",
+            "example_th": "เธอให้สัมภาษณ์อย่างตรงไปตรงมา"
+        },
+        {
+            "en": "Deter",
+            "phonetic": "ดี-เทอร์",
+            "th": "ขัดขวาง/ยับยั้ง",
+            "type": "Verb",
+            "example_en": "High prices will deter buyers.",
+            "example_th": "ราคาสูงจะขัดขวางผู้ซื้อ"
+        },
+        {
+            "en": "Elucidate",
+            "phonetic": "อิล-ลู-ซิ-เดท",
+            "th": "อธิบายให้กระจ่าง",
+            "type": "Verb",
+            "example_en": "Please elucidate your point further.",
+            "example_th": "โปรดอธิบายประเด็นของคุณให้กระจ่างยิ่งขึ้น"
+        },
+        {
+            "en": "Frivolous",
+            "phonetic": "ฟริ-โว-ลัส",
+            "th": "ไม่เอาจริงเอาจัง/ไร้สาระ",
+            "type": "Adjective",
+            "example_en": "Do not waste time on frivolous lawsuits.",
+            "example_th": "อย่าเสียเวลากับคดีฟ้องร้องที่ไร้สาระ"
+        },
+        {
+            "en": "Gullible",
+            "phonetic": "กัล-ลิ-เบิล",
+            "th": "หลอกง่าย",
+            "type": "Adjective",
+            "example_en": "The gullible tourists paid too much.",
+            "example_th": "นักท่องเที่ยวที่หลอกง่ายจ่ายเงินแพงเกินไป"
+        },
+        {
+            "en": "Homogeneous",
+            "phonetic": "โฮ-โม-จี-เนียส",
+            "th": "เป็นเนื้อเดียวกัน",
+            "type": "Adjective",
+            "example_en": "Japan is a largely homogeneous society.",
+            "example_th": "ญี่ปุ่นเป็นสังคมที่มีความกลมกลืนเป็นเนื้อเดียวกันสูง"
+        },
+        {
+            "en": "Impending",
+            "phonetic": "อิม-เพน-ดิง",
+            "th": "ใกล้เข้ามา",
+            "type": "Adjective",
+            "example_en": "They braced for the impending storm.",
+            "example_th": "พวกเขาเตรียมพร้อมรับมือพายุที่กำลังใกล้เข้ามา"
+        },
+        {
+            "en": "Jeopardize",
+            "phonetic": "เจพ-พาร์-ไดซ์",
+            "th": "เป็นอันตรายต่อ",
+            "type": "Verb",
+            "example_en": "His actions could jeopardize the mission.",
+            "example_th": "การกระทำของเขาอาจทำให้ภารกิจตกอยู่ในอันตรายได้"
+        },
+        {
+            "en": "Lucrative",
+            "phonetic": "ลู-ครา-ทิฟ",
+            "th": "ทำกำไรได้ดี",
+            "type": "Adjective",
+            "example_en": "Real estate can be a lucrative business.",
+            "example_th": "อสังหาริมทรัพย์สามารถเป็นธุรกิจที่ทำกำไรได้ดี"
+        },
+        {
+            "en": "Mitigate",
+            "phonetic": "มิท-ทิ-เกท",
+            "th": "บรรเทา(ความรุนแรง)",
+            "type": "Verb",
+            "example_en": "We must take steps to mitigate the risks.",
+            "example_th": "เราต้องดำเนินการเพื่อบรรเทาความเสี่ยง"
+        },
+        {
+            "en": "Nostalgia",
+            "phonetic": "นอส-ตัล-เจีย",
+            "th": "ความหวนหาอดีต",
+            "type": "Noun",
+            "example_en": "Listening to that song brings back nostalgia.",
+            "example_th": "การฟังเพลงนั้นทำให้รู้สึกคิดถึงอดีต"
+        },
+        {
+            "en": "Opaque",
+            "phonetic": "โอ-เพค",
+            "th": "ทึบแสง/เข้าใจยาก",
+            "type": "Adjective",
+            "example_en": "The glass is opaque, so you cannot see through it.",
+            "example_th": "กระจกนั้นทึบแสง คุณจึงไม่สามารถมองทะลุผ่านได้"
+        },
+        {
+            "en": "Pragmatic",
+            "phonetic": "แพรก-แมท-ติค",
+            "th": "เน้นการปฏิบัติจริง",
+            "type": "Adjective",
+            "example_en": "We need a pragmatic solution to this problem.",
+            "example_th": "เราต้องการวิธีการแก้ปัญหานี้ในเชิงปฏิบัติ"
+        },
+        {
+            "en": "Quaint",
+            "phonetic": "เควนท์",
+            "th": "น่ารักแบบโบราณ",
+            "type": "Adjective",
+            "example_en": "They visited a quaint little village.",
+            "example_th": "พวกเขาไปเยี่ยมชมหมู่บ้านเล็กๆ ที่ดูแปลกตาน่ารัก"
+        },
+        {
+            "en": "Resilient_alt",
+            "phonetic": "รี-ซิล-เลียนท์",
+            "th": "ฟื้นตัวได้เร็ว/ยืดหยุ่น",
+            "type": "Adjective",
+            "example_en": "The economy has proven to be resilient.",
+            "example_th": "เศรษฐกิจได้พิสูจน์ให้เห็นแล้วว่ามีความยืดหยุ่น"
+        },
+        {
+            "en": "Scrutinize",
+            "phonetic": "สครู-ทิ-ไนซ์",
+            "th": "พิจารณาอย่างละเอียด",
+            "type": "Verb",
+            "example_en": "The committee will scrutinize the documents.",
+            "example_th": "คณะกรรมการจะตรวจสอบเอกสารอย่างละเอียด"
+        },
+        {
+            "en": "Tenacious",
+            "phonetic": "เท-เน-เชียส",
+            "th": "ดื้อดึง/เหนียวแน่น",
+            "type": "Adjective",
+            "example_en": "She is a tenacious advocate for animal rights.",
+            "example_th": "เธอเป็นผู้สนับสนุนสิทธิสัตว์อย่างเหนียวแน่น"
+        },
+        {
+            "en": "Unambiguous",
+            "phonetic": "อัน-แอม-บิก-กิว-อัส",
+            "th": "ชัดเจน/ไม่กำกวม",
+            "type": "Adjective",
+            "example_en": "The rules are unambiguous.",
+            "example_th": "กฎระเบียบมีความชัดเจนไม่กำกวม"
+        },
+        {
+            "en": "Vindicate",
+            "phonetic": "วิน-ดิ-เคท",
+            "th": "พิสูจน์ความบริสุทธิ์",
+            "type": "Verb",
+            "example_en": "The DNA evidence vindicated him.",
+            "example_th": "หลักฐานดีเอ็นเอพิสูจน์ความบริสุทธิ์ของเขา"
+        },
+        {
+            "en": "Abundant_alt",
+            "phonetic": "อะ-บัน-ดันท์",
+            "th": "มากมายอุดมสมบูรณ์",
+            "type": "Adjective",
+            "example_en": "There is an abundant supply of fresh water.",
+            "example_th": "มีแหล่งน้ำจืดที่อุดมสมบูรณ์"
+        },
+        {
+            "en": "Coherent",
+            "phonetic": "โค-เฮีย-เรนท์",
+            "th": "สอดคล้องกัน/มีเหตุผล",
+            "type": "Adjective",
+            "example_en": "His explanation was not coherent.",
+            "example_th": "คำอธิบายของเขาไม่สอดคล้องและไม่มีเหตุผล"
+        },
+        {
+            "en": "Didactic",
+            "phonetic": "ได-แดค-ติค",
+            "th": "สั่งสอน",
+            "type": "Adjective",
+            "example_en": "The story has a didactic purpose.",
+            "example_th": "เรื่องราวมีจุดประสงค์เพื่อสั่งสอน"
+        },
+        {
+            "en": "Ephemeral",
+            "phonetic": "อิ-เฟม-เมอ-รัล",
+            "th": "อยู่ได้ไม่นาน/ชั่วคราว",
+            "type": "Adjective",
+            "example_en": "Fame is often ephemeral.",
+            "example_th": "ชื่อเสียงมักจะอยู่ได้ไม่นาน"
+        },
+        {
+            "en": "Fortuitous",
+            "phonetic": "ฟอร์-ทิว-อิ-ตัส",
+            "th": "บังเอิญ(ในทางดี)",
+            "type": "Adjective",
+            "example_en": "Their meeting was entirely fortuitous.",
+            "example_th": "การพบกันของพวกเขาเป็นเรื่องบังเอิญอย่างแท้จริง"
+        },
+        {
+            "en": "Hackneyed",
+            "phonetic": "แฮค-นีด",
+            "th": "ซ้ำซากจำเจ",
+            "type": "Adjective",
+            "example_en": "The movie plot was somewhat hackneyed.",
+            "example_th": "โครงเรื่องของภาพยนตร์ค่อนข้างจำเจ"
+        },
+        {
+            "en": "Impetuous",
+            "phonetic": "อิม-เพท-ชู-อัส",
+            "th": "ใจร้อน/หุนหันพลันแล่น",
+            "type": "Adjective",
+            "example_en": "He is an impetuous young man.",
+            "example_th": "เขาเป็นชายหนุ่มที่ใจร้อน"
+        }
+    ],
+    "toefl_speaking": [
+        {
+            "en": "Opinion",
+            "phonetic": "โอ-พิน-เยียน",
+            "th": "ความคิดเห็น",
+            "type": "Noun",
+            "example_en": "In my opinion, learning English is essential.",
+            "example_th": "ในความคิดเห็นของฉัน การเรียนภาษาอังกฤษเป็นสิ่งจำเป็น"
+        },
+        {
+            "en": "Reason",
+            "phonetic": "รี-ซัน",
+            "th": "เหตุผล",
+            "type": "Noun",
+            "example_en": "The main reason I chose this topic is its relevance.",
+            "example_th": "เหตุผลหลักที่ฉันเลือกหัวข้อนี้คือความเกี่ยวข้องของมัน"
+        },
+        {
+            "en": "Example",
+            "phonetic": "เอ็กซ์-แซม-เปิล",
+            "th": "ตัวอย่าง",
+            "type": "Noun",
+            "example_en": "For example, many students struggle with time management.",
+            "example_th": "ตัวอย่างเช่น นักเรียนหลายคนประสบปัญหาในการบริหารเวลา"
+        },
+        {
+            "en": "Detail",
+            "phonetic": "ดี-เทล",
+            "th": "รายละเอียด",
+            "type": "Noun",
+            "example_en": "Let me explain this in more detail.",
+            "example_th": "ให้ฉันอธิบายรายละเอียดเพิ่มเติมเกี่ยวกับเรื่องนี้"
+        },
+        {
+            "en": "Compare",
+            "phonetic": "คอม-แพร์",
+            "th": "เปรียบเทียบ",
+            "type": "Verb",
+            "example_en": "If we compare city life and country life, there are many differences.",
+            "example_th": "ถ้าเราเปรียบเทียบชีวิตในเมืองกับชีวิตในชนบท จะมีความแตกต่างมากมาย"
+        },
+        {
+            "en": "Contrast",
+            "phonetic": "คอน-ทราสท์",
+            "th": "เปรียบเทียบความต่าง",
+            "type": "Verb",
+            "example_en": "In contrast to her sister, she is very outgoing.",
+            "example_th": "ในทางตรงกันข้ามกับน้องสาวของเธอ เธอเป็นคนเข้าสังคมเก่งมาก"
+        },
+        {
+            "en": "Advantage",
+            "phonetic": "แอด-แวน-เทจ",
+            "th": "ข้อดี",
+            "type": "Noun",
+            "example_en": "One major advantage of public transport is cost.",
+            "example_th": "ข้อดีหลักอย่างหนึ่งของระบบขนส่งสาธารณะคือเรื่องค่าใช้จ่าย"
+        },
+        {
+            "en": "Disadvantage",
+            "phonetic": "ดิส-แอด-แวน-เทจ",
+            "th": "ข้อเสีย",
+            "type": "Noun",
+            "example_en": "The main disadvantage is the lack of privacy.",
+            "example_th": "ข้อเสียหลักคือการขาดความเป็นส่วนตัว"
+        },
+        {
+            "en": "Solution",
+            "phonetic": "โซ-ลู-ชัน",
+            "th": "ทางออก/วิธีแก้ปัญหา",
+            "type": "Noun",
+            "example_en": "The best solution to pollution is using renewable energy.",
+            "example_th": "ทางออกที่ดีที่สุดสำหรับมลพิษคือการใช้พลังงานหมุนเวียน"
+        },
+        {
+            "en": "Problem",
+            "phonetic": "พร็อบ-เบลม",
+            "th": "ปัญหา",
+            "type": "Noun",
+            "example_en": "Traffic congestion is a serious problem in the city.",
+            "example_th": "ปัญหาการจราจรติดขัดเป็นปัญหาร้ายแรงในเมือง"
+        },
+        {
+            "en": "Describe",
+            "phonetic": "ดิ-สไครบ์",
+            "th": "บรรยาย",
+            "type": "Verb",
+            "example_en": "Could you describe your favorite book?",
+            "example_th": "คุณช่วยบรรยายหนังสือเล่มโปรดของคุณได้ไหม?"
+        },
+        {
+            "en": "State",
+            "phonetic": "สเตท",
+            "th": "กล่าว",
+            "type": "Verb",
+            "example_en": "I would like to state that I completely agree.",
+            "example_th": "ฉันอยากจะกล่าวว่าฉันเห็นด้วยอย่างยิ่ง"
+        },
+        {
+            "en": "Mention",
+            "phonetic": "เมน-ชัน",
+            "th": "กล่าวถึง",
+            "type": "Verb",
+            "example_en": "As the speaker mentioned earlier, teamwork is key.",
+            "example_th": "ดังที่ผู้บรรยายได้กล่าวไว้ก่อนหน้านี้ การทำงานเป็นทีมคือกุญแจสำคัญ"
+        },
+        {
+            "en": "Argue",
+            "phonetic": "อาร์-กิว",
+            "th": "โต้แย้ง",
+            "type": "Verb",
+            "example_en": "Some people argue that technology isolates us.",
+            "example_th": "บางคนโต้แย้งว่าเทคโนโลยีทำให้เราโดดเดี่ยว"
+        },
+        {
+            "en": "Support",
+            "phonetic": "ซัพ-พอร์ต",
+            "th": "สนับสนุน",
+            "type": "Verb",
+            "example_en": "I want to provide an example to support my claim.",
+            "example_th": "ฉันต้องการยกตัวอย่างเพื่อสนับสนุนข้อกล่าวอ้างของฉัน"
+        },
+        {
+            "en": "Oppose",
+            "phonetic": "ออป-โพส",
+            "th": "คัดค้าน",
+            "type": "Verb",
+            "example_en": "Many citizens oppose the construction of the factory.",
+            "example_th": "ประชาชนจำนวนมากคัดค้านการก่อสร้างโรงงานแห่งนี้"
+        },
+        {
+            "en": "Believe",
+            "phonetic": "บิ-ลีฟ",
+            "th": "เชื่อว่า",
+            "type": "Verb",
+            "example_en": "I strongly believe that education changes lives.",
+            "example_th": "ฉันเชื่ออย่างยิ่งว่าการศึกษาเปลี่ยนแปลงชีวิตได้"
+        },
+        {
+            "en": "Consider",
+            "phonetic": "คอน-ซิ-เดอร์",
+            "th": "พิจารณา",
+            "type": "Verb",
+            "example_en": "We must consider the environmental impacts.",
+            "example_th": "เราต้องพิจารณาถึงผลกระทบต่อสิ่งแวดล้อม"
+        },
+        {
+            "en": "Prefer",
+            "phonetic": "พรี-เฟอร์",
+            "th": "ชอบมากกว่า",
+            "type": "Verb",
+            "example_en": "I prefer working independently over group work.",
+            "example_th": "ฉันชอบทำงานอิสระมากกว่าการทำงานกลุ่ม"
+        },
+        {
+            "en": "Emphasize",
+            "phonetic": "เอ็ม-ฟะ-ไซซ์",
+            "th": "เน้นย้ำ",
+            "type": "Verb",
+            "example_en": "I want to emphasize the importance of sleep.",
+            "example_th": "ฉันต้องการเน้นย้ำถึงความสำคัญของการนอนหลับ"
+        },
+        {
+            "en": "Furthermore",
+            "phonetic": "เฟอร์-เธอร์-มอร์",
+            "th": "นอกจากนี้",
+            "type": "Adverb",
+            "example_en": "Furthermore, the cost is relatively low.",
+            "example_th": "นอกจากนี้ ค่าใช้จ่ายยังค่อนข้างต่ำอีกด้วย"
+        },
+        {
+            "en": "Moreover",
+            "phonetic": "มอร์-โอ-เวอร์",
+            "th": "ยิ่งไปกว่านั้น",
+            "type": "Adverb",
+            "example_en": "Moreover, it is an environmentally friendly option.",
+            "example_th": "ยิ่งไปกว่านั้น มันยังเป็นทางเลือกที่เป็นมิตรต่อสิ่งแวดล้อม"
+        },
+        {
+            "en": "Consequently",
+            "phonetic": "คอน-ซิ-เควนท์-ลี",
+            "th": "ผลที่ตามมาคือ",
+            "type": "Adverb",
+            "example_en": "Consequently, many species are endangered.",
+            "example_th": "ผลที่ตามมาคือ หลายสายพันธุ์กำลังใกล้สูญพันธุ์"
+        },
+        {
+            "en": "Nevertheless",
+            "phonetic": "เน-เวอร์-เธอะ-เลส",
+            "th": "อย่างไรก็ตาม",
+            "type": "Adverb",
+            "example_en": "Nevertheless, we must continue our efforts.",
+            "example_th": "อย่างไรก็ตาม เราต้องพยายามต่อไป"
+        },
+        {
+            "en": "Illustrate",
+            "phonetic": "อิล-ลัส-เตรท",
+            "th": "อธิบายด้วยภาพประกอบ",
+            "type": "Verb",
+            "example_en": "To illustrate, consider the following example.",
+            "example_th": "เพื่อเป็นภาพประกอบ ให้พิจารณาตัวอย่างต่อไปนี้"
+        },
+        {
+            "en": "Significant",
+            "phonetic": "ซิก-นิฟ-ฟิ-แคนท์",
+            "th": "สำคัญ",
+            "type": "Adjective",
+            "example_en": "This is a significant factor in our decision.",
+            "example_th": "นี่เป็นปัจจัยสำคัญในการตัดสินใจของเรา"
+        },
+        {
+            "en": "Essentially",
+            "phonetic": "เอส-เซน-เชียล-ลี",
+            "th": "โดยพื้นฐานแล้ว",
+            "type": "Adverb",
+            "example_en": "Essentially, it boils down to two options.",
+            "example_th": "โดยพื้นฐานแล้ว มันสรุปได้สองทางเลือก"
+        },
+        {
+            "en": "Perspective",
+            "phonetic": "เพอร์-สเปค-ทิฟ",
+            "th": "มุมมอง",
+            "type": "Noun",
+            "example_en": "From a global perspective, this is a crisis.",
+            "example_th": "จากมุมมองระดับโลก นี่คือวิกฤต"
+        },
+        {
+            "en": "Alternative",
+            "phonetic": "ออล-เทอร์-เน-ทิฟ",
+            "th": "ทางเลือก",
+            "type": "Noun/Adjective",
+            "example_en": "We need to find an alternative energy source.",
+            "example_th": "เราจำเป็นต้องหาแหล่งพลังงานทางเลือก"
+        },
+        {
+            "en": "Accurate",
+            "phonetic": "แอค-คิว-เรท",
+            "th": "ถูกต้องแม่นยำ",
+            "type": "Adjective",
+            "example_en": "The weather forecast is not always accurate.",
+            "example_th": "พยากรณ์อากาศไม่ได้แม่นยำเสมอไป"
+        },
+        {
+            "en": "Brief",
+            "phonetic": "บรีฟ",
+            "th": "สั้นๆ",
+            "type": "Adjective",
+            "example_en": "Let me give a brief summary.",
+            "example_th": "ให้ฉันสรุปสั้นๆ"
+        },
+        {
+            "en": "Challenge",
+            "phonetic": "แชล-เลนจ์",
+            "th": "ความท้าทาย",
+            "type": "Noun/Verb",
+            "example_en": "Learning a new language is a challenge.",
+            "example_th": "การเรียนรู้ภาษาใหม่เป็นความท้าทาย"
+        },
+        {
+            "en": "Contrast_alt",
+            "phonetic": "คอน-ทราสท์",
+            "th": "ความแตกต่าง/เปรียบเทียบ",
+            "type": "Noun/Verb",
+            "example_en": "In contrast to her sister, she is tall.",
+            "example_th": "ในทางตรงกันข้ามกับน้องสาวของเธอ เธอตัวสูง"
+        },
+        {
+            "en": "Convince",
+            "phonetic": "คอน-วินซ์",
+            "th": "โน้มน้าวใจ",
+            "type": "Verb",
+            "example_en": "I tried to convince him to stay.",
+            "example_th": "ฉันพยายามโน้มน้าวให้เขาอยู่ต่อ"
+        },
+        {
+            "en": "Define",
+            "phonetic": "ดี-ไฟน์",
+            "th": "ให้คำจำกัดความ",
+            "type": "Verb",
+            "example_en": "How would you define happiness?",
+            "example_th": "คุณให้คำจำกัดความของความสุขว่าอย่างไร?"
+        },
+        {
+            "en": "Illustrate_alt",
+            "phonetic": "อิล-ลัส-เตรท",
+            "th": "อธิบายด้วยภาพ/ตัวอย่าง",
+            "type": "Verb",
+            "example_en": "To illustrate this point, let me show a graph.",
+            "example_th": "เพื่ออธิบายประเด็นนี้ ขออนุญาตแสดงกราฟ"
+        },
+        {
+            "en": "Impact",
+            "phonetic": "อิม-แพคท์",
+            "th": "ผลกระทบ",
+            "type": "Noun/Verb",
+            "example_en": "Technology has a huge impact on society.",
+            "example_th": "เทคโนโลยีมีผลกระทบอย่างมากต่อสังคม"
+        },
+        {
+            "en": "Issues",
+            "phonetic": "อิช-ชิวส์",
+            "th": "ประเด็น/ปัญหา",
+            "type": "Noun",
+            "example_en": "We discussed several environmental issues.",
+            "example_th": "เราได้หารือเกี่ยวกับปัญหาสิ่งแวดล้อมหลายประการ"
+        },
+        {
+            "en": "Obvious",
+            "phonetic": "ออบ-เวียส",
+            "th": "ชัดเจน",
+            "type": "Adjective",
+            "example_en": "It is obvious that he is lying.",
+            "example_th": "เห็นได้ชัดว่าเขากำลังโกหก"
+        },
+        {
+            "en": "Point",
+            "phonetic": "พอยท์",
+            "th": "ประเด็น/ชี้",
+            "type": "Noun/Verb",
+            "example_en": "That is a very good point.",
+            "example_th": "นั่นเป็นประเด็นที่ดีมาก"
+        },
+        {
+            "en": "Predict",
+            "phonetic": "พรี-ดิคท์",
+            "th": "ทำนาย",
+            "type": "Verb",
+            "example_en": "Experts predict an economic recovery.",
+            "example_th": "ผู้เชี่ยวชาญทำนายว่าเศรษฐกิจจะฟื้นตัว"
+        },
+        {
+            "en": "Primary",
+            "phonetic": "ไพร-มา-รี",
+            "th": "หลัก/เบื้องต้น",
+            "type": "Adjective",
+            "example_en": "My primary concern is safety.",
+            "example_th": "ความกังวลหลักของฉันคือความปลอดภัย"
+        },
+        {
+            "en": "Relate",
+            "phonetic": "รี-เลท",
+            "th": "เกี่ยวข้อง/เชื่อมโยง",
+            "type": "Verb",
+            "example_en": "These two events are closely related.",
+            "example_th": "เหตุการณ์สองเหตุการณ์นี้มีความเกี่ยวข้องกันอย่างใกล้ชิด"
+        },
+        {
+            "en": "Respond",
+            "phonetic": "รี-สปอนด์",
+            "th": "ตอบสนอง",
+            "type": "Verb",
+            "example_en": "How did she respond to the news?",
+            "example_th": "เธอตอบสนองต่อข่าวนี้อย่างไร?"
+        },
+        {
+            "en": "Role",
+            "phonetic": "โรล",
+            "th": "บทบาท",
+            "type": "Noun",
+            "example_en": "Diet plays a major role in health.",
+            "example_th": "อาหารมีบทบาทสำคัญต่อสุขภาพ"
+        },
+        {
+            "en": "Similar",
+            "phonetic": "ซิม-มิ-ลาร์",
+            "th": "คล้ายกัน",
+            "type": "Adjective",
+            "example_en": "Our views on this issue are similar.",
+            "example_th": "มุมมองของเราเกี่ยวกับประเด็นนี้คล้ายกัน"
+        },
+        {
+            "en": "Specific",
+            "phonetic": "สเป-ซิฟ-ฟิค",
+            "th": "เฉพาะเจาะจง",
+            "type": "Adjective",
+            "example_en": "I have a specific question about the assignment.",
+            "example_th": "ฉันมีคำถามเฉพาะเจาะจงเกี่ยวกับงานที่ได้รับมอบหมาย"
+        },
+        {
+            "en": "Structure",
+            "phonetic": "สตรัค-เจอร์",
+            "th": "โครงสร้าง",
+            "type": "Noun/Verb",
+            "example_en": "The essay has a clear structure.",
+            "example_th": "เรียงความมีโครงสร้างที่ชัดเจน"
+        },
+        {
+            "en": "Topic",
+            "phonetic": "ทอป-ปิค",
+            "th": "หัวข้อ",
+            "type": "Noun",
+            "example_en": "The topic of today's lecture is biology.",
+            "example_th": "หัวข้อการบรรยายในวันนี้คือชีววิทยา"
+        },
+        {
+            "en": "Acknowledge",
+            "phonetic": "แอค-นอล-เลจ",
+            "th": "ยอมรับ",
+            "type": "Verb",
+            "example_en": "I acknowledge that I made a mistake.",
+            "example_th": "ฉันยอมรับว่าฉันทำผิดพลาด"
+        },
+        {
+            "en": "Argue_alt",
+            "phonetic": "อาร์-กิว",
+            "th": "โต้แย้ง",
+            "type": "Verb",
+            "example_en": "Some argue that homework is unnecessary.",
+            "example_th": "บางคนโต้แย้งว่าการบ้านเป็นสิ่งที่ไม่จำเป็น"
+        },
+        {
+            "en": "Assume",
+            "phonetic": "แอส-ซูม",
+            "th": "สันนิษฐาน",
+            "type": "Verb",
+            "example_en": "Do not assume everything you read is true.",
+            "example_th": "อย่าทึกทักเอาว่าทุกสิ่งที่คุณอ่านเป็นความจริง"
+        },
+        {
+            "en": "Claim",
+            "phonetic": "เคลม",
+            "th": "กล่าวอ้าง",
+            "type": "Verb/Noun",
+            "example_en": "The author claims that technology harms us.",
+            "example_th": "ผู้เขียนอ้างว่าเทคโนโลยีเป็นอันตรายต่อเรา"
+        },
+        {
+            "en": "Conclude",
+            "phonetic": "คอน-คลูด",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "I would like to conclude by saying...",
+            "example_th": "ฉันขอสรุปโดยกล่าวว่า..."
+        },
+        {
+            "en": "Criticize",
+            "phonetic": "คริ-ติ-ไซซ์",
+            "th": "วิจารณ์",
+            "type": "Verb",
+            "example_en": "Many people criticize the government's policy.",
+            "example_th": "ผู้คนจำนวนมากวิพากษ์วิจารณ์นโยบายของรัฐบาล"
+        },
+        {
+            "en": "Defend",
+            "phonetic": "ดี-เฟนด์",
+            "th": "ปกป้อง/แก้ต่าง",
+            "type": "Verb",
+            "example_en": "She had to defend her thesis.",
+            "example_th": "เธอต้องปกป้องวิทยานิพนธ์ของเธอ"
+        },
+        {
+            "en": "Discuss",
+            "phonetic": "ดิส-คัส",
+            "th": "อภิปราย",
+            "type": "Verb",
+            "example_en": "We will discuss the pros and cons.",
+            "example_th": "เราจะหารือเกี่ยวกับข้อดีและข้อเสีย"
+        },
+        {
+            "en": "Emphasize_alt",
+            "phonetic": "เอ็ม-ฟะ-ไซซ์",
+            "th": "เน้นย้ำ",
+            "type": "Verb",
+            "example_en": "I want to emphasize the importance of education.",
+            "example_th": "ฉันต้องการเน้นย้ำถึงความสำคัญของการศึกษา"
+        },
+        {
+            "en": "Examine",
+            "phonetic": "เอ็ก-แซม-มิน",
+            "th": "ตรวจสอบ/พิจารณา",
+            "type": "Verb",
+            "example_en": "Let us examine the facts.",
+            "example_th": "เรามาตรวจสอบข้อเท็จจริงกันเถอะ"
+        },
+        {
+            "en": "Explain",
+            "phonetic": "เอ็กซ์-เพลน",
+            "th": "อธิบาย",
+            "type": "Verb",
+            "example_en": "Can you explain why you disagree?",
+            "example_th": "คุณช่วยอธิบายได้ไหมว่าทำไมคุณถึงไม่เห็นด้วย?"
+        },
+        {
+            "en": "Highlight",
+            "phonetic": "ไฮ-ไลท์",
+            "th": "เน้นให้เห็นเด่นชัด",
+            "type": "Verb",
+            "example_en": "The report highlights the key issues.",
+            "example_th": "รายงานเน้นย้ำถึงประเด็นสำคัญ"
+        },
+        {
+            "en": "Illustrate_alt",
+            "phonetic": "อิล-ลัส-เตรท",
+            "th": "ยกตัวอย่างประกอบ",
+            "type": "Verb",
+            "example_en": "I will illustrate my point with an example.",
+            "example_th": "ฉันจะยกตัวอย่างเพื่ออธิบายประเด็นของฉัน"
+        },
+        {
+            "en": "Interpret",
+            "phonetic": "อิน-เทอร์-พรีท",
+            "th": "ตีความ",
+            "type": "Verb",
+            "example_en": "How do you interpret this poem?",
+            "example_th": "คุณตีความบทกวีนี้อย่างไร?"
+        },
+        {
+            "en": "Justify",
+            "phonetic": "จัส-ติ-ไฟ",
+            "th": "แสดงเหตุผลสนับสนุน",
+            "type": "Verb",
+            "example_en": "You must justify your answer.",
+            "example_th": "คุณต้องให้เหตุผลประกอบคำตอบของคุณ"
+        },
+        {
+            "en": "Maintain",
+            "phonetic": "เมน-เทน",
+            "th": "ยืนกราน/รักษา",
+            "type": "Verb",
+            "example_en": "He maintains that he is innocent.",
+            "example_th": "เขายืนกรานว่าเขาเป็นผู้บริสุทธิ์"
+        },
+        {
+            "en": "Mention_alt",
+            "phonetic": "เมน-ชัน",
+            "th": "กล่าวถึง",
+            "type": "Verb",
+            "example_en": "Did I mention that I have a dog?",
+            "example_th": "ฉันเคยบอกหรือเปล่าว่าฉันมีสุนัข?"
+        },
+        {
+            "en": "Note",
+            "phonetic": "โน้ท",
+            "th": "สังเกต/กล่าวถึง",
+            "type": "Verb",
+            "example_en": "It is important to note that times have changed.",
+            "example_th": "สิ่งสำคัญคือต้องสังเกตว่ายุคสมัยเปลี่ยนไปแล้ว"
+        },
+        {
+            "en": "Observe",
+            "phonetic": "ออบ-เซิร์ฟ",
+            "th": "สังเกตเห็น/ให้ความเห็น",
+            "type": "Verb",
+            "example_en": "He observed that the sky was getting dark.",
+            "example_th": "เขาสังเกตเห็นว่าท้องฟ้าเริ่มมืดลง"
+        },
+        {
+            "en": "Persuade",
+            "phonetic": "เพอร์-สเวด",
+            "th": "โน้มน้าว",
+            "type": "Verb",
+            "example_en": "I am trying to persuade my parents.",
+            "example_th": "ฉันพยายามเกลี้ยกล่อมพ่อแม่ของฉัน"
+        },
+        {
+            "en": "Point out",
+            "phonetic": "พอยท์ เอาท์",
+            "th": "ชี้ให้เห็น",
+            "type": "Phrasal Verb",
+            "example_en": "I must point out a flaw in your argument.",
+            "example_th": "ฉันต้องชี้ให้เห็นข้อบกพร่องในข้อโต้แย้งของคุณ"
+        },
+        {
+            "en": "Propose",
+            "phonetic": "โปร-โพส",
+            "th": "เสนอ",
+            "type": "Verb",
+            "example_en": "I propose a new solution.",
+            "example_th": "ฉันขอเสนอวิธีแก้ปัญหาแบบใหม่"
+        },
+        {
+            "en": "Question",
+            "phonetic": "เควส-ชัน",
+            "th": "ตั้งคำถาม",
+            "type": "Verb",
+            "example_en": "I question the validity of this study.",
+            "example_th": "ฉันตั้งคำถามถึงความถูกต้องของการศึกษานี้"
+        },
+        {
+            "en": "Recognize",
+            "phonetic": "เรค-คอก-ไนซ์",
+            "th": "ตระหนัก/ยอมรับ",
+            "type": "Verb",
+            "example_en": "We must recognize the danger.",
+            "example_th": "เราต้องตระหนักถึงอันตราย"
+        },
+        {
+            "en": "Recommend",
+            "phonetic": "เรค-คอม-เมนด์",
+            "th": "แนะนำ",
+            "type": "Verb",
+            "example_en": "I strongly recommend reading this book.",
+            "example_th": "ฉันขอแนะนำอย่างยิ่งให้อ่านหนังสือเล่มนี้"
+        },
+        {
+            "en": "Refute",
+            "phonetic": "รี-ฟิวท์",
+            "th": "หักล้าง(ข้อโต้แย้ง)",
+            "type": "Verb",
+            "example_en": "He failed to refute the evidence.",
+            "example_th": "เขาล้มเหลวในการหักล้างหลักฐาน"
+        },
+        {
+            "en": "State_alt",
+            "phonetic": "สเตท",
+            "th": "กล่าวระบุ",
+            "type": "Verb",
+            "example_en": "The speaker stated his opinion clearly.",
+            "example_th": "ผู้พูดแสดงความคิดเห็นอย่างชัดเจน"
+        },
+        {
+            "en": "Suggest",
+            "phonetic": "ซัก-เจสท์",
+            "th": "เสนอแนะ",
+            "type": "Verb",
+            "example_en": "I suggest we take a different approach.",
+            "example_th": "ฉันเสนอให้เราใช้วิธีการที่ต่างออกไป"
+        },
+        {
+            "en": "Summarize",
+            "phonetic": "ซัม-มะ-ไรซ์",
+            "th": "สรุป",
+            "type": "Verb",
+            "example_en": "To summarize, this is a complex issue.",
+            "example_th": "โดยสรุปแล้ว นี่เป็นปัญหาที่ซับซ้อน"
+        },
+        {
+            "en": "Support_alt",
+            "phonetic": "ซัพ-พอร์ต",
+            "th": "สนับสนุน",
+            "type": "Verb",
+            "example_en": "Statistics support this claim.",
+            "example_th": "สถิติสนับสนุนคำกล่าวอ้างนี้"
+        },
+        {
+            "en": "Agree",
+            "phonetic": "อะ-กรี",
+            "th": "เห็นด้วย",
+            "type": "Verb",
+            "example_en": "I completely agree with the speaker.",
+            "example_th": "ฉันเห็นด้วยกับผู้พูดอย่างสมบูรณ์"
+        },
+        {
+            "en": "Disagree",
+            "phonetic": "ดิส-อะ-กรี",
+            "th": "ไม่เห็นด้วย",
+            "type": "Verb",
+            "example_en": "I strongly disagree with that statement.",
+            "example_th": "ฉันไม่เห็นด้วยอย่างยิ่งกับคำกล่าวนั้น"
+        },
+        {
+            "en": "Believe_alt",
+            "phonetic": "บิ-ลีฟ",
+            "th": "เชื่อว่า",
+            "type": "Verb",
+            "example_en": "I believe that early childhood education is vital.",
+            "example_th": "ฉันเชื่อว่าการศึกษาปฐมวัยเป็นสิ่งสำคัญ"
+        },
+        {
+            "en": "Consider_alt",
+            "phonetic": "คอน-ซิ-เดอร์",
+            "th": "พิจารณา",
+            "type": "Verb",
+            "example_en": "We should consider the long-term effects.",
+            "example_th": "เราควรพิจารณาถึงผลกระทบระยะยาว"
+        },
+        {
+            "en": "Compare_alt",
+            "phonetic": "คอม-แพร์",
+            "th": "เปรียบเทียบ",
+            "type": "Verb",
+            "example_en": "If we compare the two systems...",
+            "example_th": "ถ้าเราเปรียบเทียบทั้งสองระบบ..."
+        },
+        {
+            "en": "Contrast_alt",
+            "phonetic": "คอน-ทราสท์",
+            "th": "เปรียบเทียบความแตกต่าง",
+            "type": "Verb",
+            "example_en": "By contrast, the new method is faster.",
+            "example_th": "ในทางตรงกันข้าม วิธีการใหม่นั้นเร็วกว่า"
+        },
+        {
+            "en": "Elaborate",
+            "phonetic": "อี-แลบ-โบ-เรท",
+            "th": "อธิบายเพิ่มเติม",
+            "type": "Verb",
+            "example_en": "Could you elaborate on that point?",
+            "example_th": "คุณช่วยอธิบายประเด็นนั้นเพิ่มเติมได้ไหม?"
+        },
+        {
+            "en": "Specify",
+            "phonetic": "สเป-ซิ-ไฟ",
+            "th": "ระบุรายละเอียด",
+            "type": "Verb",
+            "example_en": "Please specify what you need.",
+            "example_th": "โปรดระบุรายละเอียดสิ่งที่คุณต้องการ"
+        },
+        {
+            "en": "Advocate",
+            "phonetic": "แอด-โว-เคท",
+            "th": "สนับสนุน/ทนาย",
+            "type": "Verb/Noun",
+            "example_en": "She advocates for environmental protection.",
+            "example_th": "เธอสนับสนุนการปกป้องสิ่งแวดล้อม"
+        },
+        {
+            "en": "Deny",
+            "phonetic": "ดี-นาย",
+            "th": "ปฏิเสธ",
+            "type": "Verb",
+            "example_en": "The company denies any wrongdoing.",
+            "example_th": "บริษัทปฏิเสธการกระทำผิดใดๆ"
+        },
+        {
+            "en": "Evaluate",
+            "phonetic": "อี-แวล-ลู-เอท",
+            "th": "ประเมิน",
+            "type": "Verb",
+            "example_en": "We need to evaluate the risks carefully.",
+            "example_th": "เราจำเป็นต้องประเมินความเสี่ยงอย่างรอบคอบ"
+        },
+        {
+            "en": "Forecast",
+            "phonetic": "ฟอร์-คาสท์",
+            "th": "พยากรณ์",
+            "type": "Verb",
+            "example_en": "They forecast an increase in population.",
+            "example_th": "พวกเขาคาดการณ์ว่าประชากรจะเพิ่มขึ้น"
+        },
+        {
+            "en": "Generalize",
+            "phonetic": "เจน-เนอ-รัล-ไลซ์",
+            "th": "กล่าวสรุปทั่วๆ ไป",
+            "type": "Verb",
+            "example_en": "It is unfair to generalize about all teenagers.",
+            "example_th": "มันไม่ยุติธรรมที่จะเหมารวมวัยรุ่นทั้งหมด"
+        },
+        {
+            "en": "Infer",
+            "phonetic": "อิน-เฟอร์",
+            "th": "อนุมาน",
+            "type": "Verb",
+            "example_en": "What can we infer from this passage?",
+            "example_th": "เราสามารถอนุมานอะไรได้จากข้อความนี้?"
+        },
+        {
+            "en": "Perceive",
+            "phonetic": "เพอร์-ซีฟ",
+            "th": "รับรู้/เข้าใจ",
+            "type": "Verb",
+            "example_en": "How do people perceive this brand?",
+            "example_th": "ผู้คนรับรู้ถึงแบรนด์นี้อย่างไร?"
+        },
+        {
+            "en": "Predict_alt",
+            "phonetic": "พรี-ดิคท์",
+            "th": "ทำนาย",
+            "type": "Verb",
+            "example_en": "No one can predict the future with certainty.",
+            "example_th": "ไม่มีใครสามารถทำนายอนาคตได้อย่างแน่นอน"
+        },
+        {
+            "en": "Reiterate",
+            "phonetic": "รี-อิท-เทอ-เรท",
+            "th": "กล่าวย้ำ",
+            "type": "Verb",
+            "example_en": "Let me reiterate my main point.",
+            "example_th": "ฉันขอกล่าวย้ำประเด็นหลักของฉันอีกครั้ง"
+        },
+        {
+            "en": "Stipulate",
+            "phonetic": "สติ-พิว-เลท",
+            "th": "ระบุเป็นเงื่อนไข",
+            "type": "Verb",
+            "example_en": "The contract stipulates a strict deadline.",
+            "example_th": "สัญญาระบุเงื่อนไขกำหนดเวลาที่เข้มงวด"
+        },
+        {
+            "en": "Validate",
+            "phonetic": "แวล-ลิ-เดท",
+            "th": "ทำให้มีผล/พิสูจน์ว่าจริง",
+            "type": "Verb",
+            "example_en": "This data validates our earlier findings.",
+            "example_th": "ข้อมูลนี้พิสูจน์ว่าผลการค้นพบก่อนหน้านี้ของเราเป็นความจริง"
+        },
+        {
+            "en": "Verify",
+            "phonetic": "เว-ริ-ไฟ",
+            "th": "ตรวจสอบความถูกต้อง",
+            "type": "Verb",
+            "example_en": "I need to verify this information first.",
+            "example_th": "ฉันต้องตรวจสอบข้อมูลนี้ก่อน"
+        }
+    ]
+}

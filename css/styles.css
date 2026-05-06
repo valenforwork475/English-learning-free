@@ -1021,6 +1021,45 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-1px);
 }
 
+/* Mobile Logout Icon Button */
+.mobile-logout-icon {
+    display: none; /* hidden on desktop */
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.mobile-logout-icon:hover, .mobile-logout-icon:active {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: var(--accent-red);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .mobile-logout-icon { display: flex; }
+
+    /* Make top-header position:relative so absolute btn works */
+    .top-header {
+        position: relative;
+        padding-right: 56px !important; /* space for logout icon */
+    }
+}
+
 /* Auth Slogan */
 .auth-slogan {
     font-size: 1.1rem;

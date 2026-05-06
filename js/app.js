@@ -1,8 +1,8 @@
 const UNLOCK_ALL_LEVELS = false; // เปิดสวิตช์นี้เป็น true เพื่อปลดล็อกทุกด่านให้เทสได้ทันที
 
-const supabaseUrl = 'https://gmlfvejipuaxobclitqr.supabase.co';
-const supabaseKey = 'sb_publishable_E3OGBazNKKWJ7QoqIZTQSQ_jNr_0Fjl';
-const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+const SUPABASE_URL = 'https://gmlfvejipuaxobclitqr.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_E3OGBazNKKWJ7QoqIZTQSQ_jNr_0Fjl';
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 const app = {
     currentView: 'dashboard',
@@ -26,7 +26,7 @@ const app = {
         this.setupPWA();
         
         try {
-            const { data: { session }, error } = await supabase.auth.getSession();
+            const { data: { session }, error } = await db.auth.getSession();
             if (error) throw error;
             
             const sidebar = document.querySelector('.sidebar');
@@ -76,7 +76,7 @@ const app = {
                 // แปลง Username เป็น Email ปลอมสำหรับส่งให้ Supabase
                 const fakeEmail = `${username}@eng.com`;
                 
-                const { data, error: err } = await supabase.auth.signInWithPassword({
+                const { data, error: err } = await db.auth.signInWithPassword({
                     email: fakeEmail,
                     password: pass,
                 });
@@ -111,7 +111,7 @@ const app = {
                 // แปลง Username เป็น Email ปลอมสำหรับส่งให้ Supabase
                 const fakeEmail = `${username}@eng.com`;
                 
-                const { data, error: err } = await supabase.auth.signUp({
+                const { data, error: err } = await db.auth.signUp({
                     email: fakeEmail,
                     password: pass,
                     options: {
@@ -143,7 +143,7 @@ const app = {
     },
 
     async logout() {
-        await supabase.auth.signOut();
+        await db.auth.signOut();
         document.querySelector('.sidebar').style.display = 'none';
         this.switchView('login');
     },
@@ -211,7 +211,7 @@ const app = {
     },
 
     async loadProgress() {
-        const { data: { user } } = await supabase.auth.getUser();
+        const { data: { user } } = await db.auth.getUser();
         if (user && user.user_metadata) {
             if (user.user_metadata.unlockedLevels) {
                 try { this.unlockedLevels = user.user_metadata.unlockedLevels; } catch (e) {}
@@ -225,9 +225,9 @@ const app = {
     async saveProgress() {
         this.updateStats();
         
-        const { data: { user } } = await supabase.auth.getUser();
+        const { data: { user } } = await db.auth.getUser();
         if (user) {
-            await supabase.auth.updateUser({
+            await db.auth.updateUser({
                 data: { 
                     unlockedLevels: this.unlockedLevels,
                     learnedWords: Array.from(this.learnedWords)

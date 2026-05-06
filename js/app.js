@@ -641,14 +641,51 @@ const app = {
             feedback.style.color = 'var(--accent-blue)';
         }
 
-        try {
-            recognition.start();
-        } catch(e) {
-            // กรณีที่กดปุ่มซ้ำเร็วเกินไป
-            btn.style.transform = 'scale(1)';
-            btn.style.backgroundColor = 'var(--primary)';
-            if (feedback) feedback.textContent = 'กดปุ่มไมโครโฟนเพื่อเริ่มพูด';
-            return;
+        // *** สำคัญมาก: บังคับให้ Android/PWA แสดง popup ขอสิทธิ์ไมโครโฟนก่อน ***
+        // SpeechRecognition.start() อย่างเดียวไม่ trigger dialog บน Android PWA
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then((stream) => {
+                    // ได้รับ Permission แล้ว → ปิด stream ทิ้ง แล้วเริ่ม recognition
+                    stream.getTracks().forEach(track => track.stop());
+                    try {
+                        recognition.start();
+                    } catch(e) {
+                        btn.style.transform = 'scale(1)';
+                        btn.style.backgroundColor = 'var(--primary)';
+                        if (feedback) feedback.textContent = 'กดปุ่มไมโครโฟนเพื่อเริ่มพูด';
+                    }
+                })
+                .catch((err) => {
+                    // ผู้ใช้กด "ปฏิเสธ" Permission
+                    btn.style.transform = 'scale(1)';
+                    btn.style.backgroundColor = 'var(--primary)';
+                    if (timerEl) timerEl.textContent = '';
+                    if (this._speakingTimer) {
+                        clearInterval(this._speakingTimer);
+                        this._speakingTimer = null;
+                    }
+                    if (feedback) {
+                        feedback.innerHTML = `
+                            <div style="background:#fee2e2;border:1px solid #fca5a5;border-radius:12px;padding:14px;font-size:0.9rem;color:#991b1b;line-height:1.8;">
+                                🚫 <strong>ไม่ได้รับอนุญาตให้ใช้ไมโครโฟน</strong><br>
+                                กรุณาทำตามขั้นตอนนี้:<br>
+                                1. กดปุ่ม <strong>⋮</strong> มุมขวาบนของ Chrome<br>
+                                2. เลือก <strong>การตั้งค่า → สิทธิ์ของเว็บไซต์</strong><br>
+                                3. เปิด <strong>ไมโครโฟน</strong> ให้เว็บนี้<br>
+                                หรือกด <strong>"เฉลยคำตอบ"</strong> เพื่อข้ามข้อนี้
+                            </div>`;
+                    }
+                });
+        } else {
+            // เบราว์เซอร์เก่า → ลอง start ตรงเลย
+            try {
+                recognition.start();
+            } catch(e) {
+                btn.style.transform = 'scale(1)';
+                btn.style.backgroundColor = 'var(--primary)';
+                if (feedback) feedback.textContent = 'กดปุ่มไมโครโฟนเพื่อเริ่มพูด';
+            }
         }
 
         recognition.onresult = (event) => {

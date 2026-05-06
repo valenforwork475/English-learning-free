@@ -17,12 +17,101 @@ const app = {
     },
 
     init() {
-        this.loadProgress();
-        this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
+        this.setupAuth();
         this.setupNavigation();
         this.setupPWA();
-        this.updateStats();
-        this.loadFlashcard(false);
+        
+        const currentUser = localStorage.getItem('currentUser');
+        if (!currentUser) {
+            this.switchView('login');
+            document.querySelector('.sidebar').style.display = 'none';
+        } else {
+            this.loadProgress();
+            this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
+            this.updateStats();
+            this.loadFlashcard(false);
+            this.updateGreeting(currentUser);
+        }
+    },
+
+    setupAuth() {
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+
+        if (loginForm) {
+            loginForm.onsubmit = (e) => {
+                e.preventDefault();
+                const user = document.getElementById('login-username').value.trim();
+                const pass = document.getElementById('login-password').value.trim();
+                const error = document.getElementById('login-error');
+                
+                const users = JSON.parse(localStorage.getItem('users') || '{}');
+                
+                if (users[user] && users[user] === pass) {
+                    localStorage.setItem('currentUser', user);
+                    error.style.display = 'none';
+                    loginForm.reset();
+                    
+                    document.querySelector('.sidebar').style.display = 'flex';
+                    this.init();
+                    this.switchView('dashboard');
+                } else {
+                    error.textContent = 'ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง';
+                    error.style.display = 'block';
+                }
+            };
+        }
+
+        if (registerForm) {
+            registerForm.onsubmit = (e) => {
+                e.preventDefault();
+                const user = document.getElementById('register-username').value.trim();
+                const pass = document.getElementById('register-password').value.trim();
+                const confirm = document.getElementById('register-confirm').value.trim();
+                const error = document.getElementById('register-error');
+                
+                if (pass !== confirm) {
+                    error.textContent = 'รหัสผ่านไม่ตรงกัน';
+                    error.style.display = 'block';
+                    return;
+                }
+                
+                const users = JSON.parse(localStorage.getItem('users') || '{}');
+                if (users[user]) {
+                    error.textContent = 'ชื่อผู้ใช้งานนี้มีคนใช้แล้ว';
+                    error.style.display = 'block';
+                    return;
+                }
+                
+                users[user] = pass;
+                localStorage.setItem('users', JSON.stringify(users));
+                localStorage.setItem('currentUser', user);
+                
+                error.style.display = 'none';
+                registerForm.reset();
+                
+                document.querySelector('.sidebar').style.display = 'flex';
+                this.init();
+                this.switchView('dashboard');
+            };
+        }
+    },
+
+    logout() {
+        localStorage.removeItem('currentUser');
+        document.querySelector('.sidebar').style.display = 'none';
+        this.switchView('login');
+    },
+
+    updateGreeting(username) {
+        const greetingText = document.getElementById('greeting-text');
+        const userNameSpan = document.querySelector('.user-name');
+        if (greetingText) {
+            greetingText.innerHTML = `สวัสดีคุณ, ${username}! 👋`;
+        }
+        if (userNameSpan) {
+            userNameSpan.textContent = username;
+        }
     },
 
     setupPWA() {

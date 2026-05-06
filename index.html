@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EngD - เรียนภาษาอังกฤษออนไลน์</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -34,7 +34,7 @@
             </ul>
 
             <div class="user-profile">
-                <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff" alt="User Profile">
+                <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff" id="user-avatar" alt="User Profile">
                 <div class="user-info">
                     <span class="user-name">นักเรียน</span>
                     <span class="user-level">ระดับพื้นฐาน</span>
@@ -58,15 +58,15 @@
                     <p>ยินดีต้อนรับกลับมา! พร้อมเรียนหรือยัง?</p>
                     <form id="login-form">
                         <div class="form-group">
-                            <label>ชื่อผู้ใช้งาน (Username)</label>
-                            <input type="text" id="login-username" required placeholder="ใส่ชื่อผู้ใช้งาน">
+                            <label>อีเมล (Email)</label>
+                            <input type="email" id="login-email" required placeholder="ใส่อีเมลของคุณ">
                         </div>
                         <div class="form-group">
                             <label>รหัสผ่าน</label>
                             <input type="password" id="login-password" required placeholder="ใส่รหัสผ่าน">
                         </div>
                         <p id="login-error" class="error-msg"></p>
-                        <button type="submit" class="auth-btn">เข้าสู่ระบบ</button>
+                        <button type="submit" class="auth-btn" id="login-btn">เข้าสู่ระบบ</button>
                     </form>
                     <p class="auth-switch">ยังไม่มีบัญชีใช่ไหม? <a href="#" onclick="app.switchView('register')">สมัครสมาชิกที่นี่</a></p>
                 </div>
@@ -76,22 +76,22 @@
                 <div class="auth-card">
                     <div class="auth-icon"><i class="fa-solid fa-user-plus"></i></div>
                     <h2>สมัครสมาชิกใหม่</h2>
-                    <p>สร้างบัญชีเพื่อบันทึกความคืบหน้าของคุณ</p>
+                    <p>เชื่อมต่อกับ Supabase</p>
                     <form id="register-form">
                         <div class="form-group">
-                            <label>ชื่อผู้ใช้งาน (Username)</label>
-                            <input type="text" id="register-username" required placeholder="ตั้งชื่อผู้ใช้งาน">
+                            <label>ชื่อผู้ใช้งาน (แสดงผล)</label>
+                            <input type="text" id="register-username" required placeholder="ชื่อที่จะให้แอปเรียกคุณ">
                         </div>
                         <div class="form-group">
-                            <label>รหัสผ่าน</label>
+                            <label>อีเมล (Email)</label>
+                            <input type="email" id="register-email" required placeholder="ใส่อีเมลของคุณ">
+                        </div>
+                        <div class="form-group">
+                            <label>รหัสผ่าน (อย่างน้อย 6 ตัวอักษร)</label>
                             <input type="password" id="register-password" required placeholder="ตั้งรหัสผ่าน">
                         </div>
-                        <div class="form-group">
-                            <label>ยืนยันรหัสผ่าน</label>
-                            <input type="password" id="register-confirm" required placeholder="ยืนยันรหัสผ่านอีกครั้ง">
-                        </div>
                         <p id="register-error" class="error-msg"></p>
-                        <button type="submit" class="auth-btn">สร้างบัญชี</button>
+                        <button type="submit" class="auth-btn" id="register-btn">สร้างบัญชี</button>
                     </form>
                     <p class="auth-switch">มีบัญชีอยู่แล้ว? <a href="#" onclick="app.switchView('login')">เข้าสู่ระบบ</a></p>
                 </div>
@@ -331,8 +331,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=24"></script>
-    <script src="js/app.js?v=24"></script>
+    <script src="js/data.js?v=25"></script>
+    <script src="js/app.js?v=25"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

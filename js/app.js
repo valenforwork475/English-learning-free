@@ -1,5 +1,9 @@
 const UNLOCK_ALL_LEVELS = false; // เปิดสวิตช์นี้เป็น true เพื่อปลดล็อกทุกด่านให้เทสได้ทันที
 
+const supabaseUrl = 'https://gmlfvejipuaxobclitqr.supabase.co';
+const supabaseKey = 'sb_publishable_E3OGBazNKKWJ7QoqIZTQSQ_jNr_0Fjl';
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
 const app = {
     currentView: 'dashboard',
     currentCardIndex: 0,
@@ -16,21 +20,21 @@ const app = {
         toefl_listening: 1, toefl_reading: 1, toefl_speaking: 1
     },
 
-    init() {
+    async init() {
         this.setupAuth();
         this.setupNavigation();
         this.setupPWA();
         
-        const currentUser = localStorage.getItem('currentUser');
-        if (!currentUser) {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
             this.switchView('login');
             document.querySelector('.sidebar').style.display = 'none';
         } else {
-            this.loadProgress();
+            await this.loadProgress();
             this.vocabList = vocabData.filter(w => w.category === 'toeic_listening' && w.level === 1);
             this.updateStats();
             this.loadFlashcard(false);
-            this.updateGreeting(currentUser);
+            this.updateGreeting(session.user.user_metadata.username || session.user.email);
         }
     },
 
@@ -39,53 +43,69 @@ const app = {
         const registerForm = document.getElementById('register-form');
 
         if (loginForm) {
-            loginForm.onsubmit = (e) => {
+            loginForm.onsubmit = async (e) => {
                 e.preventDefault();
-                const user = document.getElementById('login-username').value.trim();
+                const email = document.getElementById('login-email').value.trim();
                 const pass = document.getElementById('login-password').value.trim();
                 const error = document.getElementById('login-error');
+                const btn = document.getElementById('login-btn');
                 
-                const users = JSON.parse(localStorage.getItem('users') || '{}');
+                btn.textContent = 'กำลังเข้าสู่ระบบ...';
+                btn.disabled = true;
                 
-                if (users[user] && users[user] === pass) {
-                    localStorage.setItem('currentUser', user);
+                const { data, error: err } = await supabase.auth.signInWithPassword({
+                    email: email,
+                    password: pass,
+                });
+                
+                btn.textContent = 'เข้าสู่ระบบ';
+                btn.disabled = false;
+                
+                if (err) {
+                    error.textContent = 'อีเมลหรือรหัสผ่านไม่ถูกต้อง';
+                    error.style.display = 'block';
+                } else {
                     error.style.display = 'none';
                     loginForm.reset();
-                    
                     document.querySelector('.sidebar').style.display = 'flex';
                     this.init();
                     this.switchView('dashboard');
-                } else {
-                    error.textContent = 'ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง';
-                    error.style.display = 'block';
                 }
             };
         }
 
         if (registerForm) {
-            registerForm.onsubmit = (e) => {
+            registerForm.onsubmit = async (e) => {
                 e.preventDefault();
-                const user = document.getElementById('register-username').value.trim();
+                const username = document.getElementById('register-username').value.trim();
+                const email = document.getElementById('register-email').value.trim();
                 const pass = document.getElementById('register-password').value.trim();
-                const confirm = document.getElementById('register-confirm').value.trim();
                 const error = document.getElementById('register-error');
+                const btn = document.getElementById('register-btn');
                 
-                if (pass !== confirm) {
-                    error.textContent = 'รหัสผ่านไม่ตรงกัน';
+                btn.textContent = 'กำลังสร้างบัญชี...';
+                btn.disabled = true;
+                
+                const { data, error: err } = await supabase.auth.signUp({
+                    email: email,
+                    password: pass,
+                    options: {
+                        data: {
+                            username: username,
+                            unlockedLevels: this.unlockedLevels,
+                            learnedWords: Array.from(this.learnedWords)
+                        }
+                    }
+                });
+                
+                btn.textContent = 'สร้างบัญชี';
+                btn.disabled = false;
+                
+                if (err) {
+                    error.textContent = err.message || 'เกิดข้อผิดพลาดในการสมัคร';
                     error.style.display = 'block';
                     return;
                 }
-                
-                const users = JSON.parse(localStorage.getItem('users') || '{}');
-                if (users[user]) {
-                    error.textContent = 'ชื่อผู้ใช้งานนี้มีคนใช้แล้ว';
-                    error.style.display = 'block';
-                    return;
-                }
-                
-                users[user] = pass;
-                localStorage.setItem('users', JSON.stringify(users));
-                localStorage.setItem('currentUser', user);
                 
                 error.style.display = 'none';
                 registerForm.reset();
@@ -97,8 +117,8 @@ const app = {
         }
     },
 
-    logout() {
-        localStorage.removeItem('currentUser');
+    async logout() {
+        await supabase.auth.signOut();
         document.querySelector('.sidebar').style.display = 'none';
         this.switchView('login');
     },
@@ -165,20 +185,30 @@ const app = {
         }
     },
 
-    loadProgress() {
-        const savedLevels = localStorage.getItem('unlockedLevels');
-        if (savedLevels) {
-            try { this.unlockedLevels = JSON.parse(savedLevels); } catch (e) {}
-        }
-        const savedWords = localStorage.getItem('learnedWords');
-        if (savedWords) {
-            try { this.learnedWords = new Set(JSON.parse(savedWords)); } catch (e) {}
+    async loadProgress() {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user && user.user_metadata) {
+            if (user.user_metadata.unlockedLevels) {
+                try { this.unlockedLevels = user.user_metadata.unlockedLevels; } catch (e) {}
+            }
+            if (user.user_metadata.learnedWords) {
+                try { this.learnedWords = new Set(user.user_metadata.learnedWords); } catch (e) {}
+            }
         }
     },
 
-    saveProgress() {
-        localStorage.setItem('unlockedLevels', JSON.stringify(this.unlockedLevels));
-        localStorage.setItem('learnedWords', JSON.stringify([...this.learnedWords]));
+    async saveProgress() {
+        this.updateStats();
+        
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user) {
+            await supabase.auth.updateUser({
+                data: { 
+                    unlockedLevels: this.unlockedLevels,
+                    learnedWords: Array.from(this.learnedWords)
+                }
+            });
+        }
     },
 
     setupNavigation() {

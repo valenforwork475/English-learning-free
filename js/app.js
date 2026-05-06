@@ -271,6 +271,40 @@ const app = {
         }
     },
 
+    playFeedbackSound(isCorrect) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        
+        try {
+            const ctx = new AudioContext();
+            const osc = ctx.createOscillator();
+            const gainNode = ctx.createGain();
+            
+            osc.connect(gainNode);
+            gainNode.connect(ctx.destination);
+            
+            if (isCorrect) {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(500, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(1000, ctx.currentTime + 0.1);
+                gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.2);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(200, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.2);
+                gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.2);
+            }
+        } catch(e) {
+            console.error("Audio error", e);
+        }
+    },
+
     markWord(status) {
         if (status === 'easy') {
             this.learnedWords.add(this.vocabList[this.currentCardIndex].id);
@@ -338,6 +372,7 @@ const app = {
                 this.quizScore++;
                 
                 quizCard.classList.add('pop-effect');
+                this.playFeedbackSound(true);
                 
                 setTimeout(() => {
                     this.nextQuizQuestion();
@@ -349,6 +384,7 @@ const app = {
                 btn.style.transform = 'scale(1)';
                 
                 quizCard.classList.add('shake-effect');
+                this.playFeedbackSound(false);
             }
         };
 
@@ -465,10 +501,12 @@ const app = {
         if (selectedIndex === questionData.answer) {
             btnElement.classList.add('correct');
             quizCard.classList.add('pop-effect');
+            this.playFeedbackSound(true);
             this.quizScore++;
         } else {
             btnElement.classList.add('wrong');
             quizCard.classList.add('shake-effect');
+            this.playFeedbackSound(false);
             allBtns[questionData.answer].classList.add('correct');
         }
         

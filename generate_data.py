@@ -67,7 +67,7 @@ for track, levels in levelsInfo.items():
                     "audioText": "",
                     "options": [],
                     "answer": 0
-                } for _ in range(5)
+                } for _ in range(10)
             ]
         elif 'speaking' in track:
             quizData[track][level] = [
@@ -77,7 +77,7 @@ for track, levels in levelsInfo.items():
                     "answerText": "",
                     "options": [],
                     "answer": 0
-                } for _ in range(5)
+                } for _ in range(10)
             ]
         else:
             quizData[track][level] = [
@@ -86,7 +86,7 @@ for track, levels in levelsInfo.items():
                     "question": "What is the meaning of ______?",
                     "options": [],
                     "answer": 0
-                } for _ in range(5)
+                } for _ in range(10)
             ]
 
 for track, levels in quizData.items():
@@ -95,8 +95,8 @@ for track, levels in quizData.items():
         track_words = [w for w in vocabData if w["category"] == track and w["level"] == level]
         if not track_words: continue
         
-        # Pick 5 distinct answers
-        num_qs = min(5, len(track_words))
+        # Pick 10 distinct answers
+        num_qs = min(10, len(track_words))
         answers = random.sample(track_words, num_qs)
         
         # We might have fewer questions if not enough words

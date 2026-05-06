@@ -6931,12 +6931,24 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Departure",
+                "audioText": "Luggage",
                 "options": [
-                    "Boarding",
+                    "Announce",
+                    "Cancel",
+                    "Ticket",
+                    "Luggage"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Arrival",
+                "options": [
+                    "Platform",
+                    "Luggage",
                     "Arrival",
-                    "Departure",
-                    "Ticket"
+                    "Passenger"
                 ],
                 "answer": 2
             },
@@ -6945,36 +6957,12 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Ticket",
                 "options": [
-                    "Luggage",
-                    "Departure",
-                    "Ticket",
-                    "Passenger"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Luggage",
-                "options": [
                     "Arrival",
                     "Announce",
                     "Delay",
-                    "Luggage"
+                    "Ticket"
                 ],
                 "answer": 3
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Passenger",
-                "options": [
-                    "Announce",
-                    "Arrival",
-                    "Passenger",
-                    "Cancel"
-                ],
-                "answer": 2
             },
             {
                 "type": "listening",
@@ -6982,23 +6970,155 @@ const quizData = {
                 "audioText": "Platform",
                 "options": [
                     "Platform",
-                    "Announce",
-                    "Departure",
-                    "Delay"
+                    "Passenger",
+                    "Boarding",
+                    "Luggage"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Boarding",
+                "options": [
+                    "Luggage",
+                    "Boarding",
+                    "Ticket",
+                    "Arrival"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Passenger",
+                "options": [
+                    "Boarding",
+                    "Passenger",
+                    "Departure",
+                    "Announce"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Announce",
+                "options": [
+                    "Cancel",
+                    "Delay",
+                    "Announce",
+                    "Platform"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Cancel",
+                "options": [
+                    "Delay",
+                    "Luggage",
+                    "Cancel",
+                    "Arrival"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Delay",
+                "options": [
+                    "Passenger",
+                    "Platform",
+                    "Delay",
+                    "Announce"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Departure",
+                "options": [
+                    "Arrival",
+                    "Luggage",
+                    "Announce",
+                    "Departure"
+                ],
+                "answer": 3
             }
         ],
         "2": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Colleague",
+                "audioText": "Schedule",
+                "options": [
+                    "Confirm",
+                    "Discuss",
+                    "Client",
+                    "Schedule"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Confirm",
+                "options": [
+                    "Client",
+                    "Manager",
+                    "Confirm",
+                    "Discuss"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Office",
+                "options": [
+                    "Confirm",
+                    "Office",
+                    "Reserve",
+                    "Schedule"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Client",
+                "options": [
+                    "Reserve",
+                    "Confirm",
+                    "Meeting",
+                    "Client"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Reserve",
                 "options": [
                     "Schedule",
-                    "Colleague",
-                    "Manager",
-                    "Meeting"
+                    "Reserve",
+                    "Confirm",
+                    "Client"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Report",
+                "options": [
+                    "Meeting",
+                    "Report",
+                    "Schedule",
+                    "Discuss"
                 ],
                 "answer": 1
             },
@@ -7007,9 +7127,21 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Discuss",
                 "options": [
-                    "Meeting",
+                    "Schedule",
                     "Discuss",
+                    "Client",
+                    "Report"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Meeting",
+                "options": [
                     "Manager",
+                    "Meeting",
+                    "Reserve",
                     "Client"
                 ],
                 "answer": 1
@@ -7020,109 +7152,157 @@ const quizData = {
                 "audioText": "Manager",
                 "options": [
                     "Report",
-                    "Manager",
+                    "Discuss",
+                    "Reserve",
+                    "Manager"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Colleague",
+                "options": [
+                    "Confirm",
                     "Colleague",
+                    "Reserve",
                     "Office"
                 ],
                 "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Schedule",
-                "options": [
-                    "Meeting",
-                    "Client",
-                    "Schedule",
-                    "Office"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Meeting",
-                "options": [
-                    "Schedule",
-                    "Client",
-                    "Manager",
-                    "Meeting"
-                ],
-                "answer": 3
             }
         ],
         "3": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Interview",
+                "audioText": "Candidate",
+                "options": [
+                    "Briefcase",
+                    "Interview",
+                    "Candidate",
+                    "Resume"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Hotel",
                 "options": [
                     "Resume",
-                    "Luggage_alt",
-                    "Hire",
-                    "Interview"
+                    "Candidate",
+                    "Commute",
+                    "Hotel"
                 ],
                 "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Briefcase",
+                "audioText": "Hire",
                 "options": [
-                    "Overtime",
+                    "Commute",
+                    "Interview",
+                    "Hire",
+                    "Overtime"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Luggage_alt",
+                "options": [
+                    "Interview",
+                    "Luggage_alt",
                     "Briefcase",
-                    "Flight",
-                    "Luggage_alt"
+                    "Hire"
                 ],
                 "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Resume",
+                "audioText": "Overtime",
                 "options": [
                     "Interview",
-                    "Commute",
+                    "Overtime",
+                    "Resume",
+                    "Commute"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Briefcase",
+                "options": [
+                    "Flight",
                     "Hire",
-                    "Resume"
+                    "Briefcase",
+                    "Candidate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Flight",
+                "options": [
+                    "Resume",
+                    "Briefcase",
+                    "Hotel",
+                    "Flight"
                 ],
                 "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Overtime",
+                "audioText": "Commute",
                 "options": [
-                    "Commute",
-                    "Hotel",
-                    "Overtime",
-                    "Briefcase"
+                    "Briefcase",
+                    "Flight",
+                    "Luggage_alt",
+                    "Commute"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Commute",
+                "audioText": "Interview",
                 "options": [
+                    "Interview",
+                    "Overtime",
                     "Hotel",
-                    "Flight",
-                    "Commute",
-                    "Hire"
+                    "Commute"
                 ],
-                "answer": 2
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Resume",
+                "options": [
+                    "Hire",
+                    "Luggage_alt",
+                    "Interview",
+                    "Resume"
+                ],
+                "answer": 3
             }
         ],
         "4": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Evaluate",
+                "audioText": "Budget",
                 "options": [
-                    "Implement",
-                    "Proposal",
-                    "Evaluate",
-                    "Budget"
+                    "Negotiate",
+                    "Strategy",
+                    "Budget",
+                    "Implement"
                 ],
                 "answer": 2
             },
@@ -7133,7 +7313,7 @@ const quizData = {
                 "options": [
                     "Deadline",
                     "Strategy",
-                    "Proposal",
+                    "Budget",
                     "Negotiate"
                 ],
                 "answer": 1
@@ -7141,12 +7321,72 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Deadline",
+                "options": [
+                    "Feedback",
+                    "Negotiate",
+                    "Revenue",
+                    "Deadline"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Implement",
+                "options": [
+                    "Implement",
+                    "Strategy",
+                    "Proposal",
+                    "Launch"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Feedback",
                 "options": [
-                    "Revenue",
+                    "Feedback",
                     "Launch",
-                    "Proposal",
-                    "Feedback"
+                    "Implement",
+                    "Budget"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Evaluate",
+                "options": [
+                    "Strategy",
+                    "Implement",
+                    "Deadline",
+                    "Evaluate"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Proposal",
+                "options": [
+                    "Budget",
+                    "Feedback",
+                    "Evaluate",
+                    "Proposal"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Negotiate",
+                "options": [
+                    "Feedback",
+                    "Budget",
+                    "Launch",
+                    "Negotiate"
                 ],
                 "answer": 3
             },
@@ -7156,8 +7396,8 @@ const quizData = {
                 "audioText": "Revenue",
                 "options": [
                     "Strategy",
-                    "Feedback",
-                    "Proposal",
+                    "Negotiate",
+                    "Launch",
                     "Revenue"
                 ],
                 "answer": 3
@@ -7165,26 +7405,110 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Deadline",
+                "audioText": "Launch",
                 "options": [
-                    "Feedback",
-                    "Deadline",
+                    "Revenue",
+                    "Negotiate",
                     "Launch",
-                    "Negotiate"
+                    "Budget"
                 ],
-                "answer": 1
+                "answer": 2
             }
         ],
         "5": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Comply",
+                "options": [
+                    "Maintain",
+                    "Comply",
+                    "Significant",
+                    "Priority"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Priority",
+                "options": [
+                    "Ensure",
+                    "Comply",
+                    "Objective",
+                    "Priority"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Procedure",
+                "options": [
+                    "Update",
+                    "Significant",
+                    "Procedure",
+                    "Priority"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Maintain",
                 "options": [
-                    "Objective",
+                    "Procedure",
+                    "Comply",
                     "Maintain",
-                    "Require",
-                    "Procedure"
+                    "Require"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Require",
+                "options": [
+                    "Comply",
+                    "Priority",
+                    "Facility",
+                    "Require"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Objective",
+                "options": [
+                    "Priority",
+                    "Ensure",
+                    "Comply",
+                    "Objective"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Facility",
+                "options": [
+                    "Significant",
+                    "Procedure",
+                    "Facility",
+                    "Require"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Significant",
+                "options": [
+                    "Maintain",
+                    "Significant",
+                    "Priority",
+                    "Require"
                 ],
                 "answer": 1
             },
@@ -7193,22 +7517,10 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Update",
                 "options": [
-                    "Priority",
-                    "Require",
+                    "Ensure",
                     "Update",
-                    "Comply"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Priority",
-                "options": [
-                    "Objective",
-                    "Priority",
-                    "Maintain",
-                    "Significant"
+                    "Facility",
+                    "Priority"
                 ],
                 "answer": 1
             },
@@ -7217,72 +7529,96 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Ensure",
                 "options": [
-                    "Facility",
                     "Ensure",
-                    "Update",
-                    "Priority"
+                    "Significant",
+                    "Objective",
+                    "Update"
                 ],
-                "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Procedure",
-                "options": [
-                    "Require",
-                    "Procedure",
-                    "Ensure",
-                    "Significant"
-                ],
-                "answer": 1
+                "answer": 0
             }
         ],
         "6": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Machine",
-                "options": [
-                    "Machine",
-                    "Familiar",
-                    "Information",
-                    "Destination"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Counter",
+                "audioText": "Journal",
                 "options": [
                     "Occasion",
-                    "Aisle",
                     "Counter",
-                    "Guarantee"
+                    "Journal",
+                    "Destination"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Journal",
+                "audioText": "Aisle",
                 "options": [
-                    "Journal",
-                    "Baggage",
+                    "Machine",
+                    "Guarantee",
+                    "Destination",
+                    "Aisle"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Guarantee",
+                "options": [
+                    "Guarantee",
                     "Counter",
-                    "Information"
+                    "Destination",
+                    "Machine"
                 ],
                 "answer": 0
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Destination",
+                "options": [
+                    "Guarantee",
+                    "Journal",
+                    "Aisle",
+                    "Destination"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Occasion",
                 "options": [
-                    "Information",
+                    "Counter",
                     "Occasion",
-                    "Journal",
+                    "Guarantee",
+                    "Machine"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Information",
+                "options": [
+                    "Machine",
+                    "Aisle",
+                    "Information",
                     "Baggage"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Counter",
+                "options": [
+                    "Aisle",
+                    "Counter",
+                    "Information",
+                    "Familiar"
                 ],
                 "answer": 1
             },
@@ -7291,36 +7627,60 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Baggage",
                 "options": [
-                    "Destination",
-                    "Baggage",
+                    "Familiar",
                     "Counter",
-                    "Information"
-                ],
-                "answer": 1
-            }
-        ],
-        "7": [
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Yield",
-                "options": [
-                    "Receipt",
-                    "Quality",
-                    "Yield",
-                    "Terminal"
+                    "Baggage",
+                    "Destination"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Quality",
+                "audioText": "Familiar",
                 "options": [
-                    "Valuable",
+                    "Information",
+                    "Familiar",
+                    "Counter",
+                    "Machine"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Machine",
+                "options": [
+                    "Familiar",
+                    "Baggage",
+                    "Counter",
+                    "Machine"
+                ],
+                "answer": 3
+            }
+        ],
+        "7": [
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Warehouse",
+                "options": [
+                    "Warehouse",
                     "Quality",
-                    "Yield",
-                    "Package"
+                    "Terminal",
+                    "Accompany"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Receipt",
+                "options": [
+                    "Accompany",
+                    "Receipt",
+                    "Package",
+                    "Terminal"
                 ],
                 "answer": 1
             },
@@ -7329,10 +7689,58 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Terminal",
                 "options": [
-                    "Receipt",
+                    "Yield",
+                    "Warehouse",
+                    "Signature",
+                    "Terminal"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Quality",
+                "options": [
+                    "Signature",
+                    "Zone",
                     "Terminal",
-                    "Accompany",
+                    "Quality"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Zone",
+                "options": [
+                    "Valuable",
+                    "Signature",
+                    "Quality",
                     "Zone"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Package",
+                "options": [
+                    "Zone",
+                    "Package",
+                    "Warehouse",
+                    "Signature"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Signature",
+                "options": [
+                    "Package",
+                    "Signature",
+                    "Accompany",
+                    "Warehouse"
                 ],
                 "answer": 1
             },
@@ -7343,95 +7751,239 @@ const quizData = {
                 "options": [
                     "Accompany",
                     "Signature",
-                    "Valuable",
-                    "Zone"
+                    "Warehouse",
+                    "Terminal"
                 ],
                 "answer": 0
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Signature",
+                "audioText": "Yield",
                 "options": [
-                    "Terminal",
-                    "Receipt",
-                    "Signature",
-                    "Accompany"
+                    "Warehouse",
+                    "Valuable",
+                    "Accompany",
+                    "Yield"
                 ],
-                "answer": 2
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Valuable",
+                "options": [
+                    "Zone",
+                    "Warehouse",
+                    "Receipt",
+                    "Valuable"
+                ],
+                "answer": 3
             }
         ],
         "8": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Board",
+                "audioText": "Join",
                 "options": [
-                    "Board",
-                    "Cancel_alt",
-                    "Luggage_alt",
-                    "Forecast"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Damage",
-                "options": [
-                    "Economy",
-                    "Gate",
                     "Damage",
-                    "Join"
+                    "Item",
+                    "Join",
+                    "Cancel_alt"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Join",
+                "audioText": "Economy",
                 "options": [
-                    "Gate",
-                    "Join",
+                    "Board",
                     "Forecast",
-                    "Luggage_alt"
+                    "Economy",
+                    "Gate"
                 ],
-                "answer": 1
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Cancel_alt",
+                "options": [
+                    "Handle",
+                    "Board",
+                    "Economy",
+                    "Cancel_alt"
+                ],
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Gate",
                 "options": [
+                    "Damage",
+                    "Luggage_alt",
+                    "Gate",
+                    "Item"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Handle",
+                "options": [
+                    "Economy",
                     "Handle",
                     "Gate",
-                    "Damage",
-                    "Economy"
+                    "Cancel_alt"
                 ],
                 "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Luggage_alt",
+                "audioText": "Item",
+                "options": [
+                    "Join",
+                    "Economy",
+                    "Board",
+                    "Item"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Board",
                 "options": [
                     "Handle",
-                    "Item",
-                    "Luggage_alt",
-                    "Cancel_alt"
+                    "Board",
+                    "Forecast",
+                    "Item"
                 ],
-                "answer": 2
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Damage",
+                "options": [
+                    "Board",
+                    "Gate",
+                    "Economy",
+                    "Damage"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Luggage_alt",
+                "options": [
+                    "Luggage_alt",
+                    "Forecast",
+                    "Item",
+                    "Economy"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Forecast",
+                "options": [
+                    "Forecast",
+                    "Board",
+                    "Item",
+                    "Luggage_alt"
+                ],
+                "answer": 0
             }
         ],
         "9": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Security",
+                "options": [
+                    "Vehicle",
+                    "Quarter",
+                    "Manager_alt",
+                    "Security"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Option",
+                "options": [
+                    "Manager_alt",
+                    "Option",
+                    "Security",
+                    "Reservation"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Platform_alt",
+                "options": [
+                    "Platform_alt",
+                    "Vehicle",
+                    "Notice",
+                    "Upgrade"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Quarter",
+                "options": [
+                    "Quarter",
+                    "Upgrade",
+                    "Track",
+                    "Manager_alt"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Reservation",
                 "options": [
-                    "Track",
-                    "Upgrade",
                     "Reservation",
+                    "Notice",
+                    "Vehicle",
+                    "Security"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Notice",
+                "options": [
+                    "Notice",
+                    "Security",
+                    "Quarter",
+                    "Upgrade"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Manager_alt",
+                "options": [
+                    "Platform_alt",
+                    "Vehicle",
+                    "Manager_alt",
                     "Option"
                 ],
                 "answer": 2
@@ -7439,24 +7991,12 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Notice",
+                "audioText": "Track",
                 "options": [
+                    "Reservation",
                     "Security",
-                    "Option",
-                    "Notice",
-                    "Quarter"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Quarter",
-                "options": [
-                    "Track",
-                    "Security",
-                    "Upgrade",
-                    "Quarter"
+                    "Manager_alt",
+                    "Track"
                 ],
                 "answer": 3
             },
@@ -7466,8 +8006,8 @@ const quizData = {
                 "audioText": "Upgrade",
                 "options": [
                     "Reservation",
-                    "Track",
-                    "Option",
+                    "Vehicle",
+                    "Quarter",
                     "Upgrade"
                 ],
                 "answer": 3
@@ -7477,24 +8017,48 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Vehicle",
                 "options": [
+                    "Platform_alt",
                     "Upgrade",
-                    "Vehicle",
-                    "Quarter",
-                    "Option"
+                    "Track",
+                    "Vehicle"
                 ],
-                "answer": 1
+                "answer": 3
             }
         ],
         "10": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Estimate",
+                "audioText": "Guest",
                 "options": [
+                    "Guest",
+                    "Issue",
                     "Wait",
-                    "Annual",
+                    "Host"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Issue",
+                "options": [
+                    "Direct",
+                    "Balance",
+                    "Charge",
+                    "Issue"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Annual",
+                "options": [
                     "Estimate",
-                    "Frequent"
+                    "Host",
+                    "Annual",
+                    "Direct"
                 ],
                 "answer": 2
             },
@@ -7503,21 +8067,21 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Charge",
                 "options": [
-                    "Issue",
-                    "Charge",
-                    "Frequent",
-                    "Guest"
+                    "Host",
+                    "Wait",
+                    "Estimate",
+                    "Charge"
                 ],
-                "answer": 1
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Direct",
+                "audioText": "Host",
                 "options": [
-                    "Direct",
-                    "Charge",
-                    "Frequent",
+                    "Host",
+                    "Estimate",
+                    "Issue",
                     "Balance"
                 ],
                 "answer": 0
@@ -7525,26 +8089,62 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Wait",
+                "audioText": "Estimate",
                 "options": [
-                    "Estimate",
-                    "Annual",
                     "Wait",
-                    "Guest"
+                    "Balance",
+                    "Issue",
+                    "Estimate"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Balance",
+                "options": [
+                    "Charge",
+                    "Issue",
+                    "Balance",
+                    "Annual"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Issue",
+                "audioText": "Frequent",
                 "options": [
-                    "Estimate",
                     "Frequent",
-                    "Annual",
-                    "Issue"
+                    "Issue",
+                    "Host",
+                    "Charge"
                 ],
-                "answer": 3
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Direct",
+                "options": [
+                    "Guest",
+                    "Annual",
+                    "Direct",
+                    "Estimate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Wait",
+                "options": [
+                    "Frequent",
+                    "Wait",
+                    "Host",
+                    "Estimate"
+                ],
+                "answer": 1
             }
         ]
     },
@@ -7552,58 +8152,113 @@ const quizData = {
         "1": [
             {
                 "type": "reading",
-                "question": "The global ______ is highly competitive.\n\n(แปล: ตลาดโลกมีการแข่งขันสูงมาก)",
+                "question": "They will ______ the employee performance.\n\n(แปล: พวกเขาจะประเมินประสิทธิภาพการทำงานของพนักงาน)",
                 "options": [
                     "Agreement",
-                    "Propose",
-                    "Investment",
-                    "Market"
+                    "Market",
+                    "Budget",
+                    "Evaluate"
                 ],
                 "answer": 3
             },
             {
                 "type": "reading",
-                "question": "Our ______ increased by 20% this year.\n\n(แปล: รายได้ของเราเพิ่มขึ้น 20% ในปีนี้)",
+                "question": "We have a limited ______ for marketing.\n\n(แปล: เรามีงบประมาณจำกัดสำหรับการตลาด)",
                 "options": [
-                    "Implement",
-                    "Market",
                     "Revenue",
+                    "Agreement",
+                    "Budget",
                     "Strategy"
                 ],
                 "answer": 2
             },
             {
                 "type": "reading",
-                "question": "We have a limited ______ for marketing.\n\n(แปล: เรามีงบประมาณจำกัดสำหรับการตลาด)",
+                "question": "Buying real estate is a good ______.\n\n(แปล: การซื้ออสังหาริมทรัพย์เป็นการลงทุนที่ดี)",
                 "options": [
-                    "Implement",
+                    "Market",
                     "Investment",
-                    "Profit",
-                    "Budget"
+                    "Strategy",
+                    "Agreement"
                 ],
-                "answer": 3
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "We need a new business ______ to win.\n\n(แปล: เราต้องการกลยุทธ์ทางธุรกิจใหม่เพื่อเอาชนะ)",
                 "options": [
+                    "Market",
+                    "Profit",
+                    "Strategy",
+                    "Propose"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The company will ______ new safety rules.\n\n(แปล: บริษัทจะนำกฎความปลอดภัยใหม่มาใช้)",
+                "options": [
+                    "Market",
+                    "Implement",
+                    "Propose",
+                    "Revenue"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Our ______ increased by 20% this year.\n\n(แปล: รายได้ของเราเพิ่มขึ้น 20% ในปีนี้)",
+                "options": [
+                    "Investment",
+                    "Budget",
+                    "Revenue",
+                    "Evaluate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The global ______ is highly competitive.\n\n(แปล: ตลาดโลกมีการแข่งขันสูงมาก)",
+                "options": [
+                    "Market",
                     "Investment",
                     "Implement",
-                    "Agreement",
-                    "Strategy"
+                    "Agreement"
                 ],
-                "answer": 3
+                "answer": 0
             },
             {
                 "type": "reading",
                 "question": "Both parties signed the ______ today.\n\n(แปล: ทั้งสองฝ่ายได้ลงนามในข้อตกลงวันนี้)",
                 "options": [
-                    "Investment",
-                    "Agreement",
-                    "Evaluate",
-                    "Market"
+                    "Market",
+                    "Profit",
+                    "Propose",
+                    "Agreement"
                 ],
-                "answer": 1
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "I ______ that we launch the app next week.\n\n(แปล: ฉันเสนอให้เราเปิดตัวแอปในสัปดาห์หน้า)",
+                "options": [
+                    "Investment",
+                    "Revenue",
+                    "Agreement",
+                    "Propose"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The store made a huge ______ last month.\n\n(แปล: ร้านค้าทำกำไรได้อย่างมหาศาลในเดือนที่แล้ว)",
+                "options": [
+                    "Evaluate",
+                    "Market",
+                    "Revenue",
+                    "Profit"
+                ],
+                "answer": 3
             }
         ],
         "2": [
@@ -7611,29 +8266,62 @@ const quizData = {
                 "type": "reading",
                 "question": "Human ______s is an important department.\n\n(แปล: ฝ่ายทรัพยากรบุคคลเป็นแผนกที่สำคัญ)",
                 "options": [
-                    "Forecast",
+                    "Trend",
                     "Launch",
-                    "Allocate",
-                    "Resource"
+                    "Resource",
+                    "Target"
                 ],
-                "answer": 3
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Scientists ______ the data carefully.\n\n(แปล: นักวิทยาศาสตร์วิเคราะห์ข้อมูลอย่างระมัดระวัง)",
+                "options": [
+                    "Competitor",
+                    "Launch",
+                    "Analyze",
+                    "Allocate"
+                ],
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "The brand will ______ a new smartphone.\n\n(แปล: แบรนด์จะเปิดตัวสมาร์ทโฟนรุ่นใหม่)",
                 "options": [
+                    "Launch",
+                    "Promote",
                     "Competitor",
-                    "Allocate",
-                    "Campaign",
-                    "Launch"
+                    "Campaign"
                 ],
-                "answer": 3
+                "answer": 0
             },
             {
                 "type": "reading",
                 "question": "The government will ______ funds to schools.\n\n(แปล: รัฐบาลจะจัดสรรเงินทุนให้กับโรงเรียน)",
                 "options": [
                     "Allocate",
+                    "Forecast",
+                    "Promote",
+                    "Trend"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "There is a growing ______ in online shopping.\n\n(แปล: มีแนวโน้มการเติบโตในการช็อปปิ้งออนไลน์)",
+                "options": [
+                    "Allocate",
+                    "Trend",
+                    "Forecast",
+                    "Promote"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Experts ______ a drop in housing prices.\n\n(แปล: ผู้เชี่ยวชาญคาดการณ์ว่าราคาบ้านจะลดลง)",
+                "options": [
+                    "Forecast",
                     "Promote",
                     "Launch",
                     "Target"
@@ -7642,25 +8330,47 @@ const quizData = {
             },
             {
                 "type": "reading",
-                "question": "He was ______d to the position of director.\n\n(แปล: เขาได้รับการเลื่อนตำแหน่งเป็นผู้อำนวยการ)",
+                "question": "The advertising ______ was successful.\n\n(แปล: แคมเปญโฆษณาประสบความสำเร็จอย่างมาก)",
                 "options": [
-                    "Promote",
+                    "Resource",
+                    "Forecast",
+                    "Campaign",
+                    "Analyze"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "We must reach our sales ______ by December.\n\n(แปล: เราต้องไปให้ถึงเป้าหมายการขายภายในเดือนธันวาคม)",
+                "options": [
                     "Target",
-                    "Trend",
-                    "Resource"
+                    "Allocate",
+                    "Campaign",
+                    "Promote"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "Experts ______ a drop in housing prices.\n\n(แปล: ผู้เชี่ยวชาญคาดการณ์ว่าราคาบ้านจะลดลง)",
+                "question": "He was ______d to the position of director.\n\n(แปล: เขาได้รับการเลื่อนตำแหน่งเป็นผู้อำนวยการ)",
                 "options": [
-                    "Forecast",
                     "Launch",
-                    "Competitor",
+                    "Promote",
+                    "Target",
                     "Analyze"
                 ],
-                "answer": 0
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Our main ______ has lowered their prices.\n\n(แปล: คู่แข่งหลักของเราได้ปรับลดราคาลง)",
+                "options": [
+                    "Trend",
+                    "Forecast",
+                    "Promote",
+                    "Competitor"
+                ],
+                "answer": 3
             }
         ],
         "3": [
@@ -7668,78 +8378,166 @@ const quizData = {
                 "type": "reading",
                 "question": "The laptop comes with a one-year ______.\n\n(แปล: แล็ปท็อปมาพร้อมกับการรับประกันหนึ่งปี)",
                 "options": [
-                    "Policy",
+                    "Shipment",
+                    "Warranty",
+                    "Guarantee",
+                    "Policy"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Please sign the ______ by Friday.\n\n(แปล: โปรดเซ็นสัญญาภายในวันศุกร์)",
+                "options": [
                     "Discount",
-                    "Inventory",
-                    "Warranty"
+                    "Expense",
+                    "Contract",
+                    "Refund"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The ______ will arrive next week.\n\n(แปล: การจัดส่งสินค้าจะมาถึงในสัปดาห์หน้า)",
+                "options": [
+                    "Invoice",
+                    "Guarantee",
+                    "Discount",
+                    "Shipment"
                 ],
                 "answer": 3
             },
             {
                 "type": "reading",
-                "question": "The ______ was sent to the client.\n\n(แปล: ใบแจ้งหนี้ถูกส่งไปยังลูกค้าแล้ว)",
+                "question": "Employees get a 20% ______.\n\n(แปล: พนักงานได้รับส่วนลด 20%)",
                 "options": [
-                    "Invoice",
-                    "Expense",
+                    "Contract",
                     "Guarantee",
-                    "Discount"
+                    "Discount",
+                    "Inventory"
                 ],
-                "answer": 0
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "We need to check the ______ level.\n\n(แปล: เราจำเป็นต้องตรวจสอบระดับสินค้าคงคลัง)",
                 "options": [
-                    "Warranty",
+                    "Expense",
                     "Shipment",
-                    "Inventory",
-                    "Discount"
+                    "Warranty",
+                    "Inventory"
                 ],
-                "answer": 2
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Travel ______s will be reimbursed.\n\n(แปล: ค่าใช้จ่ายในการเดินทางจะได้รับการเบิกคืน)",
+                "options": [
+                    "Refund",
+                    "Expense",
+                    "Contract",
+                    "Shipment"
+                ],
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "We ______ the quality of our products.\n\n(แปล: เรารับประกันคุณภาพของสินค้าของเรา)",
                 "options": [
                     "Guarantee",
-                    "Expense",
+                    "Discount",
                     "Contract",
-                    "Inventory"
+                    "Shipment"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The ______ will arrive next week.\n\n(แปล: การจัดส่งสินค้าจะมาถึงในสัปดาห์หน้า)",
+                "question": "You can request a full ______ within 30 days.\n\n(แปล: คุณสามารถขอคืนเงินเต็มจำนวนได้ภายใน 30 วัน)",
                 "options": [
+                    "Refund",
                     "Shipment",
-                    "Policy",
-                    "Discount",
-                    "Invoice"
+                    "Warranty",
+                    "Policy"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The ______ was sent to the client.\n\n(แปล: ใบแจ้งหนี้ถูกส่งไปยังลูกค้าแล้ว)",
+                "options": [
+                    "Contract",
+                    "Inventory",
+                    "Shipment",
+                    "Invoice"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The company updated its return ______.\n\n(แปล: บริษัทได้อัปเดตนโยบายการคืนสินค้า)",
+                "options": [
+                    "Inventory",
+                    "Shipment",
+                    "Expense",
+                    "Policy"
+                ],
+                "answer": 3
             }
         ],
         "4": [
             {
                 "type": "reading",
-                "question": "You must ______ a visa before traveling.\n\n(แปล: คุณต้องได้รับวีซ่าก่อนเดินทาง)",
+                "question": "You should ______ a lawyer first.\n\n(แปล: คุณควรปรึกษาทนายความก่อน)",
                 "options": [
-                    "Consult",
                     "Obtain",
-                    "Exceed",
-                    "Determine"
+                    "Determine",
+                    "Colleague",
+                    "Consult"
                 ],
-                "answer": 1
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "We ______ the network 24/7.\n\n(แปล: เราเฝ้าสังเกตเครือข่ายตลอด 24 ชั่วโมง)",
                 "options": [
+                    "Monitor",
+                    "Colleague",
                     "Investigate",
+                    "Hesitate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The survey will ______ the market needs.\n\n(แปล: การสำรวจจะกำหนดความต้องการของตลาด)",
+                "options": [
+                    "Colleague",
+                    "Determine",
+                    "Investigate",
+                    "Monitor"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "We need to ______ the core problem.\n\n(แปล: เราต้องระบุปัญหาหลัก)",
+                "options": [
                     "Hesitate",
                     "Consult",
-                    "Monitor"
+                    "Identify",
+                    "Determine"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "My ______ will assist you.\n\n(แปล: เพื่อนร่วมงานของฉันจะช่วยเหลือคุณ)",
+                "options": [
+                    "Obtain",
+                    "Accommodation",
+                    "Investigate",
+                    "Colleague"
                 ],
                 "answer": 3
             },
@@ -7747,78 +8545,89 @@ const quizData = {
                 "type": "reading",
                 "question": "Please do not ______ to contact us.\n\n(แปล: โปรดอย่าลังเลที่จะติดต่อเรา)",
                 "options": [
-                    "Obtain",
-                    "Accommodation",
                     "Hesitate",
+                    "Exceed",
+                    "Monitor",
+                    "Accommodation"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The police will ______ the incident.\n\n(แปล: ตำรวจจะสืบสวนเหตุการณ์ดังกล่าว)",
+                "options": [
+                    "Obtain",
+                    "Investigate",
+                    "Identify",
+                    "Colleague"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Sales ______ed our expectations.\n\n(แปล: ยอดขายทะลุความคาดหมายของเรา)",
+                "options": [
+                    "Determine",
+                    "Consult",
+                    "Exceed",
                     "Identify"
                 ],
                 "answer": 2
             },
             {
                 "type": "reading",
-                "question": "Sales ______ed our expectations.\n\n(แปล: ยอดขายทะลุความคาดหมายของเรา)",
+                "question": "We need to book ______ for the trip.\n\n(แปล: เราต้องจองที่พักสำหรับการเดินทาง)",
                 "options": [
-                    "Exceed",
-                    "Investigate",
-                    "Determine",
-                    "Monitor"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "reading",
-                "question": "We need to ______ the core problem.\n\n(แปล: เราต้องระบุปัญหาหลัก)",
-                "options": [
+                    "Consult",
                     "Obtain",
-                    "Identify",
-                    "Determine",
-                    "Consult"
-                ],
-                "answer": 1
-            }
-        ],
-        "5": [
-            {
-                "type": "reading",
-                "question": "Can you be more ______?\n\n(แปล: คุณช่วยระบุให้เฉพาะเจาะจงกว่านี้ได้ไหม?)",
-                "options": [
-                    "Specific",
-                    "Recommend",
-                    "Submit",
-                    "Participate"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "reading",
-                "question": "Please ______ your email address.\n\n(แปล: โปรดตรวจสอบความถูกต้องของที่อยู่อีเมลของคุณ)",
-                "options": [
-                    "Verify",
-                    "Sufficient",
-                    "Recommend",
-                    "Valid"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "reading",
-                "question": "The hotel ______s free Wi-Fi.\n\n(แปล: โรงแรมให้บริการ Wi-Fi ฟรี)",
-                "options": [
-                    "Submit",
-                    "Recommend",
-                    "Provide",
-                    "Resolve"
+                    "Accommodation",
+                    "Investigate"
                 ],
                 "answer": 2
             },
             {
                 "type": "reading",
-                "question": "Everyone is encouraged to ______.\n\n(แปล: ทุกคนได้รับการส่งเสริมให้เข้าร่วม)",
+                "question": "You must ______ a visa before traveling.\n\n(แปล: คุณต้องได้รับวีซ่าก่อนเดินทาง)",
                 "options": [
-                    "Provide",
+                    "Investigate",
+                    "Determine",
+                    "Consult",
+                    "Obtain"
+                ],
+                "answer": 3
+            }
+        ],
+        "5": [
+            {
+                "type": "reading",
+                "question": "______: She was promoted to manager last year.\n\n(แปล: เธอได้รับการเลื่อนตำแหน่งเป็นผู้จัดการเมื่อปีที่แล้ว)",
+                "options": [
+                    "Participate",
                     "Recommend",
                     "Verify",
-                    "Participate"
+                    "Promote_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Can you be more ______?\n\n(แปล: คุณช่วยระบุให้เฉพาะเจาะจงกว่านี้ได้ไหม?)",
+                "options": [
+                    "Valid",
+                    "Specific",
+                    "Participate",
+                    "Recommend"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "I highly ______ this restaurant.\n\n(แปล: ฉันขอแนะนำร้านอาหารนี้อย่างยิ่ง)",
+                "options": [
+                    "Participate",
+                    "Provide",
+                    "Specific",
+                    "Recommend"
                 ],
                 "answer": 3
             },
@@ -7826,124 +8635,300 @@ const quizData = {
                 "type": "reading",
                 "question": "Your ticket is no longer ______.\n\n(แปล: ตั๋วของคุณใช้ไม่ได้อีกต่อไป)",
                 "options": [
-                    "Provide",
-                    "Valid",
+                    "Promote_alt",
+                    "Verify",
                     "Specific",
+                    "Valid"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "We must ______ this issue immediately.\n\n(แปล: เราต้องแก้ไขปัญหานี้ทันที)",
+                "options": [
+                    "Promote_alt",
+                    "Valid",
+                    "Provide",
+                    "Resolve"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Everyone is encouraged to ______.\n\n(แปล: ทุกคนได้รับการส่งเสริมให้เข้าร่วม)",
+                "options": [
+                    "Promote_alt",
+                    "Sufficient",
+                    "Recommend",
                     "Participate"
                 ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "We have ______ funds for the project.\n\n(แปล: เรามีเงินทุนเพียงพอสำหรับโครงการ)",
+                "options": [
+                    "Resolve",
+                    "Specific",
+                    "Submit",
+                    "Sufficient"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The hotel ______s free Wi-Fi.\n\n(แปล: โรงแรมให้บริการ Wi-Fi ฟรี)",
+                "options": [
+                    "Specific",
+                    "Provide",
+                    "Verify",
+                    "Resolve"
+                ],
                 "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Please ______ your email address.\n\n(แปล: โปรดตรวจสอบความถูกต้องของที่อยู่อีเมลของคุณ)",
+                "options": [
+                    "Participate",
+                    "Submit",
+                    "Verify",
+                    "Recommend"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "______ your application online.\n\n(แปล: ส่งใบสมัครของคุณทางออนไลน์)",
+                "options": [
+                    "Promote_alt",
+                    "Provide",
+                    "Resolve",
+                    "Submit"
+                ],
+                "answer": 3
             }
         ],
         "6": [
             {
                 "type": "reading",
-                "question": "Taxes will be ______ed from your salary.\n\n(แปล: ภาษีจะถูกหักออกจากเงินเดือนของคุณ)",
+                "question": "The real estate ______ showed us the house.\n\n(แปล: นายหน้าอสังหาริมทรัพย์พาเราไปดูบ้าน)",
                 "options": [
                     "Broker",
-                    "Gross",
-                    "Deduct",
-                    "Franchise"
+                    "Asset",
+                    "Inventory_alt",
+                    "Clause"
                 ],
-                "answer": 2
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The company has many valuable ______s.\n\n(แปล: บริษัทมีสินทรัพย์ที่มีค่ามากมาย)",
+                "options": [
+                    "Franchise",
+                    "Asset",
+                    "Jobless",
+                    "Gross"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Please read the penalty ______ carefully.\n\n(แปล: โปรดอ่านข้อสัญญาการปรับอย่างละเอียด)",
+                "options": [
+                    "Asset",
+                    "Inventory_alt",
+                    "Deduct",
+                    "Clause"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "______: We conduct an inventory check every month.\n\n(แปล: เราทำการตรวจสอบสินค้าคงคลังทุกเดือน)",
+                "options": [
+                    "Franchise",
+                    "Inventory_alt",
+                    "Deduct",
+                    "Headquarters"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Our ______ is located in London.\n\n(แปล: สำนักงานใหญ่ของเราตั้งอยู่ในลอนดอน)",
+                "options": [
+                    "Deduct",
+                    "Headquarters",
+                    "Inventory_alt",
+                    "Broker"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Taxes will be ______ed from your salary.\n\n(แปล: ภาษีจะถูกหักออกจากเงินเดือนของคุณ)",
+                "options": [
+                    "Gross",
+                    "Clause",
+                    "Inventory_alt",
+                    "Deduct"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "He owns a fast-food ______.\n\n(แปล: เขาเป็นเจ้าของแฟรนไชส์ฟาสต์ฟู้ด)",
+                "options": [
+                    "Gross",
+                    "Franchise",
+                    "Clause",
+                    "Headquarters"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "The ______ rate has decreased this year.\n\n(แปล: อัตราคนว่างงานลดลงในปีนี้)",
+                "options": [
+                    "Jobless",
+                    "Gross",
+                    "Broker",
+                    "Inventory_alt"
+                ],
+                "answer": 0
             },
             {
                 "type": "reading",
                 "question": "Non-profit organizations are tax-______.\n\n(แปล: องค์กรไม่แสวงหาผลกำไรได้รับการยกเว้นภาษี)",
                 "options": [
                     "Exempt",
-                    "Gross",
-                    "Deduct",
-                    "Headquarters"
+                    "Headquarters",
+                    "Clause",
+                    "Asset"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The real estate ______ showed us the house.\n\n(แปล: นายหน้าอสังหาริมทรัพย์พาเราไปดูบ้าน)",
+                "question": "The ______ profit margin was 40%.\n\n(แปล: อัตรากำไรขั้นต้นอยู่ที่ 40%)",
                 "options": [
                     "Broker",
-                    "Franchise",
-                    "Clause",
-                    "Headquarters"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "reading",
-                "question": "Please read the penalty ______ carefully.\n\n(แปล: โปรดอ่านข้อสัญญาการปรับอย่างละเอียด)",
-                "options": [
-                    "Exempt",
-                    "Clause",
-                    "Headquarters",
-                    "Jobless"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "The company has many valuable ______s.\n\n(แปล: บริษัทมีสินทรัพย์ที่มีค่ามากมาย)",
-                "options": [
-                    "Headquarters",
                     "Asset",
                     "Jobless",
-                    "Clause"
+                    "Gross"
                 ],
-                "answer": 1
+                "answer": 3
             }
         ],
         "7": [
             {
                 "type": "reading",
-                "question": "The ______ bills include water and electricity.\n\n(แปล: ค่าสาธารณูปโภคครอบคลุมค่าน้ำและค่าไฟฟ้า)",
+                "question": "The company filed a ______ for the new technology.\n\n(แปล: บริษัทได้ยื่นจดสิทธิบัตรสำหรับเทคโนโลยีใหม่)",
+                "options": [
+                    "Retail",
+                    "Output",
+                    "Patent",
+                    "Stake"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "New ______s on imported goods were introduced.\n\n(แปล: มีการนำอัตราภาษีใหม่สำหรับสินค้านำเข้ามาใช้)",
                 "options": [
                     "Patent",
+                    "Retail",
+                    "Tariff",
+                    "Stake"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The ______ bills include water and electricity.\n\n(แปล: ค่าสาธารณูปโภคครอบคลุมค่าน้ำและค่าไฟฟ้า)",
+                "options": [
                     "Utility",
+                    "Output",
+                    "Retail",
+                    "Margin"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Factory ______ reached a new high.\n\n(แปล: ผลผลิตของโรงงานพุ่งแตะระดับสูงสุดใหม่)",
+                "options": [
                     "Lease",
+                    "Utility",
+                    "Stake",
+                    "Output"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "______ prices have gone up slightly.\n\n(แปล: ราคาขายปลีกปรับตัวสูงขึ้นเล็กน้อย)",
+                "options": [
+                    "Quota",
+                    "Lease",
+                    "Margin",
+                    "Retail"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The sales team met their monthly ______.\n\n(แปล: ทีมขายทำยอดได้ตามโควตารายเดือน)",
+                "options": [
+                    "Retail",
+                    "Quota",
+                    "Margin",
                     "Net"
                 ],
                 "answer": 1
             },
             {
                 "type": "reading",
-                "question": "The company filed a ______ for the new technology.\n\n(แปล: บริษัทได้ยื่นจดสิทธิบัตรสำหรับเทคโนโลยีใหม่)",
+                "question": "We need to increase our profit ______.\n\n(แปล: เราจำเป็นต้องเพิ่มอัตรากำไรของเรา)",
                 "options": [
+                    "Retail",
                     "Margin",
-                    "Net",
-                    "Patent",
+                    "Output",
                     "Quota"
                 ],
-                "answer": 2
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "The office ______ expires in December.\n\n(แปล: สัญญาเช่าสำนักงานจะหมดอายุในเดือนธันวาคม)",
+                "options": [
+                    "Lease",
+                    "Tariff",
+                    "Output",
+                    "Utility"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "______ income rose by 10%.\n\n(แปล: รายได้สุทธิเพิ่มขึ้น 10%)",
+                "options": [
+                    "Margin",
+                    "Retail",
+                    "Lease",
+                    "Net"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "He holds a 20% ______ in the business.\n\n(แปล: เขาถือหุ้น 20% ในธุรกิจนี้)",
                 "options": [
                     "Quota",
-                    "Utility",
-                    "Output",
-                    "Stake"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "reading",
-                "question": "New ______s on imported goods were introduced.\n\n(แปล: มีการนำอัตราภาษีใหม่สำหรับสินค้านำเข้ามาใช้)",
-                "options": [
                     "Retail",
-                    "Tariff",
-                    "Margin",
-                    "Quota"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "______ income rose by 10%.\n\n(แปล: รายได้สุทธิเพิ่มขึ้น 10%)",
-                "options": [
-                    "Quota",
-                    "Output",
-                    "Stake",
-                    "Net"
+                    "Utility",
+                    "Stake"
                 ],
                 "answer": 3
             }
@@ -7951,102 +8936,135 @@ const quizData = {
         "8": [
             {
                 "type": "reading",
-                "question": "The investment offers a high ______.\n\n(แปล: การลงทุนให้ผลตอบแทนสูง)",
+                "question": "The company went ______ last year.\n\n(แปล: บริษัทล้มละลายเมื่อปีที่แล้ว)",
                 "options": [
+                    "Bankrupt",
+                    "Distribute",
                     "Yield",
-                    "Approve",
-                    "Compensation",
-                    "Bankrupt"
+                    "Feature"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "She is a successful ______ in the tech industry.\n\n(แปล: เธอเป็นผู้ประกอบการที่ประสบความสำเร็จในอุตสาหกรรมเทคโนโลยี)",
+                "options": [
+                    "Vendor",
+                    "Approve",
+                    "Guarantee_alt",
+                    "Entrepreneur"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "We buy materials at ______ prices.\n\n(แปล: เราซื้อวัสดุในราคาขายส่ง)",
                 "options": [
-                    "Approve",
                     "Wholesale",
                     "Vendor",
-                    "Guarantee_alt"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "______: The television comes with a two-year guarantee.\n\n(แปล: โทรทัศน์มาพร้อมกับการรับประกันสองปี)",
-                "options": [
-                    "Vendor",
-                    "Yield",
-                    "Guarantee_alt",
-                    "Entrepreneur"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "The new car has many advanced safety ______s.\n\n(แปล: รถยนต์รุ่นใหม่มีคุณลักษณะด้านความปลอดภัยขั้นสูงมากมาย)",
-                "options": [
-                    "Wholesale",
-                    "Approve",
-                    "Feature",
-                    "Vendor"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "We ______ products worldwide.\n\n(แปล: เราจัดจำหน่ายสินค้าไปทั่วโลก)",
-                "options": [
                     "Entrepreneur",
-                    "Guarantee_alt",
-                    "Distribute",
-                    "Vendor"
-                ],
-                "answer": 2
-            }
-        ],
-        "9": [
-            {
-                "type": "reading",
-                "question": "______: The marketing team will launch the campaign next week.\n\n(แปล: ทีมการตลาดจะเปิดตัวแคมเปญในสัปดาห์หน้า)",
-                "options": [
-                    "Refund_alt",
-                    "Incentive",
-                    "Launch_alt",
-                    "Hierarchical"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "We publish a ______ report.\n\n(แปล: เราจัดพิมพ์รายงานรายไตรมาส)",
-                "options": [
-                    "Portfolio",
-                    "Merger",
-                    "Quarterly",
-                    "Niche"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "Many companies ______ their IT services.\n\n(แปล: บริษัทหลายแห่งจ้างบุคคลภายนอกให้บริการด้านไอที)",
-                "options": [
-                    "Outsource",
-                    "Refund_alt",
-                    "Portfolio",
-                    "Merger"
+                    "Approve"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The ______ between the two banks was successful.\n\n(แปล: การควบรวมกิจการระหว่างสองธนาคารประสบความสำเร็จ)",
+                "question": "We need to select a reliable software ______.\n\n(แปล: เราจำเป็นต้องเลือกผู้จัดจำหน่ายซอฟต์แวร์ที่เชื่อถือได้)",
                 "options": [
-                    "Merger",
+                    "Compensation",
+                    "Yield",
+                    "Distribute",
+                    "Vendor"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The new car has many advanced safety ______s.\n\n(แปล: รถยนต์รุ่นใหม่มีคุณลักษณะด้านความปลอดภัยขั้นสูงมากมาย)",
+                "options": [
+                    "Approve",
+                    "Vendor",
+                    "Entrepreneur",
+                    "Feature"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "We ______ products worldwide.\n\n(แปล: เราจัดจำหน่ายสินค้าไปทั่วโลก)",
+                "options": [
+                    "Distribute",
+                    "Approve",
+                    "Wholesale",
+                    "Yield"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The manager ______d the budget request.\n\n(แปล: ผู้จัดการอนุมัติคำของบประมาณ)",
+                "options": [
+                    "Approve",
+                    "Vendor",
+                    "Wholesale",
+                    "Yield"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The investment offers a high ______.\n\n(แปล: การลงทุนให้ผลตอบแทนสูง)",
+                "options": [
+                    "Yield",
+                    "Wholesale",
+                    "Guarantee_alt",
+                    "Distribute"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "______: The television comes with a two-year guarantee.\n\n(แปล: โทรทัศน์มาพร้อมกับการรับประกันสองปี)",
+                "options": [
+                    "Bankrupt",
+                    "Wholesale",
+                    "Compensation",
+                    "Guarantee_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "He received workers' ______ for his injury.\n\n(แปล: เขาได้รับค่าตอบแทนสำหรับคนงานจากการบาดเจ็บ)",
+                "options": [
+                    "Feature",
+                    "Approve",
+                    "Bankrupt",
+                    "Compensation"
+                ],
+                "answer": 3
+            }
+        ],
+        "9": [
+            {
+                "type": "reading",
+                "question": "The organization has a ______ structure.\n\n(แปล: องค์กรมีโครงสร้างตามลำดับชั้น)",
+                "options": [
+                    "Refund_alt",
+                    "Hierarchical",
                     "Launch_alt",
-                    "Portfolio",
-                    "Hierarchical"
+                    "Incentive"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "______: The marketing team will launch the campaign next week.\n\n(แปล: ทีมการตลาดจะเปิดตัวแคมเปญในสัปดาห์หน้า)",
+                "options": [
+                    "Launch_alt",
+                    "Incentive",
+                    "Outsource",
+                    "Justify"
                 ],
                 "answer": 0
             },
@@ -8054,33 +9072,99 @@ const quizData = {
                 "type": "reading",
                 "question": "You must ______ your business expenses.\n\n(แปล: คุณต้องแสดงเหตุผลสำหรับค่าใช้จ่ายทางธุรกิจของคุณ)",
                 "options": [
-                    "Portfolio",
                     "Justify",
-                    "Merger",
-                    "Refund_alt"
+                    "Quarterly",
+                    "Niche",
+                    "Hierarchical"
                 ],
-                "answer": 1
-            }
-        ],
-        "10": [
+                "answer": 0
+            },
             {
                 "type": "reading",
-                "question": "This product sets a new ______ for quality.\n\n(แปล: ผลิตภัณฑ์นี้สร้างเกณฑ์มาตรฐานใหม่สำหรับคุณภาพ)",
+                "question": "They found a profitable ______ in the market.\n\n(แปล: พวกเขาพบกลุ่มเป้าหมายเฉพาะที่ทำกำไรได้ในตลาด)",
                 "options": [
-                    "Turnover",
-                    "Benchmark",
-                    "Warrant",
-                    "Acquisition"
+                    "Launch_alt",
+                    "Incentive",
+                    "Merger",
+                    "Niche"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The designer presented her ______ to the client.\n\n(แปล: นักออกแบบนำเสนอผลงานของเธอต่อลูกค้า)",
+                "options": [
+                    "Portfolio",
+                    "Niche",
+                    "Outsource",
+                    "Justify"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Many companies ______ their IT services.\n\n(แปล: บริษัทหลายแห่งจ้างบุคคลภายนอกให้บริการด้านไอที)",
+                "options": [
+                    "Merger",
+                    "Quarterly",
+                    "Hierarchical",
+                    "Outsource"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The ______ between the two banks was successful.\n\n(แปล: การควบรวมกิจการระหว่างสองธนาคารประสบความสำเร็จ)",
+                "options": [
+                    "Hierarchical",
+                    "Incentive",
+                    "Merger",
+                    "Launch_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Employees are given financial ______s for good performance.\n\n(แปล: พนักงานจะได้รับสิ่งจูงใจทางการเงินสำหรับผลการทำงานที่ดี)",
+                "options": [
+                    "Hierarchical",
+                    "Incentive",
+                    "Niche",
+                    "Refund_alt"
                 ],
                 "answer": 1
             },
             {
                 "type": "reading",
-                "question": "The ______ will double our market share.\n\n(แปล: การเข้าซื้อกิจการจะเพิ่มส่วนแบ่งการตลาดของเราเป็นสองเท่า)",
+                "question": "______: If you are not satisfied, we will offer a full refund.\n\n(แปล: หากคุณไม่พอใจ เราจะคืนเงินให้เต็มจำนวน)",
                 "options": [
-                    "Diversify",
-                    "Benchmark",
+                    "Justify",
+                    "Launch_alt",
+                    "Refund_alt",
+                    "Quarterly"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "We publish a ______ report.\n\n(แปล: เราจัดพิมพ์รายงานรายไตรมาส)",
+                "options": [
+                    "Merger",
+                    "Justify",
+                    "Hierarchical",
+                    "Quarterly"
+                ],
+                "answer": 3
+            }
+        ],
+        "10": [
+            {
+                "type": "reading",
+                "question": "The board reached a ______ decision.\n\n(แปล: คณะกรรมการมีมติเป็นเอกฉันท์)",
+                "options": [
                     "Acquisition",
+                    "Turnover",
+                    "Unanimous",
                     "Viable"
                 ],
                 "answer": 2
@@ -8089,21 +9173,54 @@ const quizData = {
                 "type": "reading",
                 "question": "We need to ______ our product range.\n\n(แปล: เราจำเป็นต้องเพิ่มความหลากหลายของสายผลิตภัณฑ์)",
                 "options": [
-                    "Turnover",
+                    "Warrant",
+                    "Viable",
                     "Diversify",
-                    "Unanimous",
-                    "Warrant"
+                    "Benchmark"
                 ],
-                "answer": 1
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "All suppliers must ______ with environmental regulations.\n\n(แปล: ซัพพลายเออร์ทั้งหมดต้องปฏิบัติตามข้อบังคับด้านสิ่งแวดล้อม)",
+                "options": [
+                    "Viable",
+                    "Warrant",
+                    "Sponsor",
+                    "Comply"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "The event is ______ed by local businesses.\n\n(แปล: กิจกรรมนี้ได้รับการสนับสนุนจากธุรกิจในท้องถิ่น)",
                 "options": [
+                    "Warrant",
                     "Acquisition",
-                    "Comply",
+                    "Unanimous",
+                    "Sponsor"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The company has a high staff ______ rate.\n\n(แปล: บริษัทมีอัตราการลาออกของพนักงานสูง)",
+                "options": [
+                    "Acquisition",
+                    "Benchmark",
+                    "Unanimous",
+                    "Turnover"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The situation does not ______ such drastic measures.\n\n(แปล: สถานการณ์ไม่ได้รุนแรงถึงขั้นต้องใช้มาตรการรุนแรงเช่นนี้)",
+                "options": [
                     "Sponsor",
-                    "Unanimous"
+                    "Diversify",
+                    "Warrant",
+                    "Acquisition"
                 ],
                 "answer": 2
             },
@@ -8111,10 +9228,32 @@ const quizData = {
                 "type": "reading",
                 "question": "We need to find a commercially ______ solution.\n\n(แปล: เราจำเป็นต้องหาวิธีแก้ปัญหาที่ทำกำไรได้ในเชิงพาณิชย์)",
                 "options": [
-                    "Unanimous",
+                    "Comply",
                     "Warrant",
-                    "Viable",
-                    "Benchmark"
+                    "Acquisition",
+                    "Viable"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The ______ will double our market share.\n\n(แปล: การเข้าซื้อกิจการจะเพิ่มส่วนแบ่งการตลาดของเราเป็นสองเท่า)",
+                "options": [
+                    "Unanimous",
+                    "Benchmark",
+                    "Acquisition",
+                    "Sponsor"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "This product sets a new ______ for quality.\n\n(แปล: ผลิตภัณฑ์นี้สร้างเกณฑ์มาตรฐานใหม่สำหรับคุณภาพ)",
+                "options": [
+                    "Sponsor",
+                    "Unanimous",
+                    "Benchmark",
+                    "Diversify"
                 ],
                 "answer": 2
             }
@@ -8124,49 +9263,13 @@ const quizData = {
         "1": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ'",
-                "answerText": "Suggest",
-                "options": [
-                    "Present",
-                    "Summarize",
-                    "Negotiate",
-                    "Suggest"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ขอโทษ'",
-                "answerText": "Apologize",
-                "options": [
-                    "Apologize",
-                    "Recommend",
-                    "Explain",
-                    "Present"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ไม่เห็นด้วย'",
-                "answerText": "Disagree",
-                "options": [
-                    "Recommend",
-                    "Apologize",
-                    "Disagree",
-                    "Explain"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นำเสนอ'",
                 "answerText": "Present",
                 "options": [
-                    "Recommend",
+                    "Summarize",
                     "Present",
-                    "Explain",
-                    "Apologize"
+                    "Disagree",
+                    "Agree"
                 ],
                 "answer": 1
             },
@@ -8175,110 +9278,242 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้ชัดเจน'",
                 "answerText": "Clarify",
                 "options": [
-                    "Present",
-                    "Disagree",
                     "Recommend",
-                    "Clarify"
+                    "Clarify",
+                    "Disagree",
+                    "Agree"
                 ],
-                "answer": 3
-            }
-        ],
-        "2": [
+                "answer": 1
+            },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้เชื่อ'",
-                "answerText": "Convince",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เจรจาต่อรอง'",
+                "answerText": "Negotiate",
                 "options": [
-                    "Persuade",
-                    "Illustrate",
-                    "Convince",
-                    "Respond"
+                    "Disagree",
+                    "Negotiate",
+                    "Agree",
+                    "Recommend"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ไม่เห็นด้วย'",
+                "answerText": "Disagree",
+                "options": [
+                    "Explain",
+                    "Present",
+                    "Negotiate",
+                    "Disagree"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ/เสนอแนะ'",
+                "answerText": "Recommend",
+                "options": [
+                    "Explain",
+                    "Apologize",
+                    "Recommend",
+                    "Disagree"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
-                "answerText": "Persuade",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เห็นด้วย'",
+                "answerText": "Agree",
                 "options": [
+                    "Recommend",
+                    "Agree",
+                    "Present",
+                    "Disagree"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ'",
+                "answerText": "Suggest",
+                "options": [
+                    "Apologize",
+                    "Present",
+                    "Summarize",
+                    "Suggest"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
+                "answerText": "Summarize",
+                "options": [
+                    "Agree",
+                    "Negotiate",
+                    "Summarize",
+                    "Recommend"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ขอโทษ'",
+                "answerText": "Apologize",
+                "options": [
+                    "Clarify",
+                    "Explain",
+                    "Apologize",
+                    "Disagree"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบาย'",
+                "answerText": "Explain",
+                "options": [
+                    "Explain",
+                    "Summarize",
+                    "Apologize",
+                    "Present"
+                ],
+                "answer": 0
+            }
+        ],
+        "2": [
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตอบกลับ'",
+                "answerText": "Respond",
+                "options": [
+                    "Respond",
+                    "Express",
                     "Communicate",
-                    "Emphasize",
-                    "Persuade",
+                    "Illustrate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โต้ตอบ'",
+                "answerText": "Interact",
+                "options": [
+                    "Illustrate",
+                    "Participate",
+                    "Interact",
                     "Introduce"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตอบกลับ'",
-                "answerText": "Respond",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สื่อสาร'",
+                "answerText": "Communicate",
                 "options": [
                     "Emphasize",
-                    "Respond",
-                    "Persuade",
+                    "Communicate",
+                    "Participate",
                     "Convince"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แสดงออก'",
+                "answerText": "Express",
+                "options": [
+                    "Express",
+                    "Introduce",
+                    "Participate",
+                    "Illustrate"
+                ],
+                "answer": 0
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เข้าร่วม'",
                 "answerText": "Participate",
                 "options": [
-                    "Participate",
-                    "Express",
+                    "Illustrate",
                     "Introduce",
-                    "Convince"
+                    "Participate",
+                    "Express"
                 ],
-                "answer": 0
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยกตัวอย่าง'",
                 "answerText": "Illustrate",
                 "options": [
-                    "Convince",
-                    "Persuade",
+                    "Participate",
                     "Illustrate",
-                    "Express"
-                ],
-                "answer": 2
-            }
-        ],
-        "3": [
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ซาบซึ้ง'",
-                "answerText": "Appreciate",
-                "options": [
-                    "Provide",
-                    "Notify",
-                    "Appreciate",
-                    "Confirm"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยืนยัน'",
-                "answerText": "Confirm",
-                "options": [
-                    "Discuss",
-                    "Confirm",
-                    "Ensure",
-                    "Appreciate"
+                    "Respond",
+                    "Emphasize"
                 ],
                 "answer": 1
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้แน่ใจ'",
-                "answerText": "Ensure",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
+                "answerText": "Emphasize",
                 "options": [
-                    "Appreciate",
-                    "Ensure",
-                    "Discuss",
-                    "Confirm"
+                    "Emphasize",
+                    "Express",
+                    "Interact",
+                    "Respond"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
+                "answerText": "Persuade",
+                "options": [
+                    "Respond",
+                    "Persuade",
+                    "Participate",
+                    "Introduce"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำตัว'",
+                "answerText": "Introduce",
+                "options": [
+                    "Convince",
+                    "Emphasize",
+                    "Introduce",
+                    "Respond"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้เชื่อ'",
+                "answerText": "Convince",
+                "options": [
+                    "Convince",
+                    "Participate",
+                    "Interact",
+                    "Emphasize"
+                ],
+                "answer": 0
+            }
+        ],
+        "3": [
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยินดีต้อนรับ'",
+                "answerText": "Welcome",
+                "options": [
+                    "Submit",
+                    "Welcome",
+                    "Confirm",
+                    "Appreciate"
                 ],
                 "answer": 1
             },
@@ -8287,72 +9522,120 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ขออภัย'",
                 "answerText": "Apologize_alt",
                 "options": [
+                    "Appreciate",
                     "Apologize_alt",
                     "Notify",
-                    "Clarify_alt",
-                    "Appreciate"
+                    "Welcome"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ซาบซึ้ง'",
+                "answerText": "Appreciate",
+                "options": [
+                    "Appreciate",
+                    "Notify",
+                    "Confirm",
+                    "Provide"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ส่ง (เอกสาร)'",
+                "answerText": "Submit",
+                "options": [
+                    "Confirm",
+                    "Submit",
+                    "Discuss",
+                    "Apologize_alt"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยืนยัน'",
+                "answerText": "Confirm",
+                "options": [
+                    "Apologize_alt",
+                    "Clarify_alt",
+                    "Submit",
+                    "Confirm"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้ชัดเจน'",
+                "answerText": "Clarify_alt",
+                "options": [
+                    "Clarify_alt",
+                    "Provide",
+                    "Apologize_alt",
+                    "Notify"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อภิปราย'",
+                "answerText": "Discuss",
+                "options": [
+                    "Confirm",
+                    "Discuss",
+                    "Appreciate",
+                    "Ensure"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แจ้งให้ทราบ'",
+                "answerText": "Notify",
+                "options": [
+                    "Confirm",
+                    "Ensure",
+                    "Apologize_alt",
+                    "Notify"
+                ],
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จัดหาให้'",
                 "answerText": "Provide",
                 "options": [
-                    "Ensure",
                     "Provide",
-                    "Apologize_alt",
-                    "Notify"
-                ],
-                "answer": 1
-            }
-        ],
-        "4": [
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รวบรวม'",
-                "answerText": "Gather",
-                "options": [
-                    "Address",
-                    "Establish",
-                    "Emphasize_alt",
-                    "Gather"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สาธิต'",
-                "answerText": "Demonstrate",
-                "options": [
-                    "Demonstrate",
-                    "Explain_alt",
-                    "Establish",
-                    "Evaluate"
+                    "Confirm",
+                    "Appreciate",
+                    "Welcome"
                 ],
                 "answer": 0
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จัดการกับ(ปัญหา)'",
-                "answerText": "Address",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้แน่ใจ'",
+                "answerText": "Ensure",
                 "options": [
-                    "Demonstrate",
-                    "Explain_alt",
-                    "Evaluate",
-                    "Address"
+                    "Confirm",
+                    "Apologize_alt",
+                    "Provide",
+                    "Ensure"
                 ],
                 "answer": 3
-            },
+            }
+        ],
+        "4": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
-                "answerText": "Convince_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รับทราบ'",
+                "answerText": "Acknowledge",
                 "options": [
-                    "Acknowledge",
                     "Anticipate",
-                    "Evaluate",
-                    "Convince_alt"
+                    "Emphasize_alt",
+                    "Establish",
+                    "Acknowledge"
                 ],
                 "answer": 3
             },
@@ -8361,35 +9644,215 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเมิน'",
                 "answerText": "Evaluate",
                 "options": [
+                    "Emphasize_alt",
+                    "Address",
+                    "Evaluate",
+                    "Establish"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
+                "answerText": "Emphasize_alt",
+                "options": [
+                    "Explain_alt",
                     "Evaluate",
                     "Convince_alt",
-                    "Gather",
+                    "Emphasize_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบาย'",
+                "answerText": "Explain_alt",
+                "options": [
+                    "Establish",
+                    "Explain_alt",
+                    "Emphasize_alt",
                     "Demonstrate"
                 ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รวบรวม'",
+                "answerText": "Gather",
+                "options": [
+                    "Anticipate",
+                    "Gather",
+                    "Address",
+                    "Convince_alt"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จัดการกับ(ปัญหา)'",
+                "answerText": "Address",
+                "options": [
+                    "Demonstrate",
+                    "Address",
+                    "Explain_alt",
+                    "Establish"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
+                "answerText": "Convince_alt",
+                "options": [
+                    "Establish",
+                    "Explain_alt",
+                    "Convince_alt",
+                    "Anticipate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ก่อตั้ง/สร้าง'",
+                "answerText": "Establish",
+                "options": [
+                    "Emphasize_alt",
+                    "Establish",
+                    "Convince_alt",
+                    "Acknowledge"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สาธิต'",
+                "answerText": "Demonstrate",
+                "options": [
+                    "Demonstrate",
+                    "Establish",
+                    "Anticipate",
+                    "Evaluate"
+                ],
                 "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'คาดการณ์'",
+                "answerText": "Anticipate",
+                "options": [
+                    "Evaluate",
+                    "Anticipate",
+                    "Address",
+                    "Explain_alt"
+                ],
+                "answer": 1
             }
         ],
         "5": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เสนอ'",
-                "answerText": "Propose",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
+                "answerText": "Summarize_alt",
                 "options": [
                     "Indicate",
                     "Propose",
-                    "Observe",
-                    "Mention"
+                    "Suggest_alt",
+                    "Summarize_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระบุ/แสดงให้เห็น'",
+                "answerText": "Indicate",
+                "options": [
+                    "Maintain",
+                    "Persuade_alt",
+                    "Indicate",
+                    "Suggest_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สอบถาม'",
+                "answerText": "Inquire",
+                "options": [
+                    "Inquire",
+                    "Propose",
+                    "Negotiate_alt",
+                    "Maintain"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
+                "answerText": "Persuade_alt",
+                "options": [
+                    "Propose",
+                    "Persuade_alt",
+                    "Mention",
+                    "Suggest_alt"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เจรจาต่อรอง'",
+                "answerText": "Negotiate_alt",
+                "options": [
+                    "Propose",
+                    "Mention",
+                    "Observe",
+                    "Negotiate_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รักษา'",
+                "answerText": "Maintain",
+                "options": [
+                    "Observe",
+                    "Negotiate_alt",
+                    "Persuade_alt",
+                    "Maintain"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกต'",
+                "answerText": "Observe",
+                "options": [
+                    "Mention",
+                    "Suggest_alt",
+                    "Inquire",
+                    "Observe"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เสนอ'",
+                "answerText": "Propose",
+                "options": [
+                    "Persuade_alt",
+                    "Observe",
+                    "Propose",
+                    "Summarize_alt"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ'",
                 "answerText": "Suggest_alt",
                 "options": [
+                    "Propose",
+                    "Inquire",
                     "Observe",
-                    "Maintain",
-                    "Persuade_alt",
                     "Suggest_alt"
                 ],
                 "answer": 3
@@ -8399,48 +9862,108 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวถึง'",
                 "answerText": "Mention",
                 "options": [
+                    "Observe",
                     "Mention",
                     "Propose",
-                    "Inquire",
-                    "Summarize_alt"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
-                "answerText": "Summarize_alt",
-                "options": [
-                    "Mention",
-                    "Summarize_alt",
-                    "Persuade_alt",
-                    "Indicate"
+                    "Maintain"
                 ],
                 "answer": 1
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สอบถาม'",
-                "answerText": "Inquire",
-                "options": [
-                    "Observe",
-                    "Summarize_alt",
-                    "Suggest_alt",
-                    "Inquire"
-                ],
-                "answer": 3
             }
         ],
         "6": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ปรับตัว'",
-                "answerText": "Adapt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนวทาง'",
+                "answerText": "Guideline",
                 "options": [
+                    "Guideline",
+                    "Highlight",
                     "Benefit",
-                    "Justify",
+                    "Justify"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตัดสินใจ/กำหนด'",
+                "answerText": "Determine",
+                "options": [
+                    "Determine",
                     "Adapt",
-                    "Focus"
+                    "Guideline",
+                    "Highlight"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นให้เห็นชัด'",
+                "answerText": "Highlight",
+                "options": [
+                    "Focus",
+                    "Inform",
+                    "Highlight",
+                    "Essential"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายเหตุผล'",
+                "answerText": "Justify",
+                "options": [
+                    "Essential",
+                    "Focus",
+                    "Justify",
+                    "Conclude"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
+                "answerText": "Conclude",
+                "options": [
+                    "Guideline",
+                    "Conclude",
+                    "Highlight",
+                    "Benefit"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ผลประโยชน์'",
+                "answerText": "Benefit",
+                "options": [
+                    "Guideline",
+                    "Benefit",
+                    "Essential",
+                    "Justify"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แจ้งให้ทราบ'",
+                "answerText": "Inform",
+                "options": [
+                    "Inform",
+                    "Adapt",
+                    "Benefit",
+                    "Justify"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จำเป็นอย่างยิ่ง'",
+                "answerText": "Essential",
+                "options": [
+                    "Conclude",
+                    "Benefit",
+                    "Essential",
+                    "Determine"
                 ],
                 "answer": 2
             },
@@ -8449,98 +9972,98 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'มุ่งเน้น'",
                 "answerText": "Focus",
                 "options": [
-                    "Essential",
-                    "Benefit",
-                    "Guideline",
+                    "Adapt",
+                    "Highlight",
+                    "Justify",
                     "Focus"
                 ],
                 "answer": 3
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนวทาง'",
-                "answerText": "Guideline",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ปรับตัว'",
+                "answerText": "Adapt",
                 "options": [
-                    "Guideline",
-                    "Essential",
                     "Adapt",
+                    "Focus",
+                    "Conclude",
                     "Benefit"
                 ],
                 "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายเหตุผล'",
-                "answerText": "Justify",
-                "options": [
-                    "Essential",
-                    "Highlight",
-                    "Justify",
-                    "Focus"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จำเป็นอย่างยิ่ง'",
-                "answerText": "Essential",
-                "options": [
-                    "Benefit",
-                    "Essential",
-                    "Conclude",
-                    "Adapt"
-                ],
-                "answer": 1
             }
         ],
         "7": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตระหนัก/จดจำได้'",
-                "answerText": "Recognize",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ความรู้'",
+                "answerText": "Knowledge",
                 "options": [
-                    "Recognize",
+                    "Persuade_alt",
                     "Question",
-                    "Locate",
-                    "Outline"
+                    "Knowledge",
+                    "Note"
                 ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้สูงสุด'",
-                "answerText": "Maximize",
-                "options": [
-                    "Maximize",
-                    "Locate",
-                    "Target",
-                    "Persuade_alt"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกต/จดจำ'",
-                "answerText": "Note",
-                "options": [
-                    "Outline",
-                    "Note",
-                    "Locate",
-                    "Target"
-                ],
-                "answer": 1
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตั้งคำถาม'",
                 "answerText": "Question",
                 "options": [
+                    "Target",
                     "Question",
                     "Knowledge",
-                    "Summarize_alt",
                     "Persuade_alt"
                 ],
-                "answer": 0
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
+                "answerText": "Persuade_alt",
+                "options": [
+                    "Recognize",
+                    "Persuade_alt",
+                    "Maximize",
+                    "Outline"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตั้งอยู่/หาตำแหน่ง'",
+                "answerText": "Locate",
+                "options": [
+                    "Target",
+                    "Locate",
+                    "Question",
+                    "Outline"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เค้าโครง/สรุปคร่าวๆ'",
+                "answerText": "Outline",
+                "options": [
+                    "Note",
+                    "Outline",
+                    "Maximize",
+                    "Target"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกต/จดจำ'",
+                "answerText": "Note",
+                "options": [
+                    "Recognize",
+                    "Note",
+                    "Maximize",
+                    "Knowledge"
+                ],
+                "answer": 1
             },
             {
                 "type": "speaking",
@@ -8548,26 +10071,50 @@ const quizData = {
                 "answerText": "Target",
                 "options": [
                     "Locate",
-                    "Note",
-                    "Recognize",
-                    "Target"
+                    "Target",
+                    "Knowledge",
+                    "Recognize"
                 ],
-                "answer": 3
-            }
-        ],
-        "8": [
+                "answer": 1
+            },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระดมสมอง'",
-                "answerText": "Brainstorm",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
+                "answerText": "Summarize_alt",
                 "options": [
-                    "Clarify_alt",
-                    "Facilitate",
-                    "Brainstorm",
-                    "Analyze"
+                    "Note",
+                    "Question",
+                    "Maximize",
+                    "Summarize_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้สูงสุด'",
+                "answerText": "Maximize",
+                "options": [
+                    "Persuade_alt",
+                    "Knowledge",
+                    "Maximize",
+                    "Locate"
                 ],
                 "answer": 2
             },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตระหนัก/จดจำได้'",
+                "answerText": "Recognize",
+                "options": [
+                    "Recognize",
+                    "Knowledge",
+                    "Target",
+                    "Question"
+                ],
+                "answer": 0
+            }
+        ],
+        "8": [
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'วิเคราะห์'",
@@ -8575,46 +10122,118 @@ const quizData = {
                 "options": [
                     "Facilitate",
                     "Analyze",
-                    "Welcome_alt",
-                    "Yield"
+                    "Evaluate_alt",
+                    "Verify"
                 ],
                 "answer": 1
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้ง่ายขึ้น/อำนวยความสะดวก'",
-                "answerText": "Facilitate",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยินดีต้อนรับ'",
+                "answerText": "Welcome_alt",
                 "options": [
-                    "Understand",
-                    "Yield",
-                    "Facilitate",
-                    "Brainstorm"
+                    "Evaluate_alt",
+                    "Verify",
+                    "Brainstorm",
+                    "Welcome_alt"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เข้าใจ'",
-                "answerText": "Understand",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยืนยันความถูกต้อง'",
+                "answerText": "Verify",
                 "options": [
-                    "Brainstorm",
+                    "Facilitate",
+                    "Verify",
                     "Demonstrate_alt",
-                    "Understand",
-                    "Verify"
+                    "Analyze"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แสดงให้เห็น'",
                 "answerText": "Demonstrate_alt",
                 "options": [
-                    "Yield",
                     "Clarify_alt",
+                    "Evaluate_alt",
                     "Demonstrate_alt",
-                    "Verify"
+                    "Facilitate"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้ง่ายขึ้น/อำนวยความสะดวก'",
+                "answerText": "Facilitate",
+                "options": [
+                    "Yield",
+                    "Facilitate",
+                    "Brainstorm",
+                    "Understand"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระดมสมอง'",
+                "answerText": "Brainstorm",
+                "options": [
+                    "Understand",
+                    "Welcome_alt",
+                    "Brainstorm",
+                    "Clarify_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเมิน'",
+                "answerText": "Evaluate_alt",
+                "options": [
+                    "Understand",
+                    "Yield",
+                    "Evaluate_alt",
+                    "Demonstrate_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายให้กระจ่าง'",
+                "answerText": "Clarify_alt",
+                "options": [
+                    "Clarify_alt",
+                    "Understand",
+                    "Welcome_alt",
+                    "Facilitate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เข้าใจ'",
+                "answerText": "Understand",
+                "options": [
+                    "Demonstrate_alt",
+                    "Welcome_alt",
+                    "Verify",
+                    "Understand"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยอมแพ้/ให้ผล'",
+                "answerText": "Yield",
+                "options": [
+                    "Yield",
+                    "Clarify_alt",
+                    "Brainstorm",
+                    "Analyze"
+                ],
+                "answer": 0
             }
         ],
         "9": [
@@ -8623,34 +10242,106 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จัดระเบียบ/จัดเตรียม'",
                 "answerText": "Organize",
                 "options": [
-                    "Organize",
-                    "Handle",
-                    "Implement",
-                    "Generate"
+                    "Judge",
+                    "Keep",
+                    "Present_alt",
+                    "Organize"
                 ],
-                "answer": 0
+                "answer": 3
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตัดสิน'",
-                "answerText": "Judge",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นำไปปฏิบัติ'",
+                "answerText": "Implement",
                 "options": [
-                    "Organize",
-                    "Keep",
+                    "Generate",
                     "Judge",
-                    "Manage"
+                    "Implement",
+                    "Keep"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รักษาไว้'",
+                "answerText": "Keep",
+                "options": [
+                    "Negotiate_alt",
+                    "Handle",
+                    "Manage",
+                    "Keep"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รับมือ/จัดการ'",
+                "answerText": "Handle",
+                "options": [
+                    "Keep",
+                    "Generate",
+                    "Judge",
+                    "Handle"
+                ],
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'จัดการ'",
                 "answerText": "Manage",
                 "options": [
+                    "Present_alt",
+                    "Implement",
+                    "Judge",
+                    "Manage"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นำเสนอ'",
+                "answerText": "Present_alt",
+                "options": [
+                    "Negotiate_alt",
+                    "Organize",
+                    "Present_alt",
+                    "Implement"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นำ/เป็นผู้นำ'",
+                "answerText": "Lead",
+                "options": [
+                    "Judge",
+                    "Present_alt",
+                    "Lead",
+                    "Handle"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตัดสิน'",
+                "answerText": "Judge",
+                "options": [
+                    "Manage",
                     "Keep",
                     "Handle",
-                    "Present_alt",
-                    "Manage"
+                    "Judge"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สร้าง/ผลิต'",
+                "answerText": "Generate",
+                "options": [
+                    "Keep",
+                    "Negotiate_alt",
+                    "Implement",
+                    "Generate"
                 ],
                 "answer": 3
             },
@@ -8660,23 +10351,11 @@ const quizData = {
                 "answerText": "Negotiate_alt",
                 "options": [
                     "Lead",
-                    "Handle",
                     "Negotiate_alt",
+                    "Keep",
                     "Present_alt"
                 ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นำ/เป็นผู้นำ'",
-                "answerText": "Lead",
-                "options": [
-                    "Negotiate_alt",
-                    "Manage",
-                    "Judge",
-                    "Lead"
-                ],
-                "answer": 3
+                "answer": 1
             }
         ],
         "10": [
@@ -8685,60 +10364,120 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ให้คุณค่า'",
                 "answerText": "Value",
                 "options": [
-                    "Weigh",
+                    "Value",
+                    "Urge",
                     "Support",
-                    "Tackle",
-                    "Value"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รับมือกับ(ปัญหา)'",
-                "answerText": "Tackle",
-                "options": [
-                    "Tackle",
-                    "Review",
-                    "Yield_alt",
                     "Weigh"
                 ],
                 "answer": 0
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน'",
-                "answerText": "Support",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยอมทำตาม'",
+                "answerText": "Yield_alt",
                 "options": [
-                    "Weigh",
+                    "Quantify",
+                    "Tackle",
+                    "Review",
+                    "Yield_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตรวจสอบ'",
+                "answerText": "Examine",
+                "options": [
+                    "Tackle",
+                    "Examine",
+                    "Yield_alt",
+                    "Value"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'วัดปริมาณ'",
+                "answerText": "Quantify",
+                "options": [
                     "Zero",
-                    "Support",
+                    "Weigh",
+                    "Quantify",
                     "Review"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน'",
+                "answerText": "Support",
+                "options": [
+                    "Tackle",
+                    "Urge",
+                    "Yield_alt",
+                    "Support"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทบทวน'",
+                "answerText": "Review",
+                "options": [
+                    "Review",
+                    "Weigh",
+                    "Yield_alt",
+                    "Zero"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ศูนย์/ปรับศูนย์'",
                 "answerText": "Zero",
                 "options": [
-                    "Examine",
-                    "Zero",
-                    "Value",
-                    "Tackle"
+                    "Weigh",
+                    "Quantify",
+                    "Review",
+                    "Zero"
                 ],
-                "answer": 1
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กระตุ้น/เร่งเร้า'",
                 "answerText": "Urge",
                 "options": [
+                    "Yield_alt",
                     "Urge",
-                    "Zero",
-                    "Weigh",
-                    "Quantify"
+                    "Quantify",
+                    "Tackle"
                 ],
-                "answer": 0
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รับมือกับ(ปัญหา)'",
+                "answerText": "Tackle",
+                "options": [
+                    "Review",
+                    "Tackle",
+                    "Weigh",
+                    "Examine"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ชั่งน้ำหนัก(พิจารณา)'",
+                "answerText": "Weigh",
+                "options": [
+                    "Review",
+                    "Value",
+                    "Weigh",
+                    "Examine"
+                ],
+                "answer": 2
             }
         ]
     },
@@ -8747,14 +10486,14 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Assignment",
+                "audioText": "Deadline",
                 "options": [
-                    "Library",
+                    "Enroll",
                     "Deadline",
-                    "Assignment",
-                    "Enroll"
+                    "Campus",
+                    "Lecture"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "listening",
@@ -8762,11 +10501,11 @@ const quizData = {
                 "audioText": "Syllabus",
                 "options": [
                     "Deadline",
-                    "Credit",
                     "Syllabus",
-                    "Assignment"
+                    "Credit",
+                    "Campus"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "listening",
@@ -8774,7 +10513,67 @@ const quizData = {
                 "audioText": "Credit",
                 "options": [
                     "Credit",
+                    "Campus",
+                    "Lecture",
+                    "Library"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Library",
+                "options": [
+                    "Campus",
                     "Library",
+                    "Credit",
+                    "Enroll"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Campus",
+                "options": [
+                    "Semester",
+                    "Assignment",
+                    "Campus",
+                    "Library"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Semester",
+                "options": [
+                    "Library",
+                    "Assignment",
+                    "Semester",
+                    "Campus"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Professor",
+                "options": [
+                    "Deadline",
+                    "Semester",
+                    "Campus",
+                    "Professor"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Lecture",
+                "options": [
+                    "Lecture",
+                    "Deadline",
                     "Semester",
                     "Syllabus"
                 ],
@@ -8783,24 +10582,24 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Semester",
+                "audioText": "Enroll",
                 "options": [
-                    "Syllabus",
-                    "Lecture",
-                    "Library",
-                    "Semester"
+                    "Professor",
+                    "Enroll",
+                    "Campus",
+                    "Deadline"
                 ],
-                "answer": 3
+                "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Professor",
+                "audioText": "Assignment",
                 "options": [
+                    "Semester",
                     "Campus",
-                    "Credit",
-                    "Professor",
-                    "Deadline"
+                    "Assignment",
+                    "Syllabus"
                 ],
                 "answer": 2
             }
@@ -8809,12 +10608,84 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Observe",
+                "audioText": "Explain",
+                "options": [
+                    "Theory",
+                    "Explain",
+                    "Phenomenon",
+                    "Experiment"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Conclude",
+                "options": [
+                    "Experiment",
+                    "Conclude",
+                    "Concept",
+                    "Theory"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Experiment",
+                "options": [
+                    "Theory",
+                    "Phenomenon",
+                    "Experiment",
+                    "Hypothesis"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Theory",
                 "options": [
                     "Evidence",
+                    "Concept",
                     "Observe",
+                    "Theory"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Hypothesis",
+                "options": [
+                    "Conclude",
+                    "Identify",
                     "Hypothesis",
-                    "Experiment"
+                    "Concept"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Evidence",
+                "options": [
+                    "Observe",
+                    "Phenomenon",
+                    "Theory",
+                    "Evidence"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Phenomenon",
+                "options": [
+                    "Evidence",
+                    "Phenomenon",
+                    "Concept",
+                    "Explain"
                 ],
                 "answer": 1
             },
@@ -8824,45 +10695,33 @@ const quizData = {
                 "audioText": "Identify",
                 "options": [
                     "Identify",
-                    "Phenomenon",
-                    "Explain",
-                    "Experiment"
+                    "Conclude",
+                    "Hypothesis",
+                    "Concept"
                 ],
                 "answer": 0
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Explain",
+                "audioText": "Concept",
                 "options": [
-                    "Hypothesis",
-                    "Observe",
-                    "Explain",
-                    "Phenomenon"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Hypothesis",
-                "options": [
-                    "Hypothesis",
-                    "Evidence",
-                    "Observe",
-                    "Theory"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Evidence",
-                "options": [
+                    "Theory",
                     "Experiment",
-                    "Explain",
-                    "Evidence",
-                    "Hypothesis"
+                    "Hypothesis",
+                    "Concept"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Observe",
+                "options": [
+                    "Hypothesis",
+                    "Identify",
+                    "Observe",
+                    "Experiment"
                 ],
                 "answer": 2
             }
@@ -8871,12 +10730,12 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Article",
+                "audioText": "Discuss",
                 "options": [
-                    "Method",
-                    "Research",
                     "Survey",
-                    "Article"
+                    "Article",
+                    "Data",
+                    "Discuss"
                 ],
                 "answer": 3
             },
@@ -8885,96 +10744,120 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Research",
                 "options": [
-                    "Research",
-                    "Article",
-                    "Method",
-                    "Journal"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Method",
-                "options": [
-                    "Article",
-                    "Method",
-                    "Participant",
-                    "Research"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Participant",
-                "options": [
-                    "Participant",
-                    "Data",
-                    "Method",
-                    "Journal"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Survey",
-                "options": [
+                    "Discuss",
                     "Observe_alt",
-                    "Survey",
-                    "Examine",
-                    "Journal"
-                ],
-                "answer": 1
-            }
-        ],
-        "4": [
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Analyze",
-                "options": [
-                    "Academic",
-                    "Curriculum",
-                    "Analyze",
-                    "Enroll_alt"
+                    "Research",
+                    "Method"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Concept_alt",
+                "audioText": "Examine",
                 "options": [
-                    "Concept_alt",
-                    "Evaluate",
-                    "Curriculum",
-                    "Campus_alt"
+                    "Participant",
+                    "Examine",
+                    "Journal",
+                    "Article"
                 ],
-                "answer": 0
+                "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Credit_alt",
+                "audioText": "Article",
                 "options": [
-                    "Assignment_alt",
-                    "Academic",
-                    "Analyze",
-                    "Credit_alt"
+                    "Survey",
+                    "Journal",
+                    "Research",
+                    "Article"
                 ],
                 "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Enroll_alt",
+                "audioText": "Survey",
                 "options": [
-                    "Enroll_alt",
-                    "Academic",
-                    "Campus_alt",
-                    "Curriculum"
+                    "Research",
+                    "Journal",
+                    "Examine",
+                    "Survey"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Participant",
+                "options": [
+                    "Journal",
+                    "Method",
+                    "Participant",
+                    "Data"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Method",
+                "options": [
+                    "Journal",
+                    "Method",
+                    "Participant",
+                    "Article"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Observe_alt",
+                "options": [
+                    "Observe_alt",
+                    "Examine",
+                    "Research",
+                    "Discuss"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Journal",
+                "options": [
+                    "Journal",
+                    "Discuss",
+                    "Article",
+                    "Data"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Data",
+                "options": [
+                    "Article",
+                    "Observe_alt",
+                    "Data",
+                    "Participant"
+                ],
+                "answer": 2
+            }
+        ],
+        "4": [
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Curriculum",
+                "options": [
+                    "Curriculum",
+                    "Evaluate",
+                    "Analyze",
+                    "Academic"
                 ],
                 "answer": 0
             },
@@ -8983,12 +10866,108 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Assignment_alt",
                 "options": [
-                    "Faculty",
                     "Enroll_alt",
+                    "Faculty",
+                    "Credit_alt",
+                    "Assignment_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Concept_alt",
+                "options": [
+                    "Campus_alt",
                     "Assignment_alt",
-                    "Concept_alt"
+                    "Concept_alt",
+                    "Evaluate"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Faculty",
+                "options": [
+                    "Faculty",
+                    "Concept_alt",
+                    "Analyze",
+                    "Credit_alt"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Credit_alt",
+                "options": [
+                    "Credit_alt",
+                    "Academic",
+                    "Evaluate",
+                    "Assignment_alt"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Evaluate",
+                "options": [
+                    "Evaluate",
+                    "Curriculum",
+                    "Assignment_alt",
+                    "Faculty"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Campus_alt",
+                "options": [
+                    "Curriculum",
+                    "Analyze",
+                    "Academic",
+                    "Campus_alt"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Analyze",
+                "options": [
+                    "Analyze",
+                    "Assignment_alt",
+                    "Academic",
+                    "Curriculum"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Enroll_alt",
+                "options": [
+                    "Credit_alt",
+                    "Enroll_alt",
+                    "Analyze",
+                    "Academic"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Academic",
+                "options": [
+                    "Evaluate",
+                    "Assignment_alt",
+                    "Credit_alt",
+                    "Academic"
+                ],
+                "answer": 3
             }
         ],
         "5": [
@@ -8997,58 +10976,118 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Prerequisite",
                 "options": [
-                    "Semester_alt",
+                    "Objective",
+                    "Hypothesis_alt",
                     "Prerequisite",
-                    "Plagiarism",
                     "Methodology"
                 ],
-                "answer": 1
+                "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Semester_alt",
                 "options": [
-                    "Semester_alt",
-                    "Literature",
-                    "Plagiarism",
-                    "Hypothesis_alt"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Scholarship",
-                "options": [
-                    "Methodology",
+                    "Objective",
+                    "Hypothesis_alt",
                     "Prerequisite",
-                    "Scholarship",
                     "Semester_alt"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Objective",
                 "options": [
-                    "Literature",
+                    "Methodology",
                     "Lecture_alt",
-                    "Objective",
-                    "Methodology"
+                    "Plagiarism",
+                    "Objective"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Lecture_alt",
+                "options": [
+                    "Semester_alt",
+                    "Plagiarism",
+                    "Lecture_alt",
+                    "Literature"
                 ],
                 "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Literature",
+                "options": [
+                    "Paragraph",
+                    "Methodology",
+                    "Hypothesis_alt",
+                    "Literature"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Paragraph",
                 "options": [
+                    "Methodology",
+                    "Hypothesis_alt",
                     "Scholarship",
-                    "Plagiarism",
+                    "Paragraph"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Scholarship",
+                "options": [
+                    "Hypothesis_alt",
+                    "Prerequisite",
+                    "Lecture_alt",
+                    "Scholarship"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Hypothesis_alt",
+                "options": [
                     "Paragraph",
-                    "Methodology"
+                    "Hypothesis_alt",
+                    "Literature",
+                    "Scholarship"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Plagiarism",
+                "options": [
+                    "Methodology",
+                    "Prerequisite",
+                    "Objective",
+                    "Plagiarism"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Methodology",
+                "options": [
+                    "Objective",
+                    "Semester_alt",
+                    "Methodology",
+                    "Scholarship"
                 ],
                 "answer": 2
             }
@@ -9059,9 +11098,9 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Ecology",
                 "options": [
-                    "Documentary",
+                    "Chemistry",
+                    "Habitat",
                     "Biology",
-                    "Fossil",
                     "Ecology"
                 ],
                 "answer": 3
@@ -9069,98 +11108,158 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Fossil",
-                "options": [
-                    "Habitat",
-                    "Fossil",
-                    "Geology",
-                    "Astronomy"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Geology",
-                "options": [
-                    "Fossil",
-                    "Geology",
-                    "Documentary",
-                    "Astronomy"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Biology",
                 "options": [
-                    "Biology",
-                    "Documentary",
-                    "Ecology",
-                    "Astronomy"
+                    "Journalism",
+                    "Geology",
+                    "Institution",
+                    "Biology"
                 ],
-                "answer": 0
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Chemistry",
                 "options": [
+                    "Fossil",
                     "Chemistry",
+                    "Astronomy",
+                    "Habitat"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Fossil",
+                "options": [
+                    "Astronomy",
+                    "Fossil",
+                    "Habitat",
+                    "Biology"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Astronomy",
+                "options": [
                     "Journalism",
+                    "Chemistry",
+                    "Astronomy",
+                    "Institution"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Habitat",
+                "options": [
+                    "Fossil",
+                    "Astronomy",
+                    "Habitat",
+                    "Chemistry"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Geology",
+                "options": [
+                    "Habitat",
+                    "Documentary",
                     "Ecology",
                     "Geology"
                 ],
-                "answer": 0
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Journalism",
+                "options": [
+                    "Documentary",
+                    "Habitat",
+                    "Journalism",
+                    "Geology"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Institution",
+                "options": [
+                    "Biology",
+                    "Habitat",
+                    "Institution",
+                    "Geology"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Documentary",
+                "options": [
+                    "Ecology",
+                    "Documentary",
+                    "Astronomy",
+                    "Habitat"
+                ],
+                "answer": 1
             }
         ],
         "7": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Kinetic",
+                "audioText": "Meteorology",
+                "options": [
+                    "Organism",
+                    "Meteorology",
+                    "Linguistics",
+                    "Sociology"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Linguistics",
                 "options": [
                     "Meteorology",
-                    "Neanderthal",
-                    "Psychology",
-                    "Kinetic"
+                    "Organism",
+                    "Linguistics",
+                    "Psychology"
                 ],
-                "answer": 3
+                "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Psychology",
                 "options": [
-                    "Psychology",
+                    "Sociology",
                     "Neanderthal",
-                    "Tectonic",
-                    "Radiation"
+                    "Psychology",
+                    "Tectonic"
                 ],
-                "answer": 0
+                "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Sociology",
+                "audioText": "Tectonic",
                 "options": [
-                    "Kinetic",
-                    "Quotient",
+                    "Meteorology",
+                    "Radiation",
                     "Tectonic",
                     "Sociology"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Quotient",
-                "options": [
-                    "Kinetic",
-                    "Radiation",
-                    "Quotient",
-                    "Psychology"
                 ],
                 "answer": 2
             },
@@ -9169,10 +11268,70 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Organism",
                 "options": [
-                    "Linguistics",
+                    "Sociology",
+                    "Organism",
+                    "Quotient",
+                    "Meteorology"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Kinetic",
+                "options": [
+                    "Kinetic",
+                    "Sociology",
+                    "Organism",
+                    "Linguistics"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Sociology",
+                "options": [
+                    "Meteorology",
+                    "Radiation",
+                    "Sociology",
+                    "Neanderthal"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Radiation",
+                "options": [
+                    "Kinetic",
                     "Radiation",
                     "Organism",
+                    "Psychology"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Quotient",
+                "options": [
+                    "Radiation",
+                    "Sociology",
+                    "Linguistics",
                     "Quotient"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Neanderthal",
+                "options": [
+                    "Tectonic",
+                    "Linguistics",
+                    "Neanderthal",
+                    "Kinetic"
                 ],
                 "answer": 2
             }
@@ -9181,12 +11340,36 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Abstract",
+                "audioText": "Deduce",
+                "options": [
+                    "Volcano",
+                    "Deduce",
+                    "Empirical",
+                    "Fluctuation"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Chronological",
                 "options": [
                     "Empirical",
+                    "Zoology",
+                    "Chronological",
+                    "Botany"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Empirical",
+                "options": [
                     "Volcano",
                     "Genetics",
-                    "Abstract"
+                    "Abstract",
+                    "Empirical"
                 ],
                 "answer": 3
             },
@@ -9195,83 +11378,191 @@ const quizData = {
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Fluctuation",
                 "options": [
-                    "Empirical",
+                    "Volcano",
                     "Zoology",
-                    "Deduce",
-                    "Fluctuation"
+                    "Fluctuation",
+                    "Abstract"
                 ],
-                "answer": 3
+                "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Deduce",
+                "audioText": "Abstract",
                 "options": [
-                    "Deduce",
-                    "Fluctuation",
                     "Universe",
-                    "Botany"
+                    "Zoology",
+                    "Abstract",
+                    "Volcano"
                 ],
-                "answer": 0
+                "answer": 2
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Botany",
                 "options": [
-                    "Chronological",
-                    "Zoology",
                     "Botany",
-                    "Empirical"
+                    "Chronological",
+                    "Universe",
+                    "Fluctuation"
                 ],
-                "answer": 2
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Zoology",
+                "options": [
+                    "Abstract",
+                    "Empirical",
+                    "Volcano",
+                    "Zoology"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Volcano",
+                "options": [
+                    "Universe",
+                    "Volcano",
+                    "Empirical",
+                    "Genetics"
+                ],
+                "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Universe",
                 "options": [
-                    "Deduce",
+                    "Genetics",
                     "Volcano",
                     "Universe",
-                    "Zoology"
+                    "Botany"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Genetics",
+                "options": [
+                    "Genetics",
+                    "Empirical",
+                    "Volcano",
+                    "Fluctuation"
+                ],
+                "answer": 0
             }
         ],
         "9": [
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Predator",
+                "audioText": "Observation",
                 "options": [
-                    "Quantitative",
-                    "Nutrient",
-                    "Predator",
-                    "Implication"
+                    "Migration",
+                    "Implication",
+                    "Justification",
+                    "Observation"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Observation",
+                "audioText": "Predator",
                 "options": [
-                    "Herbivore",
+                    "Nutrient",
                     "Predator",
-                    "Observation",
-                    "Quantitative"
+                    "Herbivore",
+                    "Implication"
                 ],
-                "answer": 2
+                "answer": 1
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Implication",
+                "options": [
+                    "Implication",
+                    "Lunar",
+                    "Kinetics",
+                    "Herbivore"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Nutrient",
+                "options": [
+                    "Nutrient",
+                    "Observation",
+                    "Quantitative",
+                    "Kinetics"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Herbivore",
+                "options": [
+                    "Justification",
+                    "Predator",
+                    "Quantitative",
+                    "Herbivore"
+                ],
+                "answer": 3
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Justification",
                 "options": [
-                    "Observation",
-                    "Justification",
+                    "Herbivore",
+                    "Lunar",
+                    "Nutrient",
+                    "Justification"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Kinetics",
+                "options": [
                     "Implication",
+                    "Nutrient",
+                    "Herbivore",
+                    "Kinetics"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Lunar",
+                "options": [
+                    "Lunar",
+                    "Quantitative",
+                    "Observation",
+                    "Implication"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Migration",
+                "options": [
+                    "Implication",
+                    "Migration",
+                    "Justification",
                     "Predator"
                 ],
                 "answer": 1
@@ -9279,24 +11570,12 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Nutrient",
+                "audioText": "Quantitative",
                 "options": [
-                    "Lunar",
+                    "Justification",
                     "Nutrient",
-                    "Kinetics",
-                    "Implication"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "listening",
-                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Migration",
-                "options": [
-                    "Predator",
-                    "Kinetics",
-                    "Migration",
-                    "Lunar"
+                    "Quantitative",
+                    "Predator"
                 ],
                 "answer": 2
             }
@@ -9305,14 +11584,14 @@ const quizData = {
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Zone",
+                "audioText": "Yield",
                 "options": [
-                    "Thermodynamics",
-                    "Zone",
-                    "Variable",
+                    "Yield",
+                    "Reptile",
+                    "Aquatic",
                     "Wavelength"
                 ],
-                "answer": 1
+                "answer": 0
             },
             {
                 "type": "listening",
@@ -9322,7 +11601,19 @@ const quizData = {
                     "Unprecedented",
                     "Aquatic",
                     "Variable",
-                    "X-ray"
+                    "Zone"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "X-ray",
+                "options": [
+                    "X-ray",
+                    "Zone",
+                    "Yield",
+                    "Reptile"
                 ],
                 "answer": 0
             },
@@ -9332,35 +11623,83 @@ const quizData = {
                 "audioText": "Wavelength",
                 "options": [
                     "Wavelength",
-                    "Yield",
-                    "Reptile",
-                    "Unprecedented"
+                    "Thermodynamics",
+                    "Zone",
+                    "X-ray"
                 ],
                 "answer": 0
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
-                "audioText": "Aquatic",
+                "audioText": "Species",
                 "options": [
-                    "Unprecedented",
-                    "Variable",
+                    "Zone",
                     "X-ray",
-                    "Aquatic"
+                    "Species",
+                    "Variable"
                 ],
-                "answer": 3
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Reptile",
+                "options": [
+                    "Species",
+                    "Reptile",
+                    "Aquatic",
+                    "Yield"
+                ],
+                "answer": 1
             },
             {
                 "type": "listening",
                 "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
                 "audioText": "Thermodynamics",
                 "options": [
-                    "Wavelength",
+                    "Thermodynamics",
+                    "Variable",
+                    "X-ray",
+                    "Reptile"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Variable",
+                "options": [
+                    "Yield",
+                    "Reptile",
+                    "Variable",
+                    "Unprecedented"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Zone",
+                "options": [
+                    "Reptile",
                     "Thermodynamics",
                     "Zone",
                     "Unprecedented"
                 ],
-                "answer": 1
+                "answer": 2
+            },
+            {
+                "type": "listening",
+                "question": "ฟังเสียงแล้วเลือกคำศัพท์ที่ถูกต้อง",
+                "audioText": "Aquatic",
+                "options": [
+                    "Aquatic",
+                    "Species",
+                    "Wavelength",
+                    "Variable"
+                ],
+                "answer": 0
             }
         ]
     },
@@ -9368,34 +11707,100 @@ const quizData = {
         "1": [
             {
                 "type": "reading",
-                "question": "Try to look at the problem from a different ______.\n\n(แปล: พยายามมองปัญหาจากมุมมองที่ต่างออกไป)",
+                "question": "The word is ______d from a Latin root.\n\n(แปล: คำนี้มีรากศัพท์มาจากภาษาละติน)",
                 "options": [
                     "Structure",
-                    "Perspective",
+                    "Incorporate",
                     "Derive",
-                    "Interpret"
+                    "Adequate"
                 ],
-                "answer": 1
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "The architect ______d solar panels into the design.\n\n(แปล: สถาปนิกได้รวมแผงโซลาร์เซลล์เข้าไว้ในการออกแบบ)",
                 "options": [
-                    "Interpret",
+                    "Perspective",
+                    "Significant",
                     "Incorporate",
-                    "Adequate",
-                    "Assess"
+                    "Interpret"
                 ],
-                "answer": 1
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "The committee will ______ the impact of the new law.\n\n(แปล: คณะกรรมการจะประเมินผลกระทบของกฎหมายฉบับใหม่)",
                 "options": [
-                    "Assess",
+                    "Adequate",
                     "Evolve",
+                    "Structure",
+                    "Assess"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "There is a ______ difference between the two results.\n\n(แปล: มีความแตกต่างอย่างมีนัยสำคัญระหว่างผลลัพธ์ทั้งสอง)",
+                "options": [
+                    "Evolve",
+                    "Adequate",
+                    "Significant",
+                    "Structure"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The cell ______ of plants and animals is different.\n\n(แปล: โครงสร้างเซลล์ของพืชและสัตว์มีความแตกต่างกัน)",
+                "options": [
+                    "Significant",
+                    "Evolve",
+                    "Structure",
+                    "Interpret"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Birds ______d from dinosaurs millions of years ago.\n\n(แปล: นกวิวัฒนาการมาจากไดโนเสาร์เมื่อหลายล้านปีก่อน)",
+                "options": [
+                    "Incorporate",
+                    "Perspective",
+                    "Derive",
+                    "Evolve"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Try to look at the problem from a different ______.\n\n(แปล: พยายามมองปัญหาจากมุมมองที่ต่างออกไป)",
+                "options": [
                     "Consequence",
+                    "Evolve",
+                    "Perspective",
                     "Adequate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Make sure you drink ______ amounts of water.\n\n(แปล: ตรวจสอบให้แน่ใจว่าคุณดื่มน้ำในปริมาณที่เพียงพอ)",
+                "options": [
+                    "Perspective",
+                    "Evolve",
+                    "Derive",
+                    "Adequate"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Global warming is a ______ of human activity.\n\n(แปล: ภาวะโลกร้อนเป็นผลมาจากการกระทำของมนุษย์)",
+                "options": [
+                    "Consequence",
+                    "Incorporate",
+                    "Significant",
+                    "Assess"
                 ],
                 "answer": 0
             },
@@ -9403,45 +11808,89 @@ const quizData = {
                 "type": "reading",
                 "question": "How do you ______ the ending of the novel?\n\n(แปล: คุณตีความตอนจบของนวนิยายเรื่องนี้อย่างไร?)",
                 "options": [
-                    "Significant",
                     "Interpret",
-                    "Incorporate",
-                    "Perspective"
+                    "Significant",
+                    "Assess",
+                    "Adequate"
                 ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "The word is ______d from a Latin root.\n\n(แปล: คำนี้มีรากศัพท์มาจากภาษาละติน)",
-                "options": [
-                    "Perspective",
-                    "Consequence",
-                    "Derive",
-                    "Significant"
-                ],
-                "answer": 2
+                "answer": 0
             }
         ],
         "2": [
             {
                 "type": "reading",
-                "question": "The author uses examples to ______ his point.\n\n(แปล: ผู้เขียนยกตัวอย่างเพื่ออธิบายประเด็นของเขา)",
+                "question": "The data clearly ______s the need for reform.\n\n(แปล: ข้อมูลแสดงให้เห็นอย่างชัดเจนถึงความจำเป็นในการปฏิรูป)",
                 "options": [
                     "Illustrate",
-                    "Sequence",
-                    "Maintain",
-                    "Valid"
+                    "Proportion",
+                    "Justify",
+                    "Demonstrate"
                 ],
-                "answer": 0
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Truth and beauty are ______ concepts.\n\n(แปล: ความจริงและความงามเป็นแนวคิดที่เป็นนามธรรม)",
+                "options": [
+                    "Analyze",
+                    "Determine",
+                    "Abstract",
+                    "Proportion"
+                ],
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "You must have a ______ passport to travel abroad.\n\n(แปล: คุณต้องมีหนังสือเดินทางที่ยังไม่หมดอายุเพื่อเดินทางไปต่างประเทศ)",
                 "options": [
-                    "Determine",
-                    "Illustrate",
+                    "Valid",
+                    "Justify",
+                    "Abstract",
+                    "Determine"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "A large ______ of the budget goes to education.\n\n(แปล: สัดส่วนส่วนใหญ่ของงบประมาณตกเป็นของการศึกษา)",
+                "options": [
                     "Sequence",
+                    "Abstract",
+                    "Proportion",
                     "Valid"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Can you ______ your decision to quit the job?\n\n(แปล: คุณสามารถให้เหตุผลประกอบการตัดสินใจลาออกจากงานได้หรือไม่?)",
+                "options": [
+                    "Analyze",
+                    "Maintain",
+                    "Justify",
+                    "Determine"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "It is important to ______ a healthy diet.\n\n(แปล: การรักษาพฤติกรรมการกินเพื่อสุขภาพเป็นสิ่งสำคัญ)",
+                "options": [
+                    "Maintain",
+                    "Demonstrate",
+                    "Analyze",
+                    "Justify"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Your grades will ______ which university you enter.\n\n(แปล: เกรดของคุณจะเป็นตัวกำหนดว่าคุณจะเข้าเรียนมหาวิทยาลัยใด)",
+                "options": [
+                    "Proportion",
+                    "Maintain",
+                    "Analyze",
+                    "Determine"
                 ],
                 "answer": 3
             },
@@ -9449,102 +11898,223 @@ const quizData = {
                 "type": "reading",
                 "question": "Follow the ______ of steps in the manual.\n\n(แปล: ทำตามลำดับขั้นตอนในคู่มือ)",
                 "options": [
-                    "Determine",
-                    "Demonstrate",
-                    "Abstract",
+                    "Analyze",
+                    "Justify",
+                    "Valid",
                     "Sequence"
                 ],
                 "answer": 3
             },
             {
                 "type": "reading",
-                "question": "Can you ______ your decision to quit the job?\n\n(แปล: คุณสามารถให้เหตุผลประกอบการตัดสินใจลาออกจากงานได้หรือไม่?)",
+                "question": "The author uses examples to ______ his point.\n\n(แปล: ผู้เขียนยกตัวอย่างเพื่ออธิบายประเด็นของเขา)",
                 "options": [
-                    "Justify",
                     "Maintain",
-                    "Sequence",
-                    "Analyze"
+                    "Abstract",
+                    "Illustrate",
+                    "Determine"
                 ],
-                "answer": 0
+                "answer": 2
             },
             {
                 "type": "reading",
                 "question": "We need to ______ the customer feedback.\n\n(แปล: เราจำเป็นต้องวิเคราะห์ความคิดเห็นของลูกค้า)",
                 "options": [
-                    "Valid",
-                    "Determine",
+                    "Demonstrate",
                     "Analyze",
-                    "Sequence"
+                    "Sequence",
+                    "Determine"
                 ],
-                "answer": 2
+                "answer": 1
             }
         ],
         "3": [
             {
                 "type": "reading",
-                "question": "It is ______ that the climate is changing.\n\n(แปล: เป็นที่แน่ชัดว่าสภาพภูมิอากาศกำลังเปลี่ยนแปลง)",
+                "question": "The meaning of the poem is ______.\n\n(แปล: ความหมายของบทกวีค่อนข้างคลุมเครือ)",
                 "options": [
-                    "Abundant",
-                    "Crucial",
+                    "Obscure",
                     "Evident",
-                    "Resilient"
+                    "Profound",
+                    "Inherent"
                 ],
-                "answer": 2
+                "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The discovery had a ______ impact.\n\n(แปล: การค้นพบนี้มีผลกระทบอย่างลึกซึ้ง)",
+                "question": "The rainforest has a ______ ecosystem.\n\n(แปล: ป่าฝนมีระบบนิเวศที่หลากหลาย)",
+                "options": [
+                    "Abundant",
+                    "Flourish",
+                    "Profound",
+                    "Diverse"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Plants ______ in this environment.\n\n(แปล: พืชเจริญงอกงามในสภาพแวดล้อมนี้)",
+                "options": [
+                    "Evident",
+                    "Diverse",
+                    "Obscure",
+                    "Flourish"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "Children are often remarkably ______.\n\n(แปล: เด็กๆ มักจะฟื้นตัวได้อย่างน่าทึ่ง)",
                 "options": [
                     "Subtle",
-                    "Diverse",
-                    "Profound",
+                    "Flourish",
+                    "Abundant",
+                    "Resilient"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "It is ______ that the climate is changing.\n\n(แปล: เป็นที่แน่ชัดว่าสภาพภูมิอากาศกำลังเปลี่ยนแปลง)",
+                "options": [
+                    "Abundant",
+                    "Evident",
+                    "Inherent",
                     "Obscure"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "There is an ______ supply of water.\n\n(แปล: มีแหล่งน้ำอุดมสมบูรณ์)",
                 "options": [
                     "Obscure",
-                    "Abundant",
+                    "Diverse",
+                    "Subtle",
+                    "Abundant"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "There are ______ risks in this procedure.\n\n(แปล: มีความเสี่ยงโดยธรรมชาติในขั้นตอนนี้)",
+                "options": [
+                    "Crucial",
                     "Inherent",
-                    "Subtle"
+                    "Resilient",
+                    "Profound"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "The discovery had a ______ impact.\n\n(แปล: การค้นพบนี้มีผลกระทบอย่างลึกซึ้ง)",
+                "options": [
+                    "Obscure",
+                    "Crucial",
+                    "Subtle",
+                    "Profound"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "There is a ______ difference between the two.\n\n(แปล: มีความแตกต่างเพียงเล็กน้อยระหว่างสองสิ่งนี้)",
                 "options": [
-                    "Abundant",
-                    "Resilient",
                     "Subtle",
-                    "Crucial"
+                    "Diverse",
+                    "Inherent",
+                    "Evident"
                 ],
-                "answer": 2
+                "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The rainforest has a ______ ecosystem.\n\n(แปล: ป่าฝนมีระบบนิเวศที่หลากหลาย)",
+                "question": "Water is ______ for survival.\n\n(แปล: น้ำมีความสำคัญอย่างยิ่งต่อการอยู่รอด)",
                 "options": [
+                    "Obscure",
                     "Flourish",
-                    "Diverse",
-                    "Profound",
+                    "Crucial",
                     "Inherent"
                 ],
-                "answer": 1
+                "answer": 2
             }
         ],
         "4": [
             {
                 "type": "reading",
+                "question": "New details began to ______.\n\n(แปล: รายละเอียดใหม่ๆ เริ่มปรากฏออกมา)",
+                "options": [
+                    "Consequently",
+                    "Approximate",
+                    "Emerge",
+                    "Adequate_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The stadium has a seating ______ of 50,000.\n\n(แปล: สนามกีฬาแห่งนี้มีความจุที่นั่ง 50,000 ที่)",
+                "options": [
+                    "Capacity",
+                    "Component",
+                    "Apparent",
+                    "Alternative"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "What is the ______ cost?\n\n(แปล: ค่าใช้จ่ายโดยประมาณคือเท่าไร?)",
+                "options": [
+                    "Alternative",
+                    "Capacity",
+                    "Component",
+                    "Approximate"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
                 "question": "Patience is a necessary ______ for a teacher.\n\n(แปล: ความอดทนเป็นคุณลักษณะที่จำเป็นสำหรับครู)",
                 "options": [
+                    "Emerge",
+                    "Component",
                     "Attribute",
-                    "Apparent",
+                    "Demonstrate_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "It rained; ______, the game was delayed.\n\n(แปล: ฝนตก ผลที่ตามมาคือเกมถูกเลื่อนออกไป)",
+                "options": [
                     "Demonstrate_alt",
-                    "Capacity"
+                    "Consequently",
+                    "Approximate",
+                    "Attribute"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Trust is a key ______ of a relationship.\n\n(แปล: ความไว้วางใจเป็นส่วนประกอบสำคัญของความสัมพันธ์)",
+                "options": [
+                    "Emerge",
+                    "Component",
+                    "Apparent",
+                    "Consequently"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "It is ______ that he is lying.\n\n(แปล: เห็นได้ชัดว่าเขากำลังโกหก)",
+                "options": [
+                    "Apparent",
+                    "Attribute",
+                    "Approximate",
+                    "Adequate_alt"
                 ],
                 "answer": 0
             },
@@ -9552,66 +12122,132 @@ const quizData = {
                 "type": "reading",
                 "question": "______: These numbers demonstrate the problem.\n\n(แปล: ตัวเลขเหล่านี้แสดงให้เห็นถึงปัญหา)",
                 "options": [
+                    "Approximate",
                     "Demonstrate_alt",
-                    "Consequently",
-                    "Component",
-                    "Adequate_alt"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "reading",
-                "question": "We must find ______ energy sources.\n\n(แปล: เราต้องหาแหล่งพลังงานทางเลือก)",
-                "options": [
-                    "Alternative",
                     "Attribute",
-                    "Consequently",
-                    "Apparent"
+                    "Emerge"
                 ],
-                "answer": 0
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "______: The room size is adequate for two people.\n\n(แปล: ขนาดห้องเพียงพอสำหรับสองคน)",
                 "options": [
-                    "Apparent",
-                    "Consequently",
                     "Demonstrate_alt",
-                    "Adequate_alt"
+                    "Emerge",
+                    "Adequate_alt",
+                    "Apparent"
                 ],
-                "answer": 3
+                "answer": 2
             },
             {
                 "type": "reading",
-                "question": "Trust is a key ______ of a relationship.\n\n(แปล: ความไว้วางใจเป็นส่วนประกอบสำคัญของความสัมพันธ์)",
+                "question": "We must find ______ energy sources.\n\n(แปล: เราต้องหาแหล่งพลังงานทางเลือก)",
                 "options": [
-                    "Apparent",
-                    "Component",
-                    "Approximate",
-                    "Emerge"
+                    "Consequently",
+                    "Adequate_alt",
+                    "Alternative",
+                    "Apparent"
                 ],
-                "answer": 1
+                "answer": 2
             }
         ],
         "5": [
             {
                 "type": "reading",
-                "question": "The results support his ______.\n\n(แปล: ผลลัพธ์สนับสนุนสมมติฐานของเขา)",
+                "question": "Are you ______ing that I am wrong?\n\n(แปล: คุณกำลังบอกเป็นนัยว่าฉันผิดใช่ไหม?)",
                 "options": [
-                    "Justify_alt",
-                    "Sequence_alt",
                     "Initial",
-                    "Hypothesis"
+                    "Imply",
+                    "Subsequent",
+                    "Equivalent"
                 ],
-                "answer": 3
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "My ______ reaction was shock.\n\n(แปล: ปฏิกิริยาแรกของฉันคือความตกใจ)",
                 "options": [
+                    "Initial",
+                    "Justify_alt",
+                    "Sequence_alt",
+                    "Subsequent"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Freedom of speech is a ______ right.\n\n(แปล: เสรีภาพในการพูดเป็นสิทธิขั้นพื้นฐาน)",
+                "options": [
+                    "Initial",
+                    "Fundamental",
+                    "Sequence_alt",
+                    "Justify_alt"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "______: How can you justify this behavior?\n\n(แปล: คุณจะอธิบายพฤติกรรมนี้อย่างไร?)",
+                "options": [
+                    "Justify_alt",
+                    "Fundamental",
+                    "Sequence_alt",
+                    "Subsequent"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The results support his ______.\n\n(แปล: ผลลัพธ์สนับสนุนสมมติฐานของเขา)",
+                "options": [
+                    "Hypothesis",
+                    "Imply",
+                    "Perspective_alt",
+                    "Justify_alt"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "______: Try looking from a different perspective.\n\n(แปล: ลองมองจากมุมมองที่ต่างออกไป)",
+                "options": [
+                    "Hypothesis",
                     "Perspective_alt",
                     "Imply",
-                    "Initial",
+                    "Subsequent"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "One mile is ______ to 1.6 kilometers.\n\n(แปล: หนึ่งไมล์เทียบเท่ากับ 1.6 กิโลเมตร)",
+                "options": [
+                    "Hypothesis",
+                    "Subsequent",
+                    "Equivalent",
+                    "Justify_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "______: A large proportion of the land is forest.\n\n(แปล: พื้นที่ส่วนใหญ่เป็นป่าไม้)",
+                "options": [
+                    "Subsequent",
+                    "Hypothesis",
+                    "Proportion_alt",
+                    "Justify_alt"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "______ studies confirmed the finding.\n\n(แปล: การศึกษาในเวลาต่อมายืนยันการค้นพบนี้)",
+                "options": [
+                    "Proportion_alt",
+                    "Perspective_alt",
+                    "Subsequent",
                     "Justify_alt"
                 ],
                 "answer": 2
@@ -9620,159 +12256,291 @@ const quizData = {
                 "type": "reading",
                 "question": "______: Follow the sequence of events.\n\n(แปล: ทำตามลำดับเหตุการณ์)",
                 "options": [
-                    "Proportion_alt",
-                    "Imply",
+                    "Justify_alt",
                     "Sequence_alt",
+                    "Proportion_alt",
                     "Subsequent"
                 ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "One mile is ______ to 1.6 kilometers.\n\n(แปล: หนึ่งไมล์เทียบเท่ากับ 1.6 กิโลเมตร)",
-                "options": [
-                    "Proportion_alt",
-                    "Equivalent",
-                    "Perspective_alt",
-                    "Hypothesis"
-                ],
                 "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "______: How can you justify this behavior?\n\n(แปล: คุณจะอธิบายพฤติกรรมนี้อย่างไร?)",
-                "options": [
-                    "Subsequent",
-                    "Proportion_alt",
-                    "Justify_alt",
-                    "Initial"
-                ],
-                "answer": 2
             }
         ],
         "6": [
             {
                 "type": "reading",
-                "question": "Prices ______ based on supply and demand.\n\n(แปล: ราคาผันผวนตามอุปสงค์และอุปทาน)",
+                "question": "The artist ______s bright colors with dark ones.\n\n(แปล: ศิลปินนำสีสว่างมาวางคู่กับสีเข้มเพื่อเปรียบเทียบ)",
                 "options": [
-                    "Aesthetic",
-                    "Fluctuate",
-                    "Bizarre",
-                    "Innate"
+                    "Juxtapose",
+                    "Innate",
+                    "Deviate",
+                    "Fluctuate"
                 ],
-                "answer": 1
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Never ______ from the original plan.\n\n(แปล: อย่าเบี่ยงเบนไปจากแผนเดิม)",
+                "options": [
+                    "Elicit",
+                    "Aesthetic",
+                    "Gregarious",
+                    "Deviate"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "The story was completely ______.\n\n(แปล: เรื่องราวนั้นแปลกประหลาดอย่างสิ้นเชิง)",
                 "options": [
-                    "Hinder",
-                    "Bizarre",
-                    "Elicit",
-                    "Fluctuate"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "Dolphins are ______ animals.\n\n(แปล: โลมาเป็นสัตว์ที่ชอบอยู่รวมฝูง)",
-                "options": [
-                    "Coincide",
-                    "Gregarious",
-                    "Juxtapose",
-                    "Fluctuate"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "Her arrival ______d with the storm.\n\n(แปล: การมาถึงของเธอเกิดขึ้นพร้อมกับพายุ)",
-                "options": [
-                    "Bizarre",
                     "Innate",
-                    "Coincide",
-                    "Fluctuate"
+                    "Bizarre",
+                    "Fluctuate",
+                    "Hinder"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "reading",
                 "question": "Birds have an ______ ability to fly.\n\n(แปล: นกมีความสามารถในการบินโดยกำเนิด)",
                 "options": [
                     "Innate",
-                    "Hinder",
+                    "Juxtapose",
                     "Fluctuate",
-                    "Deviate"
+                    "Coincide"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Dolphins are ______ animals.\n\n(แปล: โลมาเป็นสัตว์ที่ชอบอยู่รวมฝูง)",
+                "options": [
+                    "Gregarious",
+                    "Hinder",
+                    "Juxtapose",
+                    "Fluctuate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The building has great ______ appeal.\n\n(แปล: อาคารนี้มีความดึงดูดใจด้านสุนทรียภาพอย่างมาก)",
+                "options": [
+                    "Fluctuate",
+                    "Coincide",
+                    "Aesthetic",
+                    "Deviate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Lack of funding will ______ the project.\n\n(แปล: การขาดแคลนเงินทุนจะขัดขวางโครงการ)",
+                "options": [
+                    "Hinder",
+                    "Innate",
+                    "Gregarious",
+                    "Fluctuate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Her arrival ______d with the storm.\n\n(แปล: การมาถึงของเธอเกิดขึ้นพร้อมกับพายุ)",
+                "options": [
+                    "Innate",
+                    "Aesthetic",
+                    "Coincide",
+                    "Juxtapose"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The question ______ed a defensive response.\n\n(แปล: คำถามนั้นกระตุ้นให้เกิดการตอบสนองเชิงป้องกันตัว)",
+                "options": [
+                    "Juxtapose",
+                    "Innate",
+                    "Elicit",
+                    "Coincide"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Prices ______ based on supply and demand.\n\n(แปล: ราคาผันผวนตามอุปสงค์และอุปทาน)",
+                "options": [
+                    "Gregarious",
+                    "Aesthetic",
+                    "Fluctuate",
+                    "Bizarre"
+                ],
+                "answer": 2
             }
         ],
         "7": [
             {
                 "type": "reading",
-                "question": "We need ______ evidence.\n\n(แปล: เราต้องการหลักฐานที่จับต้องได้)",
+                "question": "The snake has a ______ bite.\n\n(แปล: งูตัวนี้มีพิษกัดถึงตาย)",
                 "options": [
-                    "Nomad",
-                    "Qualitative",
-                    "Tangible",
-                    "Lethal"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "He is very ______ about his work.\n\n(แปล: เขาพิถีพิถันกับการทำงานมาก)",
-                "options": [
-                    "Paradox",
-                    "Meticulous",
-                    "Ubiquitous",
-                    "Nomad"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "reading",
-                "question": "It is a ______ that technology makes us more isolated.\n\n(แปล: เป็นเรื่องย้อนแย้งที่เทคโนโลยีทำให้เราโดดเดี่ยวมากขึ้น)",
-                "options": [
-                    "Redundant",
-                    "Obsolete",
-                    "Paradox",
-                    "Tangible"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "Typewriters are largely ______.\n\n(แปล: เครื่องพิมพ์ดีดส่วนใหญ่ล้าสมัยแล้ว)",
-                "options": [
-                    "Obsolete",
-                    "Ubiquitous",
                     "Skeptical",
-                    "Meticulous"
+                    "Qualitative",
+                    "Lethal",
+                    "Obsolete"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "We need a ______ analysis of the data.\n\n(แปล: เราต้องการการวิเคราะห์ข้อมูลในเชิงคุณภาพ)",
+                "options": [
+                    "Qualitative",
+                    "Obsolete",
+                    "Nomad",
+                    "Ubiquitous"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "The second paragraph is ______.\n\n(แปล: ย่อหน้าที่สองมีความซ้ำซ้อน)",
+                "question": "He is very ______ about his work.\n\n(แปล: เขาพิถีพิถันกับการทำงานมาก)",
                 "options": [
+                    "Nomad",
                     "Lethal",
-                    "Obsolete",
-                    "Redundant",
-                    "Skeptical"
+                    "Meticulous",
+                    "Obsolete"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "We need ______ evidence.\n\n(แปล: เราต้องการหลักฐานที่จับต้องได้)",
+                "options": [
+                    "Paradox",
+                    "Meticulous",
+                    "Nomad",
+                    "Tangible"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "It is a ______ that technology makes us more isolated.\n\n(แปล: เป็นเรื่องย้อนแย้งที่เทคโนโลยีทำให้เราโดดเดี่ยวมากขึ้น)",
+                "options": [
+                    "Nomad",
+                    "Paradox",
+                    "Qualitative",
+                    "Redundant"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "Typewriters are largely ______.\n\n(แปล: เครื่องพิมพ์ดีดส่วนใหญ่ล้าสมัยแล้ว)",
+                "options": [
+                    "Lethal",
+                    "Qualitative",
+                    "Obsolete",
+                    "Paradox"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "I am ______ of his claims.\n\n(แปล: ฉันยังคงคลางแคลงใจในคำกล่าวอ้างของเขา)",
+                "options": [
+                    "Meticulous",
+                    "Redundant",
+                    "Skeptical",
+                    "Paradox"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The second paragraph is ______.\n\n(แปล: ย่อหน้าที่สองมีความซ้ำซ้อน)",
+                "options": [
+                    "Tangible",
+                    "Redundant",
+                    "Nomad",
+                    "Ubiquitous"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "______s move from place to place.\n\n(แปล: คนเร่ร่อนย้ายจากที่หนึ่งไปยังอีกที่หนึ่ง)",
+                "options": [
+                    "Nomad",
+                    "Qualitative",
+                    "Redundant",
+                    "Lethal"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "Mobile phones are ______ today.\n\n(แปล: โทรศัพท์มือถือมีอยู่ทุกหนทุกแห่งในปัจจุบัน)",
+                "options": [
+                    "Meticulous",
+                    "Obsolete",
+                    "Nomad",
+                    "Ubiquitous"
+                ],
+                "answer": 3
             }
         ],
         "8": [
             {
                 "type": "reading",
+                "question": "Please ______ your point further.\n\n(แปล: โปรดอธิบายประเด็นของคุณให้กระจ่างยิ่งขึ้น)",
+                "options": [
+                    "Homogeneous",
+                    "Deter",
+                    "Elucidate",
+                    "Candid"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
                 "question": "She gave a ______ interview.\n\n(แปล: เธอให้สัมภาษณ์อย่างตรงไปตรงมา)",
                 "options": [
-                    "Benevolent",
-                    "Warrant",
                     "Deter",
-                    "Candid"
+                    "Candid",
+                    "Warrant",
+                    "Alleviate"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "High prices will ______ buyers.\n\n(แปล: ราคาสูงจะขัดขวางผู้ซื้อ)",
+                "options": [
+                    "Benevolent",
+                    "Deter",
+                    "Vacillate",
+                    "Homogeneous"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "The ______ tourists paid too much.\n\n(แปล: นักท่องเที่ยวที่หลอกง่ายจ่ายเงินแพงเกินไป)",
+                "options": [
+                    "Vacillate",
+                    "Homogeneous",
+                    "Elucidate",
+                    "Gullible"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "The evidence does not ______ a trial.\n\n(แปล: หลักฐานไม่มีน้ำหนักพอที่จะนำไปสู่การพิจารณาคดี)",
+                "options": [
+                    "Benevolent",
+                    "Elucidate",
+                    "Alleviate",
+                    "Warrant"
                 ],
                 "answer": 3
             },
@@ -9780,78 +12548,111 @@ const quizData = {
                 "type": "reading",
                 "question": "He ______d between two choices.\n\n(แปล: เขาลังเลระหว่างสองตัวเลือก)",
                 "options": [
-                    "Alleviate",
+                    "Deter",
+                    "Elucidate",
                     "Warrant",
-                    "Vacillate",
-                    "Frivolous"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "reading",
-                "question": "High prices will ______ buyers.\n\n(แปล: ราคาสูงจะขัดขวางผู้ซื้อ)",
-                "options": [
-                    "Benevolent",
-                    "Warrant",
-                    "Frivolous",
-                    "Deter"
+                    "Vacillate"
                 ],
                 "answer": 3
-            },
-            {
-                "type": "reading",
-                "question": "Please ______ your point further.\n\n(แปล: โปรดอธิบายประเด็นของคุณให้กระจ่างยิ่งขึ้น)",
-                "options": [
-                    "Elucidate",
-                    "Benevolent",
-                    "Gullible",
-                    "Frivolous"
-                ],
-                "answer": 0
             },
             {
                 "type": "reading",
                 "question": "Do not waste time on ______ lawsuits.\n\n(แปล: อย่าเสียเวลากับคดีฟ้องร้องที่ไร้สาระ)",
                 "options": [
                     "Alleviate",
+                    "Benevolent",
                     "Frivolous",
-                    "Gullible",
-                    "Homogeneous"
-                ],
-                "answer": 1
-            }
-        ],
-        "9": [
-            {
-                "type": "reading",
-                "question": "They visited a ______ little village.\n\n(แปล: พวกเขาไปเยี่ยมชมหมู่บ้านเล็กๆ ที่ดูแปลกตาน่ารัก)",
-                "options": [
-                    "Impending",
-                    "Mitigate",
-                    "Quaint",
-                    "Resilient_alt"
+                    "Candid"
                 ],
                 "answer": 2
             },
             {
                 "type": "reading",
+                "question": "He was a ______ leader.\n\n(แปล: เขาเป็นผู้นำที่มีความเมตตา)",
+                "options": [
+                    "Candid",
+                    "Deter",
+                    "Benevolent",
+                    "Vacillate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The medicine will ______ your pain.\n\n(แปล: ยาจะช่วยบรรเทาอาการปวดของคุณ)",
+                "options": [
+                    "Warrant",
+                    "Vacillate",
+                    "Alleviate",
+                    "Deter"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "Japan is a largely ______ society.\n\n(แปล: ญี่ปุ่นเป็นสังคมที่มีความกลมกลืนเป็นเนื้อเดียวกันสูง)",
+                "options": [
+                    "Homogeneous",
+                    "Vacillate",
+                    "Candid",
+                    "Benevolent"
+                ],
+                "answer": 0
+            }
+        ],
+        "9": [
+            {
+                "type": "reading",
+                "question": "His actions could ______ the mission.\n\n(แปล: การกระทำของเขาอาจทำให้ภารกิจตกอยู่ในอันตรายได้)",
+                "options": [
+                    "Nostalgia",
+                    "Jeopardize",
+                    "Scrutinize",
+                    "Quaint"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "We must take steps to ______ the risks.\n\n(แปล: เราต้องดำเนินการเพื่อบรรเทาความเสี่ยง)",
+                "options": [
+                    "Pragmatic",
+                    "Resilient_alt",
+                    "Scrutinize",
+                    "Mitigate"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
                 "question": "The glass is ______, so you cannot see through it.\n\n(แปล: กระจกนั้นทึบแสง คุณจึงไม่สามารถมองทะลุผ่านได้)",
                 "options": [
-                    "Opaque",
+                    "Jeopardize",
+                    "Quaint",
+                    "Impending",
+                    "Opaque"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "We need a ______ solution to this problem.\n\n(แปล: เราต้องการวิธีการแก้ปัญหานี้ในเชิงปฏิบัติ)",
+                "options": [
+                    "Pragmatic",
+                    "Quaint",
                     "Lucrative",
-                    "Scrutinize",
-                    "Resilient_alt"
+                    "Jeopardize"
                 ],
                 "answer": 0
             },
             {
                 "type": "reading",
-                "question": "His actions could ______ the mission.\n\n(แปล: การกระทำของเขาอาจทำให้ภารกิจตกอยู่ในอันตรายได้)",
+                "question": "They braced for the ______ storm.\n\n(แปล: พวกเขาเตรียมพร้อมรับมือพายุที่กำลังใกล้เข้ามา)",
                 "options": [
                     "Opaque",
-                    "Pragmatic",
-                    "Quaint",
-                    "Jeopardize"
+                    "Jeopardize",
+                    "Scrutinize",
+                    "Impending"
                 ],
                 "answer": 3
             },
@@ -9859,21 +12660,54 @@ const quizData = {
                 "type": "reading",
                 "question": "Listening to that song brings back ______.\n\n(แปล: การฟังเพลงนั้นทำให้รู้สึกคิดถึงอดีต)",
                 "options": [
-                    "Jeopardize",
                     "Nostalgia",
-                    "Scrutinize",
-                    "Pragmatic"
+                    "Resilient_alt",
+                    "Pragmatic",
+                    "Jeopardize"
                 ],
-                "answer": 1
+                "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The committee will ______ the documents.\n\n(แปล: คณะกรรมการจะตรวจสอบเอกสารอย่างละเอียด)",
+                "options": [
+                    "Pragmatic",
+                    "Resilient_alt",
+                    "Jeopardize",
+                    "Scrutinize"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "Real estate can be a ______ business.\n\n(แปล: อสังหาริมทรัพย์สามารถเป็นธุรกิจที่ทำกำไรได้ดี)",
                 "options": [
-                    "Quaint",
-                    "Impending",
+                    "Pragmatic",
+                    "Scrutinize",
                     "Lucrative",
                     "Opaque"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "They visited a ______ little village.\n\n(แปล: พวกเขาไปเยี่ยมชมหมู่บ้านเล็กๆ ที่ดูแปลกตาน่ารัก)",
+                "options": [
+                    "Resilient_alt",
+                    "Scrutinize",
+                    "Mitigate",
+                    "Quaint"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "______: The economy has proven to be resilient.\n\n(แปล: เศรษฐกิจได้พิสูจน์ให้เห็นแล้วว่ามีความยืดหยุ่น)",
+                "options": [
+                    "Jeopardize",
+                    "Scrutinize",
+                    "Resilient_alt",
+                    "Mitigate"
                 ],
                 "answer": 2
             }
@@ -9881,34 +12715,67 @@ const quizData = {
         "10": [
             {
                 "type": "reading",
-                "question": "The movie plot was somewhat ______.\n\n(แปล: โครงเรื่องของภาพยนตร์ค่อนข้างจำเจ)",
+                "question": "______: There is an abundant supply of fresh water.\n\n(แปล: มีแหล่งน้ำจืดที่อุดมสมบูรณ์)",
+                "options": [
+                    "Fortuitous",
+                    "Coherent",
+                    "Abundant_alt",
+                    "Unambiguous"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
+                "question": "The story has a ______ purpose.\n\n(แปล: เรื่องราวมีจุดประสงค์เพื่อสั่งสอน)",
                 "options": [
                     "Fortuitous",
                     "Hackneyed",
-                    "Coherent",
-                    "Ephemeral"
+                    "Vindicate",
+                    "Didactic"
                 ],
-                "answer": 1
+                "answer": 3
+            },
+            {
+                "type": "reading",
+                "question": "She is a ______ advocate for animal rights.\n\n(แปล: เธอเป็นผู้สนับสนุนสิทธิสัตว์อย่างเหนียวแน่น)",
+                "options": [
+                    "Coherent",
+                    "Impetuous",
+                    "Didactic",
+                    "Tenacious"
+                ],
+                "answer": 3
             },
             {
                 "type": "reading",
                 "question": "Their meeting was entirely ______.\n\n(แปล: การพบกันของพวกเขาเป็นเรื่องบังเอิญอย่างแท้จริง)",
                 "options": [
-                    "Tenacious",
+                    "Impetuous",
                     "Fortuitous",
-                    "Vindicate",
-                    "Abundant_alt"
+                    "Tenacious",
+                    "Vindicate"
                 ],
                 "answer": 1
             },
             {
                 "type": "reading",
+                "question": "He is an ______ young man.\n\n(แปล: เขาเป็นชายหนุ่มที่ใจร้อน)",
+                "options": [
+                    "Hackneyed",
+                    "Unambiguous",
+                    "Impetuous",
+                    "Ephemeral"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "reading",
                 "question": "Fame is often ______.\n\n(แปล: ชื่อเสียงมักจะอยู่ได้ไม่นาน)",
                 "options": [
+                    "Fortuitous",
                     "Impetuous",
-                    "Unambiguous",
                     "Ephemeral",
-                    "Hackneyed"
+                    "Tenacious"
                 ],
                 "answer": 2
             },
@@ -9916,23 +12783,45 @@ const quizData = {
                 "type": "reading",
                 "question": "The DNA evidence ______d him.\n\n(แปล: หลักฐานดีเอ็นเอพิสูจน์ความบริสุทธิ์ของเขา)",
                 "options": [
-                    "Impetuous",
-                    "Tenacious",
-                    "Vindicate",
-                    "Fortuitous"
+                    "Fortuitous",
+                    "Hackneyed",
+                    "Ephemeral",
+                    "Vindicate"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "reading",
-                "question": "She is a ______ advocate for animal rights.\n\n(แปล: เธอเป็นผู้สนับสนุนสิทธิสัตว์อย่างเหนียวแน่น)",
+                "question": "His explanation was not ______.\n\n(แปล: คำอธิบายของเขาไม่สอดคล้องและไม่มีเหตุผล)",
                 "options": [
                     "Tenacious",
-                    "Impetuous",
                     "Coherent",
-                    "Didactic"
+                    "Unambiguous",
+                    "Hackneyed"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "reading",
+                "question": "The movie plot was somewhat ______.\n\n(แปล: โครงเรื่องของภาพยนตร์ค่อนข้างจำเจ)",
+                "options": [
+                    "Hackneyed",
+                    "Ephemeral",
+                    "Unambiguous",
+                    "Coherent"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "reading",
+                "question": "The rules are ______.\n\n(แปล: กฎระเบียบมีความชัดเจนไม่กำกวม)",
+                "options": [
+                    "Abundant_alt",
+                    "Unambiguous",
+                    "Didactic",
+                    "Coherent"
+                ],
+                "answer": 1
             }
         ]
     },
@@ -9940,25 +12829,13 @@ const quizData = {
         "1": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รายละเอียด'",
-                "answerText": "Detail",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตัวอย่าง'",
+                "answerText": "Example",
                 "options": [
-                    "Advantage",
-                    "Solution",
-                    "Disadvantage",
-                    "Detail"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เหตุผล'",
-                "answerText": "Reason",
-                "options": [
-                    "Solution",
-                    "Reason",
+                    "Contrast",
+                    "Example",
                     "Problem",
-                    "Contrast"
+                    "Solution"
                 ],
                 "answer": 1
             },
@@ -9967,96 +12844,228 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทางออก/วิธีแก้ปัญหา'",
                 "answerText": "Solution",
                 "options": [
-                    "Compare",
+                    "Opinion",
+                    "Solution",
                     "Advantage",
-                    "Problem",
-                    "Solution"
+                    "Contrast"
                 ],
-                "answer": 3
+                "answer": 1
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ข้อดี'",
                 "answerText": "Advantage",
                 "options": [
-                    "Compare",
-                    "Solution",
                     "Advantage",
-                    "Opinion"
+                    "Example",
+                    "Solution",
+                    "Detail"
                 ],
-                "answer": 2
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รายละเอียด'",
+                "answerText": "Detail",
+                "options": [
+                    "Problem",
+                    "Detail",
+                    "Solution",
+                    "Disadvantage"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ข้อเสีย'",
+                "answerText": "Disadvantage",
+                "options": [
+                    "Solution",
+                    "Reason",
+                    "Example",
+                    "Disadvantage"
+                ],
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ความคิดเห็น'",
                 "answerText": "Opinion",
                 "options": [
-                    "Reason",
-                    "Problem",
-                    "Solution",
-                    "Opinion"
+                    "Contrast",
+                    "Opinion",
+                    "Compare",
+                    "Reason"
                 ],
-                "answer": 3
-            }
-        ],
-        "2": [
+                "answer": 1
+            },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
-                "answerText": "Emphasize",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบ'",
+                "answerText": "Compare",
                 "options": [
-                    "Describe",
-                    "Consider",
-                    "Believe",
-                    "Emphasize"
+                    "Compare",
+                    "Detail",
+                    "Solution",
+                    "Example"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เหตุผล'",
+                "answerText": "Reason",
+                "options": [
+                    "Solution",
+                    "Problem",
+                    "Detail",
+                    "Reason"
                 ],
                 "answer": 3
             },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบความต่าง'",
+                "answerText": "Contrast",
+                "options": [
+                    "Opinion",
+                    "Contrast",
+                    "Disadvantage",
+                    "Compare"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ปัญหา'",
+                "answerText": "Problem",
+                "options": [
+                    "Reason",
+                    "Problem",
+                    "Opinion",
+                    "Contrast"
+                ],
+                "answer": 1
+            }
+        ],
+        "2": [
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน'",
                 "answerText": "Support",
                 "options": [
                     "Emphasize",
-                    "Argue",
+                    "Mention",
                     "Support",
-                    "Prefer"
+                    "Argue"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'บรรยาย'",
+                "answerText": "Describe",
+                "options": [
+                    "Emphasize",
+                    "Prefer",
+                    "Argue",
+                    "Describe"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'คัดค้าน'",
+                "answerText": "Oppose",
+                "options": [
+                    "State",
+                    "Oppose",
+                    "Support",
+                    "Consider"
+                ],
+                "answer": 1
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวถึง'",
                 "answerText": "Mention",
                 "options": [
-                    "State",
-                    "Support",
+                    "Believe",
+                    "Describe",
+                    "Emphasize",
+                    "Mention"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'พิจารณา'",
+                "answerText": "Consider",
+                "options": [
                     "Mention",
+                    "Consider",
+                    "Describe",
                     "Prefer"
                 ],
-                "answer": 2
+                "answer": 1
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โต้แย้ง'",
                 "answerText": "Argue",
                 "options": [
-                    "Believe",
                     "Argue",
+                    "Emphasize",
                     "Oppose",
+                    "State"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าว'",
+                "answerText": "State",
+                "options": [
+                    "Mention",
+                    "Argue",
+                    "State",
+                    "Prefer"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
+                "answerText": "Emphasize",
+                "options": [
+                    "Mention",
+                    "State",
+                    "Emphasize",
                     "Describe"
                 ],
-                "answer": 1
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ชอบมากกว่า'",
                 "answerText": "Prefer",
                 "options": [
+                    "State",
                     "Prefer",
                     "Argue",
+                    "Consider"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เชื่อว่า'",
+                "answerText": "Believe",
+                "options": [
                     "Believe",
-                    "Emphasize"
+                    "Prefer",
+                    "Emphasize",
+                    "Oppose"
                 ],
                 "answer": 0
             }
@@ -10064,27 +13073,39 @@ const quizData = {
         "3": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ผลที่ตามมาคือ'",
-                "answerText": "Consequently",
-                "options": [
-                    "Illustrate",
-                    "Moreover",
-                    "Consequently",
-                    "Alternative"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'นอกจากนี้'",
                 "answerText": "Furthermore",
                 "options": [
-                    "Alternative",
+                    "Accurate",
                     "Furthermore",
-                    "Essentially",
-                    "Accurate"
+                    "Moreover",
+                    "Consequently"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โดยพื้นฐานแล้ว'",
+                "answerText": "Essentially",
+                "options": [
+                    "Consequently",
+                    "Furthermore",
+                    "Perspective",
+                    "Essentially"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายด้วยภาพประกอบ'",
+                "answerText": "Illustrate",
+                "options": [
+                    "Moreover",
+                    "Significant",
+                    "Illustrate",
+                    "Accurate"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
@@ -10092,73 +13113,145 @@ const quizData = {
                 "answerText": "Nevertheless",
                 "options": [
                     "Nevertheless",
-                    "Significant",
-                    "Essentially",
-                    "Alternative"
+                    "Alternative",
+                    "Consequently",
+                    "Furthermore"
                 ],
                 "answer": 0
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายด้วยภาพประกอบ'",
-                "answerText": "Illustrate",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ถูกต้องแม่นยำ'",
+                "answerText": "Accurate",
                 "options": [
                     "Consequently",
-                    "Illustrate",
-                    "Alternative",
-                    "Moreover"
+                    "Essentially",
+                    "Moreover",
+                    "Accurate"
                 ],
-                "answer": 1
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยิ่งไปกว่านั้น'",
+                "answerText": "Moreover",
+                "options": [
+                    "Perspective",
+                    "Alternative",
+                    "Moreover",
+                    "Accurate"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทางเลือก'",
+                "answerText": "Alternative",
+                "options": [
+                    "Moreover",
+                    "Nevertheless",
+                    "Furthermore",
+                    "Alternative"
+                ],
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'มุมมอง'",
                 "answerText": "Perspective",
                 "options": [
+                    "Consequently",
+                    "Essentially",
                     "Accurate",
-                    "Alternative",
-                    "Illustrate",
                     "Perspective"
                 ],
                 "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สำคัญ'",
+                "answerText": "Significant",
+                "options": [
+                    "Furthermore",
+                    "Significant",
+                    "Essentially",
+                    "Alternative"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ผลที่ตามมาคือ'",
+                "answerText": "Consequently",
+                "options": [
+                    "Consequently",
+                    "Furthermore",
+                    "Accurate",
+                    "Illustrate"
+                ],
+                "answer": 0
             }
         ],
         "4": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ความท้าทาย'",
-                "answerText": "Challenge",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ให้คำจำกัดความ'",
+                "answerText": "Define",
                 "options": [
-                    "Issues",
-                    "Challenge",
-                    "Point",
-                    "Contrast_alt"
+                    "Brief",
+                    "Define",
+                    "Illustrate_alt",
+                    "Impact"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ชัดเจน'",
+                "answerText": "Obvious",
+                "options": [
+                    "Obvious",
+                    "Convince",
+                    "Issues",
+                    "Define"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเด็น/ชี้'",
+                "answerText": "Point",
+                "options": [
+                    "Brief",
+                    "Point",
+                    "Issues",
+                    "Impact"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายด้วยภาพ/ตัวอย่าง'",
+                "answerText": "Illustrate_alt",
+                "options": [
+                    "Illustrate_alt",
+                    "Issues",
+                    "Point",
+                    "Obvious"
+                ],
+                "answer": 0
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าวใจ'",
                 "answerText": "Convince",
                 "options": [
-                    "Brief",
-                    "Convince",
-                    "Point",
-                    "Define"
-                ],
-                "answer": 1
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ผลกระทบ'",
-                "answerText": "Impact",
-                "options": [
-                    "Impact",
-                    "Define",
                     "Obvious",
+                    "Brief",
+                    "Impact",
                     "Convince"
                 ],
-                "answer": 0
+                "answer": 3
             },
             {
                 "type": "speaking",
@@ -10166,171 +13259,375 @@ const quizData = {
                 "answerText": "Contrast_alt",
                 "options": [
                     "Brief",
-                    "Challenge",
+                    "Convince",
                     "Contrast_alt",
-                    "Issues"
+                    "Point"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายด้วยภาพ/ตัวอย่าง'",
-                "answerText": "Illustrate_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สั้นๆ'",
+                "answerText": "Brief",
                 "options": [
-                    "Obvious",
-                    "Impact",
+                    "Issues",
                     "Illustrate_alt",
-                    "Define"
-                ],
-                "answer": 2
-            }
-        ],
-        "5": [
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เกี่ยวข้อง/เชื่อมโยง'",
-                "answerText": "Relate",
-                "options": [
-                    "Respond",
-                    "Role",
-                    "Acknowledge",
-                    "Relate"
+                    "Obvious",
+                    "Brief"
                 ],
                 "answer": 3
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'หลัก/เบื้องต้น'",
-                "answerText": "Primary",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเด็น/ปัญหา'",
+                "answerText": "Issues",
                 "options": [
-                    "Specific",
-                    "Primary",
-                    "Structure",
-                    "Acknowledge"
+                    "Define",
+                    "Issues",
+                    "Contrast_alt",
+                    "Impact"
                 ],
                 "answer": 1
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'คล้ายกัน'",
-                "answerText": "Similar",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ความท้าทาย'",
+                "answerText": "Challenge",
                 "options": [
-                    "Similar",
-                    "Topic",
-                    "Respond",
-                    "Specific"
+                    "Brief",
+                    "Point",
+                    "Challenge",
+                    "Define"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ผลกระทบ'",
+                "answerText": "Impact",
+                "options": [
+                    "Impact",
+                    "Obvious",
+                    "Define",
+                    "Brief"
                 ],
                 "answer": 0
+            }
+        ],
+        "5": [
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยอมรับ'",
+                "answerText": "Acknowledge",
+                "options": [
+                    "Role",
+                    "Acknowledge",
+                    "Structure",
+                    "Topic"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เฉพาะเจาะจง'",
+                "answerText": "Specific",
+                "options": [
+                    "Acknowledge",
+                    "Role",
+                    "Specific",
+                    "Primary"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำนาย'",
                 "answerText": "Predict",
                 "options": [
-                    "Structure",
-                    "Relate",
                     "Acknowledge",
-                    "Predict"
+                    "Topic",
+                    "Predict",
+                    "Respond"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตอบสนอง'",
+                "answerText": "Respond",
+                "options": [
+                    "Acknowledge",
+                    "Predict",
+                    "Primary",
+                    "Respond"
                 ],
                 "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'คล้ายกัน'",
+                "answerText": "Similar",
+                "options": [
+                    "Role",
+                    "Predict",
+                    "Similar",
+                    "Relate"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'หัวข้อ'",
                 "answerText": "Topic",
                 "options": [
-                    "Specific",
                     "Topic",
+                    "Specific",
+                    "Predict",
+                    "Acknowledge"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เกี่ยวข้อง/เชื่อมโยง'",
+                "answerText": "Relate",
+                "options": [
+                    "Acknowledge",
+                    "Relate",
+                    "Specific",
+                    "Topic"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'หลัก/เบื้องต้น'",
+                "answerText": "Primary",
+                "options": [
+                    "Primary",
+                    "Topic",
+                    "Acknowledge",
+                    "Role"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โครงสร้าง'",
+                "answerText": "Structure",
+                "options": [
+                    "Acknowledge",
                     "Structure",
+                    "Predict",
                     "Role"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'บทบาท'",
+                "answerText": "Role",
+                "options": [
+                    "Role",
+                    "Similar",
+                    "Topic",
+                    "Predict"
+                ],
+                "answer": 0
             }
         ],
         "6": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
-                "answerText": "Emphasize_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
+                "answerText": "Conclude",
                 "options": [
-                    "Emphasize_alt",
-                    "Claim",
                     "Criticize",
-                    "Assume"
+                    "Conclude",
+                    "Discuss",
+                    "Examine"
                 ],
-                "answer": 0
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบาย'",
+                "answerText": "Explain",
+                "options": [
+                    "Defend",
+                    "Assume",
+                    "Explain",
+                    "Emphasize_alt"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อภิปราย'",
                 "answerText": "Discuss",
                 "options": [
-                    "Claim",
-                    "Examine",
-                    "Discuss",
-                    "Assume"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สรุป'",
-                "answerText": "Conclude",
-                "options": [
                     "Defend",
                     "Assume",
-                    "Conclude",
-                    "Discuss"
+                    "Discuss",
+                    "Examine"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โต้แย้ง'",
-                "answerText": "Argue_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สันนิษฐาน'",
+                "answerText": "Assume",
                 "options": [
-                    "Discuss",
                     "Defend",
-                    "Argue_alt",
-                    "Explain"
+                    "Claim",
+                    "Conclude",
+                    "Assume"
                 ],
-                "answer": 2
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตรวจสอบ/พิจารณา'",
                 "answerText": "Examine",
                 "options": [
+                    "Claim",
+                    "Argue_alt",
                     "Examine",
-                    "Conclude",
+                    "Conclude"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'วิจารณ์'",
+                "answerText": "Criticize",
+                "options": [
+                    "Assume",
+                    "Argue_alt",
                     "Discuss",
                     "Criticize"
                 ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ปกป้อง/แก้ต่าง'",
+                "answerText": "Defend",
+                "options": [
+                    "Claim",
+                    "Emphasize_alt",
+                    "Defend",
+                    "Discuss"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นย้ำ'",
+                "answerText": "Emphasize_alt",
+                "options": [
+                    "Emphasize_alt",
+                    "Examine",
+                    "Criticize",
+                    "Defend"
+                ],
                 "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โต้แย้ง'",
+                "answerText": "Argue_alt",
+                "options": [
+                    "Defend",
+                    "Explain",
+                    "Argue_alt",
+                    "Assume"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวอ้าง'",
+                "answerText": "Claim",
+                "options": [
+                    "Assume",
+                    "Criticize",
+                    "Claim",
+                    "Argue_alt"
+                ],
+                "answer": 2
             }
         ],
         "7": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตีความ'",
-                "answerText": "Interpret",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกตเห็น/ให้ความเห็น'",
+                "answerText": "Observe",
                 "options": [
                     "Mention_alt",
-                    "Highlight",
                     "Interpret",
+                    "Illustrate_alt",
+                    "Observe"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นให้เห็นเด่นชัด'",
+                "answerText": "Highlight",
+                "options": [
+                    "Maintain",
+                    "Mention_alt",
+                    "Highlight",
                     "Persuade"
                 ],
                 "answer": 2
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกตเห็น/ให้ความเห็น'",
-                "answerText": "Observe",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวถึง'",
+                "answerText": "Mention_alt",
+                "options": [
+                    "Point out",
+                    "Mention_alt",
+                    "Persuade",
+                    "Observe"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกต/กล่าวถึง'",
+                "answerText": "Note",
                 "options": [
                     "Note",
                     "Highlight",
+                    "Mention_alt",
+                    "Interpret"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'โน้มน้าว'",
+                "answerText": "Persuade",
+                "options": [
+                    "Maintain",
+                    "Observe",
+                    "Point out",
+                    "Persuade"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยืนกราน/รักษา'",
+                "answerText": "Maintain",
+                "options": [
+                    "Illustrate_alt",
+                    "Persuade",
                     "Justify",
-                    "Observe"
+                    "Maintain"
                 ],
                 "answer": 3
             },
@@ -10339,86 +13636,146 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ยกตัวอย่างประกอบ'",
                 "answerText": "Illustrate_alt",
                 "options": [
-                    "Illustrate_alt",
+                    "Justify",
                     "Mention_alt",
-                    "Highlight",
-                    "Persuade"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สังเกต/กล่าวถึง'",
-                "answerText": "Note",
-                "options": [
-                    "Note",
-                    "Interpret",
-                    "Observe",
-                    "Persuade"
-                ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เน้นให้เห็นเด่นชัด'",
-                "answerText": "Highlight",
-                "options": [
-                    "Persuade",
-                    "Note",
-                    "Interpret",
-                    "Highlight"
+                    "Maintain",
+                    "Illustrate_alt"
                 ],
                 "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ชี้ให้เห็น'",
+                "answerText": "Point out",
+                "options": [
+                    "Interpret",
+                    "Point out",
+                    "Note",
+                    "Mention_alt"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แสดงเหตุผลสนับสนุน'",
+                "answerText": "Justify",
+                "options": [
+                    "Illustrate_alt",
+                    "Note",
+                    "Maintain",
+                    "Justify"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตีความ'",
+                "answerText": "Interpret",
+                "options": [
+                    "Interpret",
+                    "Maintain",
+                    "Point out",
+                    "Highlight"
+                ],
+                "answer": 0
             }
         ],
         "8": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน'",
-                "answerText": "Support_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวระบุ'",
+                "answerText": "State_alt",
                 "options": [
-                    "Support_alt",
-                    "Refute",
-                    "State_alt",
-                    "Recommend"
+                    "Propose",
+                    "Recognize",
+                    "Question",
+                    "State_alt"
                 ],
-                "answer": 0
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ'",
-                "answerText": "Recommend",
-                "options": [
-                    "State_alt",
-                    "Recommend",
-                    "Support_alt",
-                    "Refute"
-                ],
-                "answer": 1
+                "answer": 3
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตั้งคำถาม'",
                 "answerText": "Question",
                 "options": [
-                    "Agree",
+                    "Refute",
                     "Question",
-                    "Summarize",
-                    "Recommend"
+                    "Suggest",
+                    "Recognize"
                 ],
                 "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตระหนัก/ยอมรับ'",
+                "answerText": "Recognize",
+                "options": [
+                    "Support_alt",
+                    "Question",
+                    "Recognize",
+                    "Summarize"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน'",
+                "answerText": "Support_alt",
+                "options": [
+                    "State_alt",
+                    "Question",
+                    "Support_alt",
+                    "Propose"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เสนอแนะ'",
                 "answerText": "Suggest",
                 "options": [
-                    "Suggest",
                     "State_alt",
-                    "Support_alt",
-                    "Recognize"
+                    "Suggest",
+                    "Recognize",
+                    "Question"
                 ],
-                "answer": 0
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'หักล้าง(ข้อโต้แย้ง)'",
+                "answerText": "Refute",
+                "options": [
+                    "State_alt",
+                    "Suggest",
+                    "Question",
+                    "Refute"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เสนอ'",
+                "answerText": "Propose",
+                "options": [
+                    "Recognize",
+                    "Question",
+                    "Suggest",
+                    "Propose"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'แนะนำ'",
+                "answerText": "Recommend",
+                "options": [
+                    "Summarize",
+                    "State_alt",
+                    "Recommend",
+                    "Propose"
+                ],
+                "answer": 2
             },
             {
                 "type": "speaking",
@@ -10426,59 +13783,47 @@ const quizData = {
                 "answerText": "Summarize",
                 "options": [
                     "Question",
-                    "Suggest",
+                    "Refute",
                     "Summarize",
-                    "Recognize"
+                    "State_alt"
                 ],
                 "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เห็นด้วย'",
+                "answerText": "Agree",
+                "options": [
+                    "Suggest",
+                    "Propose",
+                    "Recommend",
+                    "Agree"
+                ],
+                "answer": 3
             }
         ],
         "9": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเมิน'",
-                "answerText": "Evaluate",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'สนับสนุน/ทนาย'",
+                "answerText": "Advocate",
                 "options": [
                     "Compare_alt",
                     "Advocate",
-                    "Consider_alt",
-                    "Evaluate"
-                ],
-                "answer": 3
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบ'",
-                "answerText": "Compare_alt",
-                "options": [
-                    "Contrast_alt",
-                    "Advocate",
-                    "Compare_alt",
+                    "Disagree",
                     "Believe_alt"
-                ],
-                "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระบุรายละเอียด'",
-                "answerText": "Specify",
-                "options": [
-                    "Consider_alt",
-                    "Specify",
-                    "Deny",
-                    "Advocate"
                 ],
                 "answer": 1
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบความแตกต่าง'",
-                "answerText": "Contrast_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อธิบายเพิ่มเติม'",
+                "answerText": "Elaborate",
                 "options": [
+                    "Evaluate",
+                    "Elaborate",
                     "Specify",
-                    "Contrast_alt",
-                    "Deny",
-                    "Disagree"
+                    "Consider_alt"
                 ],
                 "answer": 1
             },
@@ -10487,74 +13832,206 @@ const quizData = {
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เชื่อว่า'",
                 "answerText": "Believe_alt",
                 "options": [
-                    "Evaluate",
                     "Deny",
+                    "Believe_alt",
                     "Advocate",
-                    "Believe_alt"
+                    "Elaborate"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ปฏิเสธ'",
+                "answerText": "Deny",
+                "options": [
+                    "Contrast_alt",
+                    "Elaborate",
+                    "Disagree",
+                    "Deny"
                 ],
                 "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบความแตกต่าง'",
+                "answerText": "Contrast_alt",
+                "options": [
+                    "Specify",
+                    "Contrast_alt",
+                    "Compare_alt",
+                    "Deny"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ประเมิน'",
+                "answerText": "Evaluate",
+                "options": [
+                    "Evaluate",
+                    "Consider_alt",
+                    "Advocate",
+                    "Elaborate"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'พิจารณา'",
+                "answerText": "Consider_alt",
+                "options": [
+                    "Specify",
+                    "Consider_alt",
+                    "Elaborate",
+                    "Believe_alt"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'เปรียบเทียบ'",
+                "answerText": "Compare_alt",
+                "options": [
+                    "Evaluate",
+                    "Consider_alt",
+                    "Compare_alt",
+                    "Disagree"
+                ],
+                "answer": 2
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ไม่เห็นด้วย'",
+                "answerText": "Disagree",
+                "options": [
+                    "Disagree",
+                    "Believe_alt",
+                    "Consider_alt",
+                    "Contrast_alt"
+                ],
+                "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระบุรายละเอียด'",
+                "answerText": "Specify",
+                "options": [
+                    "Deny",
+                    "Compare_alt",
+                    "Specify",
+                    "Elaborate"
+                ],
+                "answer": 2
             }
         ],
         "10": [
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำนาย'",
-                "answerText": "Predict_alt",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตรวจสอบความถูกต้อง'",
+                "answerText": "Verify",
                 "options": [
-                    "Predict_alt",
                     "Stipulate",
-                    "Generalize",
-                    "Validate"
+                    "Perceive",
+                    "Predict_alt",
+                    "Verify"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวย้ำ'",
+                "answerText": "Reiterate",
+                "options": [
+                    "Reiterate",
+                    "Predict_alt",
+                    "Validate",
+                    "Infer"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ระบุเป็นเงื่อนไข'",
+                "answerText": "Stipulate",
+                "options": [
+                    "Reiterate",
+                    "Stipulate",
+                    "Predict_alt",
+                    "Generalize"
+                ],
+                "answer": 1
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'พยากรณ์'",
                 "answerText": "Forecast",
                 "options": [
+                    "Perceive",
                     "Stipulate",
-                    "Validate",
                     "Forecast",
-                    "Generalize"
+                    "Verify"
                 ],
                 "answer": 2
-            },
-            {
-                "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อนุมาน'",
-                "answerText": "Infer",
-                "options": [
-                    "Infer",
-                    "Forecast",
-                    "Predict_alt",
-                    "Perceive"
-                ],
-                "answer": 0
             },
             {
                 "type": "speaking",
                 "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'กล่าวสรุปทั่วๆ ไป'",
                 "answerText": "Generalize",
                 "options": [
-                    "Reiterate",
+                    "Infer",
+                    "Generalize",
+                    "Forecast",
+                    "Reiterate"
+                ],
+                "answer": 1
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำให้มีผล/พิสูจน์ว่าจริง'",
+                "answerText": "Validate",
+                "options": [
                     "Predict_alt",
                     "Perceive",
-                    "Generalize"
+                    "Verify",
+                    "Validate"
                 ],
                 "answer": 3
             },
             {
                 "type": "speaking",
-                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ตรวจสอบความถูกต้อง'",
-                "answerText": "Verify",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'อนุมาน'",
+                "answerText": "Infer",
                 "options": [
                     "Verify",
+                    "Validate",
+                    "Stipulate",
+                    "Infer"
+                ],
+                "answer": 3
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'รับรู้/เข้าใจ'",
+                "answerText": "Perceive",
+                "options": [
                     "Perceive",
                     "Validate",
-                    "Reiterate"
+                    "Forecast",
+                    "Generalize"
                 ],
                 "answer": 0
+            },
+            {
+                "type": "speaking",
+                "question": "กดปุ่มไมโครโฟนแล้วพูดคำศัพท์ภาษาอังกฤษที่แปลว่า 'ทำนาย'",
+                "answerText": "Predict_alt",
+                "options": [
+                    "Reiterate",
+                    "Stipulate",
+                    "Predict_alt",
+                    "Infer"
+                ],
+                "answer": 2
             }
         ]
     }

@@ -126,6 +126,8 @@ const app = {
             document.querySelectorAll('.nav-links li').forEach(n => n.classList.remove('active'));
             document.querySelector('[data-view="dashboard"]').classList.add('active');
         }
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     updateStats() {
@@ -284,21 +286,24 @@ const app = {
             gainNode.connect(ctx.destination);
             
             if (isCorrect) {
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(500, ctx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(1000, ctx.currentTime + 0.1);
+                // Bright 'Ding-ding' chord
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(659.25, ctx.currentTime); // E5
+                osc.frequency.setValueAtTime(1046.50, ctx.currentTime + 0.1); // C6
                 gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
-                osc.start();
-                osc.stop(ctx.currentTime + 0.2);
+                gainNode.gain.setValueAtTime(0.5, ctx.currentTime + 0.1);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+                osc.start(ctx.currentTime);
+                osc.stop(ctx.currentTime + 0.4);
             } else {
+                // Low buzz
                 osc.type = 'sawtooth';
-                osc.frequency.setValueAtTime(200, ctx.currentTime);
-                osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.2);
+                osc.frequency.setValueAtTime(150, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.3);
                 gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
-                osc.start();
-                osc.stop(ctx.currentTime + 0.2);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+                osc.start(ctx.currentTime);
+                osc.stop(ctx.currentTime + 0.3);
             }
         } catch(e) {
             console.error("Audio error", e);

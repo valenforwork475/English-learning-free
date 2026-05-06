@@ -1035,24 +1035,39 @@ h1, h2, h3, h4, h5, h6 {
 .btn-reveal-answer {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    padding: 10px 24px;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 13px 32px;
     border-radius: 50px;
-    border: 1.5px solid var(--border);
-    background: transparent;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 500;
+    border: none;
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     font-family: 'Kanit', sans-serif;
-    transition: all 0.2s;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+    letter-spacing: 0.3px;
+}
+
+.btn-reveal-answer i {
+    font-size: 1.1rem;
+    transition: transform 0.3s;
 }
 
 .btn-reveal-answer:hover {
-    background: #fef3c7;
-    border-color: var(--accent-yellow);
-    color: #92400e;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.45);
+    background: linear-gradient(135deg, #d97706, #dc2626);
+}
+
+.btn-reveal-answer:hover i {
+    transform: rotate(15deg);
+}
+
+.btn-reveal-answer:active {
+    transform: scale(0.97);
 }
 
 /* Mobile Logout Icon Button */

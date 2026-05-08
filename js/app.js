@@ -381,6 +381,11 @@ const app = {
             document.querySelectorAll('.nav-links li').forEach(n => n.classList.remove('active'));
             document.querySelector('[data-view="dashboard"]').classList.add('active');
         }
+
+        // Render grammar lessons when entering grammar view
+        if (viewId === 'grammar') {
+            grammarEngine.render();
+        }
         
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },
@@ -1071,6 +1076,252 @@ const app = {
             
             const modal = document.getElementById('completion-modal');
             if (modal) modal.classList.add('active');
+        }
+    }
+};
+
+// ========================
+// GRAMMAR DATA: Verb to Be
+// ========================
+const grammarLessons = [
+    {
+        id: 'verb-to-be-intro',
+        title: 'Verb to Be คืออะไร?',
+        icon: '📖',
+        color: '#6366f1',
+        colorLight: 'rgba(99,102,241,0.1)',
+        theory: `<strong>Verb to Be</strong> คือ กริยาช่วยพื้นฐานที่สุดในภาษาอังกฤษ<br>
+        มี 3 รูปแบบ ได้แก่ <span class="gram-tag am">am</span> <span class="gram-tag is">is</span> <span class="gram-tag are">are</span>`,
+        rules: [
+            { subject: 'I', verb: 'am', example: 'I am a student.', th: 'ฉันเป็นนักเรียน' },
+            { subject: 'He / She / It', verb: 'is', example: 'She is happy.', th: 'เธอมีความสุข' },
+            { subject: 'You / We / They', verb: 'are', example: 'They are friends.', th: 'พวกเขาเป็นเพื่อนกัน' },
+        ],
+        exercises: [
+            { q: 'I ___ a teacher.', options: ['am', 'is', 'are'], answer: 0 },
+            { q: 'She ___ beautiful.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'We ___ happy today.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'He ___ my brother.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'You ___ my friend.', options: ['am', 'is', 'are'], answer: 2 },
+        ]
+    },
+    {
+        id: 'verb-to-be-negative',
+        title: 'ประโยคปฏิเสธ (Negative)',
+        icon: '🚫',
+        color: '#ef4444',
+        colorLight: 'rgba(239,68,68,0.1)',
+        theory: `เพิ่ม <strong>not</strong> หลัง Verb to Be ทันที<br>
+        <span class="gram-tag am">am not</span> &nbsp; <span class="gram-tag is">is not = isn't</span> &nbsp; <span class="gram-tag are">are not = aren't</span>`,
+        rules: [
+            { subject: 'I', verb: 'am not', example: 'I am not tired.', th: 'ฉันไม่เหนื่อย' },
+            { subject: 'He / She / It', verb: "isn't", example: "He isn't here.", th: 'เขาไม่ได้อยู่ที่นี่' },
+            { subject: 'You / We / They', verb: "aren't", example: "They aren't ready.", th: 'พวกเขายังไม่พร้อม' },
+        ],
+        exercises: [
+            { q: 'I ___ angry.', options: ['am not', "isn't", "aren't"], answer: 0 },
+            { q: 'It ___ cold today.', options: ['am not', "isn't", "aren't"], answer: 1 },
+            { q: 'They ___ at school.', options: ['am not', "isn't", "aren't"], answer: 2 },
+            { q: 'She ___ my sister.', options: ['am not', "isn't", "aren't"], answer: 1 },
+            { q: 'We ___ late.', options: ['am not', "isn't", "aren't"], answer: 2 },
+        ]
+    },
+    {
+        id: 'verb-to-be-question',
+        title: 'ประโยคคำถาม (Question)',
+        icon: '❓',
+        color: '#f59e0b',
+        colorLight: 'rgba(245,158,11,0.1)',
+        theory: `สลับตำแหน่ง <strong>Verb to Be</strong> มาไว้หน้าประโยค แล้วใส่ <strong>?</strong><br>
+        <em>She is happy. → Is she happy?</em>`,
+        rules: [
+            { subject: 'Am I ...?', verb: '', example: 'Am I late?', th: 'ฉันสายไหม?' },
+            { subject: 'Is he/she/it ...?', verb: '', example: 'Is he your teacher?', th: 'เขาเป็นครูของคุณไหม?' },
+            { subject: 'Are you/we/they ...?', verb: '', example: 'Are you okay?', th: 'คุณโอเคไหม?' },
+        ],
+        exercises: [
+            { q: '___ she your friend?', options: ['Am', 'Is', 'Are'], answer: 1 },
+            { q: '___ they at home?', options: ['Am', 'Is', 'Are'], answer: 2 },
+            { q: '___ I right?', options: ['Am', 'Is', 'Are'], answer: 0 },
+            { q: '___ it raining?', options: ['Am', 'Is', 'Are'], answer: 1 },
+            { q: '___ you ready?', options: ['Am', 'Is', 'Are'], answer: 2 },
+        ]
+    },
+    {
+        id: 'there-is-are',
+        title: 'There is / There are',
+        icon: '📍',
+        color: '#22c55e',
+        colorLight: 'rgba(34,197,94,0.1)',
+        theory: `ใช้บอกว่า <strong>"มี..."</strong> อยู่ที่ไหนสักที่<br>
+        <span class="gram-tag is">There is</span> → สิ่งของ <strong>1 ชิ้น</strong> (เอกพจน์)<br>
+        <span class="gram-tag are">There are</span> → สิ่งของ <strong>หลายชิ้น</strong> (พหูพจน์)`,
+        rules: [
+            { subject: 'There is', verb: '(เอกพจน์)', example: 'There is a cat on the sofa.', th: 'มีแมวตัวหนึ่งบนโซฟา' },
+            { subject: 'There are', verb: '(พหูพจน์)', example: 'There are three books on the table.', th: 'มีหนังสือสามเล่มบนโต๊ะ' },
+            { subject: 'Is there ...?', verb: '(คำถาม)', example: 'Is there a hospital near here?', th: 'มีโรงพยาบาลใกล้ๆ ที่นี่ไหม?' },
+            { subject: 'Are there ...?', verb: '(คำถาม)', example: 'Are there any seats left?', th: 'ยังมีที่นั่งเหลือไหม?' },
+        ],
+        exercises: [
+            { q: '___ a dog in the garden.', options: ['There is', 'There are', 'Is there'], answer: 0 },
+            { q: '___ many students in the class.', options: ['There is', 'There are', 'Are there'], answer: 1 },
+            { q: '___ a bank near here?', options: ['Is there', 'There is', 'There are'], answer: 0 },
+            { q: '___ any problems?', options: ['There are', 'Are there', 'Is there'], answer: 1 },
+            { q: '___ an apple on the table.', options: ['There are', 'Are there', 'There is'], answer: 2 },
+        ]
+    },
+    {
+        id: 'verb-to-be-past',
+        title: 'อดีตกาล: was / were',
+        icon: '⏰',
+        color: '#8b5cf6',
+        colorLight: 'rgba(139,92,246,0.1)',
+        theory: `<strong>Verb to Be</strong> ในอดีต ใช้ <span class="gram-tag am">was</span> และ <span class="gram-tag are">were</span><br>
+        <em>(ใช้เมื่อพูดถึงเรื่องที่เกิดขึ้นแล้วในอดีต)</em>`,
+        rules: [
+            { subject: 'I / He / She / It', verb: 'was', example: 'I was at school yesterday.', th: 'ฉันอยู่ที่โรงเรียนเมื่อวาน' },
+            { subject: 'You / We / They', verb: 'were', example: 'They were happy last year.', th: 'พวกเขามีความสุขเมื่อปีที่แล้ว' },
+        ],
+        exercises: [
+            { q: 'She ___ sick last week.', options: ['was', 'were', 'is'], answer: 0 },
+            { q: 'We ___ at the park yesterday.', options: ['was', 'were', 'are'], answer: 1 },
+            { q: 'He ___ very young then.', options: ['was', 'were', 'is'], answer: 0 },
+            { q: 'They ___ excited about the trip.', options: ['was', 'were', 'are'], answer: 1 },
+            { q: 'I ___ tired after the game.', options: ['was', 'were', 'am'], answer: 0 },
+        ]
+    }
+];
+
+// Grammar Engine
+const grammarEngine = {
+    scores: {}, // { lessonId: { correct, total } }
+
+    render() {
+        const container = document.getElementById('grammar-container');
+        if (!container) return;
+        container.innerHTML = grammarLessons.map((lesson, idx) => {
+            const score = this.scores[lesson.id];
+            const scoreBadge = score
+                ? `<span class="gram-score-badge" style="background:${score.correct === score.total ? '#22c55e' : '#f59e0b'}">${score.correct}/${score.total}</span>`
+                : '';
+            return `
+            <div class="gram-lesson-card" id="card-${lesson.id}" style="border-left: 4px solid ${lesson.color};">
+                <div class="gram-card-header" onclick="grammarEngine.toggle('${lesson.id}')">
+                    <span class="gram-icon">${lesson.icon}</span>
+                    <div class="gram-card-title">
+                        <h3>${lesson.title}</h3>
+                        <small style="color:var(--text-muted)">${lesson.exercises.length} แบบฝึกหัด</small>
+                    </div>
+                    ${scoreBadge}
+                    <i class="fa-solid fa-chevron-down gram-chevron" id="chev-${lesson.id}"></i>
+                </div>
+                <div class="gram-card-body" id="body-${lesson.id}" style="display:none;">
+                    <!-- Theory -->
+                    <div class="gram-theory" style="background:${lesson.colorLight}; border-left: 3px solid ${lesson.color};">
+                        ${lesson.theory}
+                    </div>
+                    <!-- Rules Table -->
+                    <div class="gram-rules-table">
+                        <div class="gram-rules-header">
+                            <span>ประธาน</span><span>Verb to Be</span><span>ตัวอย่าง</span>
+                        </div>
+                        ${lesson.rules.map(r => `
+                            <div class="gram-rule-row">
+                                <span class="gram-subject">${r.subject}</span>
+                                <span class="gram-verb" style="color:${lesson.color}">${r.verb}</span>
+                                <span class="gram-example">
+                                    <em>${r.example}</em>
+                                    <small>${r.th}</small>
+                                </span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <!-- Exercises -->
+                    <div class="gram-exercise-section">
+                        <h4>✏️ แบบฝึกหัด</h4>
+                        ${lesson.exercises.map((ex, qi) => `
+                            <div class="gram-ex-item" id="ex-${lesson.id}-${qi}">
+                                <p class="gram-ex-question">${qi+1}. ${ex.q}</p>
+                                <div class="gram-ex-options">
+                                    ${ex.options.map((opt, oi) => `
+                                        <button class="gram-opt-btn" 
+                                            id="opt-${lesson.id}-${qi}-${oi}"
+                                            onclick="grammarEngine.answer('${lesson.id}', ${qi}, ${oi}, ${ex.answer})">
+                                            ${opt}
+                                        </button>
+                                    `).join('')}
+                                </div>
+                                <div class="gram-ex-feedback" id="fb-${lesson.id}-${qi}"></div>
+                            </div>
+                        `).join('')}
+                        <div class="gram-ex-result" id="result-${lesson.id}" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>`;
+        }).join('');
+    },
+
+    toggle(id) {
+        const body = document.getElementById(`body-${id}`);
+        const chev = document.getElementById(`chev-${id}`);
+        if (!body) return;
+        const isOpen = body.style.display !== 'none';
+        body.style.display = isOpen ? 'none' : 'block';
+        if (chev) chev.style.transform = isOpen ? '' : 'rotate(180deg)';
+    },
+
+    answer(lessonId, qIndex, selectedOpt, correctOpt) {
+        const lesson = grammarLessons.find(l => l.id === lessonId);
+        const ex = lesson.exercises[qIndex];
+        const allOpts = document.querySelectorAll(`[id^="opt-${lessonId}-${qIndex}-"]`);
+        const fbEl = document.getElementById(`fb-${lessonId}-${qIndex}`);
+
+        // Disable all options for this question
+        allOpts.forEach(btn => btn.disabled = true);
+
+        if (selectedOpt === correctOpt) {
+            document.getElementById(`opt-${lessonId}-${qIndex}-${selectedOpt}`).classList.add('gram-correct');
+            if (fbEl) { fbEl.textContent = '✅ ถูกต้อง!'; fbEl.className = 'gram-ex-feedback gram-fb-correct'; }
+        } else {
+            document.getElementById(`opt-${lessonId}-${qIndex}-${selectedOpt}`).classList.add('gram-wrong');
+            document.getElementById(`opt-${lessonId}-${qIndex}-${correctOpt}`).classList.add('gram-correct');
+            if (fbEl) {
+                fbEl.innerHTML = `❌ ผิด! คำตอบที่ถูก: <strong>${ex.options[correctOpt]}</strong>`;
+                fbEl.className = 'gram-ex-feedback gram-fb-wrong';
+            }
+        }
+
+        // Check if all exercises done
+        const allDone = lesson.exercises.every((_, qi) => {
+            const opts = document.querySelectorAll(`[id^="opt-${lessonId}-${qi}-"]`);
+            return opts.length > 0 && opts[0].disabled;
+        });
+
+        if (allDone) {
+            // Count correct answers
+            let correct = 0;
+            lesson.exercises.forEach((ex2, qi) => {
+                const correctBtn = document.getElementById(`opt-${lessonId}-${qi}-${ex2.answer}`);
+                if (correctBtn && correctBtn.classList.contains('gram-correct')) correct++;
+            });
+            this.scores[lessonId] = { correct, total: lesson.exercises.length };
+            const resultEl = document.getElementById(`result-${lessonId}`);
+            if (resultEl) {
+                const isPerfect = correct === lesson.exercises.length;
+                resultEl.style.display = 'block';
+                resultEl.innerHTML = `
+                    <div class="gram-final-result ${isPerfect ? 'perfect' : 'partial'}">
+                        ${isPerfect ? '🏆 ยอดเยี่ยม! ได้คะแนนเต็ม!' : `📝 ทำได้ ${correct}/${lesson.exercises.length} ข้อ`}
+                        ${!isPerfect ? '<br><small>ลองทำอีกครั้งเพื่อให้ได้คะแนนเต็มนะครับ!</small>' : ''}
+                    </div>`;
+                // Re-render score badge
+                this.render();
+                // Re-open this lesson
+                const body = document.getElementById(`body-${lessonId}`);
+                const chev = document.getElementById(`chev-${lessonId}`);
+                if (body) body.style.display = 'block';
+                if (chev) chev.style.transform = 'rotate(180deg)';
+            }
         }
     }
 };

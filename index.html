@@ -25,6 +25,9 @@
                 <li class="active" data-view="dashboard">
                     <a href="#"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
                 </li>
+                <li data-view="grammar">
+                    <a href="#"><i class="fa-solid fa-book"></i> แกรมม่า</a>
+                </li>
                 <li data-view="quizzes">
                     <a href="#"><i class="fa-solid fa-clipboard-question"></i> แบบทดสอบ</a>
                 </li>
@@ -333,6 +336,23 @@
                 </div>
             </section>
 
+            <!-- Grammar View -->
+            <section id="grammar-view" class="view-section">
+                <header class="top-header">
+                    <div class="greeting">
+                        <h1>📚 แกรมม่าพื้นฐาน</h1>
+                        <p>เรียนไวยากรณ์ภาษาอังกฤษแบบง่ายๆ</p>
+                    </div>
+                    <button onclick="app.logout()" class="mobile-logout-icon" title="ออกจากระบบ">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </header>
+
+                <div class="grammar-container" id="grammar-container">
+                    <!-- Grammar lessons injected by JS -->
+                </div>
+            </section>
+
         </main>
     </div>
 
@@ -363,8 +383,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=38"></script>
-    <script src="js/app.js?v=38"></script>
+    <script src="js/data.js?v=39"></script>
+    <script src="js/app.js?v=39"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

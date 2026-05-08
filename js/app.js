@@ -601,10 +601,16 @@ const app = {
         }, 300);
     },
 
-    showCompletionModal(message) {
+    showCompletionModal(message, primaryBtnText = 'ทำด่านทดสอบ ⚔️', primaryBtnAction = 'app.startQuizFromModal()') {
         const msgEl = document.getElementById('modal-message');
         if (msgEl) msgEl.textContent = message;
         
+        const primaryBtn = document.getElementById('modal-primary-btn');
+        if (primaryBtn) {
+            primaryBtn.textContent = primaryBtnText;
+            primaryBtn.setAttribute('onclick', primaryBtnAction);
+        }
+
         const modal = document.getElementById('completion-modal');
         if (modal) modal.classList.add('active');
     },
@@ -654,7 +660,11 @@ const app = {
         }
 
         if (this.a1SessionQueue.length === 0) {
-            this.showCompletionModal('คุณจำคำศัพท์ A1 ทั้งหมดได้แล้ว! หรือไม่มีคำศัพท์ที่ต้องทบทวนในตอนนี้ 🎉');
+            this.showCompletionModal(
+                'คุณจำคำศัพท์ A1 ทั้งหมดได้แล้ว! หรือไม่มีคำศัพท์ที่ต้องทบทวนในตอนนี้ 🎉', 
+                'เริ่มใหม่ 🔄', 
+                'app.closeModal(); app.showA1Flashcards();'
+            );
             return;
         }
 
@@ -683,7 +693,11 @@ const app = {
     loadA1Card() {
         if (this.a1SessionQueue.length === 0) {
             this.saveProgress();
-            this.showCompletionModal('เก่งมาก! คุณทบทวนคำศัพท์รอบนี้จบแล้ว 🎉');
+            this.showCompletionModal(
+                'เก่งมาก! คุณทบทวนคำศัพท์รอบนี้จบแล้ว 🎉',
+                'เรียนอีก 10 คำ 🔄',
+                'app.closeModal(); app.showA1Flashcards();'
+            );
             this.switchView('dashboard');
             return;
         }
@@ -694,11 +708,24 @@ const app = {
 
         document.getElementById('a1-fc-word-en').textContent = word.en;
         document.getElementById('a1-fc-phonetic').textContent = `[ ${word.phonetic} ]`;
+        const phoneticFront = document.getElementById('a1-fc-phonetic-front');
+        if (phoneticFront) phoneticFront.textContent = `[ ${word.phonetic} ]`;
         document.getElementById('a1-fc-word-th').textContent = word.th;
         
         document.getElementById('a1-flashcard').classList.remove('is-flipped');
         
         this.updateA1StatsUI();
+        
+        // ทำให้เสียงออกออโต้
+        try {
+            const text = word.en.replace(/_alt$/i, '').replace(/_\w+$/i, '');
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            window.speechSynthesis.speak(utterance);
+        } catch (e) {
+            console.warn('Auto play sound failed:', e);
+        }
     },
 
     flipA1Card() {

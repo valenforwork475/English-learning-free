@@ -25,9 +25,6 @@
                 <li class="active" data-view="dashboard">
                     <a href="#"><i class="fa-solid fa-house"></i><span class="nav-text"> หน้าหลัก</span></a>
                 </li>
-                <li data-view="grammar">
-                    <a href="#"><i class="fa-solid fa-book"></i><span class="nav-text"> แกรมม่า</span></a>
-                </li>
                 <li data-view="quizzes">
                     <a href="#"><i class="fa-solid fa-clipboard-question"></i><span class="nav-text"> ทดสอบ</span></a>
                 </li>
@@ -187,6 +184,18 @@
 
                 <div class="section-title">
                     <h2>หมวดหมู่แนะนำ</h2>
+                </div>
+                
+                <!-- หมวดหมู่พื้นฐาน (แกรมม่า) -->
+                <div class="category-group" style="margin-bottom: 30px;">
+                    <h3 style="color: #6366f1; margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-book"></i> หมวดพื้นฐาน (Basic)</h3>
+                    <div class="category-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                        <div class="category-card" onclick="app.switchView('grammar')">
+                            <div class="cat-icon" style="background-color: #e0e7ff; color: #4338ca;"><i class="fa-solid fa-book-open"></i></div>
+                            <h4>Grammar</h4>
+                            <p>แกรมม่าพื้นฐาน</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="category-group" style="margin-bottom: 30px;">
@@ -383,8 +392,8 @@
         </div>
     </div>
 
-    <script src="js/data.js?v=40"></script>
-    <script src="js/app.js?v=40"></script>
+    <script src="js/data.js?v=41"></script>
+    <script src="js/app.js?v=41"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

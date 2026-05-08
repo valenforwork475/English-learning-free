@@ -274,7 +274,11 @@ const app = {
         const { data: { user } } = await db.auth.getUser();
         if (user && user.user_metadata) {
             if (user.user_metadata.unlockedLevels) {
-                try { this.unlockedLevels = user.user_metadata.unlockedLevels; } catch (e) {}
+                try { 
+                    this.unlockedLevels = { ...this.unlockedLevels, ...user.user_metadata.unlockedLevels }; 
+                    // ตรวจสอบว่าถ้า grammar เป็น undefined ให้ตั้งเป็น 1
+                    if (this.unlockedLevels.grammar === undefined) this.unlockedLevels.grammar = 1;
+                } catch (e) {}
             }
             if (user.user_metadata.learnedWords) {
                 try { this.learnedWords = new Set(user.user_metadata.learnedWords); } catch (e) {}

@@ -114,6 +114,31 @@ const levelsInfo = {
             "level": 5,
             "name": "Level 5",
             "desc": "อดีตกาล: was / were"
+        },
+        {
+            "level": 6,
+            "name": "Level 6",
+            "desc": "อดีตกาลปฏิเสธ (Past Negative)"
+        },
+        {
+            "level": 7,
+            "name": "Level 7",
+            "desc": "อดีตกาลคำถาม (Past Question)"
+        },
+        {
+            "level": 8,
+            "name": "Level 8",
+            "desc": "เคยมี... (There was/were)"
+        },
+        {
+            "level": 9,
+            "name": "Level 9",
+            "desc": "อนาคตกาล: will be"
+        },
+        {
+            "level": 10,
+            "name": "Level 10",
+            "desc": "กำลังทำ (Be + V.ing)"
         }
     ],
     "toeic_reading": [

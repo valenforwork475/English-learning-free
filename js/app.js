@@ -1113,6 +1113,11 @@ const grammarLessons = [
             { q: 'We ___ happy today.', options: ['am', 'is', 'are'], answer: 2 },
             { q: 'He ___ my brother.', options: ['am', 'is', 'are'], answer: 1 },
             { q: 'You ___ my friend.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'It ___ a cute dog.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'They ___ at the mall.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'I ___ very hungry.', options: ['am', 'is', 'are'], answer: 0 },
+            { q: 'The car ___ fast.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'My friends ___ nice.', options: ['am', 'is', 'are'], answer: 2 },
         ]
     },
     {
@@ -1134,6 +1139,11 @@ const grammarLessons = [
             { q: 'They ___ at school.', options: ['am not', "isn't", "aren't"], answer: 2 },
             { q: 'She ___ my sister.', options: ['am not', "isn't", "aren't"], answer: 1 },
             { q: 'We ___ late.', options: ['am not', "isn't", "aren't"], answer: 2 },
+            { q: 'He ___ a doctor.', options: ['am not', "isn't", "aren't"], answer: 1 },
+            { q: 'You ___ wrong.', options: ['am not', "isn't", "aren't"], answer: 2 },
+            { q: 'I ___ tired yet.', options: ['am not', "isn't", "aren't"], answer: 0 },
+            { q: 'The book ___ interesting.', options: ['am not', "isn't", "aren't"], answer: 1 },
+            { q: 'The dogs ___ hungry.', options: ['am not', "isn't", "aren't"], answer: 2 },
         ]
     },
     {
@@ -1155,6 +1165,11 @@ const grammarLessons = [
             { q: '___ I right?', options: ['Am', 'Is', 'Are'], answer: 0 },
             { q: '___ it raining?', options: ['Am', 'Is', 'Are'], answer: 1 },
             { q: '___ you ready?', options: ['Am', 'Is', 'Are'], answer: 2 },
+            { q: '___ he a good player?', options: ['Am', 'Is', 'Are'], answer: 1 },
+            { q: '___ we going now?', options: ['Am', 'Is', 'Are'], answer: 2 },
+            { q: '___ I the winner?', options: ['Am', 'Is', 'Are'], answer: 0 },
+            { q: '___ the food spicy?', options: ['Am', 'Is', 'Are'], answer: 1 },
+            { q: '___ the keys on the table?', options: ['Am', 'Is', 'Are'], answer: 2 },
         ]
     },
     {
@@ -1178,6 +1193,11 @@ const grammarLessons = [
             { q: '___ a bank near here?', options: ['Is there', 'There is', 'There are'], answer: 0 },
             { q: '___ any problems?', options: ['There are', 'Are there', 'Is there'], answer: 1 },
             { q: '___ an apple on the table.', options: ['There are', 'Are there', 'There is'], answer: 2 },
+            { q: '___ three cars outside.', options: ['There is', 'There are', 'Is there'], answer: 1 },
+            { q: '___ someone at the door.', options: ['There is', 'There are', 'Are there'], answer: 0 },
+            { q: '___ any sugar in the coffee?', options: ['Is there', 'Are there', 'There is'], answer: 0 },
+            { q: '___ enough chairs for everyone?', options: ['Is there', 'Are there', 'There are'], answer: 1 },
+            { q: '___ no time left.', options: ['There is', 'There are', 'Are there'], answer: 0 },
         ]
     },
     {
@@ -1198,6 +1218,138 @@ const grammarLessons = [
             { q: 'He ___ very young then.', options: ['was', 'were', 'is'], answer: 0 },
             { q: 'They ___ excited about the trip.', options: ['was', 'were', 'are'], answer: 1 },
             { q: 'I ___ tired after the game.', options: ['was', 'were', 'am'], answer: 0 },
+            { q: 'It ___ a beautiful day yesterday.', options: ['was', 'were', 'are'], answer: 0 },
+            { q: 'You ___ late for the meeting.', options: ['was', 'were', 'is'], answer: 1 },
+            { q: 'The movie ___ very boring.', options: ['was', 'were', 'am'], answer: 0 },
+            { q: 'My parents ___ angry with me.', options: ['was', 'were', 'is'], answer: 1 },
+            { q: 'I ___ happy to see him.', options: ['was', 'were', 'are'], answer: 0 },
+        ]
+    },
+    {
+        id: 'verb-to-be-past-neg',
+        title: 'อดีตกาลปฏิเสธ (Past Negative)',
+        icon: '🙅',
+        color: '#f43f5e',
+        colorLight: 'rgba(244,63,94,0.1)',
+        theory: `เติม <strong>not</strong> หลัง was / were เพื่อทำเป็นปฏิเสธในอดีต<br>
+        <span class="gram-tag am">was not = wasn't</span> &nbsp; <span class="gram-tag are">were not = weren't</span>`,
+        rules: [
+            { subject: 'I / He / She / It', verb: "wasn't", example: "I wasn't late.", th: 'ฉันไม่ได้มาสาย' },
+            { subject: 'You / We / They', verb: "weren't", example: "They weren't here.", th: 'พวกเขาไม่ได้อยู่ที่นี่' },
+        ],
+        exercises: [
+            { q: 'I ___ at home yesterday.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
+            { q: 'They ___ ready for the test.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
+            { q: 'It ___ a good movie.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
+            { q: 'We ___ happy with the result.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
+            { q: 'She ___ at the party.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
+            { q: 'The stores ___ open.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
+            { q: 'You ___ very polite.', options: ["wasn't", "weren't", "isn't"], answer: 1 },
+            { q: 'My dog ___ outside.', options: ["wasn't", "weren't", "aren't"], answer: 0 },
+            { q: 'The questions ___ easy.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
+            { q: 'He ___ an actor before.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
+        ]
+    },
+    {
+        id: 'verb-to-be-past-question',
+        title: 'อดีตกาลคำถาม (Past Question)',
+        icon: '🤔',
+        color: '#eab308',
+        colorLight: 'rgba(234,179,8,0.1)',
+        theory: `เอา <strong>Was</strong> หรือ <strong>Were</strong> ขึ้นต้นประโยคเพื่อตั้งคำถามในอดีต<br>
+        <em>They were tired. → Were they tired?</em>`,
+        rules: [
+            { subject: 'Was I / he / she / it...?', verb: '', example: 'Was she sick?', th: 'เธอป่วยเหรอ?' },
+            { subject: 'Were you / we / they...?', verb: '', example: 'Were you busy?', th: 'คุณยุ่งอยู่เหรอ?' },
+        ],
+        exercises: [
+            { q: '___ he your classmate?', options: ['Was', 'Were', 'Is'], answer: 0 },
+            { q: '___ they at the beach?', options: ['Was', 'Were', 'Are'], answer: 1 },
+            { q: '___ I loud?', options: ['Was', 'Were', 'Am'], answer: 0 },
+            { q: '___ we lost?', options: ['Was', 'Were', 'Are'], answer: 1 },
+            { q: '___ it a fun game?', options: ['Was', 'Were', 'Is'], answer: 0 },
+            { q: '___ the windows closed?', options: ['Was', 'Were', 'Are'], answer: 1 },
+            { q: '___ you surprised?', options: ['Was', 'Were', 'Are'], answer: 1 },
+            { q: '___ the teacher angry?', options: ['Was', 'Were', 'Is'], answer: 0 },
+            { q: '___ the cats hungry?', options: ['Was', 'Were', 'Are'], answer: 1 },
+            { q: '___ she a good singer?', options: ['Was', 'Were', 'Is'], answer: 0 },
+        ]
+    },
+    {
+        id: 'there-was-were',
+        title: 'เคยมี... (There was/were)',
+        icon: '🕰️',
+        color: '#10b981',
+        colorLight: 'rgba(16,185,129,0.1)',
+        theory: `ใช้บอกว่า <strong>"เคยมี..."</strong> ในอดีต (ตอนนี้ไม่มีแล้ว)<br>
+        <span class="gram-tag is">There was</span> → สิ่งของ 1 ชิ้น<br>
+        <span class="gram-tag are">There were</span> → สิ่งของหลายชิ้น`,
+        rules: [
+            { subject: 'There was', verb: '(เอกพจน์)', example: 'There was a big tree here.', th: 'เคยมีต้นไม้ใหญ่อยู่ตรงนี้' },
+            { subject: 'There were', verb: '(พหูพจน์)', example: 'There were many people.', th: 'เคยมีผู้คนมากมาย' },
+        ],
+        exercises: [
+            { q: '___ a problem yesterday.', options: ['There was', 'There were', 'There is'], answer: 0 },
+            { q: '___ five books on the desk.', options: ['There was', 'There were', 'There are'], answer: 1 },
+            { q: '___ any calls for me?', options: ['Was there', 'Were there', 'Is there'], answer: 1 }, // Were there any calls
+            { q: '___ only one piece of cake left.', options: ['There was', 'There were', 'There is'], answer: 0 },
+            { q: '___ no computers in 1900.', options: ['There was', 'There were', 'There are'], answer: 1 },
+            { q: '___ a loud noise last night.', options: ['There was', 'There were', 'There is'], answer: 0 },
+            { q: '___ a lot of mistakes in the test.', options: ['There was', 'There were', 'There are'], answer: 1 },
+            { q: '___ time to finish?', options: ['Was there', 'Were there', 'Is there'], answer: 0 }, // Was there time
+            { q: '___ many choices.', options: ['There wasn\'t', 'There weren\'t', 'There isn\'t'], answer: 1 }, // There weren't many choices
+            { q: '___ an accident on the road.', options: ['There was', 'There were', 'There is'], answer: 0 },
+        ]
+    },
+    {
+        id: 'future-will-be',
+        title: 'อนาคตกาล: will be',
+        icon: '🚀',
+        color: '#0ea5e9',
+        colorLight: 'rgba(14,165,233,0.1)',
+        theory: `เมื่อพูดถึงอนาคต (จะเป็น, จะอยู่) ใช้ <strong>will be</strong> ได้กับทุกประธานเลย!<br>
+        <em>I will be... / You will be... / It will be...</em>`,
+        rules: [
+            { subject: 'ทุกประธาน', verb: 'will be', example: 'I will be there.', th: 'ฉันจะไปอยู่ที่นั่น' },
+            { subject: 'ปฏิเสธ', verb: 'won\'t be', example: 'It won\'t be easy.', th: 'มันจะไม่ง่ายหรอก' },
+        ],
+        exercises: [
+            { q: 'He ___ a doctor soon.', options: ['will be', 'is', 'was'], answer: 0 },
+            { q: 'We ___ late if we don\'t hurry.', options: ['will be', 'are', 'were'], answer: 0 },
+            { q: 'The test ___ very hard.', options: ['will be', 'is', 'was'], answer: 0 },
+            { q: 'I ___ at home tomorrow.', options: ['will be', 'am', 'was'], answer: 0 },
+            { q: 'They ___ happy to see you.', options: ['will be', 'are', 'were'], answer: 0 },
+            { q: 'It ___ rainy next week.', options: ['will be', 'is', 'was'], answer: 0 },
+            { q: 'She ___ perfectly fine.', options: ['will be', 'is', 'was'], answer: 0 },
+            { q: 'I promise I ___ late.', options: ['won\'t be', 'am not', 'wasn\'t'], answer: 0 },
+            { q: 'There ___ a meeting tomorrow.', options: ['will be', 'is', 'was'], answer: 0 },
+            { q: '___ you be available?', options: ['Will', 'Are', 'Were'], answer: 0 },
+        ]
+    },
+    {
+        id: 'present-continuous',
+        title: 'กำลังทำ (Be + V.ing)',
+        icon: '🏃',
+        color: '#ec4899',
+        colorLight: 'rgba(236,72,153,0.1)',
+        theory: `ใช้บอกว่า <strong>"กำลังทำอะไรอยู่"</strong> ตอนนี้<br>
+        โครงสร้าง: <strong>Verb to Be (am/is/are) + กริยาเติม ing</strong>`,
+        rules: [
+            { subject: 'I', verb: 'am + V.ing', example: 'I am reading.', th: 'ฉันกำลังอ่าน' },
+            { subject: 'He/She/It', verb: 'is + V.ing', example: 'She is sleeping.', th: 'เธอกำลังนอนหลับ' },
+            { subject: 'You/We/They', verb: 'are + V.ing', example: 'We are eating.', th: 'พวกเรากำลังกิน' },
+        ],
+        exercises: [
+            { q: 'I ___ studying right now.', options: ['am', 'is', 'are'], answer: 0 },
+            { q: 'They ___ playing football.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'She ___ watching TV.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'We ___ listening to music.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'The dog ___ barking.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'You ___ speaking too fast.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'He ___ not working today.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: '___ they coming to the party?', options: ['Am', 'Is', 'Are'], answer: 2 },
+            { q: 'I ___ driving to work.', options: ['am', 'is', 'are'], answer: 0 },
+            { q: 'It ___ raining heavily.', options: ['am', 'is', 'are'], answer: 1 },
         ]
     }
 ];

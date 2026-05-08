@@ -998,7 +998,7 @@ const app = {
                 const v = vocabData.find(w => (w.en && w.en.toLowerCase() === cleanOpt.toLowerCase()) || (w.english && w.english.toLowerCase() === cleanOpt.toLowerCase()));
                 const phoneticText = v && v.phonetic ? v.phonetic : '';
 
-                if (phoneticText) {
+                if (phoneticText && questionData.type !== 'listening') {
                     btn.innerHTML = `<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1.2;">
                         <strong style="font-size: 1.1rem; margin-bottom: 2px;">${String.fromCharCode(65 + index)}. ${opt}</strong>
                         <small style="font-size: 0.85rem; color: #64748b; font-weight: normal;">(${phoneticText})</small>

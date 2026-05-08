@@ -29,6 +29,11 @@ const categoryData = {
         "name": "TOEFL Speaking",
         "icon": "fa-microphone",
         "color": "bg-purple"
+    },
+    "grammar": {
+        "name": "Grammar (Basic)",
+        "icon": "fa-book",
+        "color": "bg-blue"
     }
 };
 const levelsInfo = {
@@ -82,6 +87,33 @@ const levelsInfo = {
             "level": 10,
             "name": "Level 10",
             "desc": "ฝึกทักษะระดับสูง (10 คำ)"
+        }
+    ],
+    "grammar": [
+        {
+            "level": 1,
+            "name": "Level 1",
+            "desc": "Verb to Be คืออะไร?"
+        },
+        {
+            "level": 2,
+            "name": "Level 2",
+            "desc": "ประโยคปฏิเสธ (Negative)"
+        },
+        {
+            "level": 3,
+            "name": "Level 3",
+            "desc": "ประโยคคำถาม (Question)"
+        },
+        {
+            "level": 4,
+            "name": "Level 4",
+            "desc": "There is / There are"
+        },
+        {
+            "level": 5,
+            "name": "Level 5",
+            "desc": "อดีตกาล: was / were"
         }
     ],
     "toeic_reading": [

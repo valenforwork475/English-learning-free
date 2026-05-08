@@ -16,6 +16,7 @@ const app = {
     currentQuizIndex: 0,
     quizScore: 0,
     unlockedLevels: {
+        grammar: 1,
         toeic_listening: 1, toeic_reading: 1, toeic_speaking: 1,
         toefl_listening: 1, toefl_reading: 1, toefl_speaking: 1
     },
@@ -356,8 +357,13 @@ const app = {
         this.currentCategory = trackId;
         this.currentLevel = level;
         
-        // Go straight to the quiz (บทเรียนทดสอบ) without passing through flashcards
-        this.startQuiz();
+        if (trackId === 'grammar') {
+            this.switchView('grammar');
+            grammarEngine.render(level);
+        } else {
+            // Go straight to the quiz (บทเรียนทดสอบ) without passing through flashcards
+            this.startQuiz();
+        }
     },
 
     switchView(viewId) {
@@ -1196,69 +1202,87 @@ const grammarLessons = [
 const grammarEngine = {
     scores: {}, // { lessonId: { correct, total } }
 
-    render() {
+    render(level) {
         const container = document.getElementById('grammar-container');
         if (!container) return;
-        container.innerHTML = grammarLessons.map((lesson, idx) => {
-            const score = this.scores[lesson.id];
-            const scoreBadge = score
-                ? `<span class="gram-score-badge" style="background:${score.correct === score.total ? '#22c55e' : '#f59e0b'}">${score.correct}/${score.total}</span>`
-                : '';
-            return `
-            <div class="gram-lesson-card" id="card-${lesson.id}" style="border-left: 4px solid ${lesson.color};">
-                <div class="gram-card-header" onclick="grammarEngine.toggle('${lesson.id}')">
-                    <span class="gram-icon">${lesson.icon}</span>
-                    <div class="gram-card-title">
-                        <h3>${lesson.title}</h3>
-                        <small style="color:var(--text-muted)">${lesson.exercises.length} แบบฝึกหัด</small>
-                    </div>
-                    ${scoreBadge}
-                    <i class="fa-solid fa-chevron-down gram-chevron" id="chev-${lesson.id}"></i>
+        
+        // ถ้ามีการส่ง level เข้ามา ให้ดึงเฉพาะบทเรียนนั้น ถ้าไม่มี (เช่น re-render ตอนตอบถูก) ให้ใช้ level ปัจจุบัน
+        if (level !== undefined) {
+            this.currentRenderLevel = level;
+        }
+        
+        const lessonIndex = (this.currentRenderLevel || 1) - 1;
+        const lesson = grammarLessons[lessonIndex];
+        
+        if (!lesson) {
+            container.innerHTML = '<p style="text-align:center;">ไม่พบบทเรียนนี้</p>';
+            return;
+        }
+
+        const score = this.scores[lesson.id];
+        const scoreBadge = score
+            ? `<span class="gram-score-badge" style="background:${score.correct === score.total ? '#22c55e' : '#f59e0b'}">${score.correct}/${score.total}</span>`
+            : '';
+            
+        container.innerHTML = `
+        <div style="margin-bottom: 20px;">
+            <button class="secondary-btn" onclick="app.showLevels('grammar')">
+                <i class="fa-solid fa-arrow-left"></i> กลับไปหน้าเลือกระดับ
+            </button>
+        </div>
+        <div class="gram-lesson-card" id="card-${lesson.id}" style="border-left: 4px solid ${lesson.color};">
+            <div class="gram-card-header" onclick="grammarEngine.toggle('${lesson.id}')">
+                <span class="gram-icon">${lesson.icon}</span>
+                <div class="gram-card-title">
+                    <h3>${lesson.title}</h3>
+                    <small style="color:var(--text-muted)">${lesson.exercises.length} แบบฝึกหัด</small>
                 </div>
-                <div class="gram-card-body" id="body-${lesson.id}" style="display:none;">
-                    <!-- Theory -->
-                    <div class="gram-theory" style="background:${lesson.colorLight}; border-left: 3px solid ${lesson.color};">
-                        ${lesson.theory}
+                ${scoreBadge}
+                <i class="fa-solid fa-chevron-up gram-chevron" id="chev-${lesson.id}"></i>
+            </div>
+            <div class="gram-card-body" id="body-${lesson.id}" style="display:block;">
+                <!-- Theory -->
+                <div class="gram-theory" style="background:${lesson.colorLight}; border-left: 3px solid ${lesson.color};">
+                    ${lesson.theory}
+                </div>
+                <!-- Rules Table -->
+                <div class="gram-rules-table">
+                    <div class="gram-rules-header">
+                        <span>ประธาน</span><span>Verb to Be</span><span>ตัวอย่าง</span>
                     </div>
-                    <!-- Rules Table -->
-                    <div class="gram-rules-table">
-                        <div class="gram-rules-header">
-                            <span>ประธาน</span><span>Verb to Be</span><span>ตัวอย่าง</span>
+                    ${lesson.rules.map(r => `
+                        <div class="gram-rule-row">
+                            <span class="gram-subject">${r.subject}</span>
+                            <span class="gram-verb" style="color:${lesson.color}">${r.verb}</span>
+                            <span class="gram-example">
+                                <em>${r.example}</em>
+                                <small>${r.th}</small>
+                            </span>
                         </div>
-                        ${lesson.rules.map(r => `
-                            <div class="gram-rule-row">
-                                <span class="gram-subject">${r.subject}</span>
-                                <span class="gram-verb" style="color:${lesson.color}">${r.verb}</span>
-                                <span class="gram-example">
-                                    <em>${r.example}</em>
-                                    <small>${r.th}</small>
-                                </span>
-                            </div>
-                        `).join('')}
-                    </div>
-                    <!-- Exercises -->
-                    <div class="gram-exercise-section">
-                        <h4>✏️ แบบฝึกหัด</h4>
-                        ${lesson.exercises.map((ex, qi) => `
-                            <div class="gram-ex-item" id="ex-${lesson.id}-${qi}">
-                                <p class="gram-ex-question">${qi+1}. ${ex.q}</p>
-                                <div class="gram-ex-options">
-                                    ${ex.options.map((opt, oi) => `
-                                        <button class="gram-opt-btn" 
-                                            id="opt-${lesson.id}-${qi}-${oi}"
-                                            onclick="grammarEngine.answer('${lesson.id}', ${qi}, ${oi}, ${ex.answer})">
-                                            ${opt}
-                                        </button>
-                                    `).join('')}
-                                </div>
-                                <div class="gram-ex-feedback" id="fb-${lesson.id}-${qi}"></div>
-                            </div>
-                        `).join('')}
-                        <div class="gram-ex-result" id="result-${lesson.id}" style="display:none;"></div>
-                    </div>
+                    `).join('')}
                 </div>
-            </div>`;
-        }).join('');
+                <!-- Exercises -->
+                <div class="gram-exercise-section">
+                    <h4>✏️ แบบฝึกหัด</h4>
+                    ${lesson.exercises.map((ex, qi) => `
+                        <div class="gram-ex-item" id="ex-${lesson.id}-${qi}">
+                            <p class="gram-ex-question">${qi+1}. ${ex.q}</p>
+                            <div class="gram-ex-options">
+                                ${ex.options.map((opt, oi) => `
+                                    <button class="gram-opt-btn" 
+                                        id="opt-${lesson.id}-${qi}-${oi}"
+                                        onclick="grammarEngine.answer('${lesson.id}', ${qi}, ${oi}, ${ex.answer})">
+                                        ${opt}
+                                    </button>
+                                `).join('')}
+                            </div>
+                            <div class="gram-ex-feedback" id="fb-${lesson.id}-${qi}"></div>
+                        </div>
+                    `).join('')}
+                    <div class="gram-ex-result" id="result-${lesson.id}" style="display:none;"></div>
+                </div>
+            </div>
+        </div>`;
     },
 
     toggle(id) {
@@ -1314,13 +1338,44 @@ const grammarEngine = {
                         ${isPerfect ? '🏆 ยอดเยี่ยม! ได้คะแนนเต็ม!' : `📝 ทำได้ ${correct}/${lesson.exercises.length} ข้อ`}
                         ${!isPerfect ? '<br><small>ลองทำอีกครั้งเพื่อให้ได้คะแนนเต็มนะครับ!</small>' : ''}
                     </div>`;
+                
                 // Re-render score badge
                 this.render();
-                // Re-open this lesson
-                const body = document.getElementById(`body-${lessonId}`);
-                const chev = document.getElementById(`chev-${lessonId}`);
-                if (body) body.style.display = 'block';
-                if (chev) chev.style.transform = 'rotate(180deg)';
+                
+                // Handle level completion logic
+                if (isPerfect) {
+                    const currentLvl = this.currentRenderLevel;
+                    const maxLvl = levelsInfo['grammar'].length;
+                    
+                    // Unlock next level
+                    if (currentLvl === app.unlockedLevels['grammar'] && currentLvl < maxLvl) {
+                        app.unlockedLevels['grammar']++;
+                        app.saveProgress();
+                    }
+
+                    // Show success modal
+                    setTimeout(() => {
+                        const modal = document.getElementById('completion-modal');
+                        const modalTitle = document.getElementById('modal-title');
+                        const modalMessage = document.getElementById('modal-message');
+                        const primaryBtn = document.getElementById('modal-primary-btn');
+
+                        modalTitle.textContent = 'ยอดเยี่ยม! 🎉';
+                        if (currentLvl < maxLvl) {
+                            modalMessage.textContent = `คุณทำคะแนนเต็ม 100%\nปลดล็อกด่านที่ ${currentLvl + 1} แล้ว!`;
+                        } else {
+                            modalMessage.textContent = `คุณทำคะแนนเต็ม 100%\nคุณเรียนจบทุกด่านของแกรมม่าหมวดนี้แล้ว!`;
+                        }
+                        
+                        primaryBtn.textContent = 'ไปหน้ารวมด่าน';
+                        primaryBtn.onclick = () => {
+                            app.closeModal();
+                            app.showLevels('grammar');
+                        };
+
+                        if (modal) modal.classList.add('active');
+                    }, 800);
+                }
             }
         }
     }

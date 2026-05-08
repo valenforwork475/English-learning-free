@@ -975,7 +975,12 @@ const app = {
             this.startSpeakingCountdown();
         } else {
             qText.style.display = 'block';
-            qText.textContent = questionData.question;
+            if (questionData.read) {
+                // แสดงโจทย์แบบมีคำอ่าน
+                qText.innerHTML = `${questionData.question.replace(/\n/g, '<br>')}<div style="margin-top: 8px; padding: 8px; background: rgba(255,255,255,0.6); border-radius: 8px; border-left: 3px solid #cbd5e1;"><span style="font-size: 0.95rem; color: #475569; font-weight: normal;">🗣️ <span style="color: #3b82f6;">${questionData.read}</span></span></div>`;
+            } else {
+                qText.innerHTML = questionData.question.replace(/\n/g, '<br>');
+            }
             audioContainer.style.display = 'none';
             speakingContainer.style.display = 'none';
             optionsContainer.style.display = 'flex';
@@ -987,7 +992,21 @@ const app = {
             questionData.options.forEach((opt, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-option';
-                btn.textContent = `${String.fromCharCode(65 + index)}. ${opt}`;
+                
+                // ค้นหาคำอ่านจาก vocabData
+                const cleanOpt = opt.replace(/_alt$/i, '').replace(/_\w+$/i, '').trim();
+                const v = vocabData.find(w => (w.en && w.en.toLowerCase() === cleanOpt.toLowerCase()) || (w.english && w.english.toLowerCase() === cleanOpt.toLowerCase()));
+                const phoneticText = v && v.phonetic ? v.phonetic : '';
+
+                if (phoneticText) {
+                    btn.innerHTML = `<div style="display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1.2;">
+                        <strong style="font-size: 1.1rem; margin-bottom: 2px;">${String.fromCharCode(65 + index)}. ${opt}</strong>
+                        <small style="font-size: 0.85rem; color: #64748b; font-weight: normal;">(${phoneticText})</small>
+                    </div>`;
+                } else {
+                    btn.textContent = `${String.fromCharCode(65 + index)}. ${opt}`;
+                }
+
                 btn.onclick = () => this.selectQuizAnswer(index, btn);
                 optionsContainer.appendChild(btn);
             });

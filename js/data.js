@@ -8216,7 +8216,8 @@ const quizData = {
                     "Budget",
                     "Evaluate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดย์ วิล ... ดิ เอ็มพลอยอี้ เพอร์ฟอร์มานซ์"
             },
             {
                 "type": "reading",
@@ -8227,7 +8228,8 @@ const quizData = {
                     "Budget",
                     "Strategy"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วี แฮฟ อะ ลิมิเต็ด ... ฟอร์ มาร์เก็ตติ้ง"
             },
             {
                 "type": "reading",
@@ -8238,7 +8240,8 @@ const quizData = {
                     "Strategy",
                     "Agreement"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "บายนิ่ง เรียล เอสเตท อิส อะ กู๊ด ..."
             },
             {
                 "type": "reading",
@@ -8249,7 +8252,8 @@ const quizData = {
                     "Strategy",
                     "Propose"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วี นีด อะ นิว บิสเนส ... ทู วิน"
             },
             {
                 "type": "reading",
@@ -8260,7 +8264,8 @@ const quizData = {
                     "Propose",
                     "Revenue"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ คัมพานี วิล ... นิว เซฟตี้ รูลส์"
             },
             {
                 "type": "reading",
@@ -8271,7 +8276,8 @@ const quizData = {
                     "Revenue",
                     "Evaluate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "อาวเวอร์ ... อินครีสด์ บาย ทเวนตี้ เปอร์เซ็นต์ ดิส เยียร์"
             },
             {
                 "type": "reading",
@@ -8282,7 +8288,8 @@ const quizData = {
                     "Implement",
                     "Agreement"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ โกลบอล ... อิส ไฮลี่ คอมเพททิทีฟ"
             },
             {
                 "type": "reading",
@@ -8293,7 +8300,8 @@ const quizData = {
                     "Propose",
                     "Agreement"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "โบธ ปาร์ตี้ส์ ไซน์ด เดอะ ... ทูเดย์"
             },
             {
                 "type": "reading",
@@ -8304,7 +8312,8 @@ const quizData = {
                     "Agreement",
                     "Propose"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ไอ ... แดท วี ลอนช์ ดิ แอป เน็กซ์ วีค"
             },
             {
                 "type": "reading",
@@ -8315,7 +8324,8 @@ const quizData = {
                     "Revenue",
                     "Profit"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ สโตร์ เมด อะ ฮิวจ์ ... ลาสต์ มันธ์"
             }
         ],
         "2": [
@@ -8328,7 +8338,8 @@ const quizData = {
                     "Resource",
                     "Target"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ฮิวแมน ...ส อิส แอน อิมพอร์แทนท์ ดีพาร์ทเมนต์"
             },
             {
                 "type": "reading",
@@ -8339,7 +8350,8 @@ const quizData = {
                     "Analyze",
                     "Allocate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ไซเอนทิสต์ส ... เดอะ ดาต้า แคร์ฟูลลี่"
             },
             {
                 "type": "reading",
@@ -8350,7 +8362,8 @@ const quizData = {
                     "Competitor",
                     "Campaign"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ แบรนด์ วิล ... อะ นิว สมาร์ทโฟน"
             },
             {
                 "type": "reading",
@@ -8361,7 +8374,8 @@ const quizData = {
                     "Promote",
                     "Trend"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ กัฟเวิร์นเมนต์ วิล ... ฟันด์ส ทู สคูลส์"
             },
             {
                 "type": "reading",
@@ -8372,7 +8386,8 @@ const quizData = {
                     "Forecast",
                     "Promote"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "แดร์ อิส อะ โกรวิ่ง ... อิน ออนไลน์ ช้อปปิ้ง"
             },
             {
                 "type": "reading",
@@ -8383,7 +8398,8 @@ const quizData = {
                     "Launch",
                     "Target"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เอ็กซ์เพิร์ทส์ ... อะ ดรอป อิน เฮาซิ่ง ไพรเซส"
             },
             {
                 "type": "reading",
@@ -8394,7 +8410,8 @@ const quizData = {
                     "Campaign",
                     "Analyze"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ดิ แอดเวอร์ไทซิ่ง ... วอส ซัคเซสฟูล"
             },
             {
                 "type": "reading",
@@ -8405,7 +8422,8 @@ const quizData = {
                     "Campaign",
                     "Promote"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "วี มัสต์ รีช อาวเวอร์ เซลส์ ... บาย ดีเซมเบอร์"
             },
             {
                 "type": "reading",
@@ -8416,7 +8434,8 @@ const quizData = {
                     "Target",
                     "Analyze"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ฮี วอส ...ด์ ทู เดอะ โพสิชั่น ออฟ ไดเร็กเตอร์"
             },
             {
                 "type": "reading",
@@ -8427,7 +8446,8 @@ const quizData = {
                     "Promote",
                     "Competitor"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "อาวเวอร์ เมน ... แฮส โลเวอร์ด แดร์ ไพรเซส"
             }
         ],
         "3": [
@@ -8440,7 +8460,8 @@ const quizData = {
                     "Guarantee",
                     "Policy"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ แล็ปท็อป คัมส์ วิธ อะ วัน-เยียร์ ..."
             },
             {
                 "type": "reading",
@@ -8451,7 +8472,8 @@ const quizData = {
                     "Contract",
                     "Refund"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "พลีส ไซน์ เดอะ ... บาย ไฟรเดย์"
             },
             {
                 "type": "reading",
@@ -8462,7 +8484,8 @@ const quizData = {
                     "Discount",
                     "Shipment"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ... วิล อาร์ไรฟ์ เน็กซ์ วีค"
             },
             {
                 "type": "reading",
@@ -8473,7 +8496,8 @@ const quizData = {
                     "Discount",
                     "Inventory"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เอ็มพลอยอี้ส์ เก็ท อะ ทเวนตี้ เปอร์เซ็นต์ ..."
             },
             {
                 "type": "reading",
@@ -8484,7 +8508,8 @@ const quizData = {
                     "Warranty",
                     "Inventory"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วี นีด ทู เช็ค เดอะ ... เลเวล"
             },
             {
                 "type": "reading",
@@ -8495,7 +8520,8 @@ const quizData = {
                     "Contract",
                     "Shipment"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ทราเวล ...ส วิล บี รีอิมเบิร์สด์"
             },
             {
                 "type": "reading",
@@ -8506,7 +8532,8 @@ const quizData = {
                     "Contract",
                     "Shipment"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "วี ... เดอะ ควอลิตี้ ออฟ อาวเวอร์ โปรดักส์"
             },
             {
                 "type": "reading",
@@ -8517,7 +8544,8 @@ const quizData = {
                     "Warranty",
                     "Policy"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ยู แคน รีเควสต์ อะ ฟูล ... วิทอิน เธอตี้ เดย์ส"
             },
             {
                 "type": "reading",
@@ -8528,7 +8556,8 @@ const quizData = {
                     "Shipment",
                     "Invoice"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ... วอส เซนต์ ทู เดอะ ไคลเอนต์"
             },
             {
                 "type": "reading",
@@ -8539,7 +8568,8 @@ const quizData = {
                     "Expense",
                     "Policy"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ คัมพานี อัปเดทเต็ด อิทส์ รีเทิร์น ..."
             }
         ],
         "4": [
@@ -8552,7 +8582,8 @@ const quizData = {
                     "Colleague",
                     "Consult"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ยู ชู้ด ... อะ ลอว์เยอร์ เฟิร์สท์"
             },
             {
                 "type": "reading",
@@ -8563,7 +8594,8 @@ const quizData = {
                     "Investigate",
                     "Hesitate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "วี ... เดอะ เน็ตเวิร์ก ทเวนตี้โฟร์ เซเว่น"
             },
             {
                 "type": "reading",
@@ -8574,7 +8606,8 @@ const quizData = {
                     "Investigate",
                     "Monitor"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ เซอร์เวย์ วิล ... เดอะ มาร์เก็ต นีดส์"
             },
             {
                 "type": "reading",
@@ -8585,7 +8618,8 @@ const quizData = {
                     "Identify",
                     "Determine"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วี นีด ทู ... เดอะ คอร์ พรอบเบลม"
             },
             {
                 "type": "reading",
@@ -8596,7 +8630,8 @@ const quizData = {
                     "Investigate",
                     "Colleague"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "มาย ... วิล แอสซิสต์ ยู"
             },
             {
                 "type": "reading",
@@ -8607,7 +8642,8 @@ const quizData = {
                     "Monitor",
                     "Accommodation"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "พลีส ดู น็อท ... ทู คอนแทค อัส"
             },
             {
                 "type": "reading",
@@ -8618,7 +8654,8 @@ const quizData = {
                     "Identify",
                     "Colleague"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ โพลิส วิล ... ดิ อินซิเดนต์"
             },
             {
                 "type": "reading",
@@ -8629,7 +8666,8 @@ const quizData = {
                     "Exceed",
                     "Identify"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เซลส์ ...ด์ อาวเวอร์ เอ็กซ์เปกเทชั่นส์"
             },
             {
                 "type": "reading",
@@ -8640,7 +8678,8 @@ const quizData = {
                     "Accommodation",
                     "Investigate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วี นีด ทู บุ๊ก ... ฟอร์ เดอะ ทริป"
             },
             {
                 "type": "reading",
@@ -8651,7 +8690,8 @@ const quizData = {
                     "Consult",
                     "Obtain"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ยู มัสต์ ... อะ วีซ่า บีฟอร์ ทราเวลลิ่ง"
             }
         ],
         "5": [
@@ -8664,7 +8704,8 @@ const quizData = {
                     "Verify",
                     "Promote_alt"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "...: ชี วอส โปรโมตเต็ด ทู เมเนเจอร์ ลาสต์ เยียร์"
             },
             {
                 "type": "reading",
@@ -8675,7 +8716,8 @@ const quizData = {
                     "Participate",
                     "Recommend"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "แคน ยู บี มอร์ ...?"
             },
             {
                 "type": "reading",
@@ -8686,7 +8728,8 @@ const quizData = {
                     "Specific",
                     "Recommend"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ไอ ไฮลี่ ... ดิส เรสเตอรองต์"
             },
             {
                 "type": "reading",
@@ -8697,7 +8740,8 @@ const quizData = {
                     "Specific",
                     "Valid"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ยัวร์ ทิกเก็ต อิส โน ลองเกอร์ ..."
             },
             {
                 "type": "reading",
@@ -8708,7 +8752,8 @@ const quizData = {
                     "Provide",
                     "Resolve"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วี มัสต์ ... ดิส อิชชู่ อิมมีเดียตลี่"
             },
             {
                 "type": "reading",
@@ -8719,7 +8764,8 @@ const quizData = {
                     "Recommend",
                     "Participate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เอฟรี่วัน อิส เอ็นคอเรจด์ ทู ..."
             },
             {
                 "type": "reading",
@@ -8730,7 +8776,8 @@ const quizData = {
                     "Submit",
                     "Sufficient"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วี แฮฟ ... ฟันด์ส ฟอร์ เดอะ โปรเจกต์"
             },
             {
                 "type": "reading",
@@ -8741,7 +8788,8 @@ const quizData = {
                     "Verify",
                     "Resolve"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ โฮเทล ...ส ฟรี ไวไฟ"
             },
             {
                 "type": "reading",
@@ -8752,7 +8800,8 @@ const quizData = {
                     "Verify",
                     "Recommend"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "พลีส ... ยัวร์ อีเมล แอดเดรส"
             },
             {
                 "type": "reading",
@@ -8763,7 +8812,8 @@ const quizData = {
                     "Resolve",
                     "Submit"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "... ยัวร์ แอปพลิเคชั่น ออนไลน์"
             }
         ],
         "6": [
@@ -11782,7 +11832,8 @@ const quizData = {
                     "Incorporate",
                     "Interpret"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ดิ อาร์คิเทค ...ด์ โซลาร์ พาเนลส์ อินทู เดอะ ดีไซน์"
             },
             {
                 "type": "reading",
@@ -11793,7 +11844,8 @@ const quizData = {
                     "Structure",
                     "Assess"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ คอมมิตตี วิล ... ดิ อิมแพค ออฟ เดอะ นิว ลอว์"
             },
             {
                 "type": "reading",
@@ -11804,7 +11856,8 @@ const quizData = {
                     "Significant",
                     "Structure"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "แดร์ อิส อะ ... ดิฟเฟอเรนซ์ บีทวีน เดอะ ทู รีซัลท์ส"
             },
             {
                 "type": "reading",
@@ -11815,7 +11868,8 @@ const quizData = {
                     "Structure",
                     "Interpret"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เดอะ เซลล์ ... ออฟ แพลนท์ส แอนด์ แอนิมอลส์ อิส ดิฟเฟอเรนต์"
             },
             {
                 "type": "reading",
@@ -11826,7 +11880,8 @@ const quizData = {
                     "Derive",
                     "Evolve"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เบิร์ดส ...ด์ ฟรอม ไดโนซอร์ส มิลเลียนส์ ออฟ เยียร์ส อะโก"
             },
             {
                 "type": "reading",
@@ -11837,7 +11892,8 @@ const quizData = {
                     "Perspective",
                     "Adequate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ไทร ทู ลุค แอท เดอะ พรอบเบลม ฟรอม อะ ดิฟเฟอเรนต์ ..."
             },
             {
                 "type": "reading",
@@ -11848,7 +11904,8 @@ const quizData = {
                     "Derive",
                     "Adequate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เมค ชัวร์ ยู ดริงก์ ... อะเมาท์ส ออฟ วอเตอร์"
             },
             {
                 "type": "reading",
@@ -11859,7 +11916,8 @@ const quizData = {
                     "Significant",
                     "Assess"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "โกลบอล วอร์มมิ่ง อิส อะ ... ออฟ ฮิวแมน แอคทิวิตี้"
             },
             {
                 "type": "reading",
@@ -11870,7 +11928,8 @@ const quizData = {
                     "Assess",
                     "Adequate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ฮาว ดู ยู ... ดิ เอนดิ้ง ออฟ เดอะ โนเวล?"
             }
         ],
         "2": [
@@ -11883,7 +11942,8 @@ const quizData = {
                     "Justify",
                     "Demonstrate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ดาต้า เคลียร์ลี่ ...ส เดอะ นีด ฟอร์ รีฟอร์ม"
             },
             {
                 "type": "reading",
@@ -11894,7 +11954,8 @@ const quizData = {
                     "Abstract",
                     "Proportion"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ทรูธ แอนด์ บิวตี้ อาร์ ... คอนเซปต์ส"
             },
             {
                 "type": "reading",
@@ -11905,7 +11966,8 @@ const quizData = {
                     "Abstract",
                     "Determine"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ยู มัสต์ แฮฟ อะ ... พาสปอร์ต ทู ทราเวล อะบรอด"
             },
             {
                 "type": "reading",
@@ -11916,7 +11978,8 @@ const quizData = {
                     "Proportion",
                     "Valid"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "อะ ลาร์จ ... ออฟ เดอะ บัดเจท โกส์ ทู เอดูเคชั่น"
             },
             {
                 "type": "reading",
@@ -11927,7 +11990,8 @@ const quizData = {
                     "Justify",
                     "Determine"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "แคน ยู ... ยัวร์ ดีซิชั่น ทู ควิท เดอะ จ็อบ?"
             },
             {
                 "type": "reading",
@@ -11938,7 +12002,8 @@ const quizData = {
                     "Analyze",
                     "Justify"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "อิท อิส อิมพอร์แทนท์ ทู ... อะ เฮลตี้ ไดเอท"
             },
             {
                 "type": "reading",
@@ -11949,7 +12014,8 @@ const quizData = {
                     "Analyze",
                     "Determine"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ยัวร์ เกรดส์ วิล ... วิช ยูนิเวอร์ซิตี้ ยู เอนเทอร์"
             },
             {
                 "type": "reading",
@@ -11960,7 +12026,8 @@ const quizData = {
                     "Valid",
                     "Sequence"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ฟอลโลว์ เดอะ ... ออฟ สเต็ปส์ อิน เดอะ แมนวล"
             },
             {
                 "type": "reading",
@@ -11971,7 +12038,8 @@ const quizData = {
                     "Illustrate",
                     "Determine"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ดิ ออเธอร์ ยูสเซส เอ็กซัมเปิลส์ ทู ... ฮิส พอยท์"
             },
             {
                 "type": "reading",
@@ -11982,7 +12050,8 @@ const quizData = {
                     "Sequence",
                     "Determine"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "วี นีด ทู ... เดอะ คัสโตเมอร์ ฟีดแบ็ก"
             }
         ],
         "3": [
@@ -11995,7 +12064,8 @@ const quizData = {
                     "Profound",
                     "Inherent"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ มีนนิ่ง ออฟ เดอะ โพเอ็ม อิส ..."
             },
             {
                 "type": "reading",
@@ -12006,7 +12076,8 @@ const quizData = {
                     "Profound",
                     "Diverse"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ เรนฟอเรสต์ แฮส อะ ... อีโคซิสเต็ม"
             },
             {
                 "type": "reading",
@@ -12017,7 +12088,8 @@ const quizData = {
                     "Obscure",
                     "Flourish"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "แพลนท์ส ... อิน ดิส เอ็นไวรอนเมนต์"
             },
             {
                 "type": "reading",
@@ -12028,7 +12100,8 @@ const quizData = {
                     "Abundant",
                     "Resilient"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ชิลเดรน อาร์ ออฟเท่น รีมาร์กเอเบิลลี่ ..."
             },
             {
                 "type": "reading",
@@ -12039,7 +12112,8 @@ const quizData = {
                     "Inherent",
                     "Obscure"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "อิท อิส ... แดท เดอะ ไคลเมท อิส เชนจิ้ง"
             },
             {
                 "type": "reading",
@@ -12050,7 +12124,8 @@ const quizData = {
                     "Subtle",
                     "Abundant"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "แดร์ อิส แอน ... ซัพพลาย ออฟ วอเตอร์"
             },
             {
                 "type": "reading",
@@ -12061,7 +12136,8 @@ const quizData = {
                     "Resilient",
                     "Profound"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "แดร์ อาร์ ... ริสก์ส อิน ดิส โพรซีเยอร์"
             },
             {
                 "type": "reading",
@@ -12072,7 +12148,8 @@ const quizData = {
                     "Subtle",
                     "Profound"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ดิสคัฟเวอรี่ แฮด อะ ... อิมแพค"
             },
             {
                 "type": "reading",
@@ -12083,7 +12160,8 @@ const quizData = {
                     "Inherent",
                     "Evident"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "แดร์ อิส อะ ... ดิฟเฟอเรนซ์ บีทวีน เดอะ ทู"
             },
             {
                 "type": "reading",
@@ -12094,7 +12172,8 @@ const quizData = {
                     "Crucial",
                     "Inherent"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วอเตอร์ อิส ... ฟอร์ เซอร์ไววัล"
             }
         ],
         "4": [
@@ -12107,7 +12186,8 @@ const quizData = {
                     "Emerge",
                     "Adequate_alt"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "นิว ดีเทลส์ บีแกน ทู ..."
             },
             {
                 "type": "reading",
@@ -12118,7 +12198,8 @@ const quizData = {
                     "Apparent",
                     "Alternative"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ สเตเดียม แฮส อะ ซีทติ้ง ... ออฟ ฟิฟตี้ เธาซันด์"
             },
             {
                 "type": "reading",
@@ -12129,7 +12210,8 @@ const quizData = {
                     "Component",
                     "Approximate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วอท อิส ดิ ... คอสต์?"
             },
             {
                 "type": "reading",
@@ -12140,7 +12222,8 @@ const quizData = {
                     "Attribute",
                     "Demonstrate_alt"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เพเชียนซ์ อิส อะ เนเซสซารี่ ... ฟอร์ อะ ทีชเชอร์"
             },
             {
                 "type": "reading",
@@ -12151,7 +12234,8 @@ const quizData = {
                     "Approximate",
                     "Attribute"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "อิท เรนด์; ..., เดอะ เกม วอส ดีเลย์"
             },
             {
                 "type": "reading",
@@ -12162,7 +12246,8 @@ const quizData = {
                     "Apparent",
                     "Consequently"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ทรัสต์ อิส อะ คีย์ ... ออฟ อะ รีเลชั่นชิป"
             },
             {
                 "type": "reading",
@@ -12173,7 +12258,8 @@ const quizData = {
                     "Approximate",
                     "Adequate_alt"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "อิท อิส ... แดท ฮี อิส ไลอิ้ง"
             },
             {
                 "type": "reading",
@@ -12184,7 +12270,8 @@ const quizData = {
                     "Attribute",
                     "Emerge"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "...: ดีส นัมเบอร์ส เดมอนสเตรท เดอะ พรอบเบลม"
             },
             {
                 "type": "reading",
@@ -12195,7 +12282,8 @@ const quizData = {
                     "Adequate_alt",
                     "Apparent"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "...: เดอะ รูม ไซส์ อิส แอดดิเควท ฟอร์ ทู พีเพิล"
             },
             {
                 "type": "reading",
@@ -12206,7 +12294,8 @@ const quizData = {
                     "Alternative",
                     "Apparent"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วี มัสต์ ไฟนด์ ... เอเนอร์จี้ ซอร์ส"
             }
         ],
         "5": [
@@ -12219,7 +12308,8 @@ const quizData = {
                     "Subsequent",
                     "Equivalent"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "อาร์ ยู ...อิ้ง แดท ไอ แอม รอง?"
             },
             {
                 "type": "reading",
@@ -12230,7 +12320,8 @@ const quizData = {
                     "Sequence_alt",
                     "Subsequent"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "มาย ... รีแอคชั่น วอส ช็อค"
             },
             {
                 "type": "reading",
@@ -12241,7 +12332,8 @@ const quizData = {
                     "Sequence_alt",
                     "Justify_alt"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ฟรีดอม ออฟ สปีช อิส อะ ... ไรท์"
             },
             {
                 "type": "reading",
@@ -12252,7 +12344,8 @@ const quizData = {
                     "Sequence_alt",
                     "Subsequent"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "...: ฮาว แคน ยู จัสทิฟาย ดิส บิฮาฟเวียร์?"
             },
             {
                 "type": "reading",
@@ -12263,7 +12356,8 @@ const quizData = {
                     "Perspective_alt",
                     "Justify_alt"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ รีซัลท์ส ซัพพอร์ต ฮิส ..."
             },
             {
                 "type": "reading",
@@ -12274,7 +12368,8 @@ const quizData = {
                     "Imply",
                     "Subsequent"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "...: ไทร ลุคกิ้ง ฟรอม อะ ดิฟเฟอเรนต์ เพอร์สเปกทีฟ"
             },
             {
                 "type": "reading",
@@ -12285,7 +12380,8 @@ const quizData = {
                     "Equivalent",
                     "Justify_alt"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "วัน ไมล์ อิส ... ทู วัน พอยท์ ซิกซ์ กิโลมิเตอร์ส"
             },
             {
                 "type": "reading",
@@ -12296,7 +12392,8 @@ const quizData = {
                     "Proportion_alt",
                     "Justify_alt"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "...: อะ ลาร์จ โปรพอร์ชั่น ออฟ เดอะ แลนด์ อิส ฟอเรสต์"
             },
             {
                 "type": "reading",
@@ -12307,7 +12404,8 @@ const quizData = {
                     "Subsequent",
                     "Justify_alt"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "... สตัดดี้ส์ คอนเฟิร์มด์ เดอะ ไฟน์ดิ้ง"
             },
             {
                 "type": "reading",
@@ -12318,7 +12416,8 @@ const quizData = {
                     "Proportion_alt",
                     "Subsequent"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "...: ฟอลโลว์ เดอะ ซีเควนซ์ ออฟ อีเวนต์ส"
             }
         ],
         "6": [
@@ -12331,7 +12430,8 @@ const quizData = {
                     "Deviate",
                     "Fluctuate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ดิ อาร์ทิสต์ ...ส์ ไบรท์ คัลเลอร์ส วิธ ดาร์ค วันส์"
             },
             {
                 "type": "reading",
@@ -12342,7 +12442,8 @@ const quizData = {
                     "Gregarious",
                     "Deviate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เนเวอร์ ... ฟรอม ดิ ออริจินัล แพลน"
             },
             {
                 "type": "reading",
@@ -12353,7 +12454,8 @@ const quizData = {
                     "Fluctuate",
                     "Hinder"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ สตอรี่ วอส คอมพลีทลี่ ..."
             },
             {
                 "type": "reading",
@@ -12364,7 +12466,8 @@ const quizData = {
                     "Fluctuate",
                     "Coincide"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เบิร์ดส แฮฟ แอน ... อะบิลิตี้ ทู ฟลาย"
             },
             {
                 "type": "reading",
@@ -12375,7 +12478,8 @@ const quizData = {
                     "Juxtapose",
                     "Fluctuate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ดอลฟินส์ อาร์ ... แอนิมอลส์"
             },
             {
                 "type": "reading",
@@ -12386,7 +12490,8 @@ const quizData = {
                     "Aesthetic",
                     "Deviate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เดอะ บิลดิ้ง แฮส เกรท ... แอพพีล"
             },
             {
                 "type": "reading",
@@ -12397,7 +12502,8 @@ const quizData = {
                     "Gregarious",
                     "Fluctuate"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "แลค ออฟ ฟันดิ้ง วิล ... เดอะ โปรเจกต์"
             },
             {
                 "type": "reading",
@@ -12408,7 +12514,8 @@ const quizData = {
                     "Coincide",
                     "Juxtapose"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เฮอร์ อาร์ไรเวิล ...ด์ วิธ เดอะ สตอร์ม"
             },
             {
                 "type": "reading",
@@ -12419,7 +12526,8 @@ const quizData = {
                     "Elicit",
                     "Coincide"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เดอะ เควสชัน ...ด์ อะ ดีเฟนซีฟ รีสปอนส์"
             },
             {
                 "type": "reading",
@@ -12430,7 +12538,8 @@ const quizData = {
                     "Fluctuate",
                     "Bizarre"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ไพรเซส ... เบสด์ ออน ซัพพลาย แอนด์ ดีมานด์"
             }
         ],
         "7": [
@@ -12443,7 +12552,8 @@ const quizData = {
                     "Lethal",
                     "Obsolete"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เดอะ สเน็ค แฮส อะ ... ไบต์"
             },
             {
                 "type": "reading",
@@ -12454,7 +12564,8 @@ const quizData = {
                     "Nomad",
                     "Ubiquitous"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "วี นีด อะ ... อะนาไลซิส ออฟ เดอะ ดาต้า"
             },
             {
                 "type": "reading",
@@ -12465,7 +12576,8 @@ const quizData = {
                     "Meticulous",
                     "Obsolete"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ฮี อิส เวรี่ ... อะเบาท์ ฮิส เวิร์ก"
             },
             {
                 "type": "reading",
@@ -12476,7 +12588,8 @@ const quizData = {
                     "Nomad",
                     "Tangible"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วี นีด ... เอวิเดนซ์"
             },
             {
                 "type": "reading",
@@ -12487,7 +12600,8 @@ const quizData = {
                     "Qualitative",
                     "Redundant"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "อิท อิส อะ ... แดท เทคโนโลยี เมคส์ อัส มอร์ ไอโซเลเตด"
             },
             {
                 "type": "reading",
@@ -12498,7 +12612,8 @@ const quizData = {
                     "Obsolete",
                     "Paradox"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ไทป์ไรเตอร์ส อาร์ ลาร์จลี่ ..."
             },
             {
                 "type": "reading",
@@ -12509,7 +12624,8 @@ const quizData = {
                     "Skeptical",
                     "Paradox"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ไอ แอม ... ออฟ ฮิส เคลมส์"
             },
             {
                 "type": "reading",
@@ -12520,7 +12636,8 @@ const quizData = {
                     "Nomad",
                     "Ubiquitous"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ เซคันด์ พารากราฟ อิส ..."
             },
             {
                 "type": "reading",
@@ -12531,7 +12648,8 @@ const quizData = {
                     "Redundant",
                     "Lethal"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "...ส์ มูฟ ฟรอม เพลส ทู เพลส"
             },
             {
                 "type": "reading",
@@ -12542,7 +12660,8 @@ const quizData = {
                     "Nomad",
                     "Ubiquitous"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "โมบายล์ โฟนส์ อาร์ ... ทูเดย์"
             }
         ],
         "8": [
@@ -12555,7 +12674,8 @@ const quizData = {
                     "Elucidate",
                     "Candid"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "พลีส ... ยัวร์ พอยท์ เฟอร์เธอร์"
             },
             {
                 "type": "reading",
@@ -12566,7 +12686,8 @@ const quizData = {
                     "Warrant",
                     "Alleviate"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ชี กีฟ อะ ... อินเทอร์วิว"
             },
             {
                 "type": "reading",
@@ -12577,7 +12698,8 @@ const quizData = {
                     "Vacillate",
                     "Homogeneous"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ไฮ ไพรเซส วิล ... บายเยอร์ส"
             },
             {
                 "type": "reading",
@@ -12588,7 +12710,8 @@ const quizData = {
                     "Elucidate",
                     "Gullible"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ... ทัวริสต์ส เพด ทู มัช"
             },
             {
                 "type": "reading",
@@ -12599,7 +12722,8 @@ const quizData = {
                     "Alleviate",
                     "Warrant"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ดิ เอวิเดนซ์ ดาส น็อท ... อะ ไทรอัล"
             },
             {
                 "type": "reading",
@@ -12610,7 +12734,8 @@ const quizData = {
                     "Warrant",
                     "Vacillate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ฮี ...ด์ บีทวีน ทู ชอยส์เซส"
             },
             {
                 "type": "reading",
@@ -12621,7 +12746,8 @@ const quizData = {
                     "Frivolous",
                     "Candid"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ดู น็อท เวสต์ ไทม์ ออน ... ลอว์ซูทส์"
             },
             {
                 "type": "reading",
@@ -12632,7 +12758,8 @@ const quizData = {
                     "Benevolent",
                     "Vacillate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ฮี วอส อะ ... ลีดเดอร์"
             },
             {
                 "type": "reading",
@@ -12643,7 +12770,8 @@ const quizData = {
                     "Alleviate",
                     "Deter"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เดอะ เมดิซีน วิล ... ยัวร์ เพน"
             },
             {
                 "type": "reading",
@@ -12654,7 +12782,8 @@ const quizData = {
                     "Candid",
                     "Benevolent"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เจแปน อิส อะ ลาร์จลี่ ... โซไซตี้"
             }
         ],
         "9": [
@@ -12667,7 +12796,8 @@ const quizData = {
                     "Scrutinize",
                     "Quaint"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ฮิส แอคชั่นส์ คูลด์ ... เดอะ มิชชัน"
             },
             {
                 "type": "reading",
@@ -12678,7 +12808,8 @@ const quizData = {
                     "Scrutinize",
                     "Mitigate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "วี มัสต์ เทค สเต็ปส์ ทู ... เดอะ ริสก์ส"
             },
             {
                 "type": "reading",
@@ -12689,7 +12820,8 @@ const quizData = {
                     "Impending",
                     "Opaque"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ กลาส อิส ..., โซ ยู แคนนอท ซี ทรู อิท"
             },
             {
                 "type": "reading",
@@ -12700,7 +12832,8 @@ const quizData = {
                     "Lucrative",
                     "Jeopardize"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "วี นีด อะ ... โซลูชั่น ทู ดิส พรอบเบลม"
             },
             {
                 "type": "reading",
@@ -12711,7 +12844,8 @@ const quizData = {
                     "Scrutinize",
                     "Impending"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดย์ เบรซด์ ฟอร์ ดิ ... สตอร์ม"
             },
             {
                 "type": "reading",
@@ -12722,7 +12856,8 @@ const quizData = {
                     "Pragmatic",
                     "Jeopardize"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "ลิสเซินนิ่ง ทู แดท ซอง บริงส์ แบ็ค ..."
             },
             {
                 "type": "reading",
@@ -12733,7 +12868,8 @@ const quizData = {
                     "Jeopardize",
                     "Scrutinize"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ คอมมิตตี วิล ... เดอะ ด็อกคิวเมนต์ส"
             },
             {
                 "type": "reading",
@@ -12744,7 +12880,8 @@ const quizData = {
                     "Lucrative",
                     "Opaque"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เรียล เอสเตท แคน บี อะ ... บิสเนส"
             },
             {
                 "type": "reading",
@@ -12755,7 +12892,8 @@ const quizData = {
                     "Mitigate",
                     "Quaint"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดย์ วิสิทเต็ด อะ ... ลิตเติล วิลเลจ"
             },
             {
                 "type": "reading",
@@ -12766,7 +12904,8 @@ const quizData = {
                     "Resilient_alt",
                     "Mitigate"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "...: ดิ อีโคโนมี่ แฮส พรูเวน ทู บี รีซิเลียนท์"
             }
         ],
         "10": [
@@ -12779,7 +12918,8 @@ const quizData = {
                     "Abundant_alt",
                     "Unambiguous"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "...: แดร์ อิส แอน อะบันดันท์ ซัพพลาย ออฟ เฟรช วอเตอร์"
             },
             {
                 "type": "reading",
@@ -12790,7 +12930,8 @@ const quizData = {
                     "Vindicate",
                     "Didactic"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ สตอรี่ แฮส อะ ... เพอร์โพส"
             },
             {
                 "type": "reading",
@@ -12801,7 +12942,8 @@ const quizData = {
                     "Didactic",
                     "Tenacious"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "ชี อิส อะ ... แอดโวเคท ฟอร์ แอนิมอล ไรท์ส"
             },
             {
                 "type": "reading",
@@ -12812,7 +12954,8 @@ const quizData = {
                     "Tenacious",
                     "Vindicate"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "แดร์ มีตติ้ง วอส เอ็นไทร์ลี่ ..."
             },
             {
                 "type": "reading",
@@ -12823,7 +12966,8 @@ const quizData = {
                     "Impetuous",
                     "Ephemeral"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "ฮี อิส แอน ... ยัง แมน"
             },
             {
                 "type": "reading",
@@ -12834,7 +12978,8 @@ const quizData = {
                     "Ephemeral",
                     "Tenacious"
                 ],
-                "answer": 2
+                "answer": 2,
+                "read": "เฟม อิส ออฟเท่น ..."
             },
             {
                 "type": "reading",
@@ -12845,7 +12990,8 @@ const quizData = {
                     "Ephemeral",
                     "Vindicate"
                 ],
-                "answer": 3
+                "answer": 3,
+                "read": "เดอะ ดีเอ็นเอ เอวิเดนซ์ ...ด์ ฮิม"
             },
             {
                 "type": "reading",
@@ -12856,7 +13002,8 @@ const quizData = {
                     "Unambiguous",
                     "Hackneyed"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "ฮิส เอ็กซ์พลาเนชั่น วอส น็อท ..."
             },
             {
                 "type": "reading",
@@ -12867,7 +13014,8 @@ const quizData = {
                     "Unambiguous",
                     "Coherent"
                 ],
-                "answer": 0
+                "answer": 0,
+                "read": "เดอะ มูฟวี่ พลอต วอส ซัมวอท ..."
             },
             {
                 "type": "reading",
@@ -12878,7 +13026,8 @@ const quizData = {
                     "Didactic",
                     "Coherent"
                 ],
-                "answer": 1
+                "answer": 1,
+                "read": "เดอะ รูลส์ อาร์ ..."
             }
         ]
     },

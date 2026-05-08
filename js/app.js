@@ -730,9 +730,7 @@ const app = {
 
     flipA1Card() {
         const card = document.getElementById('a1-flashcard');
-        if (!card.classList.contains('flipped')) {
-            card.classList.add('flipped');
-        }
+        card.classList.toggle('flipped');
     },
 
     playA1Sound(event) {
@@ -752,12 +750,6 @@ const app = {
         if (this.a1IsTransitioning) return; // ป้องกันการกดซ้ำ
         
         this.a1IsTransitioning = true;
-        const card = document.getElementById('a1-flashcard');
-        const isAlreadyFlipped = card.classList.contains('flipped');
-        
-        if (!isAlreadyFlipped) {
-            card.classList.add('flipped');
-        }
         
         const sessionItem = this.a1SessionQueue.shift(); // เอาคำปัจจุบันออก
         const word = sessionItem.word;
@@ -793,13 +785,10 @@ const app = {
         this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้ (นับให้ครบ 10)
         this.saveProgress();
         
-        // หน่วงเวลา 1.2 วิถ้าเพิ่งพลิกครั้งแรก หรือ 300ms ถ้าพลิกไว้อยู่แล้ว
-        const delay = isAlreadyFlipped ? 300 : 1500;
-        
         setTimeout(() => {
             this.a1IsTransitioning = false;
             this.loadA1Card();
-        }, delay);
+        }, 200);
     },
 
     // --- Speech Recognition Logic ---

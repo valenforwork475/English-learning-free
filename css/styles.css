@@ -1264,16 +1264,27 @@ h1, h2, h3, h4, h5, h6 {
         flex-grow: 0;
     }
 
+    .nav-links li {
+        flex: 1;
+        min-width: 0;
+    }
+
     .nav-links li a {
         flex-direction: column;
-        gap: 4px;
-        padding: 8px 12px;
-        font-size: 0.7rem;
+        gap: 3px;
+        padding: 6px 4px;
+        font-size: 0.62rem;
         text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links li a i {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     /* Main content takes full width */
@@ -1334,7 +1345,10 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr 1fr;
     }
     .auth-card h2 { font-size: 1.4rem; }
-    .nav-links li a { padding: 6px 8px; }
+    .nav-links li a { padding: 6px 4px; font-size: 0.6rem; }
+    /* ซ่อนข้อความ nav บนจอเล็กมาก → เห็นแค่ไอคอน */
+    .nav-text { display: none; }
+    .nav-links li a i { font-size: 1.4rem; }
 }
 
 @media (max-width: 768px) {

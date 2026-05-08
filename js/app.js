@@ -830,6 +830,9 @@ const app = {
         
         this.quizList = [...quizData[this.currentCategory][this.currentLevel]];
         this.quizList.sort(() => Math.random() - 0.5); // shuffle questions
+
+        // *** สร้าง options ใหม่แบบ dynamic ไม่ซ้ำกันตลอดทั้งชุดแบบทดสอบ ***
+        this._generateDynamicOptions();
         
         this.currentQuizIndex = 0;
         this.quizScore = 0;
@@ -843,6 +846,68 @@ const app = {
         document.querySelector('[data-view="quizzes"]').classList.add('active');
         
         this.loadQuizQuestion();
+    },
+
+    _generateDynamicOptions() {
+        // รวบรวม correct answer ของทุกข้อในบทเรียนนี้ก่อน
+        const getCorrect = (q) => {
+            if (q.answerText) return q.answerText;           // speaking/reading
+            if (q.audioText)  return q.audioText;            // listening
+            if (q.options && q.answer !== undefined) return q.options[q.answer]; // fallback
+            return null;
+        };
+
+        // สร้าง wordPool จากคำตอบที่ถูกของทุก level ในหมวดนี้
+        let wordPool = [];
+        const categoryQuizData = quizData[this.currentCategory];
+        if (categoryQuizData) {
+            Object.values(categoryQuizData).forEach(levelArr => {
+                levelArr.forEach(q => {
+                    const c = getCorrect(q);
+                    if (c && !wordPool.includes(c)) wordPool.push(c);
+                });
+            });
+        }
+        // ถ้า pool น้อยกว่า 10 คำ เพิ่มจาก vocabData
+        if (wordPool.length < 10) {
+            vocabData.forEach(v => {
+                if (v.english && !wordPool.includes(v.english)) wordPool.push(v.english);
+            });
+        }
+
+        // track ตัวเลือกผิดที่ใช้ไปแล้ว (ห้ามซ้ำข้ามข้อ)
+        const usedWrongAnswers = new Set();
+
+        this.quizList.forEach(q => {
+            if (q.type === 'speaking') return;
+
+            const correct = getCorrect(q);
+            if (!correct) return;
+
+            // หาตัวเลือกผิดที่ยังไม่เคยใช้
+            let available = wordPool.filter(w => w !== correct && !usedWrongAnswers.has(w));
+
+            // ถ้าของที่ไม่เคยใช้หมดแล้ว → ล้าง set แล้วสุ่มใหม่ทั้งหมด
+            if (available.length < 3) {
+                usedWrongAnswers.clear();
+                available = wordPool.filter(w => w !== correct);
+            }
+
+            // สุ่ม 3 คำผิด
+            available.sort(() => Math.random() - 0.5);
+            const wrongAnswers = available.slice(0, 3);
+            wrongAnswers.forEach(w => usedWrongAnswers.add(w));
+
+            // สุ่มตำแหน่งคำตอบที่ถูก
+            const correctPos = Math.floor(Math.random() * 4);
+            const newOptions = [...wrongAnswers];
+            newOptions.splice(correctPos, 0, correct);
+
+            q.options = newOptions;
+            q.answer = correctPos;
+            // เก็บ answerText ไว้ให้ฟีเจอร์อื่นใช้ด้วย
+            q.answerText = correct;
+        });
     },
 
     loadQuizQuestion() {

@@ -1108,16 +1108,16 @@ const grammarLessons = [
             { subject: 'You / We / They', verb: 'are', example: 'They are friends.', th: 'พวกเขาเป็นเพื่อนกัน' },
         ],
         exercises: [
-            { q: 'I ___ a teacher.', options: ['am', 'is', 'are'], answer: 0 },
-            { q: 'She ___ beautiful.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'We ___ happy today.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'He ___ my brother.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'You ___ my friend.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'It ___ a cute dog.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'They ___ at the mall.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'I ___ very hungry.', options: ['am', 'is', 'are'], answer: 0 },
-            { q: 'The car ___ fast.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'My friends ___ nice.', options: ['am', 'is', 'are'], answer: 2 },
+            { q: 'I ___ a teacher.', read: 'ไอ ... อะ ทีชเชอร์', th: 'ฉันเป็นคุณครู', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 0 },
+            { q: 'She ___ beautiful.', read: 'ชี ... บิวตี้ฟูล', th: 'เธอสวย', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'We ___ happy today.', read: 'วี ... แฮปปี้ ทูเดย์', th: 'พวกเรามีความสุขวันนี้', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'He ___ my brother.', read: 'ฮี ... มาย บราเธอร์', th: 'เขาคือพี่ชายของฉัน', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'You ___ my friend.', read: 'ยู ... มาย เฟรนด์', th: 'คุณคือเพื่อนของฉัน', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'It ___ a cute dog.', read: 'อิท ... อะ คิวท์ ด็อก', th: 'มันคือหมาที่น่ารัก', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'They ___ at the mall.', read: 'เดย์ ... แอท เดอะ มอลล์', th: 'พวกเขาอยู่ที่ห้าง', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'I ___ very hungry.', read: 'ไอ ... เวรี่ ฮังกรี้', th: 'ฉันหิวมาก', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 0 },
+            { q: 'The car ___ fast.', read: 'เดอะ คาร์ ... ฟาสต์', th: 'รถคันนั้นเร็ว', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'My friends ___ nice.', read: 'มาย เฟรนด์ส ... ไนซ์', th: 'เพื่อนๆ ของฉันนิสัยดี', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
         ]
     },
     {
@@ -1134,16 +1134,16 @@ const grammarLessons = [
             { subject: 'You / We / They', verb: "aren't", example: "They aren't ready.", th: 'พวกเขายังไม่พร้อม' },
         ],
         exercises: [
-            { q: 'I ___ angry.', options: ['am not', "isn't", "aren't"], answer: 0 },
-            { q: 'It ___ cold today.', options: ['am not', "isn't", "aren't"], answer: 1 },
-            { q: 'They ___ at school.', options: ['am not', "isn't", "aren't"], answer: 2 },
-            { q: 'She ___ my sister.', options: ['am not', "isn't", "aren't"], answer: 1 },
-            { q: 'We ___ late.', options: ['am not', "isn't", "aren't"], answer: 2 },
-            { q: 'He ___ a doctor.', options: ['am not', "isn't", "aren't"], answer: 1 },
-            { q: 'You ___ wrong.', options: ['am not', "isn't", "aren't"], answer: 2 },
-            { q: 'I ___ tired yet.', options: ['am not', "isn't", "aren't"], answer: 0 },
-            { q: 'The book ___ interesting.', options: ['am not', "isn't", "aren't"], answer: 1 },
-            { q: 'The dogs ___ hungry.', options: ['am not', "isn't", "aren't"], answer: 2 },
+            { q: 'I ___ angry.', read: 'ไอ ... แองกรี้', th: 'ฉันไม่ได้โกรธ', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 0 },
+            { q: 'It ___ cold today.', read: 'อิท ... โคลด์ ทูเดย์', th: 'วันนี้อากาศไม่หนาว', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'They ___ at school.', read: 'เดย์ ... แอท สคูล', th: 'พวกเขาไม่ได้อยู่ที่โรงเรียน', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 2 },
+            { q: 'She ___ my sister.', read: 'ชี ... มาย ซิสเตอร์', th: 'เธอไม่ใช่น้องสาวของฉัน', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'We ___ late.', read: 'วี ... เลท', th: 'พวกเราไม่ได้มาสาย', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 2 },
+            { q: 'He ___ a doctor.', read: 'ฮี ... อะ ด็อกเตอร์', th: 'เขาไม่ใช่หมอ', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'You ___ wrong.', read: 'ยู ... รอง', th: 'คุณไม่ได้ผิด', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 2 },
+            { q: 'I ___ tired yet.', read: 'ไอ ... ไทร์ด เย็ท', th: 'ฉันยังไม่เหนื่อย', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 0 },
+            { q: 'The book ___ interesting.', read: 'เดอะ บุ๊ก ... อินเทอเรสติ้ง', th: 'หนังสือเล่มนี้ไม่น่าสนใจ', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'The dogs ___ hungry.', read: 'เดอะ ด็อกส ... ฮังกรี้', th: 'พวกหมายังไม่หิว', options: [{t:'am not',r:'แอม น็อท'}, {t:"isn't",r:'อิสซึ่น'}, {t:"aren't",r:'อาร์นท'}], answer: 2 },
         ]
     },
     {
@@ -1160,16 +1160,16 @@ const grammarLessons = [
             { subject: 'Are you/we/they ...?', verb: '', example: 'Are you okay?', th: 'คุณโอเคไหม?' },
         ],
         exercises: [
-            { q: '___ she your friend?', options: ['Am', 'Is', 'Are'], answer: 1 },
-            { q: '___ they at home?', options: ['Am', 'Is', 'Are'], answer: 2 },
-            { q: '___ I right?', options: ['Am', 'Is', 'Are'], answer: 0 },
-            { q: '___ it raining?', options: ['Am', 'Is', 'Are'], answer: 1 },
-            { q: '___ you ready?', options: ['Am', 'Is', 'Are'], answer: 2 },
-            { q: '___ he a good player?', options: ['Am', 'Is', 'Are'], answer: 1 },
-            { q: '___ we going now?', options: ['Am', 'Is', 'Are'], answer: 2 },
-            { q: '___ I the winner?', options: ['Am', 'Is', 'Are'], answer: 0 },
-            { q: '___ the food spicy?', options: ['Am', 'Is', 'Are'], answer: 1 },
-            { q: '___ the keys on the table?', options: ['Am', 'Is', 'Are'], answer: 2 },
+            { q: '___ she your friend?', read: '... ชี ยัวร์ เฟรนด์?', th: 'เธอเป็นเพื่อนของคุณหรือเปล่า?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ they at home?', read: '... เดย์ แอท โฮม?', th: 'พวกเขาอยู่ที่บ้านหรือเปล่า?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 2 },
+            { q: '___ I right?', read: '... ไอ ไรท์?', th: 'ฉันถูกไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 0 },
+            { q: '___ it raining?', read: '... อิท เรนนิ่ง?', th: 'ฝนกำลังตกหรือเปล่า?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ you ready?', read: '... ยู เรดี้?', th: 'คุณพร้อมไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 2 },
+            { q: '___ he a good player?', read: '... ฮี อะ กู๊ด เพลเยอร์?', th: 'เขาเป็นผู้เล่นที่ดีไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ we going now?', read: '... วี โกอิ้ง นาว?', th: 'พวกเรากำลังจะไปตอนนี้ใช่ไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 2 },
+            { q: '___ I the winner?', read: '... ไอ เดอะ วินเนอร์?', th: 'ฉันคือผู้ชนะเหรอ?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 0 },
+            { q: '___ the food spicy?', read: '... เดอะ ฟู้ด สไปซี่?', th: 'อาหารเผ็ดไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ the keys on the table?', read: '... เดอะ คีย์ส ออน เดอะ เทเบิล?', th: 'กุญแจอยู่บนโต๊ะหรือเปล่า?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 2 },
         ]
     },
     {
@@ -1188,16 +1188,16 @@ const grammarLessons = [
             { subject: 'Are there ...?', verb: '(คำถาม)', example: 'Are there any seats left?', th: 'ยังมีที่นั่งเหลือไหม?' },
         ],
         exercises: [
-            { q: '___ a dog in the garden.', options: ['There is', 'There are', 'Is there'], answer: 0 },
-            { q: '___ many students in the class.', options: ['There is', 'There are', 'Are there'], answer: 1 },
-            { q: '___ a bank near here?', options: ['Is there', 'There is', 'There are'], answer: 0 },
-            { q: '___ any problems?', options: ['There are', 'Are there', 'Is there'], answer: 1 },
-            { q: '___ an apple on the table.', options: ['There are', 'Are there', 'There is'], answer: 2 },
-            { q: '___ three cars outside.', options: ['There is', 'There are', 'Is there'], answer: 1 },
-            { q: '___ someone at the door.', options: ['There is', 'There are', 'Are there'], answer: 0 },
-            { q: '___ any sugar in the coffee?', options: ['Is there', 'Are there', 'There is'], answer: 0 },
-            { q: '___ enough chairs for everyone?', options: ['Is there', 'Are there', 'There are'], answer: 1 },
-            { q: '___ no time left.', options: ['There is', 'There are', 'Are there'], answer: 0 },
+            { q: '___ a dog in the garden.', read: '... อะ ด็อก อิน เดอะ การ์เด้น', th: 'มีหมา 1 ตัวในสวน', options: [{t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}, {t:'Is there',r:'อิส แดร์'}], answer: 0 },
+            { q: '___ many students in the class.', read: '... เมนี่ สติวเดนท์ส อิน เดอะ คลาส', th: 'มีนักเรียนหลายคนในห้อง', options: [{t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}, {t:'Are there',r:'อาร์ แดร์'}], answer: 1 },
+            { q: '___ a bank near here?', read: '... อะ แบงก์ เนียร์ เฮียร์?', th: 'มีธนาคารแถวนี้ไหม?', options: [{t:'Is there',r:'อิส แดร์'}, {t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}], answer: 0 },
+            { q: '___ any problems?', read: '... เอนี่ พรอบเบลมส์?', th: 'มีปัญหาอะไรหรือเปล่า?', options: [{t:'There are',r:'แดร์ อาร์'}, {t:'Are there',r:'อาร์ แดร์'}, {t:'Is there',r:'อิส แดร์'}], answer: 1 },
+            { q: '___ an apple on the table.', read: '... แอน แอปเปิ้ล ออน เดอะ เทเบิล', th: 'มีแอปเปิ้ล 1 ผลบนโต๊ะ', options: [{t:'There are',r:'แดร์ อาร์'}, {t:'Are there',r:'อาร์ แดร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 2 },
+            { q: '___ three cars outside.', read: '... ทรี คาร์ส เอาต์ไซด์', th: 'มีรถ 3 คันอยู่ข้างนอก', options: [{t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}, {t:'Is there',r:'อิส แดร์'}], answer: 1 },
+            { q: '___ someone at the door.', read: '... ซัมวัน แอท เดอะ ดอร์', th: 'มีใครบางคนอยู่ที่ประตู', options: [{t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}, {t:'Are there',r:'อาร์ แดร์'}], answer: 0 },
+            { q: '___ any sugar in the coffee?', read: '... เอนี่ ชูการ์ อิน เดอะ คอฟฟี่?', th: 'มีน้ำตาลในกาแฟไหม?', options: [{t:'Is there',r:'อิส แดร์'}, {t:'Are there',r:'อาร์ แดร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 0 },
+            { q: '___ enough chairs for everyone?', read: '... อีนาฟ แชร์ส ฟอร์ เอฟรี่วัน?', th: 'มีเก้าอี้พอสำหรับทุกคนไหม?', options: [{t:'Is there',r:'อิส แดร์'}, {t:'Are there',r:'อาร์ แดร์'}, {t:'There are',r:'แดร์ อาร์'}], answer: 1 },
+            { q: '___ no time left.', read: '... โน ไทม์ เลฟท์', th: 'ไม่มีเวลาเหลือแล้ว', options: [{t:'There is',r:'แดร์ อิส'}, {t:'There are',r:'แดร์ อาร์'}, {t:'Are there',r:'อาร์ แดร์'}], answer: 0 },
         ]
     },
     {
@@ -1213,16 +1213,16 @@ const grammarLessons = [
             { subject: 'You / We / They', verb: 'were', example: 'They were happy last year.', th: 'พวกเขามีความสุขเมื่อปีที่แล้ว' },
         ],
         exercises: [
-            { q: 'She ___ sick last week.', options: ['was', 'were', 'is'], answer: 0 },
-            { q: 'We ___ at the park yesterday.', options: ['was', 'were', 'are'], answer: 1 },
-            { q: 'He ___ very young then.', options: ['was', 'were', 'is'], answer: 0 },
-            { q: 'They ___ excited about the trip.', options: ['was', 'were', 'are'], answer: 1 },
-            { q: 'I ___ tired after the game.', options: ['was', 'were', 'am'], answer: 0 },
-            { q: 'It ___ a beautiful day yesterday.', options: ['was', 'were', 'are'], answer: 0 },
-            { q: 'You ___ late for the meeting.', options: ['was', 'were', 'is'], answer: 1 },
-            { q: 'The movie ___ very boring.', options: ['was', 'were', 'am'], answer: 0 },
-            { q: 'My parents ___ angry with me.', options: ['was', 'were', 'is'], answer: 1 },
-            { q: 'I ___ happy to see him.', options: ['was', 'were', 'are'], answer: 0 },
+            { q: 'She ___ sick last week.', read: 'ชี ... ซิก ลาสต์ วีค', th: 'เธอป่วยเมื่อสัปดาห์ที่แล้ว', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'is',r:'อิส'}], answer: 0 },
+            { q: 'We ___ at the park yesterday.', read: 'วี ... แอท เดอะ พาร์ค เยสเทอร์เดย์', th: 'พวกเราอยู่ที่สวนสาธารณะเมื่อวานนี้', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'He ___ very young then.', read: 'ฮี ... เวรี่ ยัง เดน', th: 'เขายังเด็กมากในตอนนั้น', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'is',r:'อิส'}], answer: 0 },
+            { q: 'They ___ excited about the trip.', read: 'เดย์ ... เอ็กไซเต็ด อะเบาต์ เดอะ ทริป', th: 'พวกเขาตื่นเต้นกับทริปนี้', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'I ___ tired after the game.', read: 'ไอ ... ไทร์ด อาฟเตอร์ เดอะ เกม', th: 'ฉันเหนื่อยหลังจบเกม', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'am',r:'แอม'}], answer: 0 },
+            { q: 'It ___ a beautiful day yesterday.', read: 'อิท ... อะ บิวตี้ฟูล เดย์ เยสเทอร์เดย์', th: 'มันเป็นวันที่สวยงามเมื่อวานนี้', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'are',r:'อาร์'}], answer: 0 },
+            { q: 'You ___ late for the meeting.', read: 'ยู ... เลท ฟอร์ เดอะ มีตติ้ง', th: 'คุณมาสายสำหรับการประชุม', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'is',r:'อิส'}], answer: 1 },
+            { q: 'The movie ___ very boring.', read: 'เดอะ มูฟวี่ ... เวรี่ บอริ่ง', th: 'หนังน่าเบื่อมาก', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'am',r:'แอม'}], answer: 0 },
+            { q: 'My parents ___ angry with me.', read: 'มาย พาเรนท์ส ... แองกรี้ วิธ มี', th: 'พ่อแม่โกรธฉัน', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'is',r:'อิส'}], answer: 1 },
+            { q: 'I ___ happy to see him.', read: 'ไอ ... แฮปปี้ ทู ซี ฮิม', th: 'ฉันดีใจที่ได้พบเขา', options: [{t:'was',r:'วอส'}, {t:'were',r:'เวอร์'}, {t:'are',r:'อาร์'}], answer: 0 },
         ]
     },
     {
@@ -1238,16 +1238,16 @@ const grammarLessons = [
             { subject: 'You / We / They', verb: "weren't", example: "They weren't here.", th: 'พวกเขาไม่ได้อยู่ที่นี่' },
         ],
         exercises: [
-            { q: 'I ___ at home yesterday.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
-            { q: 'They ___ ready for the test.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
-            { q: 'It ___ a good movie.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
-            { q: 'We ___ happy with the result.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
-            { q: 'She ___ at the party.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
-            { q: 'The stores ___ open.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
-            { q: 'You ___ very polite.', options: ["wasn't", "weren't", "isn't"], answer: 1 },
-            { q: 'My dog ___ outside.', options: ["wasn't", "weren't", "aren't"], answer: 0 },
-            { q: 'The questions ___ easy.', options: ["wasn't", "weren't", "aren't"], answer: 1 },
-            { q: 'He ___ an actor before.', options: ["wasn't", "weren't", "isn't"], answer: 0 },
+            { q: 'I ___ at home yesterday.', read: 'ไอ ... แอท โฮม เยสเทอร์เดย์', th: 'ฉันไม่ได้อยู่บ้านเมื่อวานนี้', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"isn't",r:'อิสซึ่น'}], answer: 0 },
+            { q: 'They ___ ready for the test.', read: 'เดย์ ... เรดี้ ฟอร์ เดอะ เทสต์', th: 'พวกเขาไม่พร้อมสำหรับการสอบ', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'It ___ a good movie.', read: 'อิท ... อะ กู๊ด มูฟวี่', th: 'มันไม่ใช่หนังที่ดี', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"isn't",r:'อิสซึ่น'}], answer: 0 },
+            { q: 'We ___ happy with the result.', read: 'วี ... แฮปปี้ วิธ เดอะ รีซัลท์', th: 'พวกเราไม่พอใจกับผลลัพธ์', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'She ___ at the party.', read: 'ชี ... แอท เดอะ ปาร์ตี้', th: 'เธอไม่ได้อยู่ที่งานปาร์ตี้', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"isn't",r:'อิสซึ่น'}], answer: 0 },
+            { q: 'The stores ___ open.', read: 'เดอะ สโตร์ส ... โอเพ่น', th: 'ร้านค้าไม่ได้เปิด', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'You ___ very polite.', read: 'ยู ... เวรี่ โพไลท์', th: 'คุณไม่ค่อยสุภาพเลย', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"isn't",r:'อิสซึ่น'}], answer: 1 },
+            { q: 'My dog ___ outside.', read: 'มาย ด็อก ... เอาต์ไซด์', th: 'หมาของฉันไม่ได้อยู่ข้างนอก', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"aren't",r:'อาร์นท'}], answer: 0 },
+            { q: 'The questions ___ easy.', read: 'เดอะ เควสชันส์ ... อีซี่', th: 'คำถามไม่ง่ายเลย', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"aren't",r:'อาร์นท'}], answer: 1 },
+            { q: 'He ___ an actor before.', read: 'ฮี ... แอน แอคเตอร์ บีฟอร์', th: 'เขาไม่ได้เป็นนักแสดงมาก่อน', options: [{t:"wasn't",r:'วอสซึ่น'}, {t:"weren't",r:'เวอร์รึนท์'}, {t:"isn't",r:'อิสซึ่น'}], answer: 0 },
         ]
     },
     {
@@ -1263,16 +1263,16 @@ const grammarLessons = [
             { subject: 'Were you / we / they...?', verb: '', example: 'Were you busy?', th: 'คุณยุ่งอยู่เหรอ?' },
         ],
         exercises: [
-            { q: '___ he your classmate?', options: ['Was', 'Were', 'Is'], answer: 0 },
-            { q: '___ they at the beach?', options: ['Was', 'Were', 'Are'], answer: 1 },
-            { q: '___ I loud?', options: ['Was', 'Were', 'Am'], answer: 0 },
-            { q: '___ we lost?', options: ['Was', 'Were', 'Are'], answer: 1 },
-            { q: '___ it a fun game?', options: ['Was', 'Were', 'Is'], answer: 0 },
-            { q: '___ the windows closed?', options: ['Was', 'Were', 'Are'], answer: 1 },
-            { q: '___ you surprised?', options: ['Was', 'Were', 'Are'], answer: 1 },
-            { q: '___ the teacher angry?', options: ['Was', 'Were', 'Is'], answer: 0 },
-            { q: '___ the cats hungry?', options: ['Was', 'Were', 'Are'], answer: 1 },
-            { q: '___ she a good singer?', options: ['Was', 'Were', 'Is'], answer: 0 },
+            { q: '___ he your classmate?', read: '... ฮี ยัวร์ คลาสเมท?', th: 'เขาเคยเป็นเพื่อนร่วมชั้นของคุณเหรอ?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Is',r:'อิส'}], answer: 0 },
+            { q: '___ they at the beach?', read: '... เดย์ แอท เดอะ บีช?', th: 'พวกเขาอยู่ที่ชายหาดเหรอ?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ I loud?', read: '... ไอ เลาด์?', th: 'ฉันเสียงดังไปเหรอ?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Am',r:'แอม'}], answer: 0 },
+            { q: '___ we lost?', read: '... วี ลอสต์?', th: 'พวกเราหลงทางเหรอ?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ it a fun game?', read: '... อิท อะ ฟัน เกม?', th: 'มันเป็นเกมที่สนุกไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Is',r:'อิส'}], answer: 0 },
+            { q: '___ the windows closed?', read: '... เดอะ วินโดวส์ โคลส?', th: 'หน้าต่างปิดอยู่ไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ you surprised?', read: '... ยู เซอร์ไพรส์ด?', th: 'คุณประหลาดใจไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ the teacher angry?', read: '... เดอะ ทีชเชอร์ แองกรี้?', th: 'คุณครูโกรธไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Is',r:'อิส'}], answer: 0 },
+            { q: '___ the cats hungry?', read: '... เดอะ แคทส์ ฮังกรี้?', th: 'พวกแมวหิวไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Are',r:'อาร์'}], answer: 1 },
+            { q: '___ she a good singer?', read: '... ชี อะ กู๊ด ซิงเกอร์?', th: 'เธอเป็นนักร้องที่ดีไหม?', options: [{t:'Was',r:'วอส'}, {t:'Were',r:'เวอร์'}, {t:'Is',r:'อิส'}], answer: 0 },
         ]
     },
     {
@@ -1289,16 +1289,16 @@ const grammarLessons = [
             { subject: 'There were', verb: '(พหูพจน์)', example: 'There were many people.', th: 'เคยมีผู้คนมากมาย' },
         ],
         exercises: [
-            { q: '___ a problem yesterday.', options: ['There was', 'There were', 'There is'], answer: 0 },
-            { q: '___ five books on the desk.', options: ['There was', 'There were', 'There are'], answer: 1 },
-            { q: '___ any calls for me?', options: ['Was there', 'Were there', 'Is there'], answer: 1 }, // Were there any calls
-            { q: '___ only one piece of cake left.', options: ['There was', 'There were', 'There is'], answer: 0 },
-            { q: '___ no computers in 1900.', options: ['There was', 'There were', 'There are'], answer: 1 },
-            { q: '___ a loud noise last night.', options: ['There was', 'There were', 'There is'], answer: 0 },
-            { q: '___ a lot of mistakes in the test.', options: ['There was', 'There were', 'There are'], answer: 1 },
-            { q: '___ time to finish?', options: ['Was there', 'Were there', 'Is there'], answer: 0 }, // Was there time
-            { q: '___ many choices.', options: ['There wasn\'t', 'There weren\'t', 'There isn\'t'], answer: 1 }, // There weren't many choices
-            { q: '___ an accident on the road.', options: ['There was', 'There were', 'There is'], answer: 0 },
+            { q: '___ a problem yesterday.', read: '... อะ พรอบเบลม เยสเทอร์เดย์', th: 'เคยมีปัญหาเมื่อวานนี้', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 0 },
+            { q: '___ five books on the desk.', read: '... ไฟว์ บุ๊กส์ ออน เดอะ เดสก์', th: 'เคยมีหนังสือ 5 เล่มบนโต๊ะ', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There are',r:'แดร์ อาร์'}], answer: 1 },
+            { q: '___ any calls for me?', read: '... เอนี่ คอลส์ ฟอร์ มี?', th: 'มีสายโทรเข้าหาฉันไหม?', options: [{t:'Was there',r:'วอส แดร์'}, {t:'Were there',r:'เวอร์ แดร์'}, {t:'Is there',r:'อิส แดร์'}], answer: 1 },
+            { q: '___ only one piece of cake left.', read: '... โอนลี่ วัน พีซ ออฟ เค้ก เลฟท์', th: 'เคยมีเค้กเหลือแค่ชิ้นเดียว', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 0 },
+            { q: '___ no computers in 1900.', read: '... โน คอมพิวเตอร์ส อิน ไนน์ทีน ฮันเดรด', th: 'ไม่มีคอมพิวเตอร์ในปี 1900', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There are',r:'แดร์ อาร์'}], answer: 1 },
+            { q: '___ a loud noise last night.', read: '... อะ เลาด์ นอยซ์ ลาสต์ ไนท์', th: 'มีเสียงดังเมื่อคืนนี้', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 0 },
+            { q: '___ a lot of mistakes in the test.', read: '... อะ ล็อท ออฟ มิสเทคส์ อิน เดอะ เทสต์', th: 'เคยมีข้อผิดพลาดเยอะมากในการสอบ', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There are',r:'แดร์ อาร์'}], answer: 1 },
+            { q: '___ time to finish?', read: '... ไทม์ ทู ฟินิช?', th: 'มีเวลาเหลือให้ทำเสร็จไหม?', options: [{t:'Was there',r:'วอส แดร์'}, {t:'Were there',r:'เวอร์ แดร์'}, {t:'Is there',r:'อิส แดร์'}], answer: 0 },
+            { q: '___ many choices.', read: '... เมนี่ ชอยส์', th: 'ไม่ได้มีตัวเลือกเยอะหรอก', options: [{t:"There wasn't",r:'แดร์ วอสซึ่น'}, {t:"There weren't",r:'แดร์ เวอร์รึนท์'}, {t:"There isn't",r:'แดร์ อิสซึ่น'}], answer: 1 },
+            { q: '___ an accident on the road.', read: '... แอน แอคซิเดนท์ ออน เดอะ โร้ด', th: 'เคยมีอุบัติเหตุบนถนน', options: [{t:'There was',r:'แดร์ วอส'}, {t:'There were',r:'แดร์ เวอร์'}, {t:'There is',r:'แดร์ อิส'}], answer: 0 },
         ]
     },
     {
@@ -1314,16 +1314,16 @@ const grammarLessons = [
             { subject: 'ปฏิเสธ', verb: 'won\'t be', example: 'It won\'t be easy.', th: 'มันจะไม่ง่ายหรอก' },
         ],
         exercises: [
-            { q: 'He ___ a doctor soon.', options: ['will be', 'is', 'was'], answer: 0 },
-            { q: 'We ___ late if we don\'t hurry.', options: ['will be', 'are', 'were'], answer: 0 },
-            { q: 'The test ___ very hard.', options: ['will be', 'is', 'was'], answer: 0 },
-            { q: 'I ___ at home tomorrow.', options: ['will be', 'am', 'was'], answer: 0 },
-            { q: 'They ___ happy to see you.', options: ['will be', 'are', 'were'], answer: 0 },
-            { q: 'It ___ rainy next week.', options: ['will be', 'is', 'was'], answer: 0 },
-            { q: 'She ___ perfectly fine.', options: ['will be', 'is', 'was'], answer: 0 },
-            { q: 'I promise I ___ late.', options: ['won\'t be', 'am not', 'wasn\'t'], answer: 0 },
-            { q: 'There ___ a meeting tomorrow.', options: ['will be', 'is', 'was'], answer: 0 },
-            { q: '___ you be available?', options: ['Will', 'Are', 'Were'], answer: 0 },
+            { q: 'He ___ a doctor soon.', read: 'ฮี ... อะ ด็อกเตอร์ ซูน', th: 'เขาจะเป็นหมอในเร็วๆ นี้', options: [{t:'will be',r:'วิล บี'}, {t:'is',r:'อิส'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: 'We ___ late if we don\'t hurry.', read: 'วี ... เลท อิฟ วี ดอนท์ เฮอร์รี่', th: 'พวกเราจะสายถ้าไม่รีบ', options: [{t:'will be',r:'วิล บี'}, {t:'are',r:'อาร์'}, {t:'were',r:'เวอร์'}], answer: 0 },
+            { q: 'The test ___ very hard.', read: 'เดอะ เทสต์ ... เวรี่ ฮาร์ด', th: 'การสอบจะยากมากแน่ๆ', options: [{t:'will be',r:'วิล บี'}, {t:'is',r:'อิส'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: 'I ___ at home tomorrow.', read: 'ไอ ... แอท โฮม ทูมอร์โรว์', th: 'ฉันจะอยู่บ้านพรุ่งนี้', options: [{t:'will be',r:'วิล บี'}, {t:'am',r:'แอม'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: 'They ___ happy to see you.', read: 'เดย์ ... แฮปปี้ ทู ซี ยู', th: 'พวกเขาจะดีใจที่ได้พบคุณ', options: [{t:'will be',r:'วิล บี'}, {t:'are',r:'อาร์'}, {t:'were',r:'เวอร์'}], answer: 0 },
+            { q: 'It ___ rainy next week.', read: 'อิท ... เรนนี่ เน็กซ์ วีค', th: 'ฝนจะตกในสัปดาห์หน้า', options: [{t:'will be',r:'วิล บี'}, {t:'is',r:'อิส'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: 'She ___ perfectly fine.', read: 'ชี ... เพอร์เฟคต์ลี่ ไฟน์', th: 'เธอจะสบายดีแน่นอน', options: [{t:'will be',r:'วิล บี'}, {t:'is',r:'อิส'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: 'I promise I ___ late.', read: 'ไอ พรอมิส ไอ ... เลท', th: 'ฉันสัญญาว่าฉันจะไม่มาสาย', options: [{t:"won't be",r:'โวนท์ บี'}, {t:'am not',r:'แอม น็อท'}, {t:"wasn't",r:'วอสซึ่น'}], answer: 0 },
+            { q: 'There ___ a meeting tomorrow.', read: 'แดร์ ... อะ มีตติ้ง ทูมอร์โรว์', th: 'จะมีการประชุมในวันพรุ่งนี้', options: [{t:'will be',r:'วิล บี'}, {t:'is',r:'อิส'}, {t:'was',r:'วอส'}], answer: 0 },
+            { q: '___ you be available?', read: '... ยู บี อะไวเลเบิล?', th: 'คุณจะว่างไหม?', options: [{t:'Will',r:'วิล'}, {t:'Are',r:'อาร์'}, {t:'Were',r:'เวอร์'}], answer: 0 },
         ]
     },
     {
@@ -1340,16 +1340,16 @@ const grammarLessons = [
             { subject: 'You/We/They', verb: 'are + V.ing', example: 'We are eating.', th: 'พวกเรากำลังกิน' },
         ],
         exercises: [
-            { q: 'I ___ studying right now.', options: ['am', 'is', 'are'], answer: 0 },
-            { q: 'They ___ playing football.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'She ___ watching TV.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'We ___ listening to music.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'The dog ___ barking.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: 'You ___ speaking too fast.', options: ['am', 'is', 'are'], answer: 2 },
-            { q: 'He ___ not working today.', options: ['am', 'is', 'are'], answer: 1 },
-            { q: '___ they coming to the party?', options: ['Am', 'Is', 'Are'], answer: 2 },
-            { q: 'I ___ driving to work.', options: ['am', 'is', 'are'], answer: 0 },
-            { q: 'It ___ raining heavily.', options: ['am', 'is', 'are'], answer: 1 },
+            { q: 'I ___ studying right now.', read: 'ไอ ... สตัดดี้อิ้ง ไรท์ นาว', th: 'ฉันกำลังเรียนอยู่ตอนนี้', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 0 },
+            { q: 'They ___ playing football.', read: 'เดย์ ... เพลย์อิ้ง ฟุตบอล', th: 'พวกเขากำลังเล่นฟุตบอล', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'She ___ watching TV.', read: 'ชี ... วอทชิ่ง ทีวี', th: 'เธอกำลังดูทีวี', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'We ___ listening to music.', read: 'วี ... ลิสเซินนิ่ง ทู มิวสิก', th: 'พวกเรากำลังฟังเพลง', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'The dog ___ barking.', read: 'เดอะ ด็อก ... บาร์คกิ้ง', th: 'หมากำลังเห่า', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: 'You ___ speaking too fast.', read: 'ยู ... สปีคกิ้ง ทู ฟาสต์', th: 'คุณกำลังพูดเร็วเกินไป', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 2 },
+            { q: 'He ___ not working today.', read: 'ฮี ... น็อท เวิร์กกิ้ง ทูเดย์', th: 'เขาไม่ได้กำลังทำงานวันนี้', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
+            { q: '___ they coming to the party?', read: '... เดย์ คัมมิ่ง ทู เดอะ ปาร์ตี้?', th: 'พวกเขากำลังจะมางานปาร์ตี้ใช่ไหม?', options: [{t:'Am',r:'แอม'}, {t:'Is',r:'อิส'}, {t:'Are',r:'อาร์'}], answer: 2 },
+            { q: 'I ___ driving to work.', read: 'ไอ ... ไดร์ฟวิ่ง ทู เวิร์ก', th: 'ฉันกำลังขับรถไปทำงาน', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 0 },
+            { q: 'It ___ raining heavily.', read: 'อิท ... เรนนิ่ง เฮฟวี่ลี่', th: 'ฝนกำลังตกหนัก', options: [{t:'am',r:'แอม'}, {t:'is',r:'อิส'}, {t:'are',r:'อาร์'}], answer: 1 },
         ]
     }
 ];
@@ -1423,12 +1423,17 @@ const grammarEngine = {
                     ${lesson.exercises.map((ex, qi) => `
                         <div class="gram-ex-item" id="ex-${lesson.id}-${qi}">
                             <p class="gram-ex-question">${qi+1}. ${ex.q}</p>
-                            <div class="gram-ex-options">
+                            <div class="gram-ex-reading-th" style="background: rgba(255,255,255,0.7); padding: 8px 12px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid #cbd5e1; font-size: 0.9rem;">
+                                <div style="color: #475569; margin-bottom: 4px;">🗣️ <span style="color: #3b82f6;">${ex.read}</span></div>
+                                <div style="color: #475569;">🇹🇭 <span>${ex.th}</span></div>
+                            </div>
+                            <div class="gram-ex-options" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
                                 ${ex.options.map((opt, oi) => `
-                                    <button class="gram-opt-btn" 
+                                    <button class="gram-opt-btn" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; line-height: 1.2;"
                                         id="opt-${lesson.id}-${qi}-${oi}"
                                         onclick="grammarEngine.answer('${lesson.id}', ${qi}, ${oi}, ${ex.answer})">
-                                        ${opt}
+                                        <strong style="font-size: 1.1rem; margin-bottom: 4px;">${opt.t}</strong>
+                                        <small style="font-size: 0.8rem; color: #64748b; font-weight: normal;">${opt.r}</small>
                                     </button>
                                 `).join('')}
                             </div>
@@ -1466,7 +1471,7 @@ const grammarEngine = {
             document.getElementById(`opt-${lessonId}-${qIndex}-${selectedOpt}`).classList.add('gram-wrong');
             document.getElementById(`opt-${lessonId}-${qIndex}-${correctOpt}`).classList.add('gram-correct');
             if (fbEl) {
-                fbEl.innerHTML = `❌ ผิด! คำตอบที่ถูก: <strong>${ex.options[correctOpt]}</strong>`;
+                fbEl.innerHTML = `❌ ผิด! คำตอบที่ถูก: <strong>${ex.options[correctOpt].t}</strong>`;
                 fbEl.className = 'gram-ex-feedback gram-fb-wrong';
             }
         }

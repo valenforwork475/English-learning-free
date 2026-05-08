@@ -712,7 +712,7 @@ const app = {
         if (phoneticFront) phoneticFront.textContent = `[ ${word.phonetic} ]`;
         document.getElementById('a1-fc-word-th').textContent = word.th;
         
-        document.getElementById('a1-flashcard').classList.remove('is-flipped');
+        document.getElementById('a1-flashcard').classList.remove('flipped');
         
         this.updateA1StatsUI();
         
@@ -730,9 +730,8 @@ const app = {
 
     flipA1Card() {
         const card = document.getElementById('a1-flashcard');
-        if (!card.classList.contains('is-flipped')) {
-            card.classList.add('is-flipped');
-            document.getElementById('a1-srs-actions').style.display = 'grid';
+        if (!card.classList.contains('flipped')) {
+            card.classList.add('flipped');
         }
     },
 
@@ -754,10 +753,10 @@ const app = {
         
         this.a1IsTransitioning = true;
         const card = document.getElementById('a1-flashcard');
-        const isAlreadyFlipped = card.classList.contains('is-flipped');
+        const isAlreadyFlipped = card.classList.contains('flipped');
         
         if (!isAlreadyFlipped) {
-            card.classList.add('is-flipped');
+            card.classList.add('flipped');
         }
         
         const sessionItem = this.a1SessionQueue.shift(); // เอาคำปัจจุบันออก

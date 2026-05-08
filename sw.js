@@ -1,4 +1,4 @@
-const CACHE_NAME = 'english-learning-cache-v16';
+const CACHE_NAME = 'english-learning-cache-v17';
 
 // Install: clear old caches
 self.addEventListener('install', event => {

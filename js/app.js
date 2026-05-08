@@ -697,7 +697,6 @@ const app = {
         document.getElementById('a1-fc-word-th').textContent = word.th;
         
         document.getElementById('a1-flashcard').classList.remove('is-flipped');
-        document.getElementById('a1-srs-actions').style.display = 'none';
         
         this.updateA1StatsUI();
     },
@@ -724,6 +723,15 @@ const app = {
 
     markA1Word(grade) {
         if (this.a1SessionQueue.length === 0) return;
+        if (this.a1IsTransitioning) return; // ป้องกันการกดซ้ำ
+        
+        this.a1IsTransitioning = true;
+        const card = document.getElementById('a1-flashcard');
+        const isAlreadyFlipped = card.classList.contains('is-flipped');
+        
+        if (!isAlreadyFlipped) {
+            card.classList.add('is-flipped');
+        }
         
         const sessionItem = this.a1SessionQueue.shift(); // เอาคำปัจจุบันออก
         const word = sessionItem.word;
@@ -737,19 +745,15 @@ const app = {
 
         if (grade === 'very_hard') {
             prog.easyCount = 0;
-            prog.nextReview = now; // ทบทวนอีกครั้ง
-            // แทรกกลับเข้าไปในคิวที่ตำแหน่งที่ 2 (หรือท้ายสุดถ้าสั้น)
-            const insertIndex = Math.min(2, this.a1SessionQueue.length);
-            this.a1SessionQueue.splice(insertIndex, 0, sessionItem);
+            // ให้โผล่มาทบทวนใหม่ในรอบหน้าเลย (0 ชั่วโมง)
+            prog.nextReview = now; 
         } else if (grade === 'hard') {
             prog.easyCount = 0;
+            // ให้โผล่มาทบทวนใหม่ในรอบหน้าเลย
             prog.nextReview = now;
-            // แทรกกลับเข้าไปท้ายคิว
-            this.a1SessionQueue.push(sessionItem);
         } else if (grade === 'good') {
-            // พอได้: ให้มาเจอในอีก 2 ชั่วโมง (รอบหน้า)
+            // พอได้: ให้มาเจอในอีก 2 ชั่วโมง
             prog.nextReview = now + (2 * 60 * 60 * 1000);
-            this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้
         } else if (grade === 'easy') {
             prog.easyCount++;
             if (prog.easyCount >= 2) {
@@ -758,11 +762,18 @@ const app = {
                 // ให้มาเจอในอีก 12 ชั่วโมง
                 prog.nextReview = now + (12 * 60 * 60 * 1000);
             }
-            this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้
         }
-
+        
+        this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้ (นับให้ครบ 10)
         this.saveProgress();
-        setTimeout(() => this.loadA1Card(), 200);
+        
+        // หน่วงเวลา 1.2 วิถ้าเพิ่งพลิกครั้งแรก หรือ 300ms ถ้าพลิกไว้อยู่แล้ว
+        const delay = isAlreadyFlipped ? 300 : 1500;
+        
+        setTimeout(() => {
+            this.a1IsTransitioning = false;
+            this.loadA1Card();
+        }, delay);
     },
 
     // --- Speech Recognition Logic ---

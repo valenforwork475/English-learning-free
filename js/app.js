@@ -849,12 +849,16 @@ const app = {
     },
 
     _generateDynamicOptions() {
+        // ลบ _alt และ garbage suffix ออกจากคำ
+        const cleanWord = (w) => w ? w.replace(/_alt$/i, '').replace(/_\w+$/i, '').trim() : '';
+
         // รวบรวม correct answer ของทุกข้อในบทเรียนนี้ก่อน
         const getCorrect = (q) => {
-            if (q.answerText) return q.answerText;           // speaking/reading
-            if (q.audioText)  return q.audioText;            // listening
-            if (q.options && q.answer !== undefined) return q.options[q.answer]; // fallback
-            return null;
+            let raw = '';
+            if (q.answerText) raw = q.answerText;
+            else if (q.audioText) raw = q.audioText;
+            else if (q.options && q.answer !== undefined) raw = q.options[q.answer];
+            return cleanWord(raw) || null;
         };
 
         // สร้าง wordPool จากคำตอบที่ถูกของทุก level ในหมวดนี้
@@ -871,7 +875,12 @@ const app = {
         // ถ้า pool น้อยกว่า 10 คำ เพิ่มจาก vocabData
         if (wordPool.length < 10) {
             vocabData.forEach(v => {
-                if (v.english && !wordPool.includes(v.english)) wordPool.push(v.english);
+                // ใช้ field 'en' (vocabData ใช้ 'en' ไม่ใช่ 'english')
+                // กรอง: ห้ามมี _alt, ห้ามว่าง, ห้ามซ้ำ
+                const word = v.en || v.english || '';
+                if (word && !word.includes('_') && !wordPool.includes(word)) {
+                    wordPool.push(word);
+                }
             });
         }
 

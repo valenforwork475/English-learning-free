@@ -20,6 +20,9 @@ const app = {
         toeic_listening: 1, toeic_reading: 1, toeic_speaking: 1,
         toefl_listening: 1, toefl_reading: 1, toefl_speaking: 1
     },
+    a1Progress: {}, // { wordId: { status: 'learning'|'memorized', easyCount: 0, nextReview: 0 } }
+    a1SessionQueue: [],
+    a1CurrentWordId: null,
 
     async init() {
         this.setupAuth();
@@ -283,6 +286,9 @@ const app = {
             if (user.user_metadata.learnedWords) {
                 try { this.learnedWords = new Set(user.user_metadata.learnedWords); } catch (e) {}
             }
+            if (user.user_metadata.a1Progress) {
+                try { this.a1Progress = user.user_metadata.a1Progress; } catch (e) {}
+            }
         }
     },
 
@@ -294,7 +300,8 @@ const app = {
             await db.auth.updateUser({
                 data: { 
                     unlockedLevels: this.unlockedLevels,
-                    learnedWords: Array.from(this.learnedWords)
+                    learnedWords: Array.from(this.learnedWords),
+                    a1Progress: this.a1Progress
                 }
             });
         }
@@ -605,6 +612,157 @@ const app = {
     closeModal() {
         const modal = document.getElementById('completion-modal');
         if (modal) modal.classList.remove('active');
+    },
+
+    // --- A1 SRS Flashcard Logic ---
+    showA1Flashcards() {
+        if (typeof vocabDataA1 === 'undefined') {
+            alert('ไม่พบข้อมูล A1');
+            return;
+        }
+
+        this.a1SessionQueue = [];
+        const numToSelect = 10;
+        const now = Date.now();
+        
+        // 1. ดึงคำศัพท์ที่ครบกำหนดทบทวน
+        let dueWords = [];
+        // 2. ดึงคำศัพท์ใหม่ที่ยังไม่เคยเรียน
+        let newWords = [];
+        
+        vocabDataA1.forEach(w => {
+            const progress = this.a1Progress[w.id];
+            if (progress) {
+                if (progress.status === 'learning' && progress.nextReview <= now) {
+                    dueWords.push(w);
+                }
+            } else {
+                newWords.push(w);
+            }
+        });
+
+        // สุ่มลำดับ
+        dueWords.sort(() => Math.random() - 0.5);
+        newWords.sort(() => Math.random() - 0.5);
+
+        // เลือกมาให้ครบ 10 คำ
+        for (let i = 0; i < dueWords.length && this.a1SessionQueue.length < numToSelect; i++) {
+            this.a1SessionQueue.push({ word: dueWords[i], type: 'review' });
+        }
+        for (let i = 0; i < newWords.length && this.a1SessionQueue.length < numToSelect; i++) {
+            this.a1SessionQueue.push({ word: newWords[i], type: 'new' });
+        }
+
+        if (this.a1SessionQueue.length === 0) {
+            this.showCompletionModal('คุณจำคำศัพท์ A1 ทั้งหมดได้แล้ว! หรือไม่มีคำศัพท์ที่ต้องทบทวนในตอนนี้ 🎉');
+            return;
+        }
+
+        this.a1CurrentIndexInSession = 0;
+        this.a1SessionTotal = this.a1SessionQueue.length;
+        
+        this.updateA1StatsUI();
+        this.switchView('a1-flashcards');
+        this.loadA1Card();
+    },
+
+    updateA1StatsUI() {
+        const memorizedCount = Object.values(this.a1Progress).filter(p => p.status === 'memorized').length;
+        const countEl = document.getElementById('a1-memorized-count');
+        if (countEl) countEl.textContent = memorizedCount;
+        
+        const currentEl = document.getElementById('a1-fc-current');
+        const totalEl = document.getElementById('a1-fc-total');
+        if (currentEl) currentEl.textContent = this.a1CurrentIndexInSession + 1;
+        if (totalEl) totalEl.textContent = this.a1SessionTotal;
+        
+        const progEl = document.getElementById('a1-session-progress');
+        if (progEl) progEl.textContent = `${this.a1CurrentIndexInSession}/${this.a1SessionTotal}`;
+    },
+
+    loadA1Card() {
+        if (this.a1SessionQueue.length === 0) {
+            this.saveProgress();
+            this.showCompletionModal('เก่งมาก! คุณทบทวนคำศัพท์รอบนี้จบแล้ว 🎉');
+            this.switchView('dashboard');
+            return;
+        }
+
+        const sessionItem = this.a1SessionQueue[0];
+        const word = sessionItem.word;
+        this.a1CurrentWordId = word.id;
+
+        document.getElementById('a1-fc-word-en').textContent = word.en;
+        document.getElementById('a1-fc-phonetic').textContent = `[ ${word.phonetic} ]`;
+        document.getElementById('a1-fc-word-th').textContent = word.th;
+        
+        document.getElementById('a1-flashcard').classList.remove('is-flipped');
+        document.getElementById('a1-srs-actions').style.display = 'none';
+        
+        this.updateA1StatsUI();
+    },
+
+    flipA1Card() {
+        const card = document.getElementById('a1-flashcard');
+        if (!card.classList.contains('is-flipped')) {
+            card.classList.add('is-flipped');
+            document.getElementById('a1-srs-actions').style.display = 'grid';
+        }
+    },
+
+    playA1Sound(event) {
+        event.stopPropagation();
+        if (this.a1SessionQueue.length > 0) {
+            const word = this.a1SessionQueue[0].word;
+            const text = word.en.replace(/_alt$/i, '').replace(/_\w+$/i, '');
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            window.speechSynthesis.speak(utterance);
+        }
+    },
+
+    markA1Word(grade) {
+        if (this.a1SessionQueue.length === 0) return;
+        
+        const sessionItem = this.a1SessionQueue.shift(); // เอาคำปัจจุบันออก
+        const word = sessionItem.word;
+        const now = Date.now();
+        
+        // ตรวจสอบหรือสร้าง progress
+        if (!this.a1Progress[word.id]) {
+            this.a1Progress[word.id] = { status: 'learning', easyCount: 0, nextReview: 0 };
+        }
+        const prog = this.a1Progress[word.id];
+
+        if (grade === 'very_hard') {
+            prog.easyCount = 0;
+            prog.nextReview = now; // ทบทวนอีกครั้ง
+            // แทรกกลับเข้าไปในคิวที่ตำแหน่งที่ 2 (หรือท้ายสุดถ้าสั้น)
+            const insertIndex = Math.min(2, this.a1SessionQueue.length);
+            this.a1SessionQueue.splice(insertIndex, 0, sessionItem);
+        } else if (grade === 'hard') {
+            prog.easyCount = 0;
+            prog.nextReview = now;
+            // แทรกกลับเข้าไปท้ายคิว
+            this.a1SessionQueue.push(sessionItem);
+        } else if (grade === 'good') {
+            // พอได้: ให้มาเจอในอีก 2 ชั่วโมง (รอบหน้า)
+            prog.nextReview = now + (2 * 60 * 60 * 1000);
+            this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้
+        } else if (grade === 'easy') {
+            prog.easyCount++;
+            if (prog.easyCount >= 2) {
+                prog.status = 'memorized';
+            } else {
+                // ให้มาเจอในอีก 12 ชั่วโมง
+                prog.nextReview = now + (12 * 60 * 60 * 1000);
+            }
+            this.a1CurrentIndexInSession++; // ถือว่าผ่านในรอบนี้
+        }
+
+        this.saveProgress();
+        setTimeout(() => this.loadA1Card(), 200);
     },
 
     // --- Speech Recognition Logic ---

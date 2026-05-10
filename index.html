@@ -6,6 +6,7 @@
     <title>EngD - เรียนภาษาอังกฤษออนไลน์</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -174,7 +175,7 @@
                             <div class="stat-item">
                                 <div class="stat-icon bg-green"><i class="fa-solid fa-check-double"></i></div>
                                 <div class="stat-info">
-                                    <span class="stat-value">85%</span>
+                                    <span class="stat-value" id="accuracy-value">85%</span>
                                     <span class="stat-label">ความแม่นยำ</span>
                                 </div>
                             </div>
@@ -244,6 +245,47 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="category-group" style="margin-top: 30px;">
+                    <h3 style="color: #ec4899; margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-keyboard"></i> หมวดฝึกสะกดคำ (Spelling)</h3>
+                    <div class="category-list" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                        <div class="category-card" onclick="app.showLevels('toeic_spelling')">
+                            <div class="cat-icon" style="background-color: #fdf2f8; color: #db2777;"><i class="fa-solid fa-keyboard"></i></div>
+                            <h4>TOEIC Spelling</h4>
+                            <p>สะกดคำศัพท์วัยทำงาน</p>
+                        </div>
+                        <div class="category-card" onclick="app.showLevels('toefl_spelling')">
+                            <div class="cat-icon" style="background-color: #fdf2f8; color: #db2777;"><i class="fa-solid fa-keyboard"></i></div>
+                            <h4>TOEFL Spelling</h4>
+                            <p>สะกดคำศัพท์เรียนต่อ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress View -->
+            <section id="progress-view" class="view-section">
+                <header class="top-header">
+                    <div style="display: flex; align-items: center;">
+                        <button class="btn-icon" onclick="app.switchView('dashboard')"><i class="fa-solid fa-arrow-left"></i></button>
+                        <h2 style="display: inline-block; margin-left: 15px;">ความคืบหน้า</h2>
+                    </div>
+                </header>
+                <div class="progress-dashboard-container" style="padding: 20px;">
+                    <div class="stats-grid" style="margin-bottom: 20px;">
+                        <div class="stat-item" style="background: white; border-radius: 16px; padding: 15px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                            <div class="stat-icon bg-orange" style="width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #ffedd5; color: #f97316; font-size: 1.5rem;"><i class="fa-solid fa-fire"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-value" id="streak-value" style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">0 วัน</span>
+                                <span class="stat-label" style="font-size: 0.85rem; color: #64748b;">เรียนต่อเนื่อง</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-container" style="background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                        <h3 style="margin-bottom: 15px; color: #334155; font-size: 1.1rem;">คำศัพท์ที่จำได้รายหมวดหมู่</h3>
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                </div>
             </section>
 
             <!-- Levels View -->
@@ -260,87 +302,48 @@
                 </div>
             </section>
 
-            <!-- Flashcards View -->
-            <section id="flashcards-view" class="view-section">
-                <header class="top-header">
-                    <div>
-                        <button class="btn-icon" onclick="app.switchView('levels')"><i class="fa-solid fa-arrow-left"></i></button>
-                        <h2 id="fc-category-title" style="display: inline-block; margin-left: 15px;">หมวดหมู่: อาหารและเครื่องดื่ม</h2>
-                    </div>
-                    <div class="flashcard-progress">
-                        <span id="fc-current">1</span> / <span id="fc-total">10</span>
-                    </div>
-                </header>
-
-                <div class="flashcard-container">
-                    <div class="flashcard" id="flashcard" onclick="app.flipCard()">
-                        <div class="flashcard-inner">
-                            <div class="flashcard-front">
-                                <div class="fc-type">Noun</div>
-                                <h1 class="fc-word" id="fc-word-en">Apple</h1>
-                                <button class="btn-sound" onclick="app.playSound(event)"><i class="fa-solid fa-volume-high"></i></button>
-                                <p class="fc-hint">แตะเพื่อดูคำแปล</p>
-                            </div>
-                            <div class="flashcard-back">
-                                <h3 class="fc-phonetic" id="fc-phonetic" style="color: var(--text-muted); margin-bottom: 8px; font-weight: normal;">[ แอพ-เพิล ]</h3>
-                                <h2 class="fc-word-th" id="fc-word-th">แอปเปิ้ล</h2>
-                                <p class="fc-example" id="fc-example">I eat an apple every day.</p>
-                                <p class="fc-example-th" id="fc-example-th">ฉันกินแอปเปิ้ลทุกวัน</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flashcard-controls">
-                        <button class="btn btn-outline" id="btn-prev" onclick="app.prevCard()"><i class="fa-solid fa-chevron-left"></i> ก่อนหน้า</button>
-                        <button class="btn btn-primary" id="btn-next" onclick="app.nextCard()">ถัดไป <i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                    
-                    <div class="learning-actions">
-                        <button class="btn-action bg-red" onclick="app.markWord('hard')"><i class="fa-solid fa-xmark"></i> ยังจำไม่ได้</button>
-                        <button class="btn-action bg-green" onclick="app.markWord('easy')"><i class="fa-solid fa-check"></i> จำได้แล้ว</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- A1 SRS Flashcards View -->
-            <section id="a1-flashcards-view" class="view-section">
+            <!-- Universal SRS Flashcards View -->
+            <section id="srs-flashcards-view" class="view-section">
                 <header class="top-header">
                     <div>
                         <button class="btn-icon" onclick="app.switchView('dashboard')"><i class="fa-solid fa-arrow-left"></i></button>
-                        <h2 style="display: inline-block; margin-left: 15px;">คำศัพท์ CEFR A1</h2>
+                        <h2 id="srs-category-title" style="display: inline-block; margin-left: 15px;">ทบทวนคำศัพท์</h2>
                     </div>
                     <div class="flashcard-progress">
-                        <span id="a1-fc-current">1</span> / <span id="a1-fc-total">10</span>
+                        <span id="srs-fc-current">1</span> / <span id="srs-fc-total">10</span>
                     </div>
                 </header>
 
                 <div class="flashcard-container">
                     <!-- Progress summary stats -->
                     <div style="text-align: center; margin-bottom: 10px; font-size: 0.85rem; color: #64748b;">
-                        รอบนี้: <strong id="a1-session-progress">0/10</strong> | จำได้แล้ว: <strong id="a1-memorized-count" style="color: #10b981;">0</strong> / 300 คำ
+                        รอบนี้: <strong id="srs-session-progress">0/10</strong> | จำได้แล้ว: <strong id="srs-memorized-count" style="color: #10b981;">0</strong> คำ
                     </div>
                     
-                    <div class="flashcard" id="a1-flashcard" onclick="app.flipA1Card()">
+                    <div class="flashcard" id="srs-flashcard" onclick="app.flipSRSCard()">
                         <div class="flashcard-inner">
                             <div class="flashcard-front">
-                                <h1 class="fc-word" id="a1-fc-word-en">Apple</h1>
-                                <h3 class="fc-phonetic" id="a1-fc-phonetic-front" style="color: #64748b; margin-bottom: 15px; font-weight: normal; font-size: 1.1rem;">[ แอพ-เพิล ]</h3>
-                                <button class="btn-sound" onclick="app.playA1Sound(event)"><i class="fa-solid fa-volume-high"></i></button>
+                                <div class="fc-type" id="srs-fc-type" style="display: none; padding: 4px 12px; background: #e2e8f0; border-radius: 12px; font-size: 0.85rem; color: #475569; margin-bottom: 10px; display: inline-block;">Noun</div>
+                                <h1 class="fc-word" id="srs-fc-word-en">Apple</h1>
+                                <h3 class="fc-phonetic" id="srs-fc-phonetic-front" style="color: #64748b; margin-bottom: 15px; font-weight: normal; font-size: 1.1rem;">[ แอพ-เพิล ]</h3>
+                                <button class="btn-sound" onclick="app.playSRSSound(event)"><i class="fa-solid fa-volume-high"></i></button>
                                 <p class="fc-hint">แตะเพื่อดูคำแปล</p>
                             </div>
                             <div class="flashcard-back">
-                                <h3 class="fc-phonetic" id="a1-fc-phonetic" style="color: var(--text-muted); margin-bottom: 8px; font-weight: normal;">[ แอพ-เพิล ]</h3>
-                                <h2 class="fc-word-th" id="a1-fc-word-th">แอปเปิ้ล</h2>
+                                <h3 class="fc-phonetic" id="srs-fc-phonetic" style="color: var(--text-muted); margin-bottom: 8px; font-weight: normal;">[ แอพ-เพิล ]</h3>
+                                <h2 class="fc-word-th" id="srs-fc-word-th">แอปเปิ้ล</h2>
+                                <p class="fc-example" id="srs-fc-example" style="display: none; margin-top: 15px; font-style: italic; color: #475569;">I eat an apple every day.</p>
+                                <p class="fc-example-th" id="srs-fc-example-th" style="display: none; color: #64748b; font-size: 0.95rem;">ฉันกินแอปเปิ้ลทุกวัน</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Action buttons -->
-                    <div class="srs-actions" id="a1-srs-actions" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 20px;">
-                        <button class="btn-action" style="background-color: #ef4444; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markA1Word('very_hard')">ยากมาก</button>
-                        <button class="btn-action" style="background-color: #f97316; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markA1Word('hard')">ยาก</button>
-                        <button class="btn-action" style="background-color: #3b82f6; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markA1Word('good')">พอได้</button>
-                        <button class="btn-action" style="background-color: #10b981; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markA1Word('easy')">ง่าย</button>
+                    <div class="srs-actions" id="srs-actions" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 20px;">
+                        <button class="btn-action" style="background-color: #ef4444; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markSRSWord('very_hard')">ยากมาก</button>
+                        <button class="btn-action" style="background-color: #f97316; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markSRSWord('hard')">ยาก</button>
+                        <button class="btn-action" style="background-color: #3b82f6; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markSRSWord('good')">พอได้</button>
+                        <button class="btn-action" style="background-color: #10b981; font-size: 0.85rem; padding: 10px 5px;" onclick="app.markSRSWord('easy')">ง่าย</button>
                     </div>
                 </div>
             </section>
@@ -368,6 +371,12 @@
                         </div>
                         <div class="quiz-options" id="quiz-options" style="display: flex; flex-direction: column; gap: 12px;">
                             <!-- Options injected by JS -->
+                        </div>
+                        <div id="quiz-spelling-container" style="display: none; text-align: center; margin-top: 20px;">
+                            <input type="text" id="quiz-spelling-input" placeholder="พิมพ์คำศัพท์ภาษาอังกฤษที่นี่..." style="width: 100%; padding: 15px; font-size: 1.2rem; border: 2px solid #e2e8f0; border-radius: 12px; margin-bottom: 15px; text-align: center; font-family: 'Outfit', sans-serif;">
+                            <p id="quiz-spelling-feedback" style="margin-bottom: 10px; font-size: 1rem; color: #ef4444; display: none;">ลองอีกครั้ง</p>
+                            <button class="btn btn-primary" onclick="app.submitSpellingAnswer()" style="width: 100%; padding: 15px; font-size: 1.1rem; border-radius: 12px;">ส่งคำตอบ <i class="fa-solid fa-paper-plane"></i></button>
+                            <button class="btn btn-outline" onclick="app.revealSpellingAnswer()" style="width: 100%; padding: 10px; font-size: 0.95rem; border-radius: 12px; margin-top: 10px;">ข้าม/ดูเฉลย</button>
                         </div>
                         <div id="quiz-speaking-container" style="display: none; text-align: center; margin-top: 20px;">
                             <!-- Timer Countdown -->

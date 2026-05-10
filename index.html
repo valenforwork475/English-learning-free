@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -259,54 +258,6 @@
                             <div class="cat-icon" style="background-color: #fdf2f8; color: #db2777;"><i class="fa-solid fa-keyboard"></i></div>
                             <h4>TOEFL Spelling</h4>
                             <p>สะกดคำศัพท์เรียนต่อ</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="category-group" style="margin-top: 30px;">
-                    <h3 style="color: #10b981; margin-bottom: 15px; font-size: 1.2rem;"><i class="fa-solid fa-camera"></i> หมวดทดลอง (Experimental)</h3>
-                    <div class="category-list" style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 15px;">
-                        <div class="category-card" onclick="app.switchView('photo')" style="background: linear-gradient(135deg, #d1fae5, #a7f3d0); border: 2px dashed #34d399;">
-                            <div class="cat-icon" style="background-color: #059669; color: white;"><i class="fa-solid fa-camera"></i></div>
-                            <h4 style="color: #064e3b;">ถ่ายรูปหาคำศัพท์</h4>
-                            <p style="color: #047857;">สแกนคำศัพท์ภาษาอังกฤษจากรูปภาพ</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Photo Mode View -->
-            <section id="photo-view" class="view-section" style="display: none;">
-                <header class="top-header">
-                    <div style="display: flex; align-items: center;">
-                        <button class="btn-icon" onclick="app.switchView('dashboard')"><i class="fa-solid fa-arrow-left"></i></button>
-                        <h2 style="display: inline-block; margin-left: 15px;">ถ่ายรูปหาคำศัพท์</h2>
-                    </div>
-                </header>
-                <div class="photo-container" style="padding: 20px; text-align: center; max-width: 600px; margin: 0 auto;">
-                    <div style="margin-bottom: 20px;">
-                        <label for="camera-input" class="btn" style="display: inline-block; width: 100%; cursor: pointer; padding: 15px; font-size: 1.1rem; background: #10b981;">
-                            <i class="fa-solid fa-camera"></i> ถ่ายรูป / อัปโหลดรูป
-                        </label>
-                        <input type="file" id="camera-input" accept="image/*" capture="environment" style="display: none;" onchange="app.handlePhotoUpload(event)">
-                    </div>
-                    
-                    <div id="photo-preview-container" style="display: none; margin-bottom: 20px;">
-                        <img id="photo-preview" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" alt="Preview">
-                        <button class="btn btn-primary" id="process-photo-btn" onclick="app.processPhoto()" style="margin-top: 15px; width: 100%;">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> สแกนหาคำศัพท์
-                        </button>
-                    </div>
-
-                    <div id="photo-loading" style="display: none; margin: 20px 0;">
-                        <div class="spinner" style="margin: 0 auto 10px auto; border-top-color: #10b981;"></div>
-                        <p style="color: #64748b;" id="photo-loading-text">กำลังวิเคราะห์รูปภาพ...</p>
-                    </div>
-
-                    <div id="photo-results" style="display: none; text-align: left;">
-                        <h3 style="margin-bottom: 15px; color: #334155;">คำศัพท์ที่พบ:</h3>
-                        <div id="photo-words-list" style="display: grid; gap: 10px;">
-                            <!-- Words will be injected here -->
                         </div>
                     </div>
                 </div>

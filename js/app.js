@@ -439,6 +439,11 @@ const app = {
             const pLink = document.querySelector('[data-view="progress"]');
             if (pLink) pLink.classList.add('active');
             this.renderProgressChart();
+        } else if (viewId === 'photo') {
+            document.querySelectorAll('.nav-links li').forEach(n => n.classList.remove('active'));
+            document.getElementById('photo-preview-container').style.display = 'none';
+            document.getElementById('photo-results').style.display = 'none';
+            if (document.getElementById('photo-preview')) document.getElementById('photo-preview').src = '';
         }
 
         // Render grammar lessons when entering grammar view
@@ -2016,6 +2021,117 @@ const grammarEngine = {
                 }
             }
         }
+    },
+
+    // --- Photo to Vocab Mode ---
+    handlePhotoUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const preview = document.getElementById('photo-preview');
+            preview.src = e.target.result;
+            document.getElementById('photo-preview-container').style.display = 'block';
+            document.getElementById('photo-results').style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    },
+
+    async processPhoto() {
+        const preview = document.getElementById('photo-preview');
+        if (!preview.src) return;
+
+        document.getElementById('photo-loading').style.display = 'block';
+        document.getElementById('process-photo-btn').disabled = true;
+        document.getElementById('photo-results').style.display = 'none';
+        document.getElementById('photo-loading-text').textContent = 'กำลังสแกนหาคำศัพท์ภาษาอังกฤษ... (ใช้เวลาสักครู่)';
+
+        try {
+            const worker = await Tesseract.createWorker('eng');
+            const ret = await worker.recognize(preview.src);
+            await worker.terminate();
+
+            const text = ret.data.text;
+            const words = this.filterExtractedWords(text);
+            
+            if (words.length === 0) {
+                alert('ไม่พบคำศัพท์ภาษาอังกฤษที่ชัดเจนในรูปภาพ ลองถ่ายใหม่อีกครั้งครับ');
+                document.getElementById('photo-loading').style.display = 'none';
+                document.getElementById('process-photo-btn').disabled = false;
+                return;
+            }
+
+            document.getElementById('photo-loading-text').textContent = 'กำลังดึงคำแปลภาษาไทย...';
+            await this.translateAndShowWords(words);
+            
+        } catch (error) {
+            console.error(error);
+            alert('เกิดข้อผิดพลาดในการวิเคราะห์รูปภาพ');
+        } finally {
+            document.getElementById('photo-loading').style.display = 'none';
+            document.getElementById('process-photo-btn').disabled = false;
+        }
+    },
+
+    filterExtractedWords(text) {
+        // Find alphabetical words, at least 3 chars long
+        const rawWords = text.match(/\b[A-Za-z]{3,}\b/g) || [];
+        const uniqueWords = [...new Set(rawWords.map(w => w.toLowerCase()))];
+        
+        // Common stop words to ignore
+        const stopWords = ['the', 'and', 'are', 'you', 'for', 'that', 'with', 'this', 'have', 'from', 'not', 'was', 'but', 'all', 'what', 'can', 'out', 'use', 'any', 'has', 'had', 'will', 'your', 'how', 'which', 'who', 'their', 'there', 'they'];
+        return uniqueWords.filter(w => !stopWords.includes(w)).slice(0, 10); // Limit to 10 words
+    },
+
+    async translateAndShowWords(words) {
+        const listContainer = document.getElementById('photo-words-list');
+        listContainer.innerHTML = '';
+
+        for (const word of words) {
+            let translation = '';
+            
+            // Check local DB first
+            const localWord = typeof vocabData !== 'undefined' ? vocabData.find(w => (w.en && w.en.toLowerCase() === word) || (w.english && w.english.toLowerCase() === word)) : null;
+            if (localWord && localWord.th) {
+                translation = localWord.th;
+            } else if (typeof vocabDataA1 !== 'undefined') {
+                const a1Word = vocabDataA1.find(w => w.id && w.id.toLowerCase() === word);
+                if (a1Word && a1Word.th) translation = a1Word.th;
+            }
+
+            // Fallback to MyMemory API
+            if (!translation) {
+                try {
+                    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|th`);
+                    const data = await res.json();
+                    if (data && data.responseData && data.responseData.translatedText) {
+                        translation = data.responseData.translatedText;
+                        if (translation === word) translation = '(อาจเป็นชื่อเฉพาะ)';
+                    } else {
+                        translation = '(แปลไม่ได้)';
+                    }
+                } catch (e) {
+                    translation = '(ข้อผิดพลาดเครือข่าย)';
+                }
+            }
+
+            const card = document.createElement('div');
+            card.style.cssText = 'background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;';
+            
+            card.innerHTML = `
+                <div>
+                    <h4 style="color: #0f172a; font-size: 1.2rem; margin: 0; text-transform: capitalize;">${word}</h4>
+                    <p style="color: #64748b; margin: 5px 0 0 0; font-size: 0.95rem;">${translation}</p>
+                </div>
+                <button class="btn-icon" style="background: #e0e7ff; color: #4338ca; width: 40px; height: 40px;" onclick="app.speakText('${word}')">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            `;
+            listContainer.appendChild(card);
+        }
+
+        document.getElementById('photo-results').style.display = 'block';
     }
 };
 

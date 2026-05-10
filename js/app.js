@@ -410,6 +410,8 @@ const app = {
         if (trackId === 'grammar') {
             this.switchView('grammar');
             grammarEngine.render(level);
+        } else if (this.isSpellingMode) {
+            this.startQuiz();
         } else {
             this.showSRSFlashcards(lookupTrack);
         }
@@ -1205,6 +1207,16 @@ const app = {
         if (this.isSpellingMode) {
             this.quizList.forEach(q => {
                 q.type = 'spelling';
+                const correct = (q.answerText || '').trim();
+                if (correct && typeof vocabData !== 'undefined') {
+                    const cleanOpt = correct.replace(/_alt$/i, '').replace(/_\w+$/i, '');
+                    const v = vocabData.find(w => (w.en && w.en.toLowerCase() === cleanOpt.toLowerCase()) || (w.english && w.english.toLowerCase() === cleanOpt.toLowerCase()));
+                    if (v && v.th) {
+                        q.question = `แปลเป็นภาษาอังกฤษ (พิมพ์คำศัพท์):\n\n" ${v.th} "`;
+                        q.audioText = ''; // ไม่ให้ฟังเสียงเพื่อบอกใบ้แบบง่ายเกินไป
+                        q.read = ''; // ลบคำอ่านเผื่อมี
+                    }
+                }
             });
         }
         
